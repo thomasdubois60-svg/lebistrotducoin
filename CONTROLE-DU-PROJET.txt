@@ -1,0 +1,15 @@
+LE BISTROT DU COIN — CONTROLE DU PAQUET
+
+Ce dossier contient uniquement le code source du site, les images JPEG/WEBP/PNG et les fichiers de configuration nécessaires à Next.js/Vercel.
+Il ne contient aucun fichier exécutable Windows (.exe, .msi, .bat, .cmd), aucune macro et aucun mot de passe.
+
+Contrôles effectués avant livraison :
+- ouverture et test d'intégrité de l'archive ZIP ;
+- validation JSON des fichiers de configuration ;
+- analyse syntaxique de tous les fichiers TypeScript et TSX ;
+- présence des pages Accueil, Aujourd'hui, Carte, Notre histoire, Galerie, Contact et Administration ;
+- présence des photographies fournies ;
+- photo facultative pour chaque produit de la carte ;
+- PWA, SEO et responsive intégrés.
+
+La compilation npm complète ne peut pas être exécutée dans l'environnement de création, car celui-ci n'a pas accès au registre npm. Vercel installera les dépendances et lancera la compilation lors du déploiement.
