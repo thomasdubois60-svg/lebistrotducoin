@@ -2,31 +2,45 @@
 
 Site officiel du restaurant, construit avec Next.js et prêt pour Vercel.
 
-## Mise en ligne
+## Mise à jour du site existant
 
 1. Décompresser le ZIP.
-2. Envoyer tout le contenu du dossier dans le dépôt GitHub `thomasdubois60-svg/lebistrotducoin`.
-3. Dans Vercel, importer ce dépôt puis cliquer sur **Deploy**.
-4. Dans **Vercel > Project > Settings > Environment Variables**, ajouter :
-   - `ADMIN_PASSWORD` : le mot de passe choisi pour l’administration.
-   - `GITHUB_TOKEN` : un jeton GitHub à accès fin autorisé à lire et écrire le contenu du dépôt.
-   - `GITHUB_REPO` : `thomasdubois60-svg/lebistrotducoin`.
-   - `GITHUB_BRANCH` : `main`.
-   - `NEXT_PUBLIC_SITE_URL` : l’adresse finale du site, par exemple `https://lebistrotducoin.vercel.app`.
-5. Redéployer une fois après l’ajout des variables.
+2. Ouvrir le dépôt GitHub `thomasdubois60-svg/lebistrotducoin`.
+3. Envoyer tout le contenu du dossier décompressé à la racine du dépôt et valider le remplacement des fichiers existants.
+4. Cliquer sur **Commit changes**.
+5. Vercel lance automatiquement un nouveau déploiement.
 
-## Administration
+## Configuration de l’administration
 
-Ouvrir `/administration` sur le site. L’espace permet de modifier depuis un téléphone :
+Dans **Vercel > Project > Settings > Environment Variables**, ajouter :
 
-- les trois entrées, trois plats et trois desserts du jour ;
-- la suggestion et son supplément ;
-- les catégories, produits, descriptions et prix de la carte ;
-- une photo facultative pour chaque produit ;
-- les photos et légendes de la galerie.
+- `ADMIN_PASSWORD` : le mot de passe choisi pour l’administration.
+- `GITHUB_TOKEN` : un jeton GitHub à accès fin limité au dépôt, avec **Contents: Read and write**.
+- `GITHUB_REPO` : `thomasdubois60-svg/lebistrotducoin`.
+- `GITHUB_BRANCH` : `main`.
+- `NEXT_PUBLIC_SITE_URL` : `https://lebistrotducoin.vercel.app`.
 
-Les modifications sont enregistrées dans GitHub. Vercel redéploie ensuite automatiquement le site.
+Redéployer une fois après l’ajout ou la modification des variables.
 
-## Sécurité du jeton GitHub
+## Fonctions de l’administration
 
-Créer un jeton **fine-grained** limité uniquement au dépôt du Bistrot, avec la permission **Contents: Read and write**. Ne jamais placer ce jeton dans un fichier du projet : il doit rester dans les variables privées de Vercel.
+L’adresse `/administration` permet de gérer depuis un téléphone :
+
+- les coordonnées, horaires, vacances et fermetures exceptionnelles ;
+- la photo principale et les textes de l’accueil ;
+- les prix des formules ;
+- un nombre libre d’entrées, plats et desserts ;
+- la suggestion du jour ;
+- l’histoire du Bistrot et sa photo ;
+- la privatisation, son texte et ses photos ;
+- les événements avec date, descriptif, prix et photo ;
+- les catégories de la carte et leurs raccourcis automatiques ;
+- les produits, prix, descriptions et photos ;
+- les avis Google et les réseaux sociaux ;
+- la galerie.
+
+Les changements sont enregistrés dans GitHub, puis Vercel republie automatiquement le site.
+
+## Sécurité
+
+Le jeton GitHub et le mot de passe administrateur doivent uniquement être enregistrés dans les variables privées de Vercel. Ils ne doivent jamais être ajoutés aux fichiers du dépôt.

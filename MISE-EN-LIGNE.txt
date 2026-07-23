@@ -1,0 +1,13 @@
+LE BISTROT DU COIN — MISE À JOUR FINALE
+
+1. Décompressez cette archive.
+2. Sur GitHub, ouvrez le dépôt lebistrotducoin.
+3. Cliquez sur Add file > Upload files.
+4. Envoyez TOUT le contenu du dossier décompressé.
+5. Cliquez sur Commit changes.
+6. Attendez le déploiement automatique Vercel.
+
+Site : https://lebistrotducoin.vercel.app
+Administration : https://lebistrotducoin.vercel.app/administration
+
+Après la mise en ligne, configurez ADMIN_PASSWORD et GITHUB_TOKEN dans les variables Vercel pour rendre les modifications depuis l’administration permanentes.

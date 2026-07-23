@@ -9,9 +9,9 @@ const slugify = (value: string, index: number) => {
 }
 
 export default function MenuPage() {
-  const { menu } = useSiteContent()
+  const { menu, pageTexts } = useSiteContent()
   return <>
-    <PageHero eyebrow="Notre cuisine" title="La carte" text="Des recettes de bistrot, généreuses et sans détour."/>
+    <PageHero eyebrow="Notre cuisine" title="La carte" text={pageTexts.menuIntro}/>
     <nav className="category-nav" aria-label="Accès rapide aux catégories"><div className="container category-nav-inner">
       {menu.map((section, index)=><a key={`${section.category}-${index}`} href={`#${slugify(section.category,index)}`}>{section.category}</a>)}
     </div></nav>
