@@ -17,6 +17,9 @@ export default function AdminPage(){
  const runUpload=async(file:File,apply:(src:string)=>void,label:string)=>{setBusy(true);setMessage('Envoi de la photo…');try{const src=await uploadFile(file);apply(src);setMessage(`${label} Appuie maintenant sur « Publier les modifications ».`)}catch(e){setMessage(e instanceof Error?e.message:'Erreur lors de l’envoi.')}setBusy(false)}
  const save=async()=>{setBusy(true);setMessage('Publication en cours…');const r=await fetch('/api/content',{method:'POST',headers:{'Content-Type':'application/json','x-admin-password':password},body:JSON.stringify(content)});const data=await r.json();setMessage(r.ok?'Modifications enregistrées. Vercel les publiera automatiquement dans quelques instants.':(data.error||'Publication impossible.'));if(r.ok)window.dispatchEvent(new Event('bistrot-content-updated'));setBusy(false)}
  const updateDaily=(group:'starters'|'mains'|'desserts',i:number,v:string)=>setContent(c=>({...c,daily:{...c.daily,[group]:c.daily[group].map((x,n)=>n===i?{...x,name:v}:x)}}))
+ const moveInArray=<T,>(items:T[],from:number,to:number)=>{if(to<0||to>=items.length)return items;const copy=[...items];const [moved]=copy.splice(from,1);copy.splice(to,0,moved);return copy}
+ const moveCategory=(index:number,direction:-1|1)=>setContent(c=>({...c,menu:moveInArray(c.menu,index,index+direction)}))
+ const moveProduct=(sectionIndex:number,itemIndex:number,direction:-1|1)=>setContent(c=>({...c,menu:c.menu.map((section,index)=>index===sectionIndex?{...section,items:moveInArray(section.items,itemIndex,itemIndex+direction)}:section)}))
  const textArea=(value:string,onChange:(v:string)=>void)=><textarea value={value} onChange={e=>onChange(e.target.value)}/>
  return <><PageHero eyebrow="Espace privé" title="Administration" text="Modifiez le contenu du site depuis votre téléphone."/><section className="section"><div className="container admin-panel">
   <div className="admin-warning"><strong>Accès privé.</strong> Saisissez le mot de passe configuré dans Vercel avant de publier.</div>
@@ -61,8 +64,38 @@ export default function AdminPage(){
   <h2>Événements</h2>
   {content.events.map((ev,i)=><fieldset key={i}><legend>Événement {i+1}</legend><label>Titre<input value={ev.title} onChange={e=>setContent(c=>({...c,events:c.events.map((x,n)=>n===i?{...x,title:e.target.value}:x)}))}/></label><label>Date / horaire<input value={ev.date} onChange={e=>setContent(c=>({...c,events:c.events.map((x,n)=>n===i?{...x,date:e.target.value}:x)}))}/></label><label>Description{ textArea(ev.description,v=>setContent(c=>({...c,events:c.events.map((x,n)=>n===i?{...x,description:v}:x)}))) }</label><label>Prix<input value={ev.price||''} onChange={e=>setContent(c=>({...c,events:c.events.map((x,n)=>n===i?{...x,price:e.target.value}:x)}))}/></label>{ev.image&&<img className="admin-event-image" src={ev.image} alt={ev.imageAlt||ev.title}/>}<label className="upload-box compact-upload">{ev.image?'Remplacer la photo':'Ajouter une photo'}<input type="file" accept="image/jpeg,image/png,image/webp" onChange={e=>{const f=e.target.files?.[0];if(f)runUpload(f,src=>setContent(c=>({...c,events:c.events.map((x,n)=>n===i?{...x,image:src,imageAlt:x.imageAlt||x.title}:x)})),'Photo de l’événement ajoutée.')}}/></label><button className="danger-link" onClick={()=>setContent(c=>({...c,events:c.events.filter((_,n)=>n!==i)}))}>Supprimer cet événement</button></fieldset>)}<button className="button secondary" onClick={()=>setContent(c=>({...c,events:[...c.events,{...blankEvent}]}))}>Ajouter un événement</button>
 
-  <h2>La carte</h2><p className="admin-help">Chaque catégorie ajoutée crée automatiquement un bouton dans le bandeau de la page Carte.</p>
-  {content.menu.map((section,si)=><fieldset key={si}><legend>Catégorie {si+1}</legend><label>Nom de la catégorie<input value={section.category} onChange={e=>setContent(c=>({...c,menu:c.menu.map((s,n)=>n===si?{...s,category:e.target.value}:s)}))}/></label>{section.items.map((item,ii)=><div className="admin-item" key={ii}><label>Produit<input value={item.name} onChange={e=>setContent(c=>({...c,menu:c.menu.map((s,n)=>n===si?{...s,items:s.items.map((x,m)=>m===ii?{...x,name:e.target.value}:x)}:s)}))}/></label><label>Description<input value={item.description||''} onChange={e=>setContent(c=>({...c,menu:c.menu.map((s,n)=>n===si?{...s,items:s.items.map((x,m)=>m===ii?{...x,description:e.target.value}:x)}:s)}))}/></label><label>Prix<input value={item.price||''} onChange={e=>setContent(c=>({...c,menu:c.menu.map((s,n)=>n===si?{...s,items:s.items.map((x,m)=>m===ii?{...x,price:e.target.value}:x)}:s)}))}/></label><label className="upload-box compact-upload">{item.image?'Remplacer la photo':'Ajouter une photo'}<input type="file" accept="image/jpeg,image/png,image/webp" onChange={e=>{const f=e.target.files?.[0];if(f)runUpload(f,src=>setContent(c=>({...c,menu:c.menu.map((s,n)=>n===si?{...s,items:s.items.map((x,m)=>m===ii?{...x,image:src,imageAlt:x.imageAlt||x.name}:x)}:s)})),'Photo du produit ajoutée.')}}/></label><button className="danger-link" onClick={()=>setContent(c=>({...c,menu:c.menu.map((s,n)=>n===si?{...s,items:s.items.filter((_,m)=>m!==ii)}:s)}))}>Supprimer ce produit</button></div>)}<button className="button secondary" onClick={()=>setContent(c=>({...c,menu:c.menu.map((s,n)=>n===si?{...s,items:[...s.items,{...blankItem}]}:s)}))}>Ajouter un produit</button><button className="danger-link" onClick={()=>setContent(c=>({...c,menu:c.menu.filter((_,n)=>n!==si)}))}>Supprimer la catégorie</button></fieldset>)}<button className="button secondary" onClick={()=>setContent(c=>({...c,menu:[...c.menu,{category:'Nouvelle catégorie',items:[{...blankItem}]}]}))}>Ajouter une catégorie</button>
+  <h2>La carte</h2>
+  <p className="admin-help">L’ordre affiché ici est aussi celui du bandeau de la page Carte. Utilise les boutons Monter et Descendre, puis publie les modifications.</p>
+  {content.menu.map((section,si)=><fieldset key={si} className="reorder-fieldset">
+    <legend>Catégorie {si+1}</legend>
+    <div className="reorder-toolbar" aria-label={`Organisation de la catégorie ${section.category}`}>
+      <strong>{section.category || `Catégorie ${si+1}`}</strong>
+      <div className="reorder-actions">
+        <button type="button" className="order-button" disabled={si===0} onClick={()=>moveCategory(si,-1)}>▲ Monter</button>
+        <button type="button" className="order-button" disabled={si===content.menu.length-1} onClick={()=>moveCategory(si,1)}>▼ Descendre</button>
+      </div>
+    </div>
+    <label>Nom de la catégorie<input value={section.category} onChange={e=>setContent(c=>({...c,menu:c.menu.map((s,n)=>n===si?{...s,category:e.target.value}:s)}))}/></label>
+    {section.items.map((item,ii)=><div className="admin-item product-reorder-item" key={ii}>
+      <div className="reorder-toolbar compact">
+        <strong>{item.name || `Produit ${ii+1}`}</strong>
+        <div className="reorder-actions">
+          <button type="button" className="order-button" disabled={ii===0} onClick={()=>moveProduct(si,ii,-1)}>▲ Monter</button>
+          <button type="button" className="order-button" disabled={ii===section.items.length-1} onClick={()=>moveProduct(si,ii,1)}>▼ Descendre</button>
+        </div>
+      </div>
+      <label>Produit<input value={item.name} onChange={e=>setContent(c=>({...c,menu:c.menu.map((s,n)=>n===si?{...s,items:s.items.map((x,m)=>m===ii?{...x,name:e.target.value}:x)}:s)}))}/></label>
+      <label>Description<input value={item.description||''} onChange={e=>setContent(c=>({...c,menu:c.menu.map((s,n)=>n===si?{...s,items:s.items.map((x,m)=>m===ii?{...x,description:e.target.value}:x)}:s)}))}/></label>
+      <label>Prix<input value={item.price||''} onChange={e=>setContent(c=>({...c,menu:c.menu.map((s,n)=>n===si?{...s,items:s.items.map((x,m)=>m===ii?{...x,price:e.target.value}:x)}:s)}))}/></label>
+      <label className="upload-box compact-upload">{item.image?'Remplacer la photo':'Ajouter une photo'}<input type="file" accept="image/jpeg,image/png,image/webp" onChange={e=>{const f=e.target.files?.[0];if(f)runUpload(f,src=>setContent(c=>({...c,menu:c.menu.map((s,n)=>n===si?{...s,items:s.items.map((x,m)=>m===ii?{...x,image:src,imageAlt:x.imageAlt||x.name}:x)}:s)})),'Photo du produit ajoutée.')}}/></label>
+      <button type="button" className="danger-link" onClick={()=>setContent(c=>({...c,menu:c.menu.map((s,n)=>n===si?{...s,items:s.items.filter((_,m)=>m!==ii)}:s)}))}>Supprimer ce produit</button>
+    </div>)}
+    <div className="category-actions">
+      <button type="button" className="button secondary" onClick={()=>setContent(c=>({...c,menu:c.menu.map((s,n)=>n===si?{...s,items:[...s.items,{...blankItem}]}:s)}))}>Ajouter un produit</button>
+      <button type="button" className="danger-link" onClick={()=>setContent(c=>({...c,menu:c.menu.filter((_,n)=>n!==si)}))}>Supprimer la catégorie</button>
+    </div>
+  </fieldset>)}
+  <button type="button" className="button secondary" onClick={()=>setContent(c=>({...c,menu:[...c.menu,{category:'Nouvelle catégorie',items:[{...blankItem}]}]}))}>Ajouter une catégorie</button>
 
   <h2>Avis Google et réseaux sociaux</h2>
   <label>Titre de la page<input value={content.reviews.title} onChange={e=>setContent(c=>({...c,reviews:{...c.reviews,title:e.target.value}}))}/></label>
