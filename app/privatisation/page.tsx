@@ -1,0 +1,4 @@
+'use client'
+import { PageHero } from '@/components/page-hero'
+import { useSiteContent } from '@/components/content-provider'
+export default function PrivatizationPage(){ const {privatization,general}=useSiteContent(); return <><PageHero eyebrow="Sur devis" title={privatization.title} text={privatization.intro}/><section className="section"><div className="container narrow centered"><p className="lead">{privatization.text}</p><div className="actions" style={{justifyContent:'center'}}><a className="button" href={`tel:${general.phoneHref}`}>Nous appeler</a><a className="button secondary" href={`mailto:${general.email}`}>Nous écrire</a></div></div><div className="container gallery-grid privatization-gallery">{privatization.photos.map((p,i)=><figure className="gallery-item" key={i}><img src={p.src} alt={p.alt}/><figcaption>{p.label}</figcaption></figure>)}</div></section></> }

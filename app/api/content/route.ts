@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { defaultContent, SiteContent } from '@/lib/default-content'
+import { defaultContent, normalizeContent, SiteContent } from '@/lib/default-content'
 
 export const dynamic = 'force-dynamic'
 
@@ -26,7 +26,7 @@ export async function GET() {
   if (!file?.content) return NextResponse.json(defaultContent)
   try {
     const text = Buffer.from(file.content, 'base64').toString('utf8')
-    return NextResponse.json(JSON.parse(text))
+    return NextResponse.json(normalizeContent(JSON.parse(text)))
   } catch { return NextResponse.json(defaultContent) }
 }
 
@@ -34,7 +34,7 @@ export async function POST(request: NextRequest) {
   const { token, repo, branch, password } = settings()
   if (!token || !password) return NextResponse.json({ error: 'Administration non configurée sur Vercel.' }, { status: 503 })
   if (request.headers.get('x-admin-password') !== password) return NextResponse.json({ error: 'Mot de passe incorrect.' }, { status: 401 })
-  const content = await request.json() as SiteContent
+  const content = normalizeContent(await request.json() as SiteContent)
   const current = await githubFile()
   const response = await fetch(`https://api.github.com/repos/${repo}/contents/data/site-content.json`, {
     method: 'PUT',
