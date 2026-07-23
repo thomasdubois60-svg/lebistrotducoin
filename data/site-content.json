@@ -23,15 +23,15 @@
     "formulas": [
       {
         "name": "Plat du jour",
-        "price": "À compléter"
+        "price": "10.90€"
       },
       {
         "name": "Entrée + plat ou plat + dessert",
-        "price": "À compléter"
+        "price": "16€"
       },
       {
         "name": "Entrée + plat + dessert",
-        "price": "À compléter"
+        "price": "17€"
       }
     ],
     "starters": [
@@ -128,7 +128,7 @@
       "category": "Nos pressions",
       "items": [
         {
-          "name": "Pélican",
+          "name": "Pélican blonde",
           "description": "25 cl : 4,50 € · 33 cl : 6 €",
           "price": "50 cl : 8 €"
         },
