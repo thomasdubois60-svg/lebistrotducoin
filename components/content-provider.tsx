@@ -1,6 +1,6 @@
 'use client'
 import { createContext, useContext, useEffect, useState } from 'react'
-import { defaultContent, SiteContent } from '@/lib/default-content'
+import { defaultContent, normalizeContent, SiteContent } from '@/lib/default-content'
 
 const ContentContext = createContext<SiteContent>(defaultContent)
 
@@ -10,7 +10,7 @@ export function ContentProvider({ children }: { children: React.ReactNode }) {
     const update = async () => {
       try {
         const response = await fetch('/api/content', { cache: 'no-store' })
-        if (response.ok) setContent(await response.json())
+        if (response.ok) setContent(normalizeContent(await response.json()))
       } catch { setContent(defaultContent) }
     }
     update()
