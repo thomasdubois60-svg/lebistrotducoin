@@ -1,0 +1,18 @@
+LE BISTROT DU COIN — ACTIVATION DE L’ADMINISTRATION
+
+1. Envoyer tout le contenu de ce dossier dans le dépôt GitHub :
+   thomasdubois60-svg/lebistrotducoin
+
+2. Dans Vercel > projet lebistrotducoin > Settings > Environment Variables, ajouter :
+   ADMIN_PASSWORD = le mot de passe privé de votre choix
+   GITHUB_TOKEN = un jeton GitHub finement limité à ce dépôt, autorisation Contents: Read and write
+   GITHUB_REPO = thomasdubois60-svg/lebistrotducoin
+   GITHUB_BRANCH = main
+   NEXT_PUBLIC_SITE_URL = https://lebistrotducoin.vercel.app
+
+3. Redéployer une seule fois le projet sans cache.
+
+4. Administration :
+   https://lebistrotducoin.vercel.app/administration
+
+Ne jamais écrire le mot de passe ou le jeton GitHub dans les fichiers du dépôt.
