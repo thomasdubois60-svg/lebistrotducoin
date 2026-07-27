@@ -6,8 +6,8 @@
     "email": "lebistrotducoin41220@gmail.com",
     "address": "15 Place de la Halle\n41220 Saint-Laurent-Nouan",
     "hours": "Lundi au jeudi : 7h–20h\nVendredi : 7h–15h\nRestauration : 11h45–14h",
-    "closureEnabled": false,
-    "closureMessage": "Le Bistrot est exceptionnellement fermé."
+    "closureEnabled": true,
+    "closureMessage": "Le Bistrot est exceptionnellement fermé. Reouverture lundi"
   },
   "pageTexts": {
     "homeSlogan": "Le Bistrot est avant tout un lieu où l’on vient se rencontrer, passer et partager de bons moments. Voilà ce que vous trouverez en poussant nos portes.",
