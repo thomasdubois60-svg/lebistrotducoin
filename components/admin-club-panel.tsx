@@ -1,27 +1,20 @@
 'use client'
-import { useMemo, useState } from 'react'
-
-type Member = {
-  id:string; first_name:string; last_name:string; email:string; birthday:string|null; email_marketing:boolean; notification_interest:boolean;
-  loyalty_points:number; reward_available:boolean; personal_code:string; created_at:string
-}
-type Stats = { total:number; emailSubscribers:number; notificationInterested:number; rewards:number }
-
-export function AdminClubPanel({ password }: { password: string }) {
-  const [members,setMembers]=useState<Member[]>([])
-  const [stats,setStats]=useState<Stats|null>(null)
-  const [query,setQuery]=useState('')
-  const [message,setMessage]=useState('Clique sur « Charger les membres ».')
-  const [busy,setBusy]=useState(false)
-
-  const filtered=useMemo(()=>{const q=query.trim().toLowerCase();return q?members.filter(member=>`${member.first_name} ${member.last_name} ${member.email}`.toLowerCase().includes(q)):members},[members,query])
-  async function load(){setBusy(true);setMessage('Chargement…');const response=await fetch('/api/club/members',{headers:{'x-admin-password':password},cache:'no-store'});const data=await response.json();if(response.ok){setMembers(data.members);setStats(data.stats);setMessage(`${data.stats.total} membre${data.stats.total>1?'s':''}.`)}else setMessage(data.error||'Chargement impossible.');setBusy(false)}
-
-  return <section className="club-admin-section">
-    <div className="club-admin-heading"><div><span className="club-badge">CLUB LBDC</span><h2>Membres</h2></div><button type="button" className="button secondary" onClick={load} disabled={busy}>{busy?'Chargement…':'Charger les membres'}</button></div>
-    {stats&&<div className="club-stat-grid"><div><strong>{stats.total}</strong><span>Membres</span></div><div><strong>{stats.emailSubscribers}</strong><span>E-mails acceptés</span></div><div><strong>{stats.notificationInterested}</strong><span>Notifications souhaitées</span></div><div><strong>{stats.rewards}</strong><span>Récompenses prêtes</span></div></div>}
-    <label>Rechercher un membre<input value={query} onChange={event=>setQuery(event.target.value)} placeholder="Prénom, nom ou e-mail"/></label>
-    <p className="admin-help">{message}</p>
-    {filtered.length>0&&<div className="club-member-list">{filtered.map(member=><article key={member.id} className="club-member-card"><div><strong>{member.first_name} {member.last_name}</strong><a href={`mailto:${member.email}`}>{member.email}</a></div><div className="club-member-meta"><span>{member.email_marketing?'E-mail accepté':'Pas d’e-mail promo'}</span><span>{member.notification_interest?'Notifications souhaitées':'Notifications non demandées'}</span><span>{member.loyalty_points} passage{member.loyalty_points>1?'s':''}</span></div></article>)}</div>}
-  </section>
-}
+import { useMemo,useState } from 'react'
+type Member={id:string;first_name:string;last_name:string;email:string;birthday:string|null;email_marketing:boolean;notification_interest:boolean;loyalty_points:number;reward_available:boolean;personal_code:string;created_at:string}
+type Event={id:string;member_id:string;event_type:'passage'|'reward';event_day:string;created_at:string;receipt_number:string|null;reward_value_ttc:number|null;club_members?:{first_name:string;last_name:string;email:string;personal_code:string}}
+const formatDate=(v:string)=>new Date(v).toLocaleString('fr-FR',{dateStyle:'short',timeStyle:'short'})
+const birthdayLabel=(v:string)=>new Date(`${v}T12:00:00`).toLocaleDateString('fr-FR',{day:'2-digit',month:'long'})
+export function AdminClubPanel({password}:{password:string}){const [members,setMembers]=useState<Member[]>([]);const [events,setEvents]=useState<Event[]>([]);const [query,setQuery]=useState('');const [message,setMessage]=useState('Clique sur « Charger les données ».');const [busy,setBusy]=useState(false);const [view,setView]=useState<'members'|'history'|'birthdays'|'rewards'>('members')
+const filtered=useMemo(()=>{const q=query.trim().toLowerCase();return q?members.filter(m=>`${m.first_name} ${m.last_name} ${m.email}`.toLowerCase().includes(q)):members},[members,query])
+const rewards=useMemo(()=>events.filter(e=>e.event_type==='reward'),[events]);const passages=useMemo(()=>events.filter(e=>e.event_type==='passage'),[events]);
+const rewardCount=useMemo(()=>{const map=new Map<string,number>();for(const e of rewards)map.set(e.member_id,(map.get(e.member_id)||0)+1);return map},[rewards])
+const birthdays=useMemo(()=>members.filter(m=>m.birthday).sort((a,b)=>{const aa=(a.birthday||'').slice(5),bb=(b.birthday||'').slice(5);return aa.localeCompare(bb)}),[members])
+async function load(){setBusy(true);setMessage('Chargement…');const r=await fetch('/api/club/admin-data',{headers:{'x-admin-password':password},cache:'no-store'});const d=await r.json();if(r.ok){setMembers(d.members||[]);setEvents(d.events||[]);setMessage(`${d.members.length} membres, ${d.events.length} opérations.`)}else setMessage(d.error||'Chargement impossible.');setBusy(false)}
+return <section className="club-admin-section"><div className="club-admin-heading"><div><span className="club-badge">CLUB LBDC</span><h2>Suivi fidélité</h2></div><div className="actions"><button type="button" className="button secondary" onClick={load} disabled={busy}>{busy?'Chargement…':'Charger les données'}</button><a className="button" href="/api/club/export">Exporter pour la comptabilité</a></div></div>
+<div className="club-stat-grid"><div><strong>{members.length}</strong><span>Membres</span></div><div><strong>{passages.length}</strong><span>Passages enregistrés</span></div><div><strong>{rewards.length}</strong><span>Formules offertes</span></div><div><strong>{members.filter(m=>m.reward_available).length}</strong><span>Récompenses disponibles</span></div></div>
+<div className="club-admin-tabs"><button onClick={()=>setView('members')}>Clients</button><button onClick={()=>setView('history')}>Historique</button><button onClick={()=>setView('birthdays')}>Anniversaires</button><button onClick={()=>setView('rewards')}>Formules offertes</button></div>
+<label>Rechercher un client<input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Prénom, nom ou e-mail"/></label><p className="admin-help">{message}</p>
+{view==='members'&&<div className="club-member-list">{filtered.map(m=><article key={m.id} className="club-member-card"><div><strong>{m.first_name} {m.last_name}</strong><a href={`mailto:${m.email}`}>{m.email}</a>{m.birthday&&<small>Anniversaire : {birthdayLabel(m.birthday)}</small>}</div><div className="club-member-meta"><span>{m.loyalty_points}/10</span><span>{rewardCount.get(m.id)||0} formule{(rewardCount.get(m.id)||0)>1?'s':''} offerte{(rewardCount.get(m.id)||0)>1?'s':''}</span><span>{m.reward_available?'Avantage disponible':'En cours'}</span></div></article>)}</div>}
+{view==='history'&&<div className="club-table-wrap"><table className="club-table"><thead><tr><th>Date</th><th>Client</th><th>Opération</th></tr></thead><tbody>{events.map(e=><tr key={e.id}><td>{formatDate(e.created_at)}</td><td>{e.club_members?.first_name} {e.club_members?.last_name}</td><td>{e.event_type==='passage'?'Formule achetée':'Formule offerte'}</td></tr>)}</tbody></table></div>}
+{view==='birthdays'&&<div className="club-member-list">{birthdays.map(m=><article key={m.id} className="club-member-card"><div><strong>{birthdayLabel(m.birthday!)} — {m.first_name} {m.last_name}</strong><a href={`mailto:${m.email}`}>{m.email}</a></div></article>)}</div>}
+{view==='rewards'&&<div className="club-table-wrap"><table className="club-table"><thead><tr><th>Date</th><th>Client</th><th>Valeur TTC</th><th>Justificatif</th></tr></thead><tbody>{rewards.map(e=><tr key={e.id}><td>{formatDate(e.created_at)}</td><td>{e.club_members?.first_name} {e.club_members?.last_name}</td><td>{Number(e.reward_value_ttc||0).toLocaleString('fr-FR',{style:'currency',currency:'EUR'})}</td><td>{e.receipt_number&&<a target="_blank" href={`/api/club/receipt/${encodeURIComponent(e.receipt_number)}`}>Imprimer</a>}</td></tr>)}</tbody></table></div>}</section>}

@@ -1,0 +1,6 @@
+1. Téléversez tout le contenu de ce dossier sur GitHub puis validez le commit.
+2. Dans Supabase > SQL Editor, exécutez SUPABASE-CLUB-LBDC-V2-3.sql.
+3. Attendez le déploiement Vercel en statut Ready.
+4. Testez un passage depuis le QR code. Un second passage le même jour doit être refusé.
+5. Dans Administration > Club LBDC, chargez les données puis testez : Historique, Anniversaires, Récompenses et Export CSV.
+6. Lors d'une formule offerte, saisissez sa valeur TTC. Un justificatif imprimable est créé automatiquement.

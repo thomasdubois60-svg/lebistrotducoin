@@ -1,0 +1,5 @@
+import { NextRequest,NextResponse } from 'next/server'
+import { isAdminRequest } from '@/lib/admin-auth'
+import { listLoyaltyEvents } from '@/lib/club-store'
+const csvCell=(v:unknown)=>`"${String(v??'').replace(/"/g,'""')}"`
+export async function GET(request:NextRequest){if(!isAdminRequest(request))return NextResponse.json({error:'Accès refusé.'},{status:401});const events=(await listLoyaltyEvents()).filter(e=>e.event_type==='reward');const header=['N° justificatif','Date','Prénom','Nom','E-mail','Avantage','Valeur TTC'];const rows=events.map(e=>[e.receipt_number,new Date(e.created_at).toLocaleString('fr-FR'),e.club_members?.first_name,e.club_members?.last_name,e.club_members?.email,'Formule fidélité offerte',Number(e.reward_value_ttc||0).toFixed(2).replace('.',',')]);const csv='\uFEFF'+[header,...rows].map(row=>row.map(csvCell).join(';')).join('\r\n');return new NextResponse(csv,{headers:{'Content-Type':'text/csv; charset=utf-8','Content-Disposition':`attachment; filename="fidelite-lbdc-${new Date().toISOString().slice(0,10)}.csv"`}})}
