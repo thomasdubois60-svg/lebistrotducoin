@@ -13,7 +13,7 @@ export type ClubMember = {
 
 const settings = () => ({
   url: process.env.SUPABASE_URL?.replace(/\/$/, ''),
-  key: process.env.SUPABASE_SERVICE_ROLE_KEY,
+  key: process.env.SUPABASE_SECRET_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY,
 })
 
 const headers = () => {
@@ -69,4 +69,25 @@ export async function listClubMembers(): Promise<ClubMember[]> {
   })
   if (!response.ok) throw new Error(`Lecture impossible (${response.status}).`)
   return response.json()
+}
+
+
+export async function getClubMember(emailInput: string, personalCodeInput: string): Promise<ClubMember | null> {
+  const { url } = settings()
+  if (!url || !clubStorageConfigured()) throw new Error('Le Club LBDC n’est pas encore configuré.')
+  const email = emailInput.trim().toLowerCase()
+  const personalCode = personalCodeInput.trim()
+  const query = new URLSearchParams({
+    select: 'id,first_name,email,birthday,email_marketing,notification_interest,loyalty_points,reward_available,personal_code,created_at',
+    email: `eq.${email}`,
+    personal_code: `eq.${personalCode}`,
+    limit: '1',
+  })
+  const response = await fetch(`${url}/rest/v1/club_members?${query.toString()}`, {
+    headers: headers(),
+    cache: 'no-store',
+  })
+  if (!response.ok) throw new Error(`Connexion impossible (${response.status}).`)
+  const rows = await response.json() as ClubMember[]
+  return rows[0] || null
 }

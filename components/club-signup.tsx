@@ -12,6 +12,7 @@ export function ClubSignup() {
   const [busy, setBusy] = useState(false)
   const [message, setMessage] = useState('')
   const [success, setSuccess] = useState(false)
+  const [personalCode, setPersonalCode] = useState('')
 
   async function submit(event: React.FormEvent) {
     event.preventDefault()
@@ -25,6 +26,7 @@ export function ClubSignup() {
     const data = await response.json()
     if (response.ok) {
       setSuccess(true)
+      setPersonalCode(data.member.personalCode)
       setMessage(`Bienvenue au Club LBDC, ${data.member.firstName} !`)
       localStorage.setItem('club-lbdc-member', JSON.stringify({ firstName, email, personalCode: data.member.personalCode }))
     } else {
@@ -33,7 +35,7 @@ export function ClubSignup() {
     setBusy(false)
   }
 
-  if (success) return <div className="club-success"><span className="club-badge">CLUB LBDC</span><h2>{message}</h2><p>Votre espace membre et votre carte de fidélité numérique seront activés lors de la prochaine étape.</p><div className="actions"><Link className="button" href="/application">Installer l’application</Link><Link className="button secondary" href="/aujourdhui">Voir le menu du jour</Link></div></div>
+  if (success) return <div className="club-success"><span className="club-badge">CLUB LBDC</span><h2>{message}</h2><p>Votre inscription est enregistrée. Conservez votre code membre :</p><div className="member-code-card"><code>{personalCode}</code></div><div className="actions"><Link className="button" href="/club/espace">Ouvrir mon espace</Link><Link className="button secondary" href="/application">Installer l’application</Link></div></div>
 
   return <form className="club-form" onSubmit={submit}>
     <span className="club-badge">Inscription gratuite</span>

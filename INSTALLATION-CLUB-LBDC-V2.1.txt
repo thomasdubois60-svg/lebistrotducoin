@@ -1,0 +1,10 @@
+CLUB LBDC V2.1
+
+Après l'envoi des fichiers sur GitHub et le déploiement Vercel :
+
+1. Vérifier que SUPABASE_URL et SUPABASE_SECRET_KEY sont présentes dans Vercel.
+2. Tester une inscription sur /club.
+3. Noter le code membre affiché après l'inscription.
+4. Ouvrir /club/espace et se connecter avec l'adresse e-mail et le code membre.
+
+Cette version accepte aussi l'ancien nom SUPABASE_SERVICE_ROLE_KEY pour compatibilité.
