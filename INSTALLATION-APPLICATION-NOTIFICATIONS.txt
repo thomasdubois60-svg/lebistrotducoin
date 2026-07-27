@@ -1,0 +1,43 @@
+LE BISTROT DU COIN — APPLICATION MOBILE ET NOTIFICATIONS
+
+Cette version transforme le site en application web installable (PWA).
+Les visiteurs peuvent :
+- ajouter LBDC à l'écran d'accueil ;
+- s'abonner aux notifications sans créer de compte ;
+- se désabonner à tout moment.
+
+L'administrateur peut :
+- voir le nombre d'abonnés ;
+- envoyer une notification seule ;
+- publier une modification et envoyer une notification en une seule action.
+
+CONFIGURATION UNIQUE APRÈS LE DÉPLOIEMENT
+
+1. Créer un projet gratuit Supabase.
+2. Ouvrir SQL Editor dans Supabase et exécuter le fichier SUPABASE-NOTIFICATIONS.sql.
+3. Dans Supabase > Project Settings > API, récupérer :
+   - Project URL ;
+   - service_role key (clé secrète, ne jamais la publier).
+4. Ajouter dans Vercel :
+   SUPABASE_URL
+   SUPABASE_SERVICE_ROLE_KEY
+5. Sur le PC, dans le dossier du projet, lancer :
+   npm install
+   npm run generate:vapid
+6. Copier les deux clés générées dans Vercel :
+   NEXT_PUBLIC_VAPID_PUBLIC_KEY
+   VAPID_PRIVATE_KEY
+7. Ajouter dans Vercel :
+   VAPID_SUBJECT = mailto:lebistrotducoin41220@gmail.com
+8. Redéployer le projet dans Vercel.
+
+TEST
+- Ouvrir /application sur un téléphone.
+- Installer le site sur l'écran d'accueil.
+- Activer les notifications.
+- Dans /administration, cliquer sur Actualiser pour vérifier le nombre d'abonnés.
+- Envoyer une notification test.
+
+IMPORTANT POUR IPHONE
+Les notifications fonctionnent après avoir ajouté le site à l'écran d'accueil,
+puis ouvert l'application depuis son icône.
