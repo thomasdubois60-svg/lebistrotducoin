@@ -4,6 +4,7 @@ import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { ContentProvider } from '@/components/content-provider'
 import { ServiceWorker } from '@/components/service-worker'
+import { Analytics } from '@vercel/analytics/next'
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://lebistrotducoin.vercel.app'
 
@@ -18,5 +19,5 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="fr"><body><ContentProvider><ServiceWorker/><Header/><main>{children}</main><Footer/></ContentProvider></body></html>
+  return <html lang="fr"><body><ContentProvider><ServiceWorker/><Header/><main>{children}</main><Footer/><Analytics/></ContentProvider></body></html>
 }

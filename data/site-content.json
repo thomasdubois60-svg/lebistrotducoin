@@ -7,7 +7,8 @@
     "address": "15 Place de la Halle\n41220 Saint-Laurent-Nouan",
     "hours": "Lundi au jeudi : 7h–20h\nVendredi : 7h–15h\nRestauration : 11h45–14h",
     "closureEnabled": false,
-    "closureMessage": "Le Bistrot est exceptionnellement fermé. Reouverture lundi"
+    "closureMessage": "Le Bistrot est exceptionnellement fermé.",
+    "analyticsUrl": "https://vercel.com/dashboard"
   },
   "pageTexts": {
     "homeSlogan": "Le Bistrot est avant tout un lieu où l’on vient se rencontrer, passer et partager de bons moments. Voilà ce que vous trouverez en poussant nos portes.",
@@ -22,16 +23,29 @@
     "dateLabel": "Aujourd’hui",
     "formulas": [
       {
+        "name": "Entrée seule",
+        "price": "À compléter",
+        "takeawayPrice": ""
+      },
+      {
         "name": "Plat du jour",
-        "price": "10.90€"
+        "price": "À compléter",
+        "takeawayPrice": ""
+      },
+      {
+        "name": "Dessert seul",
+        "price": "À compléter",
+        "takeawayPrice": ""
       },
       {
         "name": "Entrée + plat ou plat + dessert",
-        "price": "16€"
+        "price": "À compléter",
+        "takeawayPrice": ""
       },
       {
         "name": "Entrée + plat + dessert",
-        "price": "17€"
+        "price": "À compléter",
+        "takeawayPrice": ""
       }
     ],
     "starters": [
@@ -71,7 +85,11 @@
       {
         "name": "Dessert du jour 3"
       }
-    ]
+    ],
+    "startersTitle": "3 entrées au choix",
+    "mainsTitle": "3 plats au choix",
+    "dessertsTitle": "3 desserts au choix",
+    "suggestionSupplementText": "+4 € sur le prix du plat du jour ou de la formule choisie"
   },
   "menu": [
     {
@@ -128,7 +146,7 @@
       "category": "Nos pressions",
       "items": [
         {
-          "name": "Pélican blonde",
+          "name": "Pélican",
           "description": "25 cl : 4,50 € · 33 cl : 6 €",
           "price": "50 cl : 8 €"
         },

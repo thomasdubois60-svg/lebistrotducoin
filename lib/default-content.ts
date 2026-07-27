@@ -1,14 +1,14 @@
 export type MenuItem = { name: string; description?: string; price?: string; image?: string; imageAlt?: string }
 export type MenuSection = { category: string; items: MenuItem[] }
 export type GalleryItem = { src: string; alt: string; label: string }
-export type FormulaItem = { name: string; price: string; description?: string }
+export type FormulaItem = { name: string; price: string; description?: string; takeawayPrice?: string }
 export type EventItem = { title: string; date: string; description: string; price?: string; image?: string; imageAlt?: string }
 export type SocialLink = { label: string; url: string }
 export type SiteContent = {
   heroImage: string
-  general: { phone: string; phoneHref: string; email: string; address: string; hours: string; closureEnabled: boolean; closureMessage: string }
+  general: { phone: string; phoneHref: string; email: string; address: string; hours: string; closureEnabled: boolean; closureMessage: string; analyticsUrl: string }
   pageTexts: { homeSlogan: string; todayIntro: string; menuIntro: string; galleryIntro: string; contactIntro: string; eventsIntro: string; reviewsIntro: string }
-  daily: { dateLabel: string; formulas: FormulaItem[]; starters: MenuItem[]; mains: MenuItem[]; suggestion: MenuItem; desserts: MenuItem[] }
+  daily: { dateLabel: string; startersTitle: string; mainsTitle: string; dessertsTitle: string; suggestionSupplementText: string; formulas: FormulaItem[]; starters: MenuItem[]; mains: MenuItem[]; suggestion: MenuItem; desserts: MenuItem[] }
   menu: MenuSection[]
   gallery: GalleryItem[]
   story: { eyebrow: string; title: string; intro: string; paragraphs: string[]; quote: string; image: string; imageAlt: string }
@@ -24,7 +24,8 @@ export const defaultContent: SiteContent = {
     phone: '02 54 44 36 70', phoneHref: '+33254443670', email: 'lebistrotducoin41220@gmail.com',
     address: '15 Place de la Halle\n41220 Saint-Laurent-Nouan',
     hours: 'Lundi au jeudi : 7h–20h\nVendredi : 7h–15h\nRestauration : 11h45–14h',
-    closureEnabled: false, closureMessage: 'Le Bistrot est exceptionnellement fermé.'
+    closureEnabled: false, closureMessage: 'Le Bistrot est exceptionnellement fermé.',
+    analyticsUrl: 'https://vercel.com/dashboard'
   },
   pageTexts: {
     homeSlogan: 'Le Bistrot est avant tout un lieu où l’on vient se rencontrer, passer et partager de bons moments. Voilà ce que vous trouverez en poussant nos portes.',
@@ -37,10 +38,16 @@ export const defaultContent: SiteContent = {
   },
   daily: {
     dateLabel: 'Aujourd’hui',
+    startersTitle: '3 entrées au choix',
+    mainsTitle: '3 plats au choix',
+    dessertsTitle: '3 desserts au choix',
+    suggestionSupplementText: '+4 € sur le prix du plat du jour ou de la formule choisie',
     formulas: [
-      { name: 'Plat du jour', price: 'À compléter' },
-      { name: 'Entrée + plat ou plat + dessert', price: 'À compléter' },
-      { name: 'Entrée + plat + dessert', price: 'À compléter' }
+      { name: 'Entrée seule', price: 'À compléter', takeawayPrice: '' },
+      { name: 'Plat du jour', price: 'À compléter', takeawayPrice: '' },
+      { name: 'Dessert seul', price: 'À compléter', takeawayPrice: '' },
+      { name: 'Entrée + plat ou plat + dessert', price: 'À compléter', takeawayPrice: '' },
+      { name: 'Entrée + plat + dessert', price: 'À compléter', takeawayPrice: '' }
     ],
     starters: [{ name: 'Entrée du jour 1' }, { name: 'Entrée du jour 2' }, { name: 'Entrée du jour 3' }],
     mains: [{ name: 'Plat du jour 1' }, { name: 'Plat du jour 2' }, { name: 'Plat du jour 3' }],
