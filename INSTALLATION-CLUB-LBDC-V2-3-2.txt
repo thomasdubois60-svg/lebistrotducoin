@@ -1,0 +1,10 @@
+MISE À JOUR V2.3.2 — COMPTABILITÉ AUTOMATIQUE
+
+1. Envoyer tous les fichiers sur GitHub puis valider le commit.
+2. Attendre le statut Ready dans Vercel.
+3. Aucune modification Supabase n'est nécessaire.
+4. Vérifier dans Administration > Aujourd'hui > Nos formules que la ligne « Entrée + plat + dessert » possède un prix valide, par exemple 17 €.
+5. Lorsqu'une formule offerte est utilisée, le prix de cette formule est automatiquement enregistré dans l'historique comptable.
+6. L'export CSV contient un résumé, le prix actuel de la formule complète, le nombre de formules offertes, la valeur totale TTC et le détail de chaque justificatif.
+
+IMPORTANT : le prix enregistré avec chaque avantage est figé au moment de son utilisation. Une hausse future du prix ne modifiera pas les anciens justificatifs.
