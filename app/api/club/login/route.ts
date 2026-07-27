@@ -1,33 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { getClubMember } from '@/lib/club-store'
-
-export const dynamic = 'force-dynamic'
-
-export async function POST(request: NextRequest) {
-  try {
-    const body = await request.json() as { email?: string; personalCode?: string }
-    const email = body.email?.trim().toLowerCase() || ''
-    const personalCode = body.personalCode?.trim() || ''
-    if (!/^\S+@\S+\.\S+$/.test(email) || !personalCode) {
-      return NextResponse.json({ error: 'Adresse e-mail ou code membre invalide.' }, { status: 400 })
-    }
-    const member = await getClubMember(email, personalCode)
-    if (!member) return NextResponse.json({ error: 'Aucun membre ne correspond à ces informations.' }, { status: 401 })
-    return NextResponse.json({
-      ok: true,
-      member: {
-        firstName: member.first_name,
-        email: member.email,
-        birthday: member.birthday,
-        personalCode: member.personal_code,
-        loyaltyPoints: member.loyalty_points,
-        rewardAvailable: member.reward_available,
-        emailMarketing: member.email_marketing,
-        notificationInterest: member.notification_interest,
-        createdAt: member.created_at,
-      },
-    })
-  } catch (error) {
-    return NextResponse.json({ error: error instanceof Error ? error.message : 'Connexion impossible.' }, { status: 503 })
-  }
-}
+import { getClubMemberByPassword } from '@/lib/club-store'
+export const dynamic='force-dynamic'
+export async function POST(request:NextRequest){try{const b=await request.json() as {email?:string;password?:string};const email=b.email?.trim().toLowerCase()||'';const password=b.password||'';if(!/^\S+@\S+\.\S+$/.test(email)||!password)return NextResponse.json({error:'Adresse e-mail ou mot de passe invalide.'},{status:400});const m=await getClubMemberByPassword(email,password);if(!m)return NextResponse.json({error:'Adresse e-mail ou mot de passe incorrect.'},{status:401});return NextResponse.json({ok:true,member:{firstName:m.first_name,lastName:m.last_name,email:m.email,birthday:m.birthday,personalCode:m.personal_code,loyaltyPoints:m.loyalty_points,rewardAvailable:m.reward_available,emailMarketing:m.email_marketing,notificationInterest:m.notification_interest,createdAt:m.created_at}})}catch(e){return NextResponse.json({error:e instanceof Error?e.message:'Connexion impossible.'},{status:503})}}

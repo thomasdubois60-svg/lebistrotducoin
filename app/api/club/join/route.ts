@@ -1,38 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { joinClub } from '@/lib/club-store'
-
-export const dynamic = 'force-dynamic'
-
-export async function POST(request: NextRequest) {
-  try {
-    const body = await request.json() as {
-      firstName?: string
-      email?: string
-      birthday?: string
-      emailMarketing?: boolean
-      notificationInterest?: boolean
-      privacyAccepted?: boolean
-    }
-
-    const firstName = body.firstName?.trim() || ''
-    const email = body.email?.trim().toLowerCase() || ''
-    if (firstName.length < 2) return NextResponse.json({ error: 'Prénom obligatoire.' }, { status: 400 })
-    if (!/^\S+@\S+\.\S+$/.test(email)) return NextResponse.json({ error: 'Adresse e-mail invalide.' }, { status: 400 })
-    if (!body.privacyAccepted) return NextResponse.json({ error: 'Vous devez accepter l’utilisation de vos données pour rejoindre le Club.' }, { status: 400 })
-
-    const member = await joinClub({
-      firstName,
-      email,
-      birthday: body.birthday,
-      emailMarketing: Boolean(body.emailMarketing),
-      notificationInterest: Boolean(body.notificationInterest),
-    })
-
-    return NextResponse.json({
-      ok: true,
-      member: { firstName: member.first_name, personalCode: member.personal_code },
-    })
-  } catch (error) {
-    return NextResponse.json({ error: error instanceof Error ? error.message : 'Inscription impossible.' }, { status: 503 })
-  }
-}
+export const dynamic='force-dynamic'
+export async function POST(request:NextRequest){try{const b=await request.json() as any;const firstName=b.firstName?.trim()||'';const lastName=b.lastName?.trim()||'';const email=b.email?.trim().toLowerCase()||'';const password=b.password||'';if(firstName.length<2)return NextResponse.json({error:'Prénom obligatoire.'},{status:400});if(lastName.length<2)return NextResponse.json({error:'Nom de famille obligatoire.'},{status:400});if(!/^\S+@\S+\.\S+$/.test(email))return NextResponse.json({error:'Adresse e-mail invalide.'},{status:400});if(password.length<8)return NextResponse.json({error:'Le mot de passe doit contenir au moins 8 caractères.'},{status:400});if(!b.privacyAccepted)return NextResponse.json({error:'Vous devez accepter l’utilisation de vos données.'},{status:400});const m=await joinClub({firstName,lastName,email,password,birthday:b.birthday,emailMarketing:Boolean(b.emailMarketing),notificationInterest:Boolean(b.notificationInterest)});return NextResponse.json({ok:true,member:{firstName:m.first_name,lastName:m.last_name,email:m.email}})}catch(e){return NextResponse.json({error:e instanceof Error?e.message:'Inscription impossible.'},{status:503})}}

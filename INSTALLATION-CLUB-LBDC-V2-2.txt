@@ -1,0 +1,7 @@
+1. Envoyer tous les fichiers sur GitHub puis attendre le déploiement Vercel.
+2. Dans Supabase > SQL Editor, exécuter SUPABASE-CLUB-LBDC-V2-2.sql.
+3. Pour un ancien compte de test, remplir à nouveau l'inscription avec la même adresse e-mail, le nom et un mot de passe. Le compte sera mis à jour.
+4. Se connecter sur /club/espace avec e-mail + mot de passe.
+5. Le QR code personnel apparaît dans l'espace membre.
+6. Depuis le téléphone administrateur, ouvrir une fois /administration et se connecter. La session administrateur restera mémorisée 30 jours par un cookie sécurisé.
+7. Scanner le QR code du client avec l'appareil photo. La page de fidélité s'ouvre et permet d'ajouter un repas.
