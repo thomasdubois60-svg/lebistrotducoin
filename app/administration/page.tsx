@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react'
 import { defaultContent, EventItem, FormulaItem, GalleryItem, MenuItem, normalizeContent, SiteContent, SocialLink } from '@/lib/default-content'
 import { PageHero } from '@/components/page-hero'
+import { AdminClubPanel } from '@/components/admin-club-panel'
 
 const blankItem: MenuItem = { name:'', description:'', price:'', image:'', imageAlt:'' }
 const blankFormula: FormulaItem = { name:'Nouvelle formule', price:'', takeawayPrice:'' }
@@ -31,6 +32,8 @@ export default function AdminPage(){
  return <><PageHero eyebrow="Espace privé" title="Administration" text="Modifiez le contenu du site depuis votre téléphone."/><section className="section"><div className="container admin-panel">
   <div className="admin-topbar"><strong>Session administrateur ouverte</strong><button type="button" className="button secondary" onClick={logout}>Se déconnecter</button></div>
   <label>Mot de passe de publication<input type="password" value={password} onChange={e=>setPassword(e.target.value)}/></label>
+
+  <AdminClubPanel password={password}/>
 
   <h2>Informations générales</h2>
   <label>Téléphone affiché<input value={content.general.phone} onChange={e=>setContent(c=>({...c,general:{...c.general,phone:e.target.value}}))}/></label>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { PageHero } from '@/components/page-hero'
 import { PushSubscriptionManager } from '@/components/push-subscription'
+import Link from 'next/link'
 
 export const metadata: Metadata = { title: 'Application mobile' }
 
@@ -12,7 +13,7 @@ export default function ApplicationPage() {
         <h2>Installer l’application</h2>
         <h3>Sur iPhone</h3><p>Ouvrez cette page dans Safari, touchez le bouton <strong>Partager</strong>, puis <strong>Sur l’écran d’accueil</strong>.</p>
         <h3>Sur Android</h3><p>Touchez <strong>Installer</strong> lorsque la proposition apparaît, ou ouvrez le menu du navigateur puis choisissez <strong>Installer l’application</strong>.</p>
-        <p>Aucun compte n’est nécessaire et l’installation est gratuite.</p>
+        <p>L’installation est gratuite.</p><div className="actions"><Link className="button" href="/club">Rejoindre le Club LBDC</Link></div>
       </div>
       <figure className="qr-card"><img src="/qr-code-application.png" alt="QR code vers l’application Le Bistrot Du Coin"/><figcaption>Scannez ce QR code avec l’appareil photo de votre téléphone.</figcaption></figure>
     </div></section>

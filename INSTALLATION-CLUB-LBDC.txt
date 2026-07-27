@@ -1,0 +1,11 @@
+CLUB LBDC — INSTALLATION
+
+1. Envoyer tous les fichiers du ZIP sur GitHub et attendre le déploiement Vercel.
+2. Dans Supabase, ouvrir SQL Editor.
+3. Coller puis exécuter le contenu de SUPABASE-NOTIFICATIONS.sql si ce n'est pas déjà fait.
+4. Coller puis exécuter le contenu de SUPABASE-CLUB-LBDC.sql.
+5. Vérifier dans Vercel que SUPABASE_URL et SUPABASE_SERVICE_ROLE_KEY existent déjà.
+6. Redéployer une fois après toute modification de variable.
+7. Tester : /club puis /administration > Club LBDC.
+
+Les consentements promotionnels restent facultatifs et séparés de l'inscription au Club.
