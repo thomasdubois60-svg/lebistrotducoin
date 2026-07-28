@@ -21,6 +21,10 @@
   },
   "daily": {
     "dateLabel": "Aujourd’hui",
+    "startersTitle": "3 entrées au choix",
+    "mainsTitle": "3 plats au choix",
+    "dessertsTitle": "3 desserts au choix",
+    "suggestionSupplementText": "+4 € sur le prix du plat du jour ou de la formule choisie",
     "formulas": [
       {
         "name": "Entrée seule",
@@ -85,11 +89,7 @@
       {
         "name": "Dessert du jour 3"
       }
-    ],
-    "startersTitle": "3 entrées au choix",
-    "mainsTitle": "3 plats au choix",
-    "dessertsTitle": "3 desserts au choix",
-    "suggestionSupplementText": "+4 € sur le prix du plat du jour ou de la formule choisie"
+    ]
   },
   "menu": [
     {
@@ -369,7 +369,7 @@
     "title": "Avis Google & réseaux sociaux",
     "intro": "Votre avis compte beaucoup pour nous. Consultez les témoignages de nos clients ou partagez votre expérience.",
     "googleReviewsUrl": "https://share.google/I0OlzrRJJKi4ne3kO",
-    "googleReviewWriteUrl": "https://share.google/I0OlzrRJJKi4ne3kO"
+    "googleReviewWriteUrl": "https://share.google/B2lXVB4O7tjjpV6tn"
   },
   "socials": [
     {
