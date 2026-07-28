@@ -5,6 +5,7 @@ import { PageHero } from '@/components/page-hero'
 import { AdminClubPanel } from '@/components/admin-club-panel'
 import { AdminPromotionsPanel } from '@/components/admin-promotions-panel'
 import { AdminCommunicationPanel } from '@/components/admin-communication-panel'
+import { ServiceModePanel } from '@/components/service-mode-panel'
 
 const blankItem: MenuItem = { name:'', description:'', price:'', image:'', imageAlt:'' }
 const blankFormula: FormulaItem = { name:'Nouvelle formule', price:'', takeawayPrice:'' }
@@ -37,6 +38,7 @@ export default function AdminPage(){
   <label>Mot de passe de publication<input type="password" value={password} onChange={e=>setPassword(e.target.value)}/></label>
 
   <nav className="admin-section-nav" aria-label="Navigation dans l’administration">
+   <button type="button" onClick={()=>goToSection('admin-service')}>Mode Service</button>
    <button type="button" onClick={()=>goToSection('admin-club')}>Fidélité / Club</button>
    <button type="button" onClick={()=>goToSection('admin-communication')}>Communication</button>
    <button type="button" onClick={()=>goToSection('admin-promotions')}>Promotions</button>
@@ -53,6 +55,7 @@ export default function AdminPage(){
    <button type="button" onClick={()=>goToSection('admin-gallery')}>Galerie</button>
   </nav>
 
+  <div id="admin-service" className="admin-anchor-section"><ServiceModePanel password={password}/></div>
   <div id="admin-club" className="admin-anchor-section"><AdminClubPanel password={password}/></div>
   <div id="admin-communication" className="admin-anchor-section"><AdminCommunicationPanel password={password}/></div>
   <div id="admin-promotions" className="admin-anchor-section"><AdminPromotionsPanel password={password}/></div>
