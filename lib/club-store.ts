@@ -1,5 +1,6 @@
 import { randomBytes, scryptSync, timingSafeEqual } from 'node:crypto'
 import { getFullFormulaPrice } from '@/lib/site-pricing'
+import { ensureWelcomeOffer } from '@/lib/welcome-offer-store'
 
 export type ClubMember = {
   id: string; first_name: string; last_name: string; email: string; birthday: string | null;
@@ -23,7 +24,7 @@ async function parseError(response:Response,fallback:string){let details='';try{
 export async function joinClub(input:{firstName:string;lastName:string;email:string;password:string;birthday?:string;emailMarketing:boolean;notificationInterest:boolean}){
  const {url}=requireSettings();const email=input.email.trim().toLowerCase();const secured=hashPassword(input.password)
  const response=await fetch(`${url}/rest/v1/club_members?on_conflict=email`,{method:'POST',headers:{...headers(),Prefer:'resolution=merge-duplicates,return=representation'},body:JSON.stringify({first_name:input.firstName.trim(),last_name:input.lastName.trim(),email,birthday:input.birthday||null,email_marketing:input.emailMarketing,notification_interest:input.notificationInterest,password_hash:secured.hash,password_salt:secured.salt,consent_updated_at:new Date().toISOString()}),cache:'no-store'})
- if(!response.ok)throw await parseError(response,`Inscription impossible (${response.status}).`);const rows=await response.json() as ClubMember[];return rows[0]
+ if(!response.ok)throw await parseError(response,`Inscription impossible (${response.status}).`);const rows=await response.json() as ClubMember[];const member=rows[0];await ensureWelcomeOffer(member.id);return member
 }
 export async function listClubMembers():Promise<ClubMember[]>{const {url}=requireSettings();const r=await fetch(`${url}/rest/v1/club_members?select=${memberSelect}&order=created_at.desc`,{headers:headers(),cache:'no-store'});if(!r.ok)throw await parseError(r,`Lecture impossible (${r.status}).`);return r.json()}
 export async function getClubMemberByPassword(emailInput:string,password:string):Promise<ClubMember|null>{const {url}=requireSettings();const email=emailInput.trim().toLowerCase();const q=new URLSearchParams({select:`${memberSelect},password_hash,password_salt`,email:`eq.${email}`,limit:'1'});const r=await fetch(`${url}/rest/v1/club_members?${q}`,{headers:headers(),cache:'no-store'});if(!r.ok)throw await parseError(r,`Connexion impossible (${r.status}).`);const rows=await r.json() as (ClubMember&{password_hash:string|null;password_salt:string|null})[];const row=rows[0];if(!row?.password_hash||!row.password_salt||!verifyPassword(password,row.password_salt,row.password_hash))return null;const {password_hash,password_salt,...member}=row;return member}

@@ -14,7 +14,7 @@ const urlBase64ToUint8Array = (base64String: string) => {
 const isStandalone = () => window.matchMedia('(display-mode: standalone)').matches || Boolean((navigator as Navigator & { standalone?: boolean }).standalone)
 const isIOS = () => /iphone|ipad|ipod/i.test(navigator.userAgent)
 
-export function PushSubscriptionManager() {
+export function PushSubscriptionManager({ memberCode }: { memberCode?: string } = {}) {
   const [status, setStatus] = useState<Status>('loading')
   const [message, setMessage] = useState('Vérification de votre appareil…')
   const [busy, setBusy] = useState(false)
@@ -52,7 +52,7 @@ export function PushSubscriptionManager() {
       if (!config.configured || !config.publicKey) throw new Error('Notifications non configurées.')
       const registration = await navigator.serviceWorker.ready
       const subscription = await registration.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: urlBase64ToUint8Array(config.publicKey) })
-      const response = await fetch('/api/push/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(subscription.toJSON()) })
+      const response = await fetch('/api/push/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ subscription: subscription.toJSON(), memberCode }) })
       const data = await response.json()
       if (!response.ok) throw new Error(data.error || 'Abonnement impossible.')
       setStatus('subscribed'); setMessage('Notifications activées. Merci !')

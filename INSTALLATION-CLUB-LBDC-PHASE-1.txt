@@ -1,0 +1,11 @@
+PHASE 1 — OFFRE DE BIENVENUE -10 %
+
+1. Envoyer tout le contenu de cette archive sur GitHub et valider le commit.
+2. Dans Supabase > SQL Editor, exécuter SUPABASE-CLUB-LBDC-PHASE-1.sql.
+3. Dans Vercel, vérifier que les variables VAPID sont configurées pour les notifications.
+4. Redéployer et attendre le statut Ready.
+5. Tester avec un nouveau membre ou se reconnecter avec un membre existant : une offre est créée automatiquement.
+6. Le rappel J-2 est lancé chaque jour à 09:00 UTC pour les offres expirant dans les 48 heures par Vercel Cron. Sur iPhone, le membre doit avoir installé l’application et activé les notifications depuis son espace membre.
+
+Le QR code de bienvenue disparaît après utilisation et devient expiré après 30 jours.
+7. Dans Vercel > Settings > Environment Variables, ajouter CRON_SECRET avec une valeur privée de votre choix (Production et Preview), puis redéployer. Cette variable protège l’envoi automatique des rappels.
