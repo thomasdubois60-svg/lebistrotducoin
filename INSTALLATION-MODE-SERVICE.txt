@@ -8,3 +8,4 @@ MODE SERVICE MOBILE
 6. Scanner le QR fidélité, le QR de bienvenue ou un coupon promotionnel d’un membre.
 
 Le mode Service affiche le membre, sa fidélité, ses passages, ses récompenses, son anniversaire, son offre de bienvenue et ses coupons actifs.
+Déclenchement du déploiement Vercel
