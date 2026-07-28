@@ -1,0 +1,7 @@
+1. Envoyer tout le contenu du dossier sur GitHub puis valider le commit.
+2. Dans Supabase > SQL Editor, exécuter SUPABASE-CLUB-LBDC-COMMUNICATION.sql.
+3. Attendre le statut Ready sur Vercel.
+4. Ouvrir Administration > Communication.
+5. Tester d'abord une campagne immédiate vers Tous les membres.
+6. Tester ensuite une campagne programmée. Le contrôle Vercel s'exécute une fois par heure.
+Aucune nouvelle variable Vercel n'est nécessaire si CRON_SECRET et les clés VAPID sont déjà configurés.

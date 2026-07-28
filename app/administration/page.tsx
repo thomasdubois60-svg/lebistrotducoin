@@ -4,6 +4,7 @@ import { defaultContent, EventItem, FormulaItem, GalleryItem, MenuItem, normaliz
 import { PageHero } from '@/components/page-hero'
 import { AdminClubPanel } from '@/components/admin-club-panel'
 import { AdminPromotionsPanel } from '@/components/admin-promotions-panel'
+import { AdminCommunicationPanel } from '@/components/admin-communication-panel'
 
 const blankItem: MenuItem = { name:'', description:'', price:'', image:'', imageAlt:'' }
 const blankFormula: FormulaItem = { name:'Nouvelle formule', price:'', takeawayPrice:'' }
@@ -37,6 +38,7 @@ export default function AdminPage(){
 
   <nav className="admin-section-nav" aria-label="Navigation dans l’administration">
    <button type="button" onClick={()=>goToSection('admin-club')}>Fidélité / Club</button>
+   <button type="button" onClick={()=>goToSection('admin-communication')}>Communication</button>
    <button type="button" onClick={()=>goToSection('admin-promotions')}>Promotions</button>
    <button type="button" onClick={()=>goToSection('admin-general')}>Informations</button>
    <button type="button" onClick={()=>goToSection('admin-notifications')}>Notifications</button>
@@ -52,6 +54,7 @@ export default function AdminPage(){
   </nav>
 
   <div id="admin-club" className="admin-anchor-section"><AdminClubPanel password={password}/></div>
+  <div id="admin-communication" className="admin-anchor-section"><AdminCommunicationPanel password={password}/></div>
   <div id="admin-promotions" className="admin-anchor-section"><AdminPromotionsPanel password={password}/></div>
 
   <h2 id="admin-general" className="admin-anchor-section">Informations générales</h2>
