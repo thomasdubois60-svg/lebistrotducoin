@@ -1,0 +1,10 @@
+MODE SERVICE MOBILE
+
+1. Envoyer tout le contenu du ZIP sur GitHub.
+2. Attendre le statut Ready dans Vercel.
+3. Aucune modification Supabase ni variable Vercel nécessaire.
+4. Ouvrir Administration > Mode Service.
+5. Appuyer sur « Ouvrir le scanner » et autoriser la caméra.
+6. Scanner le QR fidélité, le QR de bienvenue ou un coupon promotionnel d’un membre.
+
+Le mode Service affiche le membre, sa fidélité, ses passages, ses récompenses, son anniversaire, son offre de bienvenue et ses coupons actifs.
