@@ -28,3 +28,5 @@
 .welcome-offer-card{margin:1.5rem 0;padding:1.5rem;border:2px solid var(--gold,#c49a45);border-radius:18px;text-align:center;background:linear-gradient(180deg,#fffaf0,#fff)}
 .welcome-offer-card img{display:block;width:min(260px,80%);height:auto;margin:1rem auto;background:#fff;padding:.6rem;border-radius:12px}
 .welcome-offer-card h3{font-size:1.55rem;margin:.7rem 0}
+
+.promotion-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.promotion-description{grid-column:1/-1}.member-promotions{margin:1.5rem 0}.member-promotion-card{border:1px solid #d8c9bc;background:#fff8f1;padding:1.25rem;margin:.75rem 0}.member-promotion-card h3{margin:.25rem 0}.member-promotion-card .promotion-value{font-size:1.4rem;font-weight:800;color:#7c1022}@media(max-width:700px){.promotion-form-grid{grid-template-columns:1fr}.promotion-description{grid-column:auto}}

@@ -1,0 +1,10 @@
+PHASE 2 — PROMOTIONS ET NOTIFICATIONS
+
+1. Envoyer tous les fichiers sur GitHub puis valider le commit.
+2. Dans Supabase > SQL Editor, exécuter SUPABASE-CLUB-LBDC-PHASE-2.sql.
+3. Attendre le statut Ready dans Vercel.
+4. Ouvrir /administration.
+5. Dans Promotions réservées aux membres, créer une offre puis choisir Publier et notifier.
+6. Vérifier l'offre dans /club/espace avec un compte membre.
+
+Les notifications nécessitent toujours les clés VAPID déjà prévues dans Vercel.

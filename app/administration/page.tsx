@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import { defaultContent, EventItem, FormulaItem, GalleryItem, MenuItem, normalizeContent, SiteContent, SocialLink } from '@/lib/default-content'
 import { PageHero } from '@/components/page-hero'
 import { AdminClubPanel } from '@/components/admin-club-panel'
+import { AdminPromotionsPanel } from '@/components/admin-promotions-panel'
 
 const blankItem: MenuItem = { name:'', description:'', price:'', image:'', imageAlt:'' }
 const blankFormula: FormulaItem = { name:'Nouvelle formule', price:'', takeawayPrice:'' }
@@ -34,6 +35,7 @@ export default function AdminPage(){
   <label>Mot de passe de publication<input type="password" value={password} onChange={e=>setPassword(e.target.value)}/></label>
 
   <AdminClubPanel password={password}/>
+  <AdminPromotionsPanel password={password}/>
 
   <h2>Informations générales</h2>
   <label>Téléphone affiché<input value={content.general.phone} onChange={e=>setContent(c=>({...c,general:{...c.general,phone:e.target.value}}))}/></label>
