@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name:'Le Bistrot Du Coin',
     short_name:'LBDC',
     description:'Menus du jour, carte, événements et actualités du Bistrot.',
-    start_url:'/',
+    start_url:'/club',
     scope:'/',
     display:'standalone',
     background_color:'#f4efe8',
@@ -17,6 +17,7 @@ export default function manifest(): MetadataRoute.Manifest {
       {src:'/icons/icon-512.png',sizes:'512x512',type:'image/png',purpose:'maskable'}
     ],
     shortcuts:[
+      {name:'Mon Club LBDC',short_name:'Club',url:'/club',icons:[{src:'/icons/icon-192.png',sizes:'192x192'}]},
       {name:'Menu du jour',short_name:'Aujourd’hui',url:'/aujourdhui',icons:[{src:'/icons/icon-192.png',sizes:'192x192'}]},
       {name:'La carte',short_name:'Carte',url:'/carte',icons:[{src:'/icons/icon-192.png',sizes:'192x192'}]},
       {name:'Événements',short_name:'Événements',url:'/evenements',icons:[{src:'/icons/icon-192.png',sizes:'192x192'}]}
