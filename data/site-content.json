@@ -21,6 +21,10 @@
   },
   "daily": {
     "dateLabel": "Aujourd’hui",
+    "startersTitle": "3 entrées au choix",
+    "mainsTitle": "3 plats au choix",
+    "dessertsTitle": "3 desserts au choix",
+    "suggestionSupplementText": "+4 € sur le prix du plat du jour ou de la formule choisie",
     "formulas": [
       {
         "name": "Entrée seule",
@@ -40,7 +44,7 @@
       {
         "name": "Entrée + plat ou plat + dessert",
         "price": "À compléter",
-        "takeawayPrice": ""
+        "takeawayPrice": "17€"
       },
       {
         "name": "Entrée + plat + dessert",
@@ -85,11 +89,7 @@
       {
         "name": "Dessert du jour 3"
       }
-    ],
-    "startersTitle": "3 entrées au choix",
-    "mainsTitle": "3 plats au choix",
-    "dessertsTitle": "3 desserts au choix",
-    "suggestionSupplementText": "+4 € sur le prix du plat du jour ou de la formule choisie"
+    ]
   },
   "menu": [
     {
