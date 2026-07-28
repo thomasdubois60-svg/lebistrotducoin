@@ -36,12 +36,15 @@ export function PushSubscriptionManager({ memberCode }: { memberCode?: string } 
     const registration = await navigator.serviceWorker.ready
     const subscription = await registration.pushManager.getSubscription()
     if (subscription) {
-      setStatus('subscribed'); setMessage('Vous recevrez les nouveaux menus, événements et actualités du Bistrot.'); return
+      if (memberCode) {
+        await fetch('/api/push/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ subscription: subscription.toJSON(), memberCode }) }).catch(() => undefined)
+      }
+      setStatus('subscribed'); setMessage('Notifications activées. Elles peuvent arriver même lorsque l’application est fermée.'); return
     }
     setStatus('ready'); setMessage('Activez les notifications pour ne rien manquer.');
   }
 
-  useEffect(() => { refresh().catch(() => { setStatus('error'); setMessage('Vérification impossible.') }) }, [])
+  useEffect(() => { refresh().catch(() => { setStatus('error'); setMessage('Vérification impossible.') }) }, [memberCode])
 
   const subscribe = async () => {
     setBusy(true)
@@ -55,7 +58,7 @@ export function PushSubscriptionManager({ memberCode }: { memberCode?: string } 
       const response = await fetch('/api/push/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ subscription: subscription.toJSON(), memberCode }) })
       const data = await response.json()
       if (!response.ok) throw new Error(data.error || 'Abonnement impossible.')
-      setStatus('subscribed'); setMessage('Notifications activées. Merci !')
+      setStatus('subscribed'); setMessage('Notifications activées. Elles peuvent arriver même lorsque l’application est fermée.')
     } catch (error) {
       setStatus('error'); setMessage(error instanceof Error ? error.message : 'Abonnement impossible.')
     } finally { setBusy(false) }
