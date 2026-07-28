@@ -30,3 +30,6 @@
 .welcome-offer-card h3{font-size:1.55rem;margin:.7rem 0}
 
 .promotion-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.promotion-description{grid-column:1/-1}.member-promotions{margin:1.5rem 0}.member-promotion-card{border:1px solid #d8c9bc;background:#fff8f1;padding:1.25rem;margin:.75rem 0}.member-promotion-card h3{margin:.25rem 0}.member-promotion-card .promotion-value{font-size:1.4rem;font-weight:800;color:#7c1022}@media(max-width:700px){.promotion-form-grid{grid-template-columns:1fr}.promotion-description{grid-column:auto}}
+
+/* Navigation interne de l’administration */
+.admin-section-nav{position:sticky;top:88px;z-index:42;display:flex;gap:8px;overflow-x:auto;margin:20px 0 28px;padding:12px;background:rgba(255,255,255,.97);border:1px solid var(--line);box-shadow:0 8px 24px rgba(21,19,19,.08);backdrop-filter:blur(10px);scrollbar-width:thin}.admin-section-nav button{flex:0 0 auto;border:1px solid var(--wine);background:#fff;color:var(--wine);padding:10px 13px;font-weight:800;cursor:pointer}.admin-section-nav button:hover,.admin-section-nav button:focus{background:var(--wine);color:#fff}.admin-anchor-section{scroll-margin-top:170px}@media(max-width:800px){.admin-section-nav{top:80px;margin-left:-20px;margin-right:-20px;border-left:0;border-right:0;padding:10px 20px}.admin-anchor-section{scroll-margin-top:155px}}

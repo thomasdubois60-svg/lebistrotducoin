@@ -29,15 +29,32 @@ export default function AdminPage(){
  const textArea=(value:string,onChange:(v:string)=>void)=><textarea value={value} onChange={e=>onChange(e.target.value)}/>
  const login=async(e:React.FormEvent)=>{e.preventDefault();setBusy(true);setLoginMessage('Vérification…');const r=await fetch('/api/admin-login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password})});const d=await r.json();if(r.ok){sessionStorage.setItem('bistrot-admin','connected');sessionStorage.setItem('bistrot-admin-password',password);setAuthenticated(true);setLoginMessage('')}else setLoginMessage(d.error||'Connexion impossible.');setBusy(false)}
  const logout=()=>{sessionStorage.removeItem('bistrot-admin');sessionStorage.removeItem('bistrot-admin-password');setAuthenticated(false);setPassword('');setMessage('')}
+ const goToSection=(id:string)=>{document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'})}
  if(!authenticated) return <><PageHero eyebrow="Espace privé" title="Connexion" text="Accédez à l’administration du Bistrot."/><section className="section"><form className="container admin-login-card" onSubmit={login}><h2>Administration</h2><p>Saisissez votre mot de passe pour afficher le tableau de bord.</p><label>Mot de passe<input autoFocus type="password" value={password} onChange={e=>setPassword(e.target.value)}/></label><button className="button" disabled={busy||!password}>{busy?'Vérification…':'Se connecter'}</button>{loginMessage&&<p className="admin-login-message">{loginMessage}</p>}</form></section></>
  return <><PageHero eyebrow="Espace privé" title="Administration" text="Modifiez le contenu du site depuis votre téléphone."/><section className="section"><div className="container admin-panel">
   <div className="admin-topbar"><strong>Session administrateur ouverte</strong><button type="button" className="button secondary" onClick={logout}>Se déconnecter</button></div>
   <label>Mot de passe de publication<input type="password" value={password} onChange={e=>setPassword(e.target.value)}/></label>
 
-  <AdminClubPanel password={password}/>
-  <AdminPromotionsPanel password={password}/>
+  <nav className="admin-section-nav" aria-label="Navigation dans l’administration">
+   <button type="button" onClick={()=>goToSection('admin-club')}>Fidélité / Club</button>
+   <button type="button" onClick={()=>goToSection('admin-promotions')}>Promotions</button>
+   <button type="button" onClick={()=>goToSection('admin-general')}>Informations</button>
+   <button type="button" onClick={()=>goToSection('admin-notifications')}>Notifications</button>
+   <button type="button" onClick={()=>goToSection('admin-pages')}>Textes</button>
+   <button type="button" onClick={()=>goToSection('admin-home-photo')}>Accueil</button>
+   <button type="button" onClick={()=>goToSection('admin-daily')}>Menu du jour</button>
+   <button type="button" onClick={()=>goToSection('admin-story')}>Histoire</button>
+   <button type="button" onClick={()=>goToSection('admin-privatization')}>Privatisation</button>
+   <button type="button" onClick={()=>goToSection('admin-events')}>Événements</button>
+   <button type="button" onClick={()=>goToSection('admin-menu')}>Carte</button>
+   <button type="button" onClick={()=>goToSection('admin-reviews')}>Avis / Réseaux</button>
+   <button type="button" onClick={()=>goToSection('admin-gallery')}>Galerie</button>
+  </nav>
 
-  <h2>Informations générales</h2>
+  <div id="admin-club" className="admin-anchor-section"><AdminClubPanel password={password}/></div>
+  <div id="admin-promotions" className="admin-anchor-section"><AdminPromotionsPanel password={password}/></div>
+
+  <h2 id="admin-general" className="admin-anchor-section">Informations générales</h2>
   <label>Téléphone affiché<input value={content.general.phone} onChange={e=>setContent(c=>({...c,general:{...c.general,phone:e.target.value}}))}/></label>
   <label>Téléphone pour le bouton d’appel<input value={content.general.phoneHref} onChange={e=>setContent(c=>({...c,general:{...c.general,phoneHref:e.target.value}}))}/></label>
   <label>Email<input value={content.general.email} onChange={e=>setContent(c=>({...c,general:{...c.general,email:e.target.value}}))}/></label>
@@ -47,7 +64,7 @@ export default function AdminPage(){
   <label>Message fermeture ou vacances<input value={content.general.closureMessage} onChange={e=>setContent(c=>({...c,general:{...c.general,closureMessage:e.target.value}}))}/></label>
   <h2>Statistiques de visite</h2><p className="admin-help">Les statistiques s’ouvrent dans ton tableau de bord privé Vercel.</p><label>Lien Vercel Analytics<input value={content.general.analyticsUrl} onChange={e=>setContent(c=>({...c,general:{...c.general,analyticsUrl:e.target.value}}))}/></label><a className="button" href={content.general.analyticsUrl||'https://vercel.com/dashboard'} target="_blank" rel="noreferrer">Voir les statistiques</a>
 
-  <h2>Application mobile et notifications</h2>
+  <h2 id="admin-notifications" className="admin-anchor-section">Application mobile et notifications</h2>
   <p className="admin-help">Les clients peuvent installer le site depuis la page Application et s’abonner sans créer de compte.</p>
   <div className="notification-admin-card">
     <div className="notification-count"><strong>{subscriberCount===null?'Abonnés non comptés':`${subscriberCount} abonné${subscriberCount>1?'s':''}`}</strong><button type="button" className="button secondary compact" onClick={refreshSubscriberCount}>Actualiser</button></div>
@@ -58,7 +75,7 @@ export default function AdminPage(){
     {notificationMessage&&<p className="admin-login-message">{notificationMessage}</p>}
   </div>
 
-  <h2>Textes des pages</h2>
+  <h2 id="admin-pages" className="admin-anchor-section">Textes des pages</h2>
   <label>Slogan de l’accueil{ textArea(content.pageTexts.homeSlogan,v=>setContent(c=>({...c,pageTexts:{...c.pageTexts,homeSlogan:v}}))) }</label>
   <label>Introduction Aujourd’hui<input value={content.pageTexts.todayIntro} onChange={e=>setContent(c=>({...c,pageTexts:{...c.pageTexts,todayIntro:e.target.value}}))}/></label>
   <label>Introduction Carte<input value={content.pageTexts.menuIntro} onChange={e=>setContent(c=>({...c,pageTexts:{...c.pageTexts,menuIntro:e.target.value}}))}/></label>
@@ -67,29 +84,29 @@ export default function AdminPage(){
   <label>Introduction Événements<input value={content.pageTexts.eventsIntro} onChange={e=>setContent(c=>({...c,pageTexts:{...c.pageTexts,eventsIntro:e.target.value}}))}/></label>
   <label>Introduction Avis & réseaux<input value={content.pageTexts.reviewsIntro} onChange={e=>setContent(c=>({...c,pageTexts:{...c.pageTexts,reviewsIntro:e.target.value}}))}/></label>
 
-  <h2>Photo principale de l’accueil</h2><div className="hero-photo-admin"><img src={content.heroImage} alt="Photo principale actuelle"/><label className="upload-box compact-upload">Remplacer la photo principale<input type="file" accept="image/jpeg,image/png,image/webp" onChange={e=>{const f=e.target.files?.[0];if(f)runUpload(f,src=>setContent(c=>({...c,heroImage:src})),'Photo d’accueil remplacée.')}}/></label></div>
+  <h2 id="admin-home-photo" className="admin-anchor-section">Photo principale de l’accueil</h2><div className="hero-photo-admin"><img src={content.heroImage} alt="Photo principale actuelle"/><label className="upload-box compact-upload">Remplacer la photo principale<input type="file" accept="image/jpeg,image/png,image/webp" onChange={e=>{const f=e.target.files?.[0];if(f)runUpload(f,src=>setContent(c=>({...c,heroImage:src})),'Photo d’accueil remplacée.')}}/></label></div>
 
-  <h2>Menu du jour</h2>
+  <h2 id="admin-daily" className="admin-anchor-section">Menu du jour</h2>
   <label>Libellé de date<input value={content.daily.dateLabel} onChange={e=>setContent(c=>({...c,daily:{...c.daily,dateLabel:e.target.value}}))}/></label>
   <fieldset><legend>Prix des formules</legend>{content.daily.formulas.map((f,i)=><div className="admin-item" key={i}><label>Nom<input value={f.name} onChange={e=>setContent(c=>({...c,daily:{...c.daily,formulas:c.daily.formulas.map((x,n)=>n===i?{...x,name:e.target.value}:x)}}))}/></label><label>Description<input value={f.description||''} onChange={e=>setContent(c=>({...c,daily:{...c.daily,formulas:c.daily.formulas.map((x,n)=>n===i?{...x,description:e.target.value}:x)}}))}/></label><label>Prix sur place<input value={f.price} onChange={e=>setContent(c=>({...c,daily:{...c.daily,formulas:c.daily.formulas.map((x,n)=>n===i?{...x,price:e.target.value}:x)}}))}/></label><label>Prix à emporter<input value={f.takeawayPrice||''} onChange={e=>setContent(c=>({...c,daily:{...c.daily,formulas:c.daily.formulas.map((x,n)=>n===i?{...x,takeawayPrice:e.target.value}:x)}}))}/></label><button className="danger-link" onClick={()=>setContent(c=>({...c,daily:{...c.daily,formulas:c.daily.formulas.filter((_,n)=>n!==i)}}))}>Supprimer cette formule</button></div>)}<button className="button secondary" onClick={()=>setContent(c=>({...c,daily:{...c.daily,formulas:[...c.daily.formulas,{...blankFormula}]}}))}>Ajouter une formule</button></fieldset>
   <fieldset><legend>Titres des blocs du menu</legend><label>Titre des entrées<input value={content.daily.startersTitle} onChange={e=>setContent(c=>({...c,daily:{...c.daily,startersTitle:e.target.value}}))}/></label><label>Titre des plats<input value={content.daily.mainsTitle} onChange={e=>setContent(c=>({...c,daily:{...c.daily,mainsTitle:e.target.value}}))}/></label><label>Titre des desserts<input value={content.daily.dessertsTitle} onChange={e=>setContent(c=>({...c,daily:{...c.daily,dessertsTitle:e.target.value}}))}/></label></fieldset>
   {(['starters','mains','desserts'] as const).map(group=><fieldset key={group}><legend>{group==='starters'?'Entrées':group==='mains'?'Plats':'Desserts'}</legend>{content.daily[group].map((item,i)=><div className="daily-admin-row" key={i}><label>Choix {i+1}<input value={item.name} onChange={e=>updateDaily(group,i,e.target.value)}/></label><button className="danger-link" onClick={()=>setContent(c=>({...c,daily:{...c.daily,[group]:c.daily[group].filter((_,n)=>n!==i)}}))}>Supprimer ce choix</button></div>)}<button className="button secondary" onClick={()=>setContent(c=>({...c,daily:{...c.daily,[group]:[...c.daily[group],{...blankItem}]}}))}>Ajouter un choix</button></fieldset>)}
   <fieldset><legend>Suggestion du chef</legend><label>Texte du supplément<input value={content.daily.suggestionSupplementText} onChange={e=>setContent(c=>({...c,daily:{...c.daily,suggestionSupplementText:e.target.value}}))}/></label><label>Nom<input value={content.daily.suggestion.name} onChange={e=>setContent(c=>({...c,daily:{...c.daily,suggestion:{...c.daily.suggestion,name:e.target.value}}}))}/></label><label>Description<input value={content.daily.suggestion.description||''} onChange={e=>setContent(c=>({...c,daily:{...c.daily,suggestion:{...c.daily.suggestion,description:e.target.value}}}))}/></label><label>Supplément<input value={content.daily.suggestion.price||''} onChange={e=>setContent(c=>({...c,daily:{...c.daily,suggestion:{...c.daily.suggestion,price:e.target.value}}}))}/></label></fieldset>
 
-  <h2>Notre histoire</h2>
+  <h2 id="admin-story" className="admin-anchor-section">Notre histoire</h2>
   <label>Petit titre<input value={content.story.eyebrow} onChange={e=>setContent(c=>({...c,story:{...c.story,eyebrow:e.target.value}}))}/></label><label>Titre<input value={content.story.title} onChange={e=>setContent(c=>({...c,story:{...c.story,title:e.target.value}}))}/></label><label>Introduction{ textArea(content.story.intro,v=>setContent(c=>({...c,story:{...c.story,intro:v}}))) }</label>
   {content.story.paragraphs.map((p,i)=><div className="admin-item" key={i}><label>Paragraphe {i+1}{textArea(p,v=>setContent(c=>({...c,story:{...c.story,paragraphs:c.story.paragraphs.map((x,n)=>n===i?v:x)}})))}</label><button className="danger-link" onClick={()=>setContent(c=>({...c,story:{...c.story,paragraphs:c.story.paragraphs.filter((_,n)=>n!==i)}}))}>Supprimer ce paragraphe</button></div>)}<button className="button secondary" onClick={()=>setContent(c=>({...c,story:{...c.story,paragraphs:[...c.story.paragraphs,'Nouveau paragraphe']}}))}>Ajouter un paragraphe</button>
   <label>Citation{ textArea(content.story.quote,v=>setContent(c=>({...c,story:{...c.story,quote:v}}))) }</label><div className="hero-photo-admin"><img src={content.story.image} alt={content.story.imageAlt}/><label className="upload-box compact-upload">Remplacer la photo de l’histoire<input type="file" accept="image/jpeg,image/png,image/webp" onChange={e=>{const f=e.target.files?.[0];if(f)runUpload(f,src=>setContent(c=>({...c,story:{...c.story,image:src}})),'Photo de l’histoire remplacée.')}}/></label><label>Texte alternatif<input value={content.story.imageAlt} onChange={e=>setContent(c=>({...c,story:{...c.story,imageAlt:e.target.value}}))}/></label></div>
 
-  <h2>Privatisation</h2>
+  <h2 id="admin-privatization" className="admin-anchor-section">Privatisation</h2>
   <label>Titre<input value={content.privatization.title} onChange={e=>setContent(c=>({...c,privatization:{...c.privatization,title:e.target.value}}))}/></label><label>Introduction<input value={content.privatization.intro} onChange={e=>setContent(c=>({...c,privatization:{...c.privatization,intro:e.target.value}}))}/></label><label>Texte{ textArea(content.privatization.text,v=>setContent(c=>({...c,privatization:{...c.privatization,text:v}}))) }</label>
   <label className="upload-box">Ajouter une photo de privatisation<input type="file" accept="image/jpeg,image/png,image/webp" onChange={e=>{const f=e.target.files?.[0];if(f)runUpload(f,src=>setContent(c=>({...c,privatization:{...c.privatization,photos:[...c.privatization.photos,{...blankPhoto,src}]}})),'Photo ajoutée.')}}/></label>
   <div className="admin-gallery">{content.privatization.photos.map((p,i)=><div className="admin-photo" key={i}><img src={p.src} alt={p.alt}/><label>Légende<input value={p.label} onChange={e=>setContent(c=>({...c,privatization:{...c.privatization,photos:c.privatization.photos.map((x,n)=>n===i?{...x,label:e.target.value}:x)}}))}/></label><button className="danger-link" onClick={()=>setContent(c=>({...c,privatization:{...c.privatization,photos:c.privatization.photos.filter((_,n)=>n!==i)}}))}>Supprimer</button></div>)}</div>
 
-  <h2>Événements</h2>
+  <h2 id="admin-events" className="admin-anchor-section">Événements</h2>
   {content.events.map((ev,i)=><fieldset key={i}><legend>Événement {i+1}</legend><label>Titre<input value={ev.title} onChange={e=>setContent(c=>({...c,events:c.events.map((x,n)=>n===i?{...x,title:e.target.value}:x)}))}/></label><label>Date / horaire<input value={ev.date} onChange={e=>setContent(c=>({...c,events:c.events.map((x,n)=>n===i?{...x,date:e.target.value}:x)}))}/></label><label>Description{ textArea(ev.description,v=>setContent(c=>({...c,events:c.events.map((x,n)=>n===i?{...x,description:v}:x)}))) }</label><label>Prix<input value={ev.price||''} onChange={e=>setContent(c=>({...c,events:c.events.map((x,n)=>n===i?{...x,price:e.target.value}:x)}))}/></label>{ev.image&&<img className="admin-event-image" src={ev.image} alt={ev.imageAlt||ev.title}/>}<label className="upload-box compact-upload">{ev.image?'Remplacer la photo':'Ajouter une photo'}<input type="file" accept="image/jpeg,image/png,image/webp" onChange={e=>{const f=e.target.files?.[0];if(f)runUpload(f,src=>setContent(c=>({...c,events:c.events.map((x,n)=>n===i?{...x,image:src,imageAlt:x.imageAlt||x.title}:x)})),'Photo de l’événement ajoutée.')}}/></label><button className="danger-link" onClick={()=>setContent(c=>({...c,events:c.events.filter((_,n)=>n!==i)}))}>Supprimer cet événement</button></fieldset>)}<button className="button secondary" onClick={()=>setContent(c=>({...c,events:[...c.events,{...blankEvent}]}))}>Ajouter un événement</button>
 
-  <h2>La carte</h2>
+  <h2 id="admin-menu" className="admin-anchor-section">La carte</h2>
   <p className="admin-help">L’ordre affiché ici est aussi celui du bandeau de la page Carte. Utilise les boutons Monter et Descendre, puis publie les modifications.</p>
   {content.menu.map((section,si)=><fieldset key={si} className="reorder-fieldset">
     <legend>Catégorie {si+1}</legend>
@@ -122,7 +139,7 @@ export default function AdminPage(){
   </fieldset>)}
   <button type="button" className="button secondary" onClick={()=>setContent(c=>({...c,menu:[...c.menu,{category:'Nouvelle catégorie',items:[{...blankItem}]}]}))}>Ajouter une catégorie</button>
 
-  <h2>Avis Google et réseaux sociaux</h2>
+  <h2 id="admin-reviews" className="admin-anchor-section">Avis Google et réseaux sociaux</h2>
   <label>Titre de la page<input value={content.reviews.title} onChange={e=>setContent(c=>({...c,reviews:{...c.reviews,title:e.target.value}}))}/></label>
   <label>Texte de présentation{ textArea(content.reviews.intro,v=>setContent(c=>({...c,reviews:{...c.reviews,intro:v}}))) }</label>
   <label>Lien pour consulter les avis Google<input value={content.reviews.googleReviewsUrl} onChange={e=>setContent(c=>({...c,reviews:{...c.reviews,googleReviewsUrl:e.target.value}}))} placeholder="https://..."/></label>
@@ -131,7 +148,7 @@ export default function AdminPage(){
   {content.socials.map((link,i)=><div className="admin-item" key={i}><label>Nom du réseau<input value={link.label} onChange={e=>setContent(c=>({...c,socials:c.socials.map((x,n)=>n===i?{...x,label:e.target.value}:x)}))}/></label><label>Lien du compte<input value={link.url} onChange={e=>setContent(c=>({...c,socials:c.socials.map((x,n)=>n===i?{...x,url:e.target.value}:x)}))} placeholder="https://..."/></label><button className="danger-link" onClick={()=>setContent(c=>({...c,socials:c.socials.filter((_,n)=>n!==i)}))}>Supprimer ce lien</button></div>)}
   <button className="button secondary" onClick={()=>setContent(c=>({...c,socials:[...c.socials,{...blankSocial}]}))}>Ajouter un réseau social</button>
 
-  <h2>Galerie</h2><label className="upload-box">Ajouter une photo<input type="file" accept="image/jpeg,image/png,image/webp" onChange={e=>{const f=e.target.files?.[0];if(f)runUpload(f,src=>setContent(c=>({...c,gallery:[...c.gallery,{...blankPhoto,src}]})),'Photo ajoutée à la galerie.')}}/></label><div className="admin-gallery">{content.gallery.map((p,i)=><div className="admin-photo" key={i}><img src={p.src} alt={p.alt}/><label>Légende<input value={p.label} onChange={e=>setContent(c=>({...c,gallery:c.gallery.map((x,n)=>n===i?{...x,label:e.target.value}:x)}))}/></label><button className="danger-link" onClick={()=>setContent(c=>({...c,gallery:c.gallery.filter((_,n)=>n!==i)}))}>Supprimer</button></div>)}</div>
+  <h2 id="admin-gallery" className="admin-anchor-section">Galerie</h2><label className="upload-box">Ajouter une photo<input type="file" accept="image/jpeg,image/png,image/webp" onChange={e=>{const f=e.target.files?.[0];if(f)runUpload(f,src=>setContent(c=>({...c,gallery:[...c.gallery,{...blankPhoto,src}]})),'Photo ajoutée à la galerie.')}}/></label><div className="admin-gallery">{content.gallery.map((p,i)=><div className="admin-photo" key={i}><img src={p.src} alt={p.alt}/><label>Légende<input value={p.label} onChange={e=>setContent(c=>({...c,gallery:c.gallery.map((x,n)=>n===i?{...x,label:e.target.value}:x)}))}/></label><button className="danger-link" onClick={()=>setContent(c=>({...c,gallery:c.gallery.filter((_,n)=>n!==i)}))}>Supprimer</button></div>)}</div>
 
   <div className="actions sticky-actions"><button className="button" onClick={save} disabled={busy||!password}>{busy?'Veuillez patienter…':'Publier sans notification'}</button><button className="button secondary" onClick={publishAndNotify} disabled={busy||!password||!notificationTitle||!notificationBody}>Publier et notifier les clients</button></div>{message&&<p className="success" aria-live="polite">{message}</p>}
  </div></section></>
