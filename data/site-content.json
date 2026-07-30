@@ -21,10 +21,6 @@
   },
   "daily": {
     "dateLabel": "Aujourd’hui",
-    "startersTitle": "3 entrées au choix",
-    "mainsTitle": "3 plats au choix",
-    "dessertsTitle": "3 desserts au choix",
-    "suggestionSupplementText": "+4 € sur le prix du plat du jour ou de la formule choisie",
     "formulas": [
       {
         "name": "Entrée seule",
@@ -48,7 +44,7 @@
       },
       {
         "name": "Entrée + plat + dessert",
-        "price": "17€",
+        "price": "À compléter",
         "takeawayPrice": ""
       }
     ],
@@ -89,7 +85,11 @@
       {
         "name": "Dessert du jour 3"
       }
-    ]
+    ],
+    "startersTitle": "3 entrées au choix",
+    "mainsTitle": "3 plats au choix",
+    "dessertsTitle": "3 desserts au choix",
+    "suggestionSupplementText": "+4 € sur le prix du plat du jour ou de la formule choisie"
   },
   "menu": [
     {
@@ -117,13 +117,13 @@
       "items": [
         {
           "name": "Masfleur — rosé de Provence",
-          "description": "12cl:5€   25cl:9€   50cl:16€",
-          "price": ""
+          "description": "12 cl : 5 € · 25 cl : 9 €",
+          "price": "50 cl : 16 €"
         },
         {
           "name": "Saint-Nicolas-de-Bourgueil — rouge de Loire",
-          "description": "12cl/25cl/50cl",
-          "price": "5€/9€/16€"
+          "description": "12 cl : 5 € · 25 cl : 9 €",
+          "price": "50 cl : 16 €"
         }
       ]
     },
@@ -369,7 +369,7 @@
     "title": "Avis Google & réseaux sociaux",
     "intro": "Votre avis compte beaucoup pour nous. Consultez les témoignages de nos clients ou partagez votre expérience.",
     "googleReviewsUrl": "https://share.google/I0OlzrRJJKi4ne3kO",
-    "googleReviewWriteUrl": "https://share.google/B2lXVB4O7tjjpV6tn"
+    "googleReviewWriteUrl": "https://share.google/I0OlzrRJJKi4ne3kO"
   },
   "socials": [
     {

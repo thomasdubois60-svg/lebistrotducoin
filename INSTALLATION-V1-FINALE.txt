@@ -1,0 +1,17 @@
+LE BISTROT DU COIN — SITE + APPLICATION ADMINISTRATION LBDC
+
+Cette archive est une base complète et fusionnée.
+
+MISE EN LIGNE
+1. Décompresser l'archive.
+2. Remplacer le contenu du dépôt GitHub par le contenu de ce dossier.
+3. Conserver les variables d'environnement déjà présentes dans Vercel.
+4. Attendre le déploiement automatique.
+
+VÉRIFICATIONS
+- Site public : /
+- Administration : /administration
+- Mode Service : /administration#admin-service
+- Installation Admin LBDC : ouvrir /administration depuis le téléphone puis utiliser le bouton d'installation.
+
+Ne pas envoyer le dossier parent du ZIP dans GitHub : envoyer directement les fichiers et dossiers contenus dans l'archive.
