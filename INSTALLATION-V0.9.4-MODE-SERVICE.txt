@@ -1,0 +1,15 @@
+MISE À JOUR V0.9.4 — MODE SERVICE LBDC
+
+1. Décompresse ce ZIP.
+2. Ouvre le dossier obtenu.
+3. Dépose tous les fichiers et dossiers dans ton dépôt GitHub, à la racine.
+4. Accepte le remplacement des fichiers existants.
+5. Attends que Vercel affiche « Ready ».
+6. Ouvre /administration puis teste le Mode Service.
+
+NOUVEAUTÉS
+- Scanner ouvert automatiquement.
+- Retour automatique au scanner après validation.
+- Statistiques du jour : clients, formules, récompenses.
+- Badges clients.
+- Fiche client plus lisible sur téléphone.
