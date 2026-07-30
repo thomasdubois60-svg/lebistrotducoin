@@ -1,0 +1,10 @@
+MISE À JOUR ADMINISTRATION LBDC + MODE SERVICE
+
+1. Envoyer tous les fichiers de cette archive sur GitHub en une seule fois.
+2. Attendre le déploiement Vercel.
+3. Ouvrir /administration et se reconnecter une fois.
+4. La connexion administrateur est ensuite conservée sur cet appareil jusqu'à « Se déconnecter ».
+5. Dans l'administration, utiliser le bloc « Administration LBDC » pour l'ajouter à l'écran d'accueil.
+6. Tester Mode Service : la caméra se prépare automatiquement, puis revient au scanner après +1 formule ou utilisation de la récompense.
+
+Aucune modification Supabase ni nouvelle variable Vercel.

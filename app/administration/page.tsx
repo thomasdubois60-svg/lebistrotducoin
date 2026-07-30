@@ -6,6 +6,7 @@ import { AdminClubPanel } from '@/components/admin-club-panel'
 import { AdminPromotionsPanel } from '@/components/admin-promotions-panel'
 import { AdminCommunicationPanel } from '@/components/admin-communication-panel'
 import { ServiceModePanel } from '@/components/service-mode-panel'
+import { AdminInstallButton } from '@/components/admin-install-button'
 
 const blankItem: MenuItem = { name:'', description:'', price:'', image:'', imageAlt:'' }
 const blankFormula: FormulaItem = { name:'Nouvelle formule', price:'', takeawayPrice:'' }
@@ -17,7 +18,7 @@ export default function AdminPage(){
  const [content,setContent]=useState<SiteContent>(defaultContent)
  const [password,setPassword]=useState(''); const [message,setMessage]=useState(''); const [busy,setBusy]=useState(false); const [authenticated,setAuthenticated]=useState(false); const [loginMessage,setLoginMessage]=useState('')
  const [notificationTitle,setNotificationTitle]=useState('Nouveau au Bistrot'); const [notificationBody,setNotificationBody]=useState('Découvrez le nouveau menu du jour ou notre prochain événement.'); const [notificationUrl,setNotificationUrl]=useState('/aujourdhui'); const [subscriberCount,setSubscriberCount]=useState<number|null>(null); const [notificationMessage,setNotificationMessage]=useState('')
- useEffect(()=>{const savedPassword=sessionStorage.getItem('bistrot-admin-password')||'';setPassword(savedPassword);setAuthenticated(sessionStorage.getItem('bistrot-admin')==='connected'&&!!savedPassword);fetch('/api/content',{cache:'no-store'}).then(r=>r.json()).then(d=>setContent(normalizeContent(d))).catch(()=>{})},[])
+ useEffect(()=>{const savedPassword=localStorage.getItem('bistrot-admin-password')||'';setPassword(savedPassword);setAuthenticated(localStorage.getItem('bistrot-admin')==='connected'&&!!savedPassword);fetch('/api/content',{cache:'no-store'}).then(r=>r.json()).then(d=>setContent(normalizeContent(d))).catch(()=>{})},[])
  const uploadFile=async(file:File)=>{ if(!password) throw new Error('Saisis d’abord le mot de passe administrateur.'); const form=new FormData(); form.append('file',file); const r=await fetch('/api/upload',{method:'POST',headers:{'x-admin-password':password},body:form}); const data=await r.json(); if(!r.ok) throw new Error(data.error||'Erreur lors de l’envoi.'); return data.src as string }
  const runUpload=async(file:File,apply:(src:string)=>void,label:string)=>{setBusy(true);setMessage('Envoi de la photo…');try{const src=await uploadFile(file);apply(src);setMessage(`${label} Appuie maintenant sur « Publier les modifications ».`)}catch(e){setMessage(e instanceof Error?e.message:'Erreur lors de l’envoi.')}setBusy(false)}
  const save=async()=>{setBusy(true);setMessage('Publication en cours…');const r=await fetch('/api/content',{method:'POST',headers:{'Content-Type':'application/json','x-admin-password':password},body:JSON.stringify(content)});const data=await r.json();setMessage(r.ok?'Modifications enregistrées. Vercel les publiera automatiquement dans quelques instants.':(data.error||'Publication impossible.'));if(r.ok)window.dispatchEvent(new Event('bistrot-content-updated'));setBusy(false)}
@@ -29,8 +30,8 @@ export default function AdminPage(){
  const moveCategory=(index:number,direction:-1|1)=>setContent(c=>({...c,menu:moveInArray(c.menu,index,index+direction)}))
  const moveProduct=(sectionIndex:number,itemIndex:number,direction:-1|1)=>setContent(c=>({...c,menu:c.menu.map((section,index)=>index===sectionIndex?{...section,items:moveInArray(section.items,itemIndex,itemIndex+direction)}:section)}))
  const textArea=(value:string,onChange:(v:string)=>void)=><textarea value={value} onChange={e=>onChange(e.target.value)}/>
- const login=async(e:React.FormEvent)=>{e.preventDefault();setBusy(true);setLoginMessage('Vérification…');const r=await fetch('/api/admin-login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password})});const d=await r.json();if(r.ok){sessionStorage.setItem('bistrot-admin','connected');sessionStorage.setItem('bistrot-admin-password',password);setAuthenticated(true);setLoginMessage('')}else setLoginMessage(d.error||'Connexion impossible.');setBusy(false)}
- const logout=()=>{sessionStorage.removeItem('bistrot-admin');sessionStorage.removeItem('bistrot-admin-password');setAuthenticated(false);setPassword('');setMessage('')}
+ const login=async(e:React.FormEvent)=>{e.preventDefault();setBusy(true);setLoginMessage('Vérification…');const r=await fetch('/api/admin-login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password})});const d=await r.json();if(r.ok){localStorage.setItem('bistrot-admin','connected');localStorage.setItem('bistrot-admin-password',password);setAuthenticated(true);setLoginMessage('')}else setLoginMessage(d.error||'Connexion impossible.');setBusy(false)}
+ const logout=()=>{localStorage.removeItem('bistrot-admin');localStorage.removeItem('bistrot-admin-password');setAuthenticated(false);setPassword('');setMessage('')}
  const goToSection=(id:string)=>{document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'})}
  if(!authenticated) return <><PageHero eyebrow="Espace privé" title="Connexion" text="Accédez à l’administration du Bistrot."/><section className="section"><form className="container admin-login-card" onSubmit={login}><h2>Administration</h2><p>Saisissez votre mot de passe pour afficher le tableau de bord.</p><label>Mot de passe<input autoFocus type="password" value={password} onChange={e=>setPassword(e.target.value)}/></label><button className="button" disabled={busy||!password}>{busy?'Vérification…':'Se connecter'}</button>{loginMessage&&<p className="admin-login-message">{loginMessage}</p>}</form></section></>
  return <><PageHero eyebrow="Espace privé" title="Administration" text="Modifiez le contenu du site depuis votre téléphone."/><section className="section"><div className="container admin-panel">
@@ -55,7 +56,7 @@ export default function AdminPage(){
    <button type="button" onClick={()=>goToSection('admin-gallery')}>Galerie</button>
   </nav>
 
-  <div id="admin-service" className="admin-anchor-section"><ServiceModePanel password={password}/></div>
+  <AdminInstallButton/><div id="admin-service" className="admin-anchor-section"><ServiceModePanel password={password}/></div>
   <div id="admin-club" className="admin-anchor-section"><AdminClubPanel password={password}/></div>
   <div id="admin-communication" className="admin-anchor-section"><AdminCommunicationPanel password={password}/></div>
   <div id="admin-promotions" className="admin-anchor-section"><AdminPromotionsPanel password={password}/></div>
