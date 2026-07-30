@@ -117,8 +117,8 @@
       "items": [
         {
           "name": "Masfleur — rosé de Provence",
-          "description": "12 cl/25cl/50cl",
-          "price": "5€/9€/16€"
+          "description": "12cl:5€   25cl:9€   50cl:16€",
+          "price": ""
         },
         {
           "name": "Saint-Nicolas-de-Bourgueil — rouge de Loire",
