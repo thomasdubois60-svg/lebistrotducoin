@@ -1,5 +1,4 @@
 {
-  "heroImage": "/photos/facade.webp",
   "general": {
     "phone": "02 54 44 36 70",
     "phoneHref": "+33254443670",
@@ -24,7 +23,7 @@
     "formulas": [
       {
         "name": "Entrée seule",
-        "price": "À compléter",
+        "price": "5.10€",
         "takeawayPrice": ""
       },
       {
@@ -384,5 +383,14 @@
       "label": "TikTok",
       "url": "https://www.tiktok.com/@lebistrotducoin41?_r=1&_t=ZN-98H20Dw4COs"
     }
-  ]
+  ],
+  "club": {
+    "title": "Club LBDC",
+    "intro": "",
+    "stampsRequired": 10,
+    "reward": "La 11e formule offerte",
+    "conditions": "",
+    "enabled": true
+  },
+  "heroImage": "/photos/facade.webp"
 }
