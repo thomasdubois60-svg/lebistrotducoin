@@ -1,4 +1,5 @@
 {
+  "heroImage": "/photos/facade.webp",
   "general": {
     "phone": "02 54 44 36 70",
     "phoneHref": "+33254443670",
@@ -20,6 +21,10 @@
   },
   "daily": {
     "dateLabel": "Aujourd’hui",
+    "startersTitle": "3 entrées au choix",
+    "mainsTitle": "3 plats au choix",
+    "dessertsTitle": "3 desserts au choix",
+    "suggestionSupplementText": "+4 € sur le prix du plat du jour ou de la formule choisie",
     "formulas": [
       {
         "name": "Entrée seule",
@@ -60,7 +65,7 @@
     ],
     "mains": [
       {
-        "name": "Plat du jour 1"
+        "name": "saucisse"
       },
       {
         "name": "Plat du jour 2"
@@ -84,11 +89,7 @@
       {
         "name": "Dessert du jour 3"
       }
-    ],
-    "startersTitle": "3 entrées au choix",
-    "mainsTitle": "3 plats au choix",
-    "dessertsTitle": "3 desserts au choix",
-    "suggestionSupplementText": "+4 € sur le prix du plat du jour ou de la formule choisie"
+    ]
   },
   "menu": [
     {
@@ -383,14 +384,5 @@
       "label": "TikTok",
       "url": "https://www.tiktok.com/@lebistrotducoin41?_r=1&_t=ZN-98H20Dw4COs"
     }
-  ],
-  "club": {
-    "title": "Club LBDC",
-    "intro": "",
-    "stampsRequired": 10,
-    "reward": "La 11e formule offerte",
-    "conditions": "",
-    "enabled": true
-  },
-  "heroImage": "/photos/facade.webp"
+  ]
 }
