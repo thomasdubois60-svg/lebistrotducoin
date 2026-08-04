@@ -452,11 +452,12 @@
   "events": [
     {
       "title": "Nouvel événement",
-      "date": "22/10/2026",
-      "time": "20h",
-      "description": "Tets",
+      "date": "22/09/2026",
+      "time": "20",
+      "description": "Test",
       "price": "20€",
-      "image": "/photos/1785859519497-img-2905.jpeg"
+      "image": "/photos/1785862089460-img-2904.jpeg",
+      "imageAlt": "Nouvel événement"
     }
   ],
   "reviews": {
