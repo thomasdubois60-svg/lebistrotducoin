@@ -364,7 +364,16 @@
       }
     ]
   },
-  "events": [],
+  "events": [
+    {
+      "title": "Nouvel événement",
+      "date": "22/10/2026",
+      "time": "20h",
+      "description": "Tets",
+      "price": "20€",
+      "image": "/photos/1785859519497-img-2905.jpeg"
+    }
+  ],
   "reviews": {
     "title": "Avis Google & réseaux sociaux",
     "intro": "Votre avis compte beaucoup pour nous. Consultez les témoignages de nos clients ou partagez votre expérience.",
