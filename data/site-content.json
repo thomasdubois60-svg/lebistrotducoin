@@ -98,7 +98,8 @@
         {
           "name": "Planche mixte",
           "description": "Rosette de Lyon, chorizo, terrine du moment, jambon de pays, jambon blanc et sélection de 3 fromages",
-          "price": "20 €"
+          "price": "20 €",
+          "image": "/photos/1785937341703-img-5882.jpeg"
         },
         {
           "name": "Saucisson sec du terroir",
