@@ -98,7 +98,8 @@
         {
           "name": "Planche mixte",
           "description": "Rosette de Lyon, chorizo, terrine du moment, jambon de pays, jambon blanc et sélection de 3 fromages",
-          "price": "20 €"
+          "price": "20 €",
+          "image": "/photos/1785937341703-img-5882.jpeg"
         },
         {
           "name": "Saucisson sec du terroir",
@@ -331,6 +332,26 @@
       "src": "/photos/plat-choucroute.webp",
       "alt": "Choucroute du Bistrot",
       "label": "Générosité"
+    },
+    {
+      "src": "/photos/1785936981198-img-5376.jpeg",
+      "alt": "",
+      "label": "Nouvelle photo"
+    },
+    {
+      "src": "/photos/1785937049389-img-5853.jpeg",
+      "alt": "",
+      "label": "Langue de bœuf et son écrasé de pomme de terre maison"
+    },
+    {
+      "src": "/photos/1785937088811-img-9900.jpeg",
+      "alt": "",
+      "label": "Magret de canard "
+    },
+    {
+      "src": "/photos/1785866377635-img-4262.jpeg",
+      "alt": "",
+      "label": "Nouvelle photo"
     }
   ],
   "story": {
@@ -364,7 +385,17 @@
       }
     ]
   },
-  "events": [],
+  "events": [
+    {
+      "title": "Fiesta",
+      "date": "01/09/2026",
+      "time": "20€",
+      "description": "Soirée musicale et repas complet ",
+      "price": "20€",
+      "image": "/photos/1785937565962-img-4258.jpeg",
+      "imageAlt": "Fiesta"
+    }
+  ],
   "reviews": {
     "title": "Avis Google & réseaux sociaux",
     "intro": "Votre avis compte beaucoup pour nous. Consultez les témoignages de nos clients ou partagez votre expérience.",
@@ -384,18 +415,5 @@
       "label": "TikTok",
       "url": "https://www.tiktok.com/@lebistrotducoin41?_r=1&_t=ZN-98H20Dw4COs"
     }
-  ],
-  "club": {
-    "presentation": "Bienvenue dans votre Club LBDC : retrouvez en un coup d’œil les avantages que vous pouvez utiliser aujourd’hui et tout ce que votre fidélité vous a déjà apporté.",
-    "programExplanation": "À chaque formule achetée, un tampon est ajouté à votre carte. Après 10 tampons, votre prochaine formule complète est offerte.",
-    "conditions": "Une seule validation fidélité par jour et par personne. Les avantages sont personnels, non cessibles et utilisables pendant leur période de validité.",
-    "rewards": [
-      "Une formule complète offerte après 10 tampons",
-      "Des coupons et offres réservés aux membres"
-    ],
-    "availableTitle": "Mes avantages disponibles",
-    "historyTitle": "Historique de mes avantages",
-    "summaryTitle": "Mon bilan Club LBDC",
-    "savingsMessage": "Grâce au Club LBDC vous avez déjà économisé {amount}."
-  }
+  ]
 }
