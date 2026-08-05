@@ -1,2 +1,86 @@
-const marker='__LBDC_PRICE_V1__'
-export function decodePromotionProduct(value:string|undefined|null){const raw=value||'';const index=raw.indexOf(marker);if(index<0)return{label:raw,referencePrice:null,customPrice:false};try{const data=JSON.parse(raw.slice(index+marker.length))as{p?:number;c?:number};const price=Number(data.p);return{label:raw.slice(0,index),referencePrice:Number.isFinite(price)&&price>=0?Math.round(price*100)/100:null,customPrice:data.c===1}}catch{return{label:raw.slice(0,index),referencePrice:null,customPrice:false}}}
+import type { SiteContent } from '@/lib/default-content'
+
+export type PublishedProduct = {
+  key: string
+  name: string
+  source: 'Carte' | 'Formule du jour'
+  rawPrice: string
+  publishedPrice: number | null
+}
+
+export type PromotionProductMetadata = {
+  label: string
+  referencePrice: number | null
+  customPrice: boolean
+}
+
+const marker = '__LBDC_PRICE_V1__'
+const roundMoney = (value: number) => Math.round((value + Number.EPSILON) * 100) / 100
+
+export function extractPublishedPrice(raw: string | undefined): number | null {
+  const value = raw?.trim() || ''
+  if (!value || /^\+\s*\d/.test(value)) return null
+  const matches = [...value.matchAll(/(\d+(?:[.,]\d{1,2})?)\s*€/g)]
+  if (matches.length !== 1) return null
+  const amount = Number(matches[0][1].replace(',', '.'))
+  return Number.isFinite(amount) && amount >= 0 ? roundMoney(amount) : null
+}
+
+export function listPublishedProducts(content: SiteContent): PublishedProduct[] {
+  const products: PublishedProduct[] = []
+  content.menu.forEach((section, sectionIndex) => section.items.forEach((item, itemIndex) => products.push({
+    key: `menu-${sectionIndex}-${itemIndex}`,
+    name: item.name,
+    source: 'Carte',
+    rawPrice: item.price || '',
+    publishedPrice: extractPublishedPrice(item.price),
+  })))
+  content.daily.formulas.forEach((formula, index) => products.push({
+    key: `formula-${index}`,
+    name: formula.name,
+    source: 'Formule du jour',
+    rawPrice: formula.price || '',
+    publishedPrice: extractPublishedPrice(formula.price),
+  }))
+  const seen = new Set<string>()
+  return products.filter((product) => {
+    const key = product.name.trim().toLocaleLowerCase('fr-FR')
+    if (!key || seen.has(key)) return false
+    seen.add(key)
+    return true
+  })
+}
+
+export function calculateProductDiscount(referencePrice: number | null, discountRate: number | null) {
+  if (referencePrice === null || discountRate === null || !Number.isFinite(referencePrice) || !Number.isFinite(discountRate) || referencePrice < 0 || discountRate <= 0 || discountRate > 100) return null
+  const discountAmount = roundMoney(referencePrice * discountRate / 100)
+  return {
+    referencePrice: roundMoney(referencePrice),
+    discountRate,
+    discountAmount,
+    finalPrice: roundMoney(referencePrice - discountAmount),
+  }
+}
+
+export function encodePromotionProduct(metadata: PromotionProductMetadata) {
+  const clean = metadata.label.trim()
+  if (metadata.referencePrice === null) return clean
+  return `${clean}${marker}${JSON.stringify({ p: roundMoney(metadata.referencePrice), c: metadata.customPrice ? 1 : 0 })}`
+}
+
+export function decodePromotionProduct(value: string | undefined | null): PromotionProductMetadata {
+  const raw = value || ''
+  const index = raw.indexOf(marker)
+  if (index < 0) return { label: raw, referencePrice: null, customPrice: false }
+  try {
+    const data = JSON.parse(raw.slice(index + marker.length)) as { p?: number; c?: number }
+    const price = Number(data.p)
+    return {
+      label: raw.slice(0, index),
+      referencePrice: Number.isFinite(price) && price >= 0 ? roundMoney(price) : null,
+      customPrice: data.c === 1,
+    }
+  } catch {
+    return { label: raw.slice(0, index), referencePrice: null, customPrice: false }
+  }
+}
