@@ -44,3 +44,4 @@ Les changements sont enregistrés dans GitHub, puis Vercel republie automatiquem
 ## Sécurité
 
 Le jeton GitHub et le mot de passe administrateur doivent uniquement être enregistrés dans les variables privées de Vercel. Ils ne doivent jamais être ajoutés aux fichiers du dépôt.
+Test déploiement après réglage Vercel
