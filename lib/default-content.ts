@@ -4,6 +4,16 @@ export type GalleryItem = { src: string; alt: string; label: string }
 export type FormulaItem = { name: string; price: string; description?: string; takeawayPrice?: string }
 export type EventItem = { title: string; date: string; description: string; price?: string; image?: string; imageAlt?: string }
 export type SocialLink = { label: string; url: string }
+export type ClubContent = {
+  presentation: string
+  programExplanation: string
+  conditions: string
+  rewards: string[]
+  availableTitle: string
+  historyTitle: string
+  summaryTitle: string
+  savingsMessage: string
+}
 export type SiteContent = {
   heroImage: string
   general: { phone: string; phoneHref: string; email: string; address: string; hours: string; closureEnabled: boolean; closureMessage: string; analyticsUrl: string }
@@ -16,6 +26,7 @@ export type SiteContent = {
   events: EventItem[]
   reviews: { title: string; intro: string; googleReviewsUrl: string; googleReviewWriteUrl: string }
   socials: SocialLink[]
+  club: ClubContent
 }
 
 export const defaultContent: SiteContent = {
@@ -133,7 +144,17 @@ export const defaultContent: SiteContent = {
     { label: 'Facebook', url: 'https://www.facebook.com/share/1BjtCjdbBa/?mibextid=wwXIfr' },
     { label: 'Instagram', url: '' },
     { label: 'TikTok', url: 'https://www.tiktok.com/@lebistrotducoin41?_r=1&_t=ZN-98H20Dw4COs' }
-  ]
+  ],
+  club: {
+    presentation: 'Bienvenue dans votre Club LBDC : retrouvez en un coup d’œil les avantages que vous pouvez utiliser aujourd’hui et tout ce que votre fidélité vous a déjà apporté.',
+    programExplanation: 'À chaque formule achetée, un tampon est ajouté à votre carte. Après 10 tampons, votre prochaine formule complète est offerte.',
+    conditions: 'Une seule validation fidélité par jour et par personne. Les avantages sont personnels, non cessibles et utilisables pendant leur période de validité.',
+    rewards: ['Une formule complète offerte après 10 tampons', 'Des coupons et offres réservés aux membres'],
+    availableTitle: 'Mes avantages disponibles',
+    historyTitle: 'Historique de mes avantages',
+    summaryTitle: 'Mon bilan Club LBDC',
+    savingsMessage: 'Grâce au Club LBDC vous avez déjà économisé {amount}.'
+  }
 }
 
 export function normalizeContent(value: Partial<SiteContent> | null | undefined): SiteContent {
@@ -156,6 +177,11 @@ export function normalizeContent(value: Partial<SiteContent> | null | undefined)
     privatization: { ...defaultContent.privatization, ...(value?.privatization || {}), photos: value?.privatization?.photos?.length ? value.privatization.photos : defaultContent.privatization.photos },
     events: value?.events || defaultContent.events,
     reviews: { ...defaultContent.reviews, ...(value?.reviews || {}) },
-    socials: value?.socials || defaultContent.socials
+    socials: value?.socials || defaultContent.socials,
+    club: {
+      ...defaultContent.club,
+      ...(value?.club || {}),
+      rewards: value?.club?.rewards?.length ? value.club.rewards : defaultContent.club.rewards
+    }
   }
 }

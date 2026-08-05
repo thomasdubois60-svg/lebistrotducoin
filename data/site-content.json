@@ -28,7 +28,7 @@
     "formulas": [
       {
         "name": "Entrée seule",
-        "price": "40",
+        "price": "5.10€",
         "takeawayPrice": ""
       },
       {
@@ -331,96 +331,6 @@
       "src": "/photos/plat-choucroute.webp",
       "alt": "Choucroute du Bistrot",
       "label": "Générosité"
-    },
-    {
-      "src": "",
-      "alt": "Sur commande ",
-      "label": "Côté de bœuf à partager ou pas "
-    },
-    {
-      "src": "",
-      "alt": "",
-      "label": "Nouvelle photo"
-    },
-    {
-      "src": "",
-      "alt": "",
-      "label": "Nouvelle photo"
-    },
-    {
-      "src": "",
-      "alt": "",
-      "label": "Nouvelle photo"
-    },
-    {
-      "src": "",
-      "alt": "",
-      "label": "Nouvelle photo"
-    },
-    {
-      "src": "",
-      "alt": "",
-      "label": "Nouvelle photo"
-    },
-    {
-      "src": "",
-      "alt": "",
-      "label": "Nouvelle photo"
-    },
-    {
-      "src": "",
-      "alt": "",
-      "label": "Nouvelle photo"
-    },
-    {
-      "src": "",
-      "alt": "",
-      "label": "Nouvelle photo"
-    },
-    {
-      "src": "",
-      "alt": "",
-      "label": "Nouvelle photo"
-    },
-    {
-      "src": "",
-      "alt": "",
-      "label": "Nouvelle photo"
-    },
-    {
-      "src": "",
-      "alt": "",
-      "label": "Nouvelle photo"
-    },
-    {
-      "src": "",
-      "alt": "",
-      "label": "Nouvelle photo"
-    },
-    {
-      "src": "",
-      "alt": "",
-      "label": "Nouvelle photo"
-    },
-    {
-      "src": "",
-      "alt": "",
-      "label": "Nouvelle photo"
-    },
-    {
-      "src": "",
-      "alt": "",
-      "label": "Nouvelle photo"
-    },
-    {
-      "src": "",
-      "alt": "",
-      "label": "Nouvelle photo"
-    },
-    {
-      "src": "/photos/1785866377635-img-4262.jpeg",
-      "alt": "",
-      "label": "Nouvelle photo"
     }
   ],
   "story": {
@@ -454,17 +364,7 @@
       }
     ]
   },
-  "events": [
-    {
-      "title": "Nouvel événement",
-      "date": "22/09/2026",
-      "time": "20",
-      "description": "Test",
-      "price": "20€",
-      "image": "/photos/1785862089460-img-2904.jpeg",
-      "imageAlt": "Nouvel événement"
-    }
-  ],
+  "events": [],
   "reviews": {
     "title": "Avis Google & réseaux sociaux",
     "intro": "Votre avis compte beaucoup pour nous. Consultez les témoignages de nos clients ou partagez votre expérience.",
@@ -484,5 +384,18 @@
       "label": "TikTok",
       "url": "https://www.tiktok.com/@lebistrotducoin41?_r=1&_t=ZN-98H20Dw4COs"
     }
-  ]
+  ],
+  "club": {
+    "presentation": "Bienvenue dans votre Club LBDC : retrouvez en un coup d’œil les avantages que vous pouvez utiliser aujourd’hui et tout ce que votre fidélité vous a déjà apporté.",
+    "programExplanation": "À chaque formule achetée, un tampon est ajouté à votre carte. Après 10 tampons, votre prochaine formule complète est offerte.",
+    "conditions": "Une seule validation fidélité par jour et par personne. Les avantages sont personnels, non cessibles et utilisables pendant leur période de validité.",
+    "rewards": [
+      "Une formule complète offerte après 10 tampons",
+      "Des coupons et offres réservés aux membres"
+    ],
+    "availableTitle": "Mes avantages disponibles",
+    "historyTitle": "Historique de mes avantages",
+    "summaryTitle": "Mon bilan Club LBDC",
+    "savingsMessage": "Grâce au Club LBDC vous avez déjà économisé {amount}."
+  }
 }
