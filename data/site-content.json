@@ -387,13 +387,13 @@
   },
   "events": [
     {
-      "title": "Nouvel événement",
-      "date": "22/09/2026",
-      "time": "20",
-      "description": "Test",
+      "title": "Fiesta",
+      "date": "01/09/2026",
+      "time": "20€",
+      "description": "Soirée musicale et repas complet ",
       "price": "20€",
-      "image": "/photos/1785862089460-img-2904.jpeg",
-      "imageAlt": "Nouvel événement"
+      "image": "/photos/1785937565962-img-4258.jpeg",
+      "imageAlt": "Fiesta"
     }
   ],
   "reviews": {
