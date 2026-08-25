@@ -150,8 +150,8 @@
       "items": [
         {
           "name": "Pélican",
-          "description": "25 cl : 4,50 € · 33 cl : 6 €",
-          "price": "50 cl : 8 €"
+          "description": "25 cl : 4,50 € · 33 cl : 6 € 50cl : 8€",
+          "price": ""
         },
         {
           "name": "Pelforth",
