@@ -387,7 +387,19 @@
       }
     ]
   },
-  "events": [],
+  "events": [
+    {
+      "title": "Soirée test LBDC",
+      "date": "2026-08-25",
+      "time": "21:17",
+      "endDate": "2026-08-25",
+      "endTime": "21:18",
+      "description": "Youhou",
+      "price": "20€",
+      "image": "/photos/1787685440691-img-4243.jpeg",
+      "imageAlt": "Soirée test LBDC"
+    }
+  ],
   "reviews": {
     "title": "Avis Google & réseaux sociaux",
     "intro": "Votre avis compte beaucoup pour nous. Consultez les témoignages de nos clients ou partagez votre expérience.",
