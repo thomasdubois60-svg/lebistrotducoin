@@ -6,8 +6,10 @@
     "email": "lebistrotducoin41220@gmail.com",
     "address": "15 Place de la Halle\n41220 Saint-Laurent-Nouan",
     "hours": "Lundi au jeudi : 7h–20h\nVendredi : 7h–15\nRestauration : 11h45–14h",
-    "closureEnabled": false,
+    "closureEnabled": true,
     "closureMessage": "Le Bistrot est exceptionnellement fermé jusqu’au 26/08/2026",
+    "closureStart": "2026-08-25T18:29:00.000Z",
+    "closureEnd": "2026-08-25T18:31:00.000Z",
     "analyticsUrl": "https://vercel.com/dashboard"
   },
   "pageTexts": {
@@ -148,8 +150,8 @@
       "items": [
         {
           "name": "Pélican",
-          "description": "25 cl : 4,50 € · 33 cl : 6 €",
-          "price": "50 cl : 8 €"
+          "description": "25 cl : 4,50 € · 33 cl : 6 € 50cl : 8€",
+          "price": ""
         },
         {
           "name": "Pelforth",
