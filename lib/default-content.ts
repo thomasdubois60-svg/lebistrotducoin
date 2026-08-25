@@ -16,7 +16,7 @@ export type ClubContent = {
 }
 export type SiteContent = {
   heroImage: string
-  general: { phone: string; phoneHref: string; email: string; address: string; hours: string; closureEnabled: boolean; closureMessage: string; analyticsUrl: string }
+  general: { phone: string; phoneHref: string; email: string; address: string; hours: string; closureEnabled: boolean; closureMessage: string; closureStart: string; closureEnd: string; analyticsUrl: string }
   pageTexts: { homeSlogan: string; todayIntro: string; menuIntro: string; galleryIntro: string; contactIntro: string; eventsIntro: string; reviewsIntro: string }
   daily: { dateLabel: string; startersTitle: string; mainsTitle: string; dessertsTitle: string; suggestionSupplementText: string; formulas: FormulaItem[]; starters: MenuItem[]; mains: MenuItem[]; suggestion: MenuItem; desserts: MenuItem[] }
   menu: MenuSection[]
@@ -35,7 +35,7 @@ export const defaultContent: SiteContent = {
     phone: '02 54 44 36 70', phoneHref: '+33254443670', email: 'lebistrotducoin41220@gmail.com',
     address: '15 Place de la Halle\n41220 Saint-Laurent-Nouan',
     hours: 'Lundi au jeudi : 7h–20h\nVendredi : 7h–15h\nRestauration : 11h45–14h',
-    closureEnabled: false, closureMessage: 'Le Bistrot est exceptionnellement fermé.',
+    closureEnabled: false, closureMessage: 'Le Bistrot est exceptionnellement fermé.', closureStart: '', closureEnd: '',
     analyticsUrl: 'https://vercel.com/dashboard'
   },
   pageTexts: {
