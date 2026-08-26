@@ -420,6 +420,18 @@
       "image": "/photos/1787764863561-img-4254.jpeg",
       "imageAlt": "Nouvel événement",
       "gallery": []
+    },
+    {
+      "title": "Nouvel événement",
+      "date": "2026-08-26",
+      "time": "19:42",
+      "endDate": "2026-08-26",
+      "endTime": "19:44",
+      "description": "Test",
+      "price": "20",
+      "image": "/photos/1787766155450-img-5958.jpeg",
+      "imageAlt": "Nouvel événement",
+      "gallery": []
     }
   ],
   "reviews": {
