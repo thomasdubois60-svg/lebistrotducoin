@@ -7,12 +7,17 @@ import { eventAnchor, eventDateLabel, partitionEvents } from '@/lib/events'
 type EventRow = ReturnType<typeof partitionEvents>['upcoming'][number]
 type LightboxPhoto = { src: string; alt: string }
 
+export function resolveEventMainPhoto(event: EventRow['event']): LightboxPhoto | null {
+  if (!event.image) return null
+  return { src: event.image, alt: event.imageAlt || event.title }
+}
+
 function EventCard({ item, past, openPhoto }: { item: EventRow; past?: boolean; openPhoto: (photo: LightboxPhoto) => void }) {
   const { event } = item
   const gallery = Array.isArray(event.gallery) ? event.gallery.filter(photo => photo?.src) : []
-  const mainPhoto = event.image ? { src: event.image, alt: event.imageAlt || event.title } : null
+  const mainPhoto = resolveEventMainPhoto(event)
   return <article className={`event-card${past ? ' event-card-past' : ''}`} id={eventAnchor(event)}>
-    {mainPhoto && (past ? <button type="button" className="event-main-photo" onClick={() => openPhoto(mainPhoto)} aria-label={`Agrandir la photo de ${event.title}`}><img src={mainPhoto.src} alt={mainPhoto.alt}/></button> : <div className="event-main-photo"><img src={mainPhoto.src} alt={mainPhoto.alt}/></div>)}
+    {mainPhoto && <button type="button" className="event-main-photo" onClick={past ? () => openPhoto(mainPhoto) : undefined} aria-label={past ? `Agrandir la photo de ${event.title}` : undefined}><img src={mainPhoto.src} alt={mainPhoto.alt}/></button>}
     <div className="event-content"><span className="eyebrow">{eventDateLabel(event)}</span><h2>{event.title}</h2><p>{event.description}</p>{event.price && <strong className="event-price">{event.price}</strong>}</div>
     {past && gallery.length > 0 && <div className="event-memory-gallery" aria-label={`Galerie souvenir de ${event.title}`}>{gallery.map((photo, index) => <button type="button" key={`${photo.src}-${index}`} onClick={() => openPhoto({ src: photo.src, alt: photo.alt || `${event.title}, photo ${index + 1}` })}><img src={photo.src} alt={photo.alt || `${event.title}, photo ${index + 1}`} loading="lazy"/></button>)}</div>}
   </article>
