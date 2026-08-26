@@ -408,6 +408,18 @@
           "alt": ""
         }
       ]
+    },
+    {
+      "title": "Nouvel événement",
+      "date": "2026-08-26",
+      "time": "19:20",
+      "endDate": "2026-08-26",
+      "endTime": "19:23",
+      "description": "Tets",
+      "price": "20€",
+      "image": "/photos/1787764863561-img-4254.jpeg",
+      "imageAlt": "Nouvel événement",
+      "gallery": []
     }
   ],
   "reviews": {
