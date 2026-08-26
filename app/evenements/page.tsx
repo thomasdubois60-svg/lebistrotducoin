@@ -12,7 +12,7 @@ function EventCard({ item, past, openPhoto }: { item: EventRow; past?: boolean; 
   const gallery = Array.isArray(event.gallery) ? event.gallery.filter(photo => photo?.src) : []
   const mainPhoto = event.image ? { src: event.image, alt: event.imageAlt || event.title } : null
   return <article className={`event-card${past ? ' event-card-past' : ''}`} id={eventAnchor(event)}>
-    {mainPhoto && <button type="button" className="event-main-photo" onClick={() => past && openPhoto(mainPhoto)} aria-label={past ? `Agrandir la photo de ${event.title}` : undefined} disabled={!past}><img src={mainPhoto.src} alt={mainPhoto.alt}/></button>}
+    {mainPhoto && (past ? <button type="button" className="event-main-photo" onClick={() => openPhoto(mainPhoto)} aria-label={`Agrandir la photo de ${event.title}`}><img src={mainPhoto.src} alt={mainPhoto.alt}/></button> : <div className="event-main-photo"><img src={mainPhoto.src} alt={mainPhoto.alt}/></div>)}
     <div className="event-content"><span className="eyebrow">{eventDateLabel(event)}</span><h2>{event.title}</h2><p>{event.description}</p>{event.price && <strong className="event-price">{event.price}</strong>}</div>
     {past && gallery.length > 0 && <div className="event-memory-gallery" aria-label={`Galerie souvenir de ${event.title}`}>{gallery.map((photo, index) => <button type="button" key={`${photo.src}-${index}`} onClick={() => openPhoto({ src: photo.src, alt: photo.alt || `${event.title}, photo ${index + 1}` })}><img src={photo.src} alt={photo.alt || `${event.title}, photo ${index + 1}`} loading="lazy"/></button>)}</div>}
   </article>
