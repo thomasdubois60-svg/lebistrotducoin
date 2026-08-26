@@ -2,7 +2,8 @@ export type MenuItem = { name: string; description?: string; price?: string; ima
 export type MenuSection = { category: string; items: MenuItem[] }
 export type GalleryItem = { src: string; alt: string; label: string }
 export type FormulaItem = { name: string; price: string; description?: string; takeawayPrice?: string }
-export type EventItem = { title: string; date: string; description: string; price?: string; image?: string; imageAlt?: string }
+export type EventGalleryItem = { src: string; alt?: string }
+export type EventItem = { title: string; date: string; description: string; price?: string; image?: string; imageAlt?: string; gallery?: EventGalleryItem[] }
 export type SocialLink = { label: string; url: string }
 export type ClubContent = {
   presentation: string
@@ -157,6 +158,30 @@ export const defaultContent: SiteContent = {
   }
 }
 
+function publishedImageUrl(value: unknown) {
+  const url = typeof value === 'string' ? value.trim().replace(/\\/g, '/') : ''
+  if (!url || /^(blob:|data:|file:)/i.test(url)) return ''
+  if (/^https:\/\//i.test(url)) return url
+  const publicPath = url.replace(/^\.?\//, '').replace(/^public\//, '')
+  return publicPath.startsWith('photos/') ? `/${publicPath}` : ''
+}
+
+function normalizeEvents(value: unknown): EventItem[] {
+  if (!Array.isArray(value)) return defaultContent.events
+  return value.map(source => {
+    const event = source && typeof source === 'object' ? source as EventItem : { title: '', date: '', description: '' }
+    const image = publishedImageUrl(event.image)
+    const normalized = { ...event }
+    if (image) normalized.image = image
+    else { delete normalized.image; delete normalized.imageAlt }
+    const gallery = Array.isArray(event.gallery) ? event.gallery.map(photo => ({
+      src: publishedImageUrl(typeof photo === 'string' ? photo : photo?.src),
+      alt: typeof photo === 'object' && typeof photo?.alt === 'string' ? photo.alt : ''
+    })).filter(photo => photo.src) : []
+    return { ...normalized, gallery }
+  })
+}
+
 export function normalizeContent(value: Partial<SiteContent> | null | undefined): SiteContent {
   return {
     ...defaultContent, ...value,
@@ -175,7 +200,7 @@ export function normalizeContent(value: Partial<SiteContent> | null | undefined)
     gallery: value?.gallery?.length ? value.gallery : defaultContent.gallery,
     story: { ...defaultContent.story, ...(value?.story || {}), paragraphs: value?.story?.paragraphs?.length ? value.story.paragraphs : defaultContent.story.paragraphs },
     privatization: { ...defaultContent.privatization, ...(value?.privatization || {}), photos: value?.privatization?.photos?.length ? value.privatization.photos : defaultContent.privatization.photos },
-    events: value?.events || defaultContent.events,
+    events: normalizeEvents(value?.events),
     reviews: { ...defaultContent.reviews, ...(value?.reviews || {}) },
     socials: value?.socials || defaultContent.socials,
     club: {
