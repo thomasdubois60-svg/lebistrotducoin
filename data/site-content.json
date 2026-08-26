@@ -387,7 +387,29 @@
       }
     ]
   },
-  "events": [],
+  "events": [
+    {
+      "title": "Nouvel événement",
+      "date": "2026-08-26",
+      "time": "18:55",
+      "endDate": "2026-08-26",
+      "endTime": "18:59",
+      "description": "Test",
+      "price": "20€",
+      "image": "/photos/1787763329099-img-4262.jpeg",
+      "imageAlt": "Nouvel événement",
+      "gallery": [
+        {
+          "src": "/photos/1787763353489-img-4258.jpeg",
+          "alt": ""
+        },
+        {
+          "src": "/photos/1787763365644-img-4709.jpeg",
+          "alt": ""
+        }
+      ]
+    }
+  ],
   "reviews": {
     "title": "Avis Google & réseaux sociaux",
     "intro": "Votre avis compte beaucoup pour nous. Consultez les témoignages de nos clients ou partagez votre expérience.",
