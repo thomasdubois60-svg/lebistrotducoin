@@ -10,6 +10,14 @@
     "closureMessage": "Le Bistrot est exceptionnellement fermé jusqu’au 26/08/2026",
     "closureStart": "2026-08-25T18:29:00.000Z",
     "closureEnd": "2026-08-25T18:31:00.000Z",
+    "reopeningPushEnabled": false,
+    "reopeningBannerEnabled": false,
+    "reopeningNotificationTitle": "Le Bistrot est de retour 🎉",
+    "reopeningNotificationMessage": "Nous sommes de nouveau ouverts. À très vite au Bistrot Du Coin !",
+    "reopeningBannerMessage": "Le Bistrot Du Coin est de retour — Nous vous attendons !",
+    "reopeningProcessedClosureEnd": "",
+    "reopeningBannerStart": "",
+    "reopeningBannerEnd": "",
     "analyticsUrl": "https://vercel.com/dashboard"
   },
   "pageTexts": {
@@ -443,6 +451,18 @@
       "price": "30",
       "image": "/photos/1787833424654-img-4257.jpeg",
       "imageAlt": "Nouvel événement",
+      "gallery": []
+    },
+    {
+      "title": "Test",
+      "date": "2026-08-27",
+      "time": "17:04",
+      "endDate": "2026-08-27",
+      "endTime": "17:08",
+      "description": "Tets",
+      "price": "40€",
+      "image": "/photos/1787843124163-img-5376.jpeg",
+      "imageAlt": "Test",
       "gallery": []
     }
   ],
