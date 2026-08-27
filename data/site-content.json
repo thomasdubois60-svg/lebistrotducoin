@@ -432,6 +432,18 @@
       "image": "/photos/1787766155450-img-5958.jpeg",
       "imageAlt": "Nouvel événement",
       "gallery": []
+    },
+    {
+      "title": "Nouvel événement",
+      "date": "2026-08-27",
+      "time": "14:23",
+      "endDate": "2026-08-27",
+      "endTime": "14:26",
+      "description": "Testtt",
+      "price": "30",
+      "image": "/photos/1787833424654-img-4257.jpeg",
+      "imageAlt": "Nouvel événement",
+      "gallery": []
     }
   ],
   "reviews": {
