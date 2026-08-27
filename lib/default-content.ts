@@ -17,7 +17,7 @@ export type ClubContent = {
 }
 export type SiteContent = {
   heroImage: string
-  general: { phone: string; phoneHref: string; email: string; address: string; hours: string; closureEnabled: boolean; closureMessage: string; closureStart: string; closureEnd: string; analyticsUrl: string }
+  general: { phone: string; phoneHref: string; email: string; address: string; hours: string; closureEnabled: boolean; closureMessage: string; closureStart: string; closureEnd: string; reopeningPushEnabled: boolean; reopeningBannerEnabled: boolean; reopeningNotificationTitle: string; reopeningNotificationMessage: string; reopeningBannerMessage: string; reopeningProcessedClosureEnd: string; reopeningBannerStart: string; reopeningBannerEnd: string; analyticsUrl: string }
   pageTexts: { homeSlogan: string; todayIntro: string; menuIntro: string; galleryIntro: string; contactIntro: string; eventsIntro: string; reviewsIntro: string }
   daily: { dateLabel: string; startersTitle: string; mainsTitle: string; dessertsTitle: string; suggestionSupplementText: string; formulas: FormulaItem[]; starters: MenuItem[]; mains: MenuItem[]; suggestion: MenuItem; desserts: MenuItem[] }
   menu: MenuSection[]
@@ -37,6 +37,11 @@ export const defaultContent: SiteContent = {
     address: '15 Place de la Halle\n41220 Saint-Laurent-Nouan',
     hours: 'Lundi au jeudi : 7h–20h\nVendredi : 7h–15h\nRestauration : 11h45–14h',
     closureEnabled: false, closureMessage: 'Le Bistrot est exceptionnellement fermé.', closureStart: '', closureEnd: '',
+    reopeningPushEnabled: false, reopeningBannerEnabled: false,
+    reopeningNotificationTitle: 'Le Bistrot est de retour 🎉',
+    reopeningNotificationMessage: 'Nous sommes de nouveau ouverts. À très vite au Bistrot Du Coin !',
+    reopeningBannerMessage: 'Le Bistrot Du Coin est de retour — Nous vous attendons !',
+    reopeningProcessedClosureEnd: '', reopeningBannerStart: '', reopeningBannerEnd: '',
     analyticsUrl: 'https://vercel.com/dashboard'
   },
   pageTexts: {
@@ -158,8 +163,9 @@ export const defaultContent: SiteContent = {
   }
 }
 
-function publishedImageUrl(value: unknown) {
-  const url = typeof value === 'string' ? value.trim().replace(/\\/g, '/') : ''
+export function publishedImageUrl(value: unknown) {
+  const candidate = value && typeof value === 'object' ? ((value as { src?: unknown; url?: unknown }).src ?? (value as { url?: unknown }).url) : value
+  const url = typeof candidate === 'string' ? candidate.trim().replace(/\\/g, '/') : ''
   if (!url || /^(blob:|data:|file:)/i.test(url)) return ''
   if (/^https:\/\//i.test(url)) return url
   const publicPath = url.replace(/^\.?\//, '').replace(/^public\//, '')

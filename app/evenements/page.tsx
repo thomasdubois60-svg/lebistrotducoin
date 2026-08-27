@@ -3,13 +3,15 @@ import { useEffect, useState } from 'react'
 import { PageHero } from '@/components/page-hero'
 import { useSiteContent } from '@/components/content-provider'
 import { eventAnchor, eventDateLabel, partitionEvents } from '@/lib/events'
+import { publishedImageUrl } from '@/lib/default-content'
 
 type EventRow = ReturnType<typeof partitionEvents>['upcoming'][number]
 type LightboxPhoto = { src: string; alt: string }
 
 export function resolveEventMainPhoto(event: EventRow['event']): LightboxPhoto | null {
-  if (!event.image) return null
-  return { src: event.image, alt: event.imageAlt || event.title }
+  const src = publishedImageUrl(event.image)
+  if (!src) return null
+  return { src, alt: event.imageAlt || event.title }
 }
 
 function EventCard({ item, past, openPhoto }: { item: EventRow; past?: boolean; openPhoto: (photo: LightboxPhoto) => void }) {
