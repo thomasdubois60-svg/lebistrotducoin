@@ -124,6 +124,27 @@
       ]
     },
     {
+      "category": "Nos pressions",
+      "items": [
+        {
+          "name": "Pélican blonde",
+          "description": "Blonde française non filtrée 7.5%",
+          "price": "25cl:4,50€/33cl:6€/50cl:8€",
+          "image": "/photos/1788086419964-img-3442.jpeg"
+        },
+        {
+          "name": "Pelforth",
+          "description": "25 cl:3,50 € · 33 cl:5€.  50cl:6€",
+          "price": ""
+        },
+        {
+          "name": "Gallia West IPA",
+          "description": "25 cl:4,50€· 33cl:6€.  50cl:8€",
+          "price": ""
+        }
+      ]
+    },
+    {
       "category": "Notre sélection de vins",
       "items": [
         {
@@ -150,27 +171,6 @@
           "name": "Délices des îles",
           "description": "Rhum blanc martiniquais, jus de maracuja, sirop de grenadine",
           "price": "8 €"
-        }
-      ]
-    },
-    {
-      "category": "Nos pressions",
-      "items": [
-        {
-          "name": "Pélican blonde",
-          "description": "Blonde française non filtrée 7.5%",
-          "price": "25cl:4,50€/33cl:6€/50cl:8€",
-          "image": "/photos/1788086419964-img-3442.jpeg"
-        },
-        {
-          "name": "Pelforth",
-          "description": "25 cl:3,50 € · 33 cl:5€.  50cl:6€",
-          "price": ""
-        },
-        {
-          "name": "Gallia West IPA",
-          "description": "25 cl:4,50€· 33cl:6€.  50cl:8€",
-          "price": ""
         }
       ]
     },
