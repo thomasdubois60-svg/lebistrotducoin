@@ -127,14 +127,14 @@
       "category": "Notre sélection de vins",
       "items": [
         {
-          "name": "Masfleur — rosé de Provence",
-          "description": "12 cl : 5 € · 25 cl : 9 €",
-          "price": "50 cl : 16 €"
+          "name": "Masfleury — rosé de Provence",
+          "description": "12 cl:5 € · 25 cl:9€.  50cl:16€",
+          "price": ""
         },
         {
           "name": "Saint-Nicolas-de-Bourgueil — rouge de Loire",
-          "description": "12 cl : 5 € · 25 cl : 9 €",
-          "price": "50 cl : 16 €"
+          "description": "12 cl:5€. 25 cl:9€. 50cl:16€",
+          "price": ""
         }
       ]
     },
@@ -157,19 +157,19 @@
       "category": "Nos pressions",
       "items": [
         {
-          "name": "Pélican",
-          "description": "25 cl : 4,50 € · 33 cl : 6 € 50cl : 8€",
+          "name": "Pélican blonde",
+          "description": "Blonde française non filtré 7,5%\n25 cl : 4,50 € · 33 cl : 6 € 50cl : 8€",
           "price": ""
         },
         {
           "name": "Pelforth",
-          "description": "25 cl : 3,50 € · 33 cl : 5 €",
-          "price": "50 cl : 6 €"
+          "description": "25 cl:3,50 € · 33 cl:5€.  50cl:6€",
+          "price": ""
         },
         {
           "name": "Gallia West IPA",
-          "description": "25 cl : 4,50 € · 33 cl : 6 €",
-          "price": "50 cl : 8 €"
+          "description": "25 cl:4,50€· 33cl:6€.  50cl:8€",
+          "price": ""
         }
       ]
     },
