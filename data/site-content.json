@@ -44,7 +44,7 @@
       {
         "name": "Plat du jour",
         "price": "10.90€",
-        "takeawayPrice": ""
+        "takeawayPrice": "9€"
       },
       {
         "name": "Dessert seul",
@@ -54,12 +54,12 @@
       {
         "name": "Entrée + plat ou plat + dessert",
         "price": "16€",
-        "takeawayPrice": ""
+        "takeawayPrice": "13€"
       },
       {
         "name": "Entrée + plat + dessert",
         "price": "17€",
-        "takeawayPrice": ""
+        "takeawayPrice": "14€"
       }
     ],
     "starters": [
@@ -404,7 +404,7 @@
       "endTime": "18:59",
       "description": "Test",
       "price": "20€",
-      "image": "/photos/1787763329099-img-4262.jpeg",
+      "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/main/public/photos/1787763329099-img-4262.jpeg",
       "imageAlt": "Nouvel événement",
       "gallery": [
         {
@@ -425,7 +425,7 @@
       "endTime": "19:23",
       "description": "Tets",
       "price": "20€",
-      "image": "/photos/1787764863561-img-4254.jpeg",
+      "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/main/public/photos/1787764863561-img-4254.jpeg",
       "imageAlt": "Nouvel événement",
       "gallery": []
     },
@@ -437,7 +437,7 @@
       "endTime": "19:44",
       "description": "Test",
       "price": "20",
-      "image": "/photos/1787766155450-img-5958.jpeg",
+      "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/main/public/photos/1787766155450-img-5958.jpeg",
       "imageAlt": "Nouvel événement",
       "gallery": []
     },
@@ -449,7 +449,7 @@
       "endTime": "14:26",
       "description": "Testtt",
       "price": "30",
-      "image": "/photos/1787833424654-img-4257.jpeg",
+      "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/main/public/photos/1787833424654-img-4257.jpeg",
       "imageAlt": "Nouvel événement",
       "gallery": []
     },
@@ -461,7 +461,7 @@
       "endTime": "17:08",
       "description": "Tets",
       "price": "40€",
-      "image": "/photos/1787843124163-img-5376.jpeg",
+      "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/main/public/photos/1787843124163-img-5376.jpeg",
       "imageAlt": "Test",
       "gallery": []
     }
