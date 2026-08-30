@@ -159,7 +159,8 @@
         {
           "name": "Pélican blonde",
           "description": "Blonde française non filtrée 7.5%",
-          "price": "25cl:4,50€/33cl:6€/50cl:8€"
+          "price": "25cl:4,50€/33cl:6€/50cl:8€",
+          "image": "/photos/1788086419964-img-3442.jpeg"
         },
         {
           "name": "Pelforth",
