@@ -540,6 +540,18 @@
       "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/main/public/photos/1788186359680-image.jpg",
       "imageAlt": "Nouvel événement",
       "gallery": []
+    },
+    {
+      "title": "Nouvel événement",
+      "date": "2026-08-31",
+      "time": "21:37",
+      "endDate": "2026-08-31",
+      "endTime": "21:45",
+      "description": "Test",
+      "price": "20€",
+      "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/main/public/photos/1788205092085-8260ac79-7632-44e0-ba4c-ab1af1354d18.png",
+      "imageAlt": "Nouvel événement",
+      "gallery": []
     }
   ],
   "reviews": {
