@@ -498,6 +498,48 @@
       "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/main/public/photos/1788180480208-img-3442.jpeg",
       "imageAlt": "Test",
       "gallery": []
+    },
+    {
+      "title": "Nouvel événement",
+      "date": "2026-08-31",
+      "time": "",
+      "endDate": "",
+      "endTime": "16:24",
+      "description": "",
+      "price": "",
+      "gallery": []
+    },
+    {
+      "title": "Nouvel événement",
+      "date": "2026-08-31",
+      "time": "16:25",
+      "endDate": "",
+      "endTime": "16:25",
+      "description": "",
+      "price": "",
+      "gallery": []
+    },
+    {
+      "title": "Nouvel événement",
+      "date": "2026-08-31",
+      "time": "16:25",
+      "endDate": "2026-08-31",
+      "endTime": "16:25",
+      "description": "",
+      "price": "",
+      "gallery": []
+    },
+    {
+      "title": "Nouvel événement",
+      "date": "2026-08-31",
+      "time": "16:25",
+      "endDate": "2026-08-31",
+      "endTime": "16:36",
+      "description": "Test",
+      "price": "40",
+      "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/main/public/photos/1788186359680-image.jpg",
+      "imageAlt": "Nouvel événement",
+      "gallery": []
     }
   ],
   "reviews": {
