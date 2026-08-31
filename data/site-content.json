@@ -114,7 +114,8 @@
         {
           "name": "Saucisson sec du terroir",
           "description": "Cèpes, nature ou piment d’Espelette",
-          "price": "6 €"
+          "price": "6 €",
+          "image": "/photos/1788180718277-img-3431.png"
         },
         {
           "name": "Chips Lay’s 145 g",
@@ -463,6 +464,38 @@
       "description": "Tets",
       "price": "40€",
       "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/main/public/photos/1787843124163-img-5376.jpeg",
+      "imageAlt": "Test",
+      "gallery": []
+    },
+    {
+      "title": "Nouvel événement",
+      "date": "2026-08-31",
+      "time": "14:46",
+      "endDate": "2026-08-31",
+      "endTime": "14:46",
+      "description": "",
+      "price": "",
+      "gallery": []
+    },
+    {
+      "title": "Nouvel événement",
+      "date": "2026-08-31",
+      "time": "14:46",
+      "endDate": "2026-08-31",
+      "endTime": "14:46",
+      "description": "",
+      "price": "",
+      "gallery": []
+    },
+    {
+      "title": "Test",
+      "date": "2026-08-31",
+      "time": "14:47",
+      "endDate": "2026-08-31",
+      "endTime": "14:56",
+      "description": "Testttest",
+      "price": "20€",
+      "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/main/public/photos/1788180480208-img-3442.jpeg",
       "imageAlt": "Test",
       "gallery": []
     }
