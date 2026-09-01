@@ -2,8 +2,7 @@ export type MenuItem = { name: string; description?: string; price?: string; ima
 export type MenuSection = { category: string; items: MenuItem[] }
 export type GalleryItem = { src: string; alt: string; label: string }
 export type FormulaItem = { name: string; price: string; description?: string; takeawayPrice?: string }
-export type EventGalleryItem = { src: string; alt?: string }
-export type EventItem = { title: string; date: string; description: string; price?: string; image?: string; imageAlt?: string; gallery?: EventGalleryItem[] }
+export type EventItem = { title: string; date: string; description: string; price?: string; image?: string; imageAlt?: string }
 export type SocialLink = { label: string; url: string }
 export type ClubContent = {
   presentation: string
@@ -17,7 +16,7 @@ export type ClubContent = {
 }
 export type SiteContent = {
   heroImage: string
-  general: { phone: string; phoneHref: string; email: string; address: string; hours: string; closureEnabled: boolean; closureMessage: string; closureStart: string; closureEnd: string; reopeningPushEnabled: boolean; reopeningBannerEnabled: boolean; reopeningNotificationTitle: string; reopeningNotificationMessage: string; reopeningBannerMessage: string; reopeningProcessedClosureEnd: string; reopeningBannerStart: string; reopeningBannerEnd: string; analyticsUrl: string }
+  general: { phone: string; phoneHref: string; email: string; address: string; hours: string; closureEnabled: boolean; closureMessage: string; closureStart: string; closureEnd: string; analyticsUrl: string }
   pageTexts: { homeSlogan: string; todayIntro: string; menuIntro: string; galleryIntro: string; contactIntro: string; eventsIntro: string; reviewsIntro: string }
   daily: { dateLabel: string; startersTitle: string; mainsTitle: string; dessertsTitle: string; suggestionSupplementText: string; formulas: FormulaItem[]; starters: MenuItem[]; mains: MenuItem[]; suggestion: MenuItem; desserts: MenuItem[] }
   menu: MenuSection[]
@@ -37,11 +36,6 @@ export const defaultContent: SiteContent = {
     address: '15 Place de la Halle\n41220 Saint-Laurent-Nouan',
     hours: 'Lundi au jeudi : 7h–20h\nVendredi : 7h–15h\nRestauration : 11h45–14h',
     closureEnabled: false, closureMessage: 'Le Bistrot est exceptionnellement fermé.', closureStart: '', closureEnd: '',
-    reopeningPushEnabled: false, reopeningBannerEnabled: false,
-    reopeningNotificationTitle: 'Le Bistrot est de retour 🎉',
-    reopeningNotificationMessage: 'Nous sommes de nouveau ouverts. À très vite au Bistrot Du Coin !',
-    reopeningBannerMessage: 'Le Bistrot Du Coin est de retour — Nous vous attendons !',
-    reopeningProcessedClosureEnd: '', reopeningBannerStart: '', reopeningBannerEnd: '',
     analyticsUrl: 'https://vercel.com/dashboard'
   },
   pageTexts: {
@@ -163,31 +157,6 @@ export const defaultContent: SiteContent = {
   }
 }
 
-export function publishedImageUrl(value: unknown) {
-  const candidate = value && typeof value === 'object' ? ((value as { src?: unknown; url?: unknown }).src ?? (value as { url?: unknown }).url) : value
-  const url = typeof candidate === 'string' ? candidate.trim().replace(/\\/g, '/') : ''
-  if (!url || /^(blob:|data:|file:)/i.test(url)) return ''
-  if (/^https:\/\//i.test(url)) return url
-  const publicPath = url.replace(/^\.?\//, '').replace(/^public\//, '')
-  return publicPath.startsWith('photos/') ? `/${publicPath}` : ''
-}
-
-function normalizeEvents(value: unknown): EventItem[] {
-  if (!Array.isArray(value)) return defaultContent.events
-  return value.map(source => {
-    const event = source && typeof source === 'object' ? source as EventItem : { title: '', date: '', description: '' }
-    const image = publishedImageUrl(event.image)
-    const normalized = { ...event }
-    if (image) normalized.image = image
-    else { delete normalized.image; delete normalized.imageAlt }
-    const gallery = Array.isArray(event.gallery) ? event.gallery.map(photo => ({
-      src: publishedImageUrl(typeof photo === 'string' ? photo : photo?.src),
-      alt: typeof photo === 'object' && typeof photo?.alt === 'string' ? photo.alt : ''
-    })).filter(photo => photo.src) : []
-    return { ...normalized, gallery }
-  })
-}
-
 export function normalizeContent(value: Partial<SiteContent> | null | undefined): SiteContent {
   return {
     ...defaultContent, ...value,
@@ -206,7 +175,7 @@ export function normalizeContent(value: Partial<SiteContent> | null | undefined)
     gallery: value?.gallery?.length ? value.gallery : defaultContent.gallery,
     story: { ...defaultContent.story, ...(value?.story || {}), paragraphs: value?.story?.paragraphs?.length ? value.story.paragraphs : defaultContent.story.paragraphs },
     privatization: { ...defaultContent.privatization, ...(value?.privatization || {}), photos: value?.privatization?.photos?.length ? value.privatization.photos : defaultContent.privatization.photos },
-    events: normalizeEvents(value?.events),
+    events: value?.events || defaultContent.events,
     reviews: { ...defaultContent.reviews, ...(value?.reviews || {}) },
     socials: value?.socials || defaultContent.socials,
     club: {
