@@ -120,7 +120,8 @@
         {
           "name": "Chips Lay’s 145 g",
           "description": "Nature, barbecue…",
-          "price": "3 €"
+          "price": "3 €",
+          "image": "/photos/1788279441459-20251210-lay-s-chips-with-crab-jpg.jpg"
         }
       ]
     },
@@ -136,7 +137,8 @@
         {
           "name": "Pelforth",
           "description": "25 cl:3,50 € · 33 cl:5€.  50cl:6€",
-          "price": ""
+          "price": "",
+          "image": "/photos/1788279358969-pelforth-blond-zapfhahn-jpg.jpg"
         },
         {
           "name": "Gallia West IPA",
@@ -551,6 +553,16 @@
       "price": "20€",
       "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/main/public/photos/1788205092085-8260ac79-7632-44e0-ba4c-ab1af1354d18.png",
       "imageAlt": "Nouvel événement",
+      "gallery": []
+    },
+    {
+      "title": "Test",
+      "date": "2026-09-01",
+      "time": "18:12",
+      "endDate": "2026-09-01",
+      "endTime": "18:12",
+      "description": "",
+      "price": "",
       "gallery": []
     }
   ],
