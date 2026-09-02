@@ -21,11 +21,22 @@ async function githubFile() {
   return response.json()
 }
 
+async function rawGithubContent() {
+  const { repo, branch } = settings()
+  const path = repo.split('/').map(encodeURIComponent).join('/')
+  const response = await fetch(`https://raw.githubusercontent.com/${path}/${encodeURIComponent(branch)}/data/site-content.json`, {
+    headers: { Accept: 'application/json', 'User-Agent': 'LeBistrotDuCoin/1.0 content-reader' },
+    cache: 'no-store'
+  })
+  if (!response.ok) return null
+  return response.text()
+}
+
 export async function GET() {
   const file = await githubFile()
-  if (!file?.content) return NextResponse.json(defaultContent)
   try {
-    const text = Buffer.from(file.content, 'base64').toString('utf8')
+    const text = file?.content ? Buffer.from(file.content, 'base64').toString('utf8') : await rawGithubContent()
+    if (!text) return NextResponse.json(defaultContent)
     return NextResponse.json(normalizeContent(JSON.parse(text)))
   } catch { return NextResponse.json(defaultContent) }
 }
