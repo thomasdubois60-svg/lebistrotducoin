@@ -597,6 +597,16 @@
       "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/main/public/photos/1788367487515-img-3485.png",
       "imageAlt": "Test",
       "gallery": []
+    },
+    {
+      "title": "Nouvel événement",
+      "date": "2026-09-03",
+      "time": "16:10",
+      "endDate": "2026-09-03",
+      "endTime": "16:17",
+      "description": "T",
+      "price": "T",
+      "gallery": []
     }
   ],
   "reviews": {
