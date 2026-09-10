@@ -620,6 +620,18 @@
       "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/6eb7e74ae3844a44b2bd27a414ef6a34b2f9e525/public/photos/5171f018-ac2f-4ccb-bc91-f387f69b8ec1-img-3481.jpg",
       "imageAlt": "Nouvel événement",
       "gallery": []
+    },
+    {
+      "title": "Nouvel événement",
+      "date": "2026-09-10",
+      "time": "10:42",
+      "endDate": "2026-09-10",
+      "endTime": "10:46",
+      "description": "Tets",
+      "price": "40",
+      "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/7c41c0f83b5890c4074ca5dcd3dea6c55b4d17d3/public/photos/a0e17320-482f-40cb-80d3-b8a079da32db-image.jpg",
+      "imageAlt": "Nouvel événement",
+      "gallery": []
     }
   ],
   "reviews": {
