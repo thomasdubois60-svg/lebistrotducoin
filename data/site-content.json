@@ -143,7 +143,8 @@
         {
           "name": "Gallia West IPA",
           "description": "25 cl:4,50€· 33cl:6€.  50cl:8€",
-          "price": ""
+          "price": "",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/2e53b2671e13d4a321a6a113542d5aa35d4f4169/public/photos/574ed9ad-78ac-4de0-9fc5-d494cd897839-international-phonetic-alphabet-translated-into-basque-beste-sinbolo-b.png"
         }
       ]
     },
