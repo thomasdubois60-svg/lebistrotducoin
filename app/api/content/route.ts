@@ -13,8 +13,8 @@ const settings = () => ({
 async function githubFile() {
   const { token, repo, branch } = settings()
   if (!token) return null
-  const response = await fetch(`https://api.github.com/repos/${repo}/contents/data/site-content.json?ref=${branch}`, {
-    headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28' },
+  const response = await fetch(`https://api.github.com/repos/${repo}/contents/data/site-content.json?ref=${encodeURIComponent(branch)}&publication=${Date.now()}`, {
+    headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28', 'Cache-Control': 'no-cache' },
     cache: 'no-store'
   })
   if (!response.ok) return null
@@ -24,8 +24,8 @@ async function githubFile() {
 async function rawGithubContent() {
   const { repo, branch } = settings()
   const path = repo.split('/').map(encodeURIComponent).join('/')
-  const response = await fetch(`https://raw.githubusercontent.com/${path}/${encodeURIComponent(branch)}/data/site-content.json`, {
-    headers: { Accept: 'application/json', 'User-Agent': 'LeBistrotDuCoin/1.0 content-reader' },
+  const response = await fetch(`https://raw.githubusercontent.com/${path}/${encodeURIComponent(branch)}/data/site-content.json?publication=${Date.now()}`, {
+    headers: { Accept: 'application/json', 'User-Agent': 'LeBistrotDuCoin/1.0 content-reader', 'Cache-Control': 'no-cache' },
     cache: 'no-store'
   })
   if (!response.ok) return null
@@ -37,7 +37,7 @@ export async function GET() {
   try {
     const text = file?.content ? Buffer.from(file.content, 'base64').toString('utf8') : await rawGithubContent()
     if (!text) return NextResponse.json(defaultContent)
-    return NextResponse.json(normalizeContent(JSON.parse(text)))
+    return NextResponse.json(normalizeContent(JSON.parse(text)), { headers: { 'Cache-Control': 'no-store, max-age=0' } })
   } catch { return NextResponse.json(defaultContent) }
 }
 
