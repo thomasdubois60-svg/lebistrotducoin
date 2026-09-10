@@ -607,6 +607,18 @@
       "description": "T",
       "price": "T",
       "gallery": []
+    },
+    {
+      "title": "Nouvel événement",
+      "date": "2026-09-10",
+      "time": "10:39",
+      "endDate": "2026-09-10",
+      "endTime": "10:42",
+      "description": "Test",
+      "price": "20€",
+      "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/6eb7e74ae3844a44b2bd27a414ef6a34b2f9e525/public/photos/5171f018-ac2f-4ccb-bc91-f387f69b8ec1-img-3481.jpg",
+      "imageAlt": "Nouvel événement",
+      "gallery": []
     }
   ],
   "reviews": {
