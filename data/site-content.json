@@ -632,6 +632,48 @@
       "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/7c41c0f83b5890c4074ca5dcd3dea6c55b4d17d3/public/photos/a0e17320-482f-40cb-80d3-b8a079da32db-image.jpg",
       "imageAlt": "Nouvel événement",
       "gallery": []
+    },
+    {
+      "title": "Nouvel événement",
+      "date": "2026-09-12",
+      "time": "15:06",
+      "endDate": "2026-09-17",
+      "endTime": "15:14",
+      "description": "Je ",
+      "price": "40€",
+      "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/8341cc98af22769c190c5fb4a32f4558becc5203/public/photos/fff9c87d-7788-49a8-bcae-922d690587c8-image.jpg",
+      "imageAlt": "BG",
+      "gallery": []
+    },
+    {
+      "title": "Nouvel événement",
+      "date": "",
+      "time": "",
+      "endDate": "",
+      "endTime": "",
+      "description": "",
+      "price": "",
+      "gallery": []
+    },
+    {
+      "title": "Nouvel événement",
+      "date": "",
+      "time": "",
+      "endDate": "",
+      "endTime": "",
+      "description": "",
+      "price": "",
+      "gallery": []
+    },
+    {
+      "title": "Nouvel événement",
+      "date": "",
+      "time": "",
+      "endDate": "",
+      "endTime": "",
+      "description": "",
+      "price": "",
+      "gallery": []
     }
   ],
   "reviews": {
