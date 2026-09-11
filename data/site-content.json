@@ -535,18 +535,6 @@
     },
     {
       "title": "Nouvel événement",
-      "date": "2026-08-31",
-      "time": "16:25",
-      "endDate": "2026-08-31",
-      "endTime": "16:36",
-      "description": "Test",
-      "price": "40",
-      "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/main/public/photos/1788186359680-image.jpg",
-      "imageAlt": "Nouvel événement",
-      "gallery": []
-    },
-    {
-      "title": "Nouvel événement",
       "date": "2026-09-10",
       "time": "10:39",
       "endDate": "2026-09-10",
