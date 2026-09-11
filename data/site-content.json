@@ -631,7 +631,12 @@
       "price": "40",
       "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/7c41c0f83b5890c4074ca5dcd3dea6c55b4d17d3/public/photos/a0e17320-482f-40cb-80d3-b8a079da32db-image.jpg",
       "imageAlt": "Nouvel événement",
-      "gallery": []
+      "gallery": [
+        {
+          "src": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/484c7b312227b09b34e5e7cca93162b3e5c2779d/public/photos/78310f5e-e453-45d9-8995-b402cd7da010-image.jpg",
+          "alt": ""
+        }
+      ]
     },
     {
       "title": "Soirée concert ",
