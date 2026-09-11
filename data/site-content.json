@@ -634,15 +634,35 @@
       "gallery": []
     },
     {
-      "title": "Nouvel événement",
+      "title": "Soirée concert ",
       "date": "2026-09-12",
       "time": "15:06",
       "endDate": "2026-09-17",
       "endTime": "15:14",
       "description": "Je ",
       "price": "40€",
-      "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/8341cc98af22769c190c5fb4a32f4558becc5203/public/photos/fff9c87d-7788-49a8-bcae-922d690587c8-image.jpg",
+      "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/deeeb4966a4be2cd460212e5b9877a6e308fce26/public/photos/6ca3235d-a98e-46b8-b2a6-0c02ff32d6a4-image.jpg",
       "imageAlt": "BG",
+      "gallery": []
+    },
+    {
+      "title": "Nouvel événement",
+      "date": "",
+      "time": "",
+      "endDate": "",
+      "endTime": "",
+      "description": "",
+      "price": "",
+      "gallery": []
+    },
+    {
+      "title": "Nouvel événement",
+      "date": "",
+      "time": "",
+      "endDate": "",
+      "endTime": "",
+      "description": "",
+      "price": "",
       "gallery": []
     },
     {
