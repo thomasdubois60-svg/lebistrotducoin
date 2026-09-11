@@ -635,14 +635,34 @@
     },
     {
       "title": "Soirée concert ",
-      "date": "2026-09-12",
-      "time": "15:06",
+      "date": "2026-09-14",
+      "time": "20:00",
       "endDate": "2026-09-17",
-      "endTime": "15:14",
-      "description": "Je ",
+      "endTime": "15:21",
+      "description": "Youpi",
       "price": "40€",
-      "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/deeeb4966a4be2cd460212e5b9877a6e308fce26/public/photos/6ca3235d-a98e-46b8-b2a6-0c02ff32d6a4-image.jpg",
+      "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/57b65590cce1d92b82789f51301f3f2eb669716a/public/photos/da265c9a-a5c6-4dec-8af6-f38b6582c93e-img-3501.jpg",
       "imageAlt": "BG",
+      "gallery": []
+    },
+    {
+      "title": "Nouvel événement",
+      "date": "",
+      "time": "",
+      "endDate": "",
+      "endTime": "",
+      "description": "",
+      "price": "",
+      "gallery": []
+    },
+    {
+      "title": "Nouvel événement",
+      "date": "",
+      "time": "",
+      "endDate": "",
+      "endTime": "",
+      "description": "",
+      "price": "",
       "gallery": []
     },
     {
