@@ -1,5 +1,6 @@
 {
   "framework": "nextjs",
+  "ignoreCommand": "node scripts/ignore-content-build.cjs",
   "cleanUrls": true,
   "crons": [{ "path": "/api/cron/welcome-reminders", "schedule": "0 7 * * *" }]
 }
