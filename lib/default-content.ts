@@ -1,3 +1,4 @@
+import { normalizeGalleryAlbums, GalleryAlbum } from './gallery-albums'
 export type MenuItem = { name: string; description?: string; price?: string; image?: string; imageAlt?: string }
 export type MenuSection = { category: string; items: MenuItem[] }
 export type GalleryItem = { src: string; alt: string; label: string }
@@ -21,6 +22,7 @@ export type SiteContent = {
   daily: { dateLabel: string; startersTitle: string; mainsTitle: string; dessertsTitle: string; suggestionSupplementText: string; formulas: FormulaItem[]; starters: MenuItem[]; mains: MenuItem[]; suggestion: MenuItem; desserts: MenuItem[] }
   menu: MenuSection[]
   gallery: GalleryItem[]
+  galleryAlbums?: GalleryAlbum[]
   story: { eyebrow: string; title: string; intro: string; paragraphs: string[]; quote: string; image: string; imageAlt: string }
   privatization: { title: string; intro: string; text: string; photos: GalleryItem[] }
   events: EventItem[]
@@ -172,6 +174,7 @@ export function normalizeContent(value: Partial<SiteContent> | null | undefined)
       suggestion: { ...defaultContent.daily.suggestion, ...(value?.daily?.suggestion || {}) }
     },
     menu: value?.menu?.length ? value.menu : defaultContent.menu,
+    galleryAlbums: normalizeGalleryAlbums({...value,gallery:Array.isArray(value?.gallery)?value.gallery:defaultContent.gallery}),
     gallery: value?.gallery?.length ? value.gallery : defaultContent.gallery,
     story: { ...defaultContent.story, ...(value?.story || {}), paragraphs: value?.story?.paragraphs?.length ? value.story.paragraphs : defaultContent.story.paragraphs },
     privatization: { ...defaultContent.privatization, ...(value?.privatization || {}), photos: value?.privatization?.photos?.length ? value.privatization.photos : defaultContent.privatization.photos },

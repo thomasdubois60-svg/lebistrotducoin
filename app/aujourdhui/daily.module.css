@@ -1,0 +1,1 @@
+.withImage{align-items:flex-start;gap:12px}.image{width:80px;height:72px;object-fit:cover;border-radius:6px;flex-shrink:0}.text{flex:1;min-width:0;overflow-wrap:anywhere}.withImage>span{flex-shrink:0}@media(max-width:480px){.image{width:64px;height:64px}.withImage{gap:10px;flex-wrap:wrap}.text{flex-basis:calc(100% - 74px)}.withImage>span{margin-left:74px}}
