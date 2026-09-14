@@ -168,9 +168,9 @@ export function normalizeContent(value: Partial<SiteContent> | null | undefined)
     daily: {
       ...defaultContent.daily, ...(value?.daily || {}),
       formulas: value?.daily?.formulas?.length ? value.daily.formulas : defaultContent.daily.formulas,
-      starters: value?.daily?.starters?.length ? value.daily.starters : defaultContent.daily.starters,
-      mains: value?.daily?.mains?.length ? value.daily.mains : defaultContent.daily.mains,
-      desserts: value?.daily?.desserts?.length ? value.daily.desserts : defaultContent.daily.desserts,
+      starters: Array.isArray(value?.daily?.starters) ? value.daily.starters : defaultContent.daily.starters,
+      mains: Array.isArray(value?.daily?.mains) ? value.daily.mains : defaultContent.daily.mains,
+      desserts: Array.isArray(value?.daily?.desserts) ? value.daily.desserts : defaultContent.daily.desserts,
       suggestion: { ...defaultContent.daily.suggestion, ...(value?.daily?.suggestion || {}) }
     },
     menu: value?.menu?.length ? value.menu : defaultContent.menu,

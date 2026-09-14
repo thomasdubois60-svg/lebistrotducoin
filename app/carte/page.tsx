@@ -1,4 +1,5 @@
 'use client'
+import { useEffect } from 'react'
 import Image from 'next/image'
 import { PageHero } from '@/components/page-hero'
 import { useSiteContent } from '@/components/content-provider'
@@ -14,6 +15,21 @@ const slugify = (value: string, index: number) => {
 
 export default function MenuPage() {
   const { menu, pageTexts } = useSiteContent()
+  useEffect(() => {
+    const refresh = () => {
+      if (document.visibilityState === 'visible') window.dispatchEvent(new Event('bistrot-content-updated'))
+    }
+    refresh()
+    window.addEventListener('focus', refresh)
+    window.addEventListener('pageshow', refresh)
+    document.addEventListener('visibilitychange', refresh)
+    return () => {
+      window.removeEventListener('focus', refresh)
+      window.removeEventListener('pageshow', refresh)
+      document.removeEventListener('visibilitychange', refresh)
+    }
+  }, [])
+
   return <>
     <PageHero eyebrow="Notre cuisine" title="La carte" text={pageTexts.menuIntro}/>
     <nav className="category-nav" aria-label="Accès rapide aux catégories"><div className="container category-nav-inner">
