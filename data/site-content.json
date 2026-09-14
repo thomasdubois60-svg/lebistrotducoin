@@ -433,30 +433,9 @@
   ],
   "galleryAlbums": [
     {
-      "id": "0d0fa149-89c8-4a29-9075-085ef4ef5979",
-      "title": "Nos desserts",
-      "order": 0,
-      "photos": [
-        {
-          "id": "719b7b74-d536-4a80-85fb-dd68df3b89e8",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/dc7ec0f49186792922427ec60c1cec43109fe3e2/public/photos/5a67e24e-b222-4353-aead-623562909d5c-img-4257.jpg",
-          "imageAlt": "",
-          "label": "",
-          "order": 0
-        },
-        {
-          "id": "a779e98d-339e-4a81-ab71-f2177b166347",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/1bb9d92eec90d32be76999e2ff01af631b52ab96/public/photos/c92936ef-103c-4e98-b0c6-8ab68fd41353-img-4243.jpg",
-          "imageAlt": "",
-          "label": "",
-          "order": 1
-        }
-      ]
-    },
-    {
       "id": "a98e3f9c-ad91-480c-8d89-0dd80ef34dce",
       "title": "Le Bistrot ",
-      "order": 1,
+      "order": 0,
       "photos": [
         {
           "id": "a045dac0-71df-44b9-95b2-5a02f326a4b0",
@@ -484,7 +463,7 @@
     {
       "id": "dcf934a6-c00d-445d-bbb8-0797fcefd36b",
       "title": "Nos entrées ",
-      "order": 2,
+      "order": 1,
       "photos": [
         {
           "id": "318a0896-4bb2-4bff-9538-0fe54a38928f",
@@ -505,13 +484,13 @@
     {
       "id": "legacy-gallery",
       "title": "Galerie",
-      "order": 3,
+      "order": 2,
       "photos": []
     },
     {
       "id": "c24e95cd-6397-4a70-9e5a-844fc5b04c64",
       "title": "Nos plats ",
-      "order": 4,
+      "order": 3,
       "photos": [
         {
           "id": "081336ff-3238-42d5-8b7e-116b074bc5ef",
@@ -540,6 +519,34 @@
           "imageAlt": "",
           "label": "",
           "order": 3
+        }
+      ]
+    },
+    {
+      "id": "0d0fa149-89c8-4a29-9075-085ef4ef5979",
+      "title": "Nos desserts",
+      "order": 4,
+      "photos": [
+        {
+          "id": "a779e98d-339e-4a81-ab71-f2177b166347",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/1bb9d92eec90d32be76999e2ff01af631b52ab96/public/photos/c92936ef-103c-4e98-b0c6-8ab68fd41353-img-4243.jpg",
+          "imageAlt": "",
+          "label": "",
+          "order": 0
+        },
+        {
+          "id": "719b7b74-d536-4a80-85fb-dd68df3b89e8",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/dc7ec0f49186792922427ec60c1cec43109fe3e2/public/photos/5a67e24e-b222-4353-aead-623562909d5c-img-4257.jpg",
+          "imageAlt": "",
+          "label": "",
+          "order": 1
+        },
+        {
+          "id": "ff6eecf7-9e59-4e64-ac55-be573f3cd11d",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/4381f20683399c736dc0420489f0970952d7f53c/public/photos/688a240d-399c-42d6-ba77-f962e9891e47-img-4262.jpg",
+          "imageAlt": "",
+          "label": "",
+          "order": 2
         }
       ]
     }
