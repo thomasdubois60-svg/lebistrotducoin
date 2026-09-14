@@ -108,29 +108,6 @@
   },
   "menu": [
     {
-      "category": "À partager… ou pas",
-      "items": [
-        {
-          "name": "Planche mixte",
-          "description": "Rosette de Lyon, chorizo, terrine du moment, jambon de pays, jambon blanc et sélection de 3 fromages",
-          "price": "20 €",
-          "image": "/photos/1785937341703-img-5882.jpeg"
-        },
-        {
-          "name": "Saucisson sec du terroir",
-          "description": "Cèpes, nature ou piment d’Espelette",
-          "price": "6 €",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/f71845d6d308c36d9494a68c1389f6acb85de321/public/photos/642de4d8-27d5-4043-b9ee-dd190c061425-img-3482.jpg"
-        },
-        {
-          "name": "Chips Lay’s 145 g",
-          "description": "Nature, barbecue…",
-          "price": "3 €",
-          "image": "/photos/1788279441459-20251210-lay-s-chips-with-crab-jpg.jpg"
-        }
-      ]
-    },
-    {
       "category": "Nos pressions",
       "items": [
         {
@@ -150,6 +127,34 @@
           "description": "25 cl:4,50€· 33cl:6€.  50cl:8€",
           "price": "",
           "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/2e53b2671e13d4a321a6a113542d5aa35d4f4169/public/photos/574ed9ad-78ac-4de0-9fc5-d494cd897839-international-phonetic-alphabet-translated-into-basque-beste-sinbolo-b.png"
+        },
+        {
+          "name": "Pélican rouge ",
+          "description": "",
+          "price": "25cl:4,50€"
+        }
+      ]
+    },
+    {
+      "category": "À partager… ou pas",
+      "items": [
+        {
+          "name": "Planche mixte",
+          "description": "Rosette de Lyon, chorizo, terrine du moment, jambon de pays, jambon blanc et sélection de 3 fromages",
+          "price": "20 €",
+          "image": "/photos/1785937341703-img-5882.jpeg"
+        },
+        {
+          "name": "Saucisson sec du terroir",
+          "description": "Cèpes, nature ou piment d’Espelette",
+          "price": "6 €",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/f71845d6d308c36d9494a68c1389f6acb85de321/public/photos/642de4d8-27d5-4043-b9ee-dd190c061425-img-3482.jpg"
+        },
+        {
+          "name": "Chips Lay’s 145 g",
+          "description": "Nature, barbecue…",
+          "price": "3 €",
+          "image": "/photos/1788279441459-20251210-lay-s-chips-with-crab-jpg.jpg"
         }
       ]
     },
