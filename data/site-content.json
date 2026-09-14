@@ -132,6 +132,10 @@
           "name": "Pélican rouge ",
           "description": "Bière rouge à la griotte ",
           "price": "25cl:4,50€"
+        },
+        {
+          "name": "Chouffe / Duvel / Triple Karmeliet / Rince Cochon / Leffe",
+          "price": "5 €"
         }
       ]
     },
@@ -192,10 +196,6 @@
     {
       "category": "Bières en bouteille",
       "items": [
-        {
-          "name": "Chouffe / Duvel / Triple Karmeliet / Rince Cochon / Leffe",
-          "price": "5 €"
-        },
         {
           "name": "Paix Dieu / Orval / Queue de Charrue",
           "price": "6 €"
