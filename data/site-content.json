@@ -64,24 +64,30 @@
     ],
     "starters": [
       {
-        "name": "Oeuf mayo"
+        "name": "Oeuf mayo",
+        "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/fcf9f42918bce09dedfbdee77ac8a0f43c99646a/public/photos/cb478ccd-a7d6-48b2-8085-3b36aad1fc6a-oeufs-durs-mayonnaise.jpg"
       },
       {
-        "name": "Terrine du jour"
+        "name": "Terrine du jour",
+        "image": ""
       },
       {
-        "name": "Salade"
+        "name": "Salade",
+        "image": ""
       }
     ],
     "mains": [
       {
-        "name": "saucisse"
+        "name": "saucisse",
+        "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/cb158a960236e1e361769ac6a0d975d22d3e8b99/public/photos/bc23f6d8-5185-4541-a8a2-e0ca13e9143c-img-5958.jpg"
       },
       {
-        "name": "Plat du jour 2"
+        "name": "Plat du jour 2",
+        "image": ""
       },
       {
-        "name": "Plat du jour 3"
+        "name": "Plat du jour 3",
+        "image": ""
       }
     ],
     "suggestion": {
@@ -91,13 +97,16 @@
     },
     "desserts": [
       {
-        "name": "Dessert du jour 1"
+        "name": "Dessert du jour 1",
+        "image": ""
       },
       {
-        "name": "Dessert du jour 2"
+        "name": "Dessert du jour 2",
+        "image": ""
       },
       {
-        "name": "Dessert du jour 3"
+        "name": "Dessert du jour 3",
+        "image": ""
       }
     ]
   },
@@ -420,6 +429,126 @@
     {
       "label": "TikTok",
       "url": "https://www.tiktok.com/@lebistrotducoin41?_r=1&_t=ZN-98H20Dw4COs"
+    }
+  ],
+  "galleryAlbums": [
+    {
+      "id": "a98e3f9c-ad91-480c-8d89-0dd80ef34dce",
+      "title": "Le Bistrot ",
+      "order": 0,
+      "photos": [
+        {
+          "id": "a045dac0-71df-44b9-95b2-5a02f326a4b0",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/db3aac756fe186480830851eba90ed663b726d44/public/photos/33e57f5a-d012-4bfa-a932-b2ae9cfb3a7e-4e640c88-7ac5-48c4-b308-55e38ac904e0.jpg",
+          "imageAlt": "",
+          "label": "",
+          "order": 0
+        },
+        {
+          "id": "65dcd893-7cb2-48ae-99d4-0120e0a3d5da",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/878352093789771b04be1c7a1a546006a493dc06/public/photos/f2708160-2e62-472e-af73-dc7f904d60db-img-4189.jpg",
+          "imageAlt": "",
+          "label": "",
+          "order": 1
+        },
+        {
+          "id": "0cb95ac0-db39-4625-bf9b-a80bd0f6b459",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/f954fea6b83fcfdf20d992635dae019592187200/public/photos/4e33cb8e-4e36-4562-9290-014396c65700-img-4218.jpg",
+          "imageAlt": "",
+          "label": "",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "dcf934a6-c00d-445d-bbb8-0797fcefd36b",
+      "title": "Nos entrées ",
+      "order": 1,
+      "photos": [
+        {
+          "id": "318a0896-4bb2-4bff-9538-0fe54a38928f",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/33fd6004d077203705fd4dfee67b78b846b3b445/public/photos/92fc82da-abbe-42a2-9907-eaf9cd00df89-img-5876.jpg",
+          "imageAlt": "",
+          "label": "",
+          "order": 0
+        },
+        {
+          "id": "80b9ddca-9369-4b5f-affc-c49861acccca",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/04ccea0b39697e5d44fde09e27499da688a21e30/public/photos/4a7a0cdf-58a3-4644-9f1b-36f05ac1c3c0-img-0041.jpg",
+          "imageAlt": "",
+          "label": "",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "legacy-gallery",
+      "title": "Galerie",
+      "order": 2,
+      "photos": []
+    },
+    {
+      "id": "c24e95cd-6397-4a70-9e5a-844fc5b04c64",
+      "title": "Nos plats ",
+      "order": 3,
+      "photos": [
+        {
+          "id": "081336ff-3238-42d5-8b7e-116b074bc5ef",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/f57b8815a3586001772629f2a65f9f9582502aab/public/photos/05c331af-9b0b-44d0-bef5-1587e3370ca9-img-4256.jpg",
+          "imageAlt": "",
+          "label": "",
+          "order": 0
+        },
+        {
+          "id": "f8b541c3-72b6-4b1e-af09-dd5b84b89ebb",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/7d741d0da8e2830446b42bc88183f78d119a5b82/public/photos/7ed70d09-64e4-429d-9af0-df49d6ff5c93-img-4258.jpg",
+          "imageAlt": "",
+          "label": "",
+          "order": 1
+        },
+        {
+          "id": "df2c4a81-2bff-410d-af20-a0edc290bd30",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/833cc3be12d1f6cb8325221d9d7e93dae2f46054/public/photos/58c2018c-43b2-4340-ada7-04b9541fcfb7-img-5853.jpg",
+          "imageAlt": "",
+          "label": "",
+          "order": 2
+        },
+        {
+          "id": "42a7ab66-1e09-4a4c-8901-f49347bf3a54",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/dbb91e6b942423c3b9ed1a493d6ba8fb434f8423/public/photos/e92b4911-8b20-4bc0-b5a4-5c956184f8e2-img-5376.jpg",
+          "imageAlt": "",
+          "label": "",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": "0d0fa149-89c8-4a29-9075-085ef4ef5979",
+      "title": "Nos desserts",
+      "order": 4,
+      "photos": [
+        {
+          "id": "a779e98d-339e-4a81-ab71-f2177b166347",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/1bb9d92eec90d32be76999e2ff01af631b52ab96/public/photos/c92936ef-103c-4e98-b0c6-8ab68fd41353-img-4243.jpg",
+          "imageAlt": "",
+          "label": "",
+          "order": 0
+        },
+        {
+          "id": "719b7b74-d536-4a80-85fb-dd68df3b89e8",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/dc7ec0f49186792922427ec60c1cec43109fe3e2/public/photos/5a67e24e-b222-4353-aead-623562909d5c-img-4257.jpg",
+          "imageAlt": "",
+          "label": "",
+          "order": 1
+        },
+        {
+          "id": "ff6eecf7-9e59-4e64-ac55-be573f3cd11d",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/4381f20683399c736dc0420489f0970952d7f53c/public/photos/688a240d-399c-42d6-ba77-f962e9891e47-img-4262.jpg",
+          "imageAlt": "",
+          "label": "",
+          "order": 2
+        }
+      ]
     }
   ]
 }
