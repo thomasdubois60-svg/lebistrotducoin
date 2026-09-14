@@ -140,6 +140,15 @@
       ]
     },
     {
+      "category": "Bières en bouteille",
+      "items": [
+        {
+          "name": "Paix Dieu / Orval / Queue de Charrue",
+          "price": "6 €"
+        }
+      ]
+    },
+    {
       "category": "À partager… ou pas",
       "items": [
         {
@@ -190,15 +199,6 @@
           "name": "Délices des îles",
           "description": "Rhum blanc martiniquais, jus de maracuja, sirop de grenadine",
           "price": "8 €"
-        }
-      ]
-    },
-    {
-      "category": "Bières en bouteille",
-      "items": [
-        {
-          "name": "Paix Dieu / Orval / Queue de Charrue",
-          "price": "6 €"
         }
       ]
     },
