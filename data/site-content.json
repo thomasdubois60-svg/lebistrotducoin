@@ -65,7 +65,7 @@
     "starters": [
       {
         "name": "Oeuf mayo",
-        "image": ""
+        "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/fcf9f42918bce09dedfbdee77ac8a0f43c99646a/public/photos/cb478ccd-a7d6-48b2-8085-3b36aad1fc6a-oeufs-durs-mayonnaise.jpg"
       },
       {
         "name": "Terrine du jour",
@@ -79,7 +79,7 @@
     "mains": [
       {
         "name": "saucisse",
-        "image": ""
+        "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/cb158a960236e1e361769ac6a0d975d22d3e8b99/public/photos/bc23f6d8-5185-4541-a8a2-e0ca13e9143c-img-5958.jpg"
       },
       {
         "name": "Plat du jour 2",
