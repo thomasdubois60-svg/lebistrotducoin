@@ -15,6 +15,20 @@ function Album({ album, onOpen }: { album: GalleryAlbum; onOpen: (photo: AlbumPh
 
 export default function GalleryPage() {
   const content = useSiteContent()
+  useEffect(() => {
+    const refresh = () => {
+      if (document.visibilityState === 'visible') window.dispatchEvent(new Event('bistrot-content-updated'))
+    }
+    refresh()
+    window.addEventListener('focus', refresh)
+    window.addEventListener('pageshow', refresh)
+    document.addEventListener('visibilitychange', refresh)
+    return () => {
+      window.removeEventListener('focus', refresh)
+      window.removeEventListener('pageshow', refresh)
+      document.removeEventListener('visibilitychange', refresh)
+    }
+  }, [])
   const albums = normalizeGalleryAlbums(content).map(album => ({ ...album, photos: album.photos.filter(photo => validImage(photo.image)) })).filter(album => album.photos.length)
   const dialog = useRef<HTMLDialogElement>(null)
   const [selected, setSelected] = useState<{photo: AlbumPhoto; title: string} | null>(null)
