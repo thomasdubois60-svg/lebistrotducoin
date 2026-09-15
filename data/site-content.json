@@ -70,10 +70,6 @@
       {
         "name": "Terrine du jour",
         "image": ""
-      },
-      {
-        "name": "Salade",
-        "image": ""
       }
     ],
     "mains": [
@@ -88,7 +84,7 @@
     ],
     "suggestion": {
       "name": "Suggestion du chef",
-      "description": "Faux filets",
+      "description": "Faux filetssss",
       "price": "+4 €"
     },
     "desserts": [
