@@ -88,7 +88,7 @@
     ],
     "suggestion": {
       "name": "Suggestion du chef",
-      "description": "Faux filet ",
+      "description": "Faux filets",
       "price": "+4 €"
     },
     "desserts": [
@@ -98,10 +98,6 @@
       },
       {
         "name": "Dessert du jour 2",
-        "image": ""
-      },
-      {
-        "name": "Dessert du jour 3",
         "image": ""
       }
     ]
