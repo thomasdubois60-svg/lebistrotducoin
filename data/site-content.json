@@ -100,6 +100,19 @@
   },
   "menu": [
     {
+      "category": "Bières en bouteille",
+      "items": [
+        {
+          "name": "Paix Dieu / Orval / Queue de Charrue",
+          "price": "6 €"
+        },
+        {
+          "name": "Chouffe / Duvel / Triple Karmeliet / Rince Cochon / Leffe",
+          "price": "5 €"
+        }
+      ]
+    },
+    {
       "category": "Nos pressions",
       "items": [
         {
@@ -124,19 +137,6 @@
           "name": "Pélican rouge ",
           "description": "Bière rouge à la griotte ",
           "price": "25cl:4,50€"
-        }
-      ]
-    },
-    {
-      "category": "Bières en bouteille",
-      "items": [
-        {
-          "name": "Paix Dieu / Orval / Queue de Charrue",
-          "price": "6 €"
-        },
-        {
-          "name": "Chouffe / Duvel / Triple Karmeliet / Rince Cochon / Leffe",
-          "price": "5 €"
         }
       ]
     },
