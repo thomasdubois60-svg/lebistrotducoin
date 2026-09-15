@@ -108,6 +108,15 @@
   },
   "menu": [
     {
+      "category": "Bières en bouteille",
+      "items": [
+        {
+          "name": "Paix Dieu / Orval / Queue de Charrue",
+          "price": "6 €"
+        }
+      ]
+    },
+    {
       "category": "Nos pressions",
       "items": [
         {
@@ -136,15 +145,6 @@
         {
           "name": "Chouffe / Duvel / Triple Karmeliet / Rince Cochon / Leffe",
           "price": "5 €"
-        }
-      ]
-    },
-    {
-      "category": "Bières en bouteille",
-      "items": [
-        {
-          "name": "Paix Dieu / Orval / Queue de Charrue",
-          "price": "6 €"
         }
       ]
     },
