@@ -1,5 +1,5 @@
 {
-  "heroImage": "/photos/facade.webp",
+  "heroImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/7d712cac3d8674236c342c3adf4a7c46dc32e24b/public/photos/0464992d-0d79-465f-ad25-5d02fcfeb010-15b225a2-8d25-499e-99f3-61fe2bea3942.png",
   "general": {
     "phone": "02 54 44 36 70",
     "phoneHref": "+33254443670",
@@ -70,6 +70,10 @@
       {
         "name": "Terrine du jour",
         "image": ""
+      },
+      {
+        "name": "top",
+        "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/a22ea051421267f68b87da8a8249418615dd056f/public/photos/c7458650-1de3-4d8f-8dd9-25b0865cbd75-8260ac79-7632-44e0-ba4c-ab1af1354d18.png"
       }
     ],
     "mains": [
@@ -84,7 +88,7 @@
     ],
     "suggestion": {
       "name": "Suggestion du chef",
-      "description": "Faux filetssss",
+      "description": "Faux filet et ses frites maison ",
       "price": "+4 €"
     },
     "desserts": [
@@ -125,7 +129,9 @@
           "description": "Bière rouge à la griotte ",
           "price": "25cl:4,50€"
         }
-      ]
+      ],
+      "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/1f8d023a7cdecd696649353002cc58156da0e597/public/photos/00280437-5ae1-4181-9b9c-35a4d0db2c2b-image.jpg",
+      "style": "ardoise"
     },
     {
       "category": "Bières en bouteille",
@@ -138,7 +144,9 @@
           "name": "Chouffe / Duvel / Triple Karmeliet / Rince Cochon / Leffe",
           "price": "5 €"
         }
-      ]
+      ],
+      "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/430bc2880c8269d79cb107109478b43219436549/public/photos/b3473b08-9bc5-4a02-b362-abd117b1d342-image.jpg",
+      "style": "ardoise"
     },
     {
       "category": "À partager… ou pas",
@@ -204,22 +212,6 @@
       ]
     },
     {
-      "category": "Notre sélection de vins",
-      "items": [
-        {
-          "name": "Masfleury — rosé de Provence",
-          "description": "12 cl:5 € · 25 cl:9€.  50cl:16€",
-          "price": ""
-        },
-        {
-          "name": "Saint-Nicolas-de-Bourgueil — rouge de Loire",
-          "description": "12 cl:5€. 25 cl:9€. 50cl:16€",
-          "price": "",
-          "image": "/photos/1788365399106-saint-nicolas-de-bourgueil-eglise-jpg.jpg"
-        }
-      ]
-    },
-    {
       "category": "Boissons chaudes",
       "items": [
         {
@@ -274,6 +266,22 @@
           "name": "Martini",
           "description": "Rouge ou blanc",
           "price": "4,50 €"
+        }
+      ]
+    },
+    {
+      "category": "Notre sélection de vins",
+      "items": [
+        {
+          "name": "Masfleury — rosé de Provence",
+          "description": "12 cl:5 € · 25 cl:9€.  50cl:16€",
+          "price": ""
+        },
+        {
+          "name": "Saint-Nicolas-de-Bourgueil — rouge de Loire",
+          "description": "12 cl:5€. 25 cl:9€. 50cl:16€",
+          "price": "",
+          "image": "/photos/1788365399106-saint-nicolas-de-bourgueil-eglise-jpg.jpg"
         }
       ]
     },
@@ -431,6 +439,22 @@
       "url": "https://www.tiktok.com/@lebistrotducoin41?_r=1&_t=ZN-98H20Dw4COs"
     }
   ],
+  "sectionPhotos": {
+    "events": {
+      "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/4f76f886845e33980d95575f0fffae1b50b292ff/public/photos/84496737-eb33-4665-8db6-bd7b2f9462c3-img-3482.jpg"
+    }
+  },
+  "menuStyle": "ardoise",
+  "heroImageAlt": "",
+  "loyaltyProgram": {
+    "title": "Programme de fidélité permanent",
+    "description": "10 formules achetées, la 11e offerte",
+    "threshold": 10,
+    "reward": "Formule offerte",
+    "clientText": "10 formules achetées, la 11e offerte",
+    "rewardValue": null,
+    "enabled": true
+  },
   "galleryAlbums": [
     {
       "id": "a98e3f9c-ad91-480c-8d89-0dd80ef34dce",
