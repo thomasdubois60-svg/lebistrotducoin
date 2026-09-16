@@ -140,7 +140,9 @@
           "name": "Chouffe / Duvel / Triple Karmeliet / Rince Cochon / Leffe",
           "price": "5 €"
         }
-      ]
+      ],
+      "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/430bc2880c8269d79cb107109478b43219436549/public/photos/b3473b08-9bc5-4a02-b362-abd117b1d342-image.jpg",
+      "style": "ardoise"
     },
     {
       "category": "À partager… ou pas",
