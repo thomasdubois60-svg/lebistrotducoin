@@ -164,22 +164,6 @@
       ]
     },
     {
-      "category": "Notre sélection de vins",
-      "items": [
-        {
-          "name": "Masfleury — rosé de Provence",
-          "description": "12 cl:5 € · 25 cl:9€.  50cl:16€",
-          "price": ""
-        },
-        {
-          "name": "Saint-Nicolas-de-Bourgueil — rouge de Loire",
-          "description": "12 cl:5€. 25 cl:9€. 50cl:16€",
-          "price": "",
-          "image": "/photos/1788365399106-saint-nicolas-de-bourgueil-eglise-jpg.jpg"
-        }
-      ]
-    },
-    {
       "category": "Cocktails du moment",
       "items": [
         {
@@ -195,20 +179,37 @@
       ]
     },
     {
-      "category": "Bières sans alcool",
-      "items": [
-        {
-          "name": "Heineken 0.0 / Desperados 0.0",
-          "price": "5 €"
-        }
-      ]
-    },
-    {
       "category": "Softs",
       "items": [
         {
           "name": "Coca-Cola, Coca-Cola Zéro, Fuze Tea pêche, Schweppes, Orangina, Perrier, limonade et jus de fruits",
           "price": "3,50 €"
+        }
+      ]
+    },
+    {
+      "category": "Bières sans alcool",
+      "items": [
+        {
+          "name": "Heineken 0.0 ",
+          "price": "5 €",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/900850da22fc8c15639c655ffc434ea014ac2eea/public/photos/1942efd8-3ef3-4bb6-89e0-27e566fbb85a-glass-of-heineken-beer-23019967875.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Notre sélection de vins",
+      "items": [
+        {
+          "name": "Masfleury — rosé de Provence",
+          "description": "12 cl:5 € · 25 cl:9€.  50cl:16€",
+          "price": ""
+        },
+        {
+          "name": "Saint-Nicolas-de-Bourgueil — rouge de Loire",
+          "description": "12 cl:5€. 25 cl:9€. 50cl:16€",
+          "price": "",
+          "image": "/photos/1788365399106-saint-nicolas-de-bourgueil-eglise-jpg.jpg"
         }
       ]
     },
