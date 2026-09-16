@@ -1,6 +1,6 @@
 import { normalizeGalleryAlbums, GalleryAlbum } from './gallery-albums'
 export type MenuItem = { name: string; description?: string; price?: string; image?: string; imageAlt?: string }
-export type MenuSection = { category: string; items: MenuItem[] }
+export type MenuSection = { category: string; id?: string; headerImage?: string; subtitle?: string; style?: string; items: MenuItem[] }
 export type GalleryItem = { src: string; alt: string; label: string }
 export type FormulaItem = { name: string; price: string; description?: string; takeawayPrice?: string }
 export type EventItem = { title: string; date: string; description: string; price?: string; image?: string; imageAlt?: string }
@@ -173,7 +173,7 @@ export function normalizeContent(value: Partial<SiteContent> | null | undefined)
       desserts: Array.isArray(value?.daily?.desserts) ? value.daily.desserts : defaultContent.daily.desserts,
       suggestion: { ...defaultContent.daily.suggestion, ...(value?.daily?.suggestion || {}) }
     },
-    menu: value?.menu?.length ? value.menu : defaultContent.menu,
+    menu: Array.isArray(value?.menu) ? value.menu : defaultContent.menu,
     galleryAlbums: normalizeGalleryAlbums({...value,gallery:Array.isArray(value?.gallery)?value.gallery:defaultContent.gallery}),
     gallery: value?.gallery?.length ? value.gallery : defaultContent.gallery,
     story: { ...defaultContent.story, ...(value?.story || {}), paragraphs: value?.story?.paragraphs?.length ? value.story.paragraphs : defaultContent.story.paragraphs },
