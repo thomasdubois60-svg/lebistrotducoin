@@ -1,11 +1,14 @@
 'use client'
 
+import {useSiteContent} from './content-provider'
+import {normalizeLoyaltyProgram} from '@/lib/loyalty-program'
 import { useCallback, useEffect, useRef, useState } from 'react'
 
 type ServiceData = any
 type DailyStats = { customers: number; formulas: number; rewards: number }
 
 export function ServiceModePanel({ password }: { password: string }) {
+  const {loyaltyProgram}=useSiteContent();const program=normalizeLoyaltyProgram(loyaltyProgram)
   const [value, setValue] = useState('')
   const [data, setData] = useState<ServiceData | null>(null)
   const [stats, setStats] = useState<DailyStats>({ customers: 0, formulas: 0, rewards: 0 })
@@ -132,7 +135,7 @@ export function ServiceModePanel({ password }: { password: string }) {
         setMessage(result.error || 'Opération impossible.')
         return
       }
-      setMessage(action === 'add' ? '✓ Formule ajoutée.' : '✓ Formule offerte enregistrée.')
+      setMessage(action === 'add' ? '✓ Formule ajoutée.' : '✓ Récompense enregistrée.')
       await refreshStats()
       setData(null)
       setValue('')
@@ -183,9 +186,9 @@ export function ServiceModePanel({ password }: { password: string }) {
     {message && <p className="admin-login-message service-message" aria-live="polite">{message}</p>}
 
     {data && <div className="service-card">
-      <div className="service-client-header"><div><span className="service-client-label">Client identifié</span><h3>{data.member.first_name} {data.member.last_name}</h3><p>{data.member.email}</p></div><div className="service-points-ring"><strong>{data.member.loyalty_points}</strong><span>/ 10</span></div></div>
+      <div className="service-client-header"><div><span className="service-client-label">Client identifié</span><h3>{data.member.first_name} {data.member.last_name}</h3><p>{data.member.email}</p></div><div className="service-points-ring"><strong>{data.member.loyalty_points}</strong><span>/ {program.threshold}</span></div></div>
       {badges.length > 0 && <div className="service-badges">{badges.map((badge) => <span key={badge}>{badge}</span>)}</div>}
-      <div className="member-cards"><article><strong>{data.member.loyalty_points}/10</strong><p>Fidélité</p></article><article><strong>{data.totalVisits}</strong><p>Passages</p></article><article><strong>{data.totalRewards}</strong><p>Formules offertes</p></article></div>
+      <div className="member-cards"><article><strong>{data.member.loyalty_points}/{program.threshold}</strong><p>Fidélité</p></article><article><strong>{data.totalVisits}</strong><p>Passages</p></article><article><strong>{data.totalRewards}</strong><p>Récompenses utilisées</p></article></div>
       <div className="service-client-details">
         <p><strong>Dernier passage :</strong> {data.lastVisit ? new Date(data.lastVisit).toLocaleString('fr-FR') : 'Aucun'}</p>
         {data.member.birthday && <p><strong>Anniversaire :</strong> {new Date(`${data.member.birthday}T12:00:00`).toLocaleDateString('fr-FR')}</p>}
@@ -193,8 +196,8 @@ export function ServiceModePanel({ password }: { password: string }) {
         <p><strong>Coupons actifs :</strong> {activeCoupons.length}</p>
       </div>
       <div className="actions service-primary-actions">
-        <button className="button service-add-button" disabled={busy || data.member.reward_available} onClick={() => loyalty('add')}>+1 formule</button>
-        {data.member.reward_available && <button className="button" disabled={busy} onClick={() => loyalty('redeem')}>🎁 Utiliser la formule offerte</button>}
+        <button className="button service-add-button" disabled={busy || !program.enabled} onClick={() => loyalty('add')}>+1 formule</button>
+        {program.enabled && data.member.loyalty_points >= program.threshold && <button className="button" disabled={busy} onClick={() => loyalty('redeem')}>🎁 Utiliser : {program.reward}</button>}
         <button className="button secondary" disabled={busy} onClick={nextClient}>Client suivant</button>
       </div>
       {data.welcome && !data.welcome.used_at && new Date(data.welcome.expires_at).getTime() > Date.now() && <p><a className="button secondary" href={`/offre-bienvenue/${data.welcome.token}`}>Utiliser le -10 % de bienvenue</a></p>}

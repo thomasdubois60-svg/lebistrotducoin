@@ -1,3 +1,4 @@
+import {SectionBanner} from '@/components/section-banner'
 import type { Metadata } from 'next'
 import './globals.css'
 import { Header } from '@/components/header'
@@ -20,5 +21,5 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="fr"><body><ContentProvider><ServiceWorker/><Header/><main>{children}</main><Footer/><PwaInstallPrompt/><Analytics/></ContentProvider></body></html>
+  return <html lang="fr"><body><ContentProvider><ServiceWorker/><Header/><main><SectionBanner/>{children}</main><Footer/><PwaInstallPrompt/><Analytics/></ContentProvider></body></html>
 }

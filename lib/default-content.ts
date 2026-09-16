@@ -1,3 +1,5 @@
+import {normalizeLoyaltyProgram} from './loyalty-program'
+import type {LoyaltyProgram} from './loyalty-program'
 import { normalizeGalleryAlbums, GalleryAlbum } from './gallery-albums'
 export type MenuItem = { name: string; description?: string; price?: string; image?: string; imageAlt?: string }
 export type MenuSection = { category: string; id?: string; headerImage?: string; subtitle?: string; style?: string; items: MenuItem[] }
@@ -16,6 +18,10 @@ export type ClubContent = {
   savingsMessage: string
 }
 export type SiteContent = {
+  menuStyle?: string
+  heroImageAlt?: string
+  sectionPhotos?: Record<string,{image?:string;alt?:string}>
+  loyaltyProgram?: LoyaltyProgram
   heroImage: string
   general: { phone: string; phoneHref: string; email: string; address: string; hours: string; closureEnabled: boolean; closureMessage: string; closureStart: string; closureEnd: string; reopeningBannerEnabled?: boolean; reopeningPushEnabled?: boolean; reopeningNotificationTitle?: string; reopeningNotificationMessage?: string; reopeningProcessedClosureEnd?: string; reopeningBannerStart?: string; reopeningBannerEnd?: string; analyticsUrl: string }
   pageTexts: { homeSlogan: string; todayIntro: string; menuIntro: string; galleryIntro: string; contactIntro: string; eventsIntro: string; reviewsIntro: string }
@@ -164,7 +170,11 @@ export function normalizeContent(value: Partial<SiteContent> | null | undefined)
     ...defaultContent, ...value,
     general: { ...defaultContent.general, ...(value?.general || {}) },
     pageTexts: { ...defaultContent.pageTexts, ...(value?.pageTexts || {}) },
-    heroImage: value?.heroImage || defaultContent.heroImage,
+    heroImage: typeof value?.heroImage==='string' ? value.heroImage : defaultContent.heroImage,
+    menuStyle: typeof value?.menuStyle==='string'?value.menuStyle:'bistrot',
+    heroImageAlt: typeof value?.heroImageAlt==='string'?value.heroImageAlt:'',
+    sectionPhotos: value?.sectionPhotos||{},
+    loyaltyProgram: normalizeLoyaltyProgram(value?.loyaltyProgram),
     daily: {
       ...defaultContent.daily, ...(value?.daily || {}),
       formulas: value?.daily?.formulas?.length ? value.daily.formulas : defaultContent.daily.formulas,
