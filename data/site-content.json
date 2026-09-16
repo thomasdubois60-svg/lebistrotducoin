@@ -194,6 +194,12 @@
           "name": "Heineken 0.0 ",
           "price": "5 €",
           "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/900850da22fc8c15639c655ffc434ea014ac2eea/public/photos/1942efd8-3ef3-4bb6-89e0-27e566fbb85a-glass-of-heineken-beer-23019967875.jpg"
+        },
+        {
+          "name": "Desperados 00",
+          "description": "",
+          "price": "5€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/17bba2cad30495eedbd6ddf989a6567b117f3bea/public/photos/9eda2ded-f90a-4df5-bed9-ca95c22b7ea2-desperados.jpg"
         }
       ]
     },
