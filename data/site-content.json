@@ -131,7 +131,7 @@
         }
       ],
       "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/1f8d023a7cdecd696649353002cc58156da0e597/public/photos/00280437-5ae1-4181-9b9c-35a4d0db2c2b-image.jpg",
-      "style": "ardoise"
+      "style": ""
     },
     {
       "category": "Bières en bouteille",
@@ -146,7 +146,7 @@
         }
       ],
       "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/430bc2880c8269d79cb107109478b43219436549/public/photos/b3473b08-9bc5-4a02-b362-abd117b1d342-image.jpg",
-      "style": "ardoise"
+      "style": ""
     },
     {
       "category": "À partager… ou pas",
@@ -169,7 +169,8 @@
           "price": "3 €",
           "image": "/photos/1788279441459-20251210-lay-s-chips-with-crab-jpg.jpg"
         }
-      ]
+      ],
+      "style": ""
     },
     {
       "category": "Cocktails du moment",
@@ -184,7 +185,8 @@
           "description": "Rhum blanc martiniquais, jus de maracuja, sirop de grenadine",
           "price": "8 €"
         }
-      ]
+      ],
+      "style": ""
     },
     {
       "category": "Softs",
@@ -193,7 +195,8 @@
           "name": "Coca-Cola, Coca-Cola Zéro, Fuze Tea pêche, Schweppes, Orangina, Perrier, limonade et jus de fruits",
           "price": "3,50 €"
         }
-      ]
+      ],
+      "style": ""
     },
     {
       "category": "Bières sans alcool",
@@ -209,7 +212,8 @@
           "price": "5€",
           "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/17bba2cad30495eedbd6ddf989a6567b117f3bea/public/photos/9eda2ded-f90a-4df5-bed9-ca95c22b7ea2-desperados.jpg"
         }
-      ]
+      ],
+      "style": ""
     },
     {
       "category": "Boissons chaudes",
@@ -234,7 +238,8 @@
           "name": "Cappuccino",
           "price": "3,20 €"
         }
-      ]
+      ],
+      "style": ""
     },
     {
       "category": "Apéritifs",
@@ -267,7 +272,8 @@
           "description": "Rouge ou blanc",
           "price": "4,50 €"
         }
-      ]
+      ],
+      "style": ""
     },
     {
       "category": "Notre sélection de vins",
@@ -283,7 +289,8 @@
           "price": "",
           "image": "/photos/1788365399106-saint-nicolas-de-bourgueil-eglise-jpg.jpg"
         }
-      ]
+      ],
+      "style": ""
     },
     {
       "category": "Whiskys",
@@ -327,7 +334,8 @@
           "description": "Très tourbé",
           "price": "8 €"
         }
-      ]
+      ],
+      "style": ""
     }
   ],
   "gallery": [
