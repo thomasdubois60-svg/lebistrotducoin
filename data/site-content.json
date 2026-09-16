@@ -125,7 +125,8 @@
           "description": "Bière rouge à la griotte ",
           "price": "25cl:4,50€"
         }
-      ]
+      ],
+      "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/1f8d023a7cdecd696649353002cc58156da0e597/public/photos/00280437-5ae1-4181-9b9c-35a4d0db2c2b-image.jpg"
     },
     {
       "category": "Bières en bouteille",
