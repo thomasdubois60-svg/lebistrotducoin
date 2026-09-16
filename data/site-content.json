@@ -1,5 +1,5 @@
 {
-  "heroImage": "/photos/facade.webp",
+  "heroImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/7d712cac3d8674236c342c3adf4a7c46dc32e24b/public/photos/0464992d-0d79-465f-ad25-5d02fcfeb010-15b225a2-8d25-499e-99f3-61fe2bea3942.png",
   "general": {
     "phone": "02 54 44 36 70",
     "phoneHref": "+33254443670",
@@ -439,6 +439,18 @@
       "url": "https://www.tiktok.com/@lebistrotducoin41?_r=1&_t=ZN-98H20Dw4COs"
     }
   ],
+  "sectionPhotos": {},
+  "menuStyle": "bistrot",
+  "heroImageAlt": "",
+  "loyaltyProgram": {
+    "title": "Programme de fidélité permanent",
+    "description": "10 formules achetées, la 11e offerte",
+    "threshold": 10,
+    "reward": "Formule offerte",
+    "clientText": "10 formules achetées, la 11e offerte",
+    "rewardValue": null,
+    "enabled": true
+  },
   "galleryAlbums": [
     {
       "id": "a98e3f9c-ad91-480c-8d89-0dd80ef34dce",
