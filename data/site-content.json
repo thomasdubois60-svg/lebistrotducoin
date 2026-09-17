@@ -161,7 +161,7 @@
           "name": "Saucisson sec du terroir",
           "description": "Cèpes, nature ou piment d’Espelette",
           "price": "6 €",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/f71845d6d308c36d9494a68c1389f6acb85de321/public/photos/642de4d8-27d5-4043-b9ee-dd190c061425-img-3482.jpg"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/446e9d1d600fa49dc835c65b8eb7d9d877fd6e05/public/photos/7a6f975f-046e-462e-a1f7-c64131ebf48d-saucisson-04.jpg"
         },
         {
           "name": "Chips Lay’s 145 g",
@@ -170,7 +170,8 @@
           "image": "/photos/1788279441459-20251210-lay-s-chips-with-crab-jpg.jpg"
         }
       ],
-      "style": ""
+      "style": "",
+      "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/ce5654f9e677f1f4ec5ebf864b5ace5cc8a9215b/public/photos/0749fc72-953d-440d-a47a-cd85e6215387-c3166564-21fb-49bb-ae8a-4d57fd2ba558.png"
     },
     {
       "category": "Cocktails du moment",
