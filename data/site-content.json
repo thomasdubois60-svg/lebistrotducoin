@@ -214,16 +214,17 @@
         {
           "name": "Heineken 0.0 ",
           "price": "5 €",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/900850da22fc8c15639c655ffc434ea014ac2eea/public/photos/1942efd8-3ef3-4bb6-89e0-27e566fbb85a-glass-of-heineken-beer-23019967875.jpg"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/baaa8cb170f84e710987911c2fd7fd6f1c7c512d/public/photos/4e1603c5-38cb-4e1b-9ec8-9f4c97d62cbb-0964a514-5d96-4ae5-b032-a9a6e849ba97.png"
         },
         {
           "name": "Desperados 00",
           "description": "",
           "price": "5€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/17bba2cad30495eedbd6ddf989a6567b117f3bea/public/photos/9eda2ded-f90a-4df5-bed9-ca95c22b7ea2-desperados.jpg"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/8d791d1da7505d9f5848c31c3d10c0b837a7bbd0/public/photos/5c28bb7c-2993-4d8f-b7ee-112c34d9ea3e-028412c7-1167-4a38-bc8f-c09754a85822.png"
         }
       ],
-      "style": ""
+      "style": "",
+      "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/2ab371b6c4b870091bc6b53dbdaf1bedb58f17ea/public/photos/e67c6dc3-ba61-4707-8082-736e636b32f6-ea55ce67-fb44-4f9d-a5c9-21a3f54c87e2.png"
     },
     {
       "category": "Boissons chaudes",
