@@ -311,37 +311,37 @@
       "items": [
         {
           "name": "Sir Edwards",
-          "description": "Écosse",
+          "description": "    Écosse_\n    Doux et rond, notes de bois, fruits secs et épices. ",
           "price": "6 €"
         },
         {
           "name": "Jameson",
-          "description": "Irlande",
+          "description": "    Irlande_\n    Souple et gourmand, notes de vanille, noix, épices et xérès.",
           "price": "7 €"
         },
         {
           "name": "Jack Daniel’s",
-          "description": "États-Unis",
+          "description": "    Tennessee, États-Unis_\n    Rond et boisé, notes de caramel et de vanille. ",
           "price": "7 €"
         },
         {
           "name": "Glenlivet",
-          "description": "Écosse",
+          "description": "    Speyside, Écosse_\n    Doux et fruité, notes d’ananas, poire et vanille. ",
           "price": "8 €"
         },
         {
           "name": "Togouchi",
-          "description": "Japon",
+          "description": "    Hiroshima, Japon_\n    Fin et doux, notes de fruits, noix, vanille et épices. ",
           "price": "8 €"
         },
         {
-          "name": "Aberstone",
-          "description": "Légèrement tourbé",
+          "name": "Aerstone",
+          "description": "    Écosse_\n    Légèrement tourbé, fumé, malté et chaleureux.",
           "price": "8 €"
         },
         {
           "name": "Big Peat",
-          "description": "Très tourbé",
+          "description": "    Islay, Écosse_\n    Très tourbé, fumé et marin, notes de cendre et de sel.",
           "price": "8 €"
         }
       ],
