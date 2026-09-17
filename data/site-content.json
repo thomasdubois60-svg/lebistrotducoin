@@ -146,18 +146,20 @@
         {
           "name": "Paix Dieu ",
           "price": "6 €",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/ee51d7c520f4a144ed2f2c1e6337ab68929aae17/public/photos/43c5e8c1-1029-42b3-ab90-cb1b9ff08df4-79320488-cec0-42db-bfd4-00e3645e3122.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/ee51d7c520f4a144ed2f2c1e6337ab68929aae17/public/photos/43c5e8c1-1029-42b3-ab90-cb1b9ff08df4-79320488-cec0-42db-bfd4-00e3645e3122.png",
+          "description": " Belgique_ Blonde triple, fruitée, épicée et ronde. 10.0°"
         },
         {
           "name": "Orval",
-          "description": "",
+          "description": "Belgique_ Trappiste sèche, houblonnée, avec une note sauvage. 6.2°",
           "price": "6€",
           "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/317a36c572b67e73934bfab4e264b0a227346928/public/photos/f4b816fd-2a3f-4b80-ad79-32281dc7318e-792603d6-61f9-4bfe-ac4a-028a9dca6f6f.png"
         },
         {
           "name": "Chouffe blonde ",
           "price": "5 €",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/7ed1a2fc71e79d938671d165b4546ae6e39efdde/public/photos/e3a2035a-5017-45a3-bc7a-30152d7e096d-02dee3bc-8759-46fe-8682-571470a14e4f.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/7ed1a2fc71e79d938671d165b4546ae6e39efdde/public/photos/e3a2035a-5017-45a3-bc7a-30152d7e096d-02dee3bc-8759-46fe-8682-571470a14e4f.png",
+          "description": "Belgique_Blonde fruitée, épicée et légèrement houblonnée. 8.0°"
         },
         {
           "name": "Cherry Chouffe",
