@@ -145,51 +145,61 @@
       "items": [
         {
           "name": "Paix Dieu ",
-          "price": "6 €"
+          "price": "6 €",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/ee51d7c520f4a144ed2f2c1e6337ab68929aae17/public/photos/43c5e8c1-1029-42b3-ab90-cb1b9ff08df4-79320488-cec0-42db-bfd4-00e3645e3122.png"
         },
         {
           "name": "Orval",
           "description": "",
-          "price": "6€"
+          "price": "6€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/317a36c572b67e73934bfab4e264b0a227346928/public/photos/f4b816fd-2a3f-4b80-ad79-32281dc7318e-792603d6-61f9-4bfe-ac4a-028a9dca6f6f.png"
         },
         {
           "name": "Chouffe blonde ",
-          "price": "5 €"
+          "price": "5 €",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/7ed1a2fc71e79d938671d165b4546ae6e39efdde/public/photos/e3a2035a-5017-45a3-bc7a-30152d7e096d-02dee3bc-8759-46fe-8682-571470a14e4f.png"
         },
         {
           "name": "Cherry Chouffe",
           "description": "",
-          "price": "5€"
+          "price": "5€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/1d53d6474a19fd8d30d3fbd4b0e9e80fb659dea1/public/photos/6353bd67-f14d-41f8-90fb-7267595c4cf1-76671929-78ed-4fe9-bb2e-2502b3163e99.png"
         },
         {
           "name": "Duvel",
           "description": "",
-          "price": "5€"
+          "price": "5€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/2e539ee799e3980447c3b247171f2b520957eb51/public/photos/f9fe0341-e48d-4f58-b2bb-644b6991b537-c0c5a982-b84a-41a1-a6f5-25409d8c24d4.png"
         },
         {
           "name": "Triple Karmeliet",
           "description": "",
-          "price": "5€"
+          "price": "5€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/b775db0cf93b18d55d21782fd2a6d5759d6c5201/public/photos/920563f6-26cf-4a33-aa14-88db9527dc2c-29bd34e6-9137-478a-923b-dc563946a540.png"
         },
         {
           "name": "Kwak ",
           "description": "",
-          "price": "5€"
+          "price": "5€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/44692efcaee59e21b94a8a6f3a4e975ce457d244/public/photos/4bf122cc-3cc3-495c-a62d-21cc924611ac-d9cf9a3c-fe7c-40f0-9b5b-8f5e352d4ed9.png"
         },
         {
           "name": "Rince Cochon",
           "description": "",
-          "price": "5€"
+          "price": "5€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/8d59880867dbfd58d7727ee072a00b311e2d2596/public/photos/7fb9f2da-c709-4a71-9f04-548b4fc5ef03-a4d44799-ce97-4bdd-9e16-3f08d7b589f7.png"
         },
         {
           "name": "Hoagarden blanche ",
           "description": "",
-          "price": "5€"
+          "price": "5€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/b14920f31d3a17b00ccb82b991627d1d0129e2ff/public/photos/f1383f40-c217-406f-8d1d-1370046f9539-0d754355-ea9e-46c3-a2ab-78b62c99dcf3.png"
         },
         {
           "name": "Leffe  blonde ",
           "description": "",
-          "price": "5€"
+          "price": "5€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/7d3588823ea32d8bd6d6b8f007c3e6fc0c1f2e14/public/photos/b64d4d6f-6bd9-48c2-b7b3-33aab326d23b-10af1dc6-182d-4214-939e-a067cc762e70.png"
         }
       ],
       "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/6501e89ab097f529cffab5798dd7341fbb15d033/public/photos/c151e979-e224-49c3-994c-141232c0e784-478fef26-c35f-4900-8f34-4ca372f5578b.png",
