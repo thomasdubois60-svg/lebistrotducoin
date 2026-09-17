@@ -110,24 +110,31 @@
           "name": "Pélican blonde",
           "description": "Blonde française non filtrée 7.5%",
           "price": "25cl:4,50€/33cl:6€/50cl:8€",
-          "image": "/photos/1788086419964-img-3442.jpeg"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/d0b5d110e101625213078335cc8790b7d3c39006/public/photos/7edc6fbc-4ecf-4a78-9edd-e7c588043b14-dd06d2ef-378a-404f-ac52-808787d171ca.png"
         },
         {
           "name": "Pelforth",
           "description": "Blonde française ",
           "price": "25 cl:3,50 € · 33 cl:5€.  50cl:6€",
-          "image": "/photos/1788279358969-pelforth-blond-zapfhahn-jpg.jpg"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/712c177c66145b03577fb57e62f2ac8f5362ec13/public/photos/d087ba5e-7fde-4526-a7d1-e81bc18af693-fc7be453-e2a8-4782-917d-e79fd9c4b7f2.png"
         },
         {
           "name": "Gallia West IPA",
-          "description": "25 cl:4,50€· 33cl:6€.  50cl:8€",
-          "price": "",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/2e53b2671e13d4a321a6a113542d5aa35d4f4169/public/photos/574ed9ad-78ac-4de0-9fc5-d494cd897839-international-phonetic-alphabet-translated-into-basque-beste-sinbolo-b.png"
+          "description": "",
+          "price": "25 cl:4,50€· 33cl:6€.  50cl:8€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/1a318aa34369c87ded98c8b181eed8dfe6e12aab/public/photos/f0b5f8b1-1c81-4126-a2a5-895f3aea9f62-f1840505-0eb8-4f7c-862f-411464d85a52.png"
         },
         {
           "name": "Pélican rouge ",
           "description": "Bière rouge à la griotte ",
-          "price": "25cl:4,50€"
+          "price": "25 cl:4,50€· 33cl:6€.  50cl:8€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/e41c314171f679d17400e4e7be77b0ae77bed475/public/photos/cb1de005-4f35-448a-82be-dd8c4d91ff0c-5532698b-5233-41ad-b6b6-91a68863c3a3.png"
+        },
+        {
+          "name": "Desperados Sunlight ",
+          "description": "",
+          "price": "25 cl:4,50€· 33cl:6€.  50cl:8€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/a06c8b9244d1ba3e644a14647fdf0101d6b623ab/public/photos/eb54c3f0-7d0d-4a72-b990-a745359f5818-17bd9998-05e1-4084-9b93-a6030d451750.png"
         }
       ],
       "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/08c91ab06da5c97dc6dedbf351ddc2c190332b2f/public/photos/018d378f-0cf6-49c0-8c0e-c749f13570f1-fb580668-efe6-4985-9d05-ab61d9937944.png",
