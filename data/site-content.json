@@ -144,12 +144,52 @@
       "category": "Bières en bouteille",
       "items": [
         {
-          "name": "Paix Dieu / Orval / Queue de Charrue",
+          "name": "Paix Dieu ",
           "price": "6 €"
         },
         {
-          "name": "Chouffe / Duvel / Triple Karmeliet / Rince Cochon / Leffe",
+          "name": "Orval",
+          "description": "",
+          "price": "6€"
+        },
+        {
+          "name": "Chouffe blonde ",
           "price": "5 €"
+        },
+        {
+          "name": "Cherry Chouffe",
+          "description": "",
+          "price": "5€"
+        },
+        {
+          "name": "Duvel",
+          "description": "",
+          "price": "5€"
+        },
+        {
+          "name": "Triple Karmeliet",
+          "description": "",
+          "price": "5€"
+        },
+        {
+          "name": "Kwak ",
+          "description": "",
+          "price": "5€"
+        },
+        {
+          "name": "Rincé Cochon",
+          "description": "",
+          "price": "5€"
+        },
+        {
+          "name": "Hoagarden blanche ",
+          "description": "",
+          "price": "5€"
+        },
+        {
+          "name": "Leffe  blonde ",
+          "description": "",
+          "price": "5€"
         }
       ],
       "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/6501e89ab097f529cffab5798dd7341fbb15d033/public/photos/c151e979-e224-49c3-994c-141232c0e784-478fef26-c35f-4900-8f34-4ca372f5578b.png",
