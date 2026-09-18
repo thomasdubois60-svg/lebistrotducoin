@@ -65,7 +65,7 @@
     "starters": [
       {
         "name": "Oeuf mayo",
-        "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/fcf9f42918bce09dedfbdee77ac8a0f43c99646a/public/photos/cb478ccd-a7d6-48b2-8085-3b36aad1fc6a-oeufs-durs-mayonnaise.jpg"
+        "image": ""
       },
       {
         "name": "Terrine du jour",
@@ -73,13 +73,13 @@
       },
       {
         "name": "Salade de pomme de terre ",
-        "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/a22ea051421267f68b87da8a8249418615dd056f/public/photos/c7458650-1de3-4d8f-8dd9-25b0865cbd75-8260ac79-7632-44e0-ba4c-ab1af1354d18.png"
+        "image": ""
       }
     ],
     "mains": [
       {
         "name": "saucisse",
-        "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/cb158a960236e1e361769ac6a0d975d22d3e8b99/public/photos/bc23f6d8-5185-4541-a8a2-e0ca13e9143c-img-5958.jpg"
+        "image": ""
       },
       {
         "name": "Plat du jour 2",
