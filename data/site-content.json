@@ -100,7 +100,8 @@
         "name": "Dessert du jour 2",
         "image": ""
       }
-    ]
+    ],
+    "theme": "ardoise"
   },
   "menu": [
     {
