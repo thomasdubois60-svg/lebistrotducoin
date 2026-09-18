@@ -25,7 +25,7 @@ export type SiteContent = {
   heroImage: string
   general: { phone: string; phoneHref: string; email: string; address: string; hours: string; closureEnabled: boolean; closureMessage: string; closureStart: string; closureEnd: string; reopeningBannerEnabled?: boolean; reopeningPushEnabled?: boolean; reopeningNotificationTitle?: string; reopeningNotificationMessage?: string; reopeningProcessedClosureEnd?: string; reopeningBannerStart?: string; reopeningBannerEnd?: string; analyticsUrl: string }
   pageTexts: { homeSlogan: string; todayIntro: string; menuIntro: string; galleryIntro: string; contactIntro: string; eventsIntro: string; reviewsIntro: string }
-  daily: { dateLabel: string; startersTitle: string; mainsTitle: string; dessertsTitle: string; suggestionSupplementText: string; formulas: FormulaItem[]; starters: MenuItem[]; mains: MenuItem[]; suggestion: MenuItem; desserts: MenuItem[] }
+  daily: { theme?: string; dateLabel: string; startersTitle: string; mainsTitle: string; dessertsTitle: string; suggestionSupplementText: string; formulas: FormulaItem[]; starters: MenuItem[]; mains: MenuItem[]; suggestion: MenuItem; desserts: MenuItem[] }
   menu: MenuSection[]
   gallery: GalleryItem[]
   galleryAlbums?: GalleryAlbum[]
