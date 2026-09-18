@@ -65,21 +65,21 @@
     "starters": [
       {
         "name": "Oeuf mayo",
-        "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/fcf9f42918bce09dedfbdee77ac8a0f43c99646a/public/photos/cb478ccd-a7d6-48b2-8085-3b36aad1fc6a-oeufs-durs-mayonnaise.jpg"
+        "image": ""
       },
       {
         "name": "Terrine du jour",
         "image": ""
       },
       {
-        "name": "top",
-        "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/a22ea051421267f68b87da8a8249418615dd056f/public/photos/c7458650-1de3-4d8f-8dd9-25b0865cbd75-8260ac79-7632-44e0-ba4c-ab1af1354d18.png"
+        "name": "Salade de pomme de terre ",
+        "image": ""
       }
     ],
     "mains": [
       {
         "name": "saucisse",
-        "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/cb158a960236e1e361769ac6a0d975d22d3e8b99/public/photos/bc23f6d8-5185-4541-a8a2-e0ca13e9143c-img-5958.jpg"
+        "image": ""
       },
       {
         "name": "Plat du jour 2",
@@ -107,46 +107,105 @@
       "category": "Nos pressions",
       "items": [
         {
+          "name": "Pelforth",
+          "description": "Blonde française 5,8%",
+          "price": "25 cl:3,50 € · 33 cl:5€.  50cl:6€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/712c177c66145b03577fb57e62f2ac8f5362ec13/public/photos/d087ba5e-7fde-4526-a7d1-e81bc18af693-fc7be453-e2a8-4782-917d-e79fd9c4b7f2.png"
+        },
+        {
           "name": "Pélican blonde",
           "description": "Blonde française non filtrée 7.5%",
           "price": "25cl:4,50€/33cl:6€/50cl:8€",
-          "image": "/photos/1788086419964-img-3442.jpeg"
-        },
-        {
-          "name": "Pelforth",
-          "description": "Blonde française ",
-          "price": "25 cl:3,50 € · 33 cl:5€.  50cl:6€",
-          "image": "/photos/1788279358969-pelforth-blond-zapfhahn-jpg.jpg"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/d0b5d110e101625213078335cc8790b7d3c39006/public/photos/7edc6fbc-4ecf-4a78-9edd-e7c588043b14-dd06d2ef-378a-404f-ac52-808787d171ca.png"
         },
         {
           "name": "Gallia West IPA",
-          "description": "25 cl:4,50€· 33cl:6€.  50cl:8€",
-          "price": "",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/2e53b2671e13d4a321a6a113542d5aa35d4f4169/public/photos/574ed9ad-78ac-4de0-9fc5-d494cd897839-international-phonetic-alphabet-translated-into-basque-beste-sinbolo-b.png"
+          "description": "IPA française 6%",
+          "price": "25 cl:4,50€· 33cl:6€.  50cl:8€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/1a318aa34369c87ded98c8b181eed8dfe6e12aab/public/photos/f0b5f8b1-1c81-4126-a2a5-895f3aea9f62-f1840505-0eb8-4f7c-862f-411464d85a52.png"
         },
         {
           "name": "Pélican rouge ",
-          "description": "Bière rouge à la griotte ",
-          "price": "25cl:4,50€"
+          "description": "Bière rouge à la griotte 7,5%",
+          "price": "25 cl:4,50€· 33cl:6€.  50cl:8€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/e41c314171f679d17400e4e7be77b0ae77bed475/public/photos/cb1de005-4f35-448a-82be-dd8c4d91ff0c-5532698b-5233-41ad-b6b6-91a68863c3a3.png"
+        },
+        {
+          "name": "Desperados Sunlight ",
+          "description": "Goût citron jaune/citron vert 4%",
+          "price": "25 cl:4,50€· 33cl:6€.  50cl:8€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/a06c8b9244d1ba3e644a14647fdf0101d6b623ab/public/photos/eb54c3f0-7d0d-4a72-b990-a745359f5818-17bd9998-05e1-4084-9b93-a6030d451750.png"
         }
       ],
-      "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/1f8d023a7cdecd696649353002cc58156da0e597/public/photos/00280437-5ae1-4181-9b9c-35a4d0db2c2b-image.jpg",
-      "style": "ardoise"
+      "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/08c91ab06da5c97dc6dedbf351ddc2c190332b2f/public/photos/018d378f-0cf6-49c0-8c0e-c749f13570f1-fb580668-efe6-4985-9d05-ab61d9937944.png",
+      "style": ""
     },
     {
       "category": "Bières en bouteille",
       "items": [
         {
-          "name": "Paix Dieu / Orval / Queue de Charrue",
-          "price": "6 €"
+          "name": "Paix Dieu ",
+          "price": "6 €",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/ee51d7c520f4a144ed2f2c1e6337ab68929aae17/public/photos/43c5e8c1-1029-42b3-ab90-cb1b9ff08df4-79320488-cec0-42db-bfd4-00e3645e3122.png",
+          "description": " Belgique_ Blonde triple, fruitée, épicée et ronde. 10.0°"
         },
         {
-          "name": "Chouffe / Duvel / Triple Karmeliet / Rince Cochon / Leffe",
-          "price": "5 €"
+          "name": "Orval",
+          "description": "Belgique_ Trappiste sèche, houblonnée, avec une note sauvage. 6.2°",
+          "price": "6€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/317a36c572b67e73934bfab4e264b0a227346928/public/photos/f4b816fd-2a3f-4b80-ad79-32281dc7318e-792603d6-61f9-4bfe-ac4a-028a9dca6f6f.png"
+        },
+        {
+          "name": "Chouffe blonde ",
+          "price": "5 €",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/7ed1a2fc71e79d938671d165b4546ae6e39efdde/public/photos/e3a2035a-5017-45a3-bc7a-30152d7e096d-02dee3bc-8759-46fe-8682-571470a14e4f.png",
+          "description": "Belgique_Blonde fruitée, épicée et légèrement houblonnée. 8.0°"
+        },
+        {
+          "name": "Cherry Chouffe",
+          "description": "Belgique_Fruité et gourmand, notes de cerise mûre, fraise, amande et légère touche épicée. 8.0°",
+          "price": "5€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/1d53d6474a19fd8d30d3fbd4b0e9e80fb659dea1/public/photos/6353bd67-f14d-41f8-90fb-7267595c4cf1-76671929-78ed-4fe9-bb2e-2502b3163e99.png"
+        },
+        {
+          "name": "Duvel",
+          "description": "Belgique_Goût : Blonde forte, fruitée, sèche et finement amère. 8.5°",
+          "price": "5€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/2e539ee799e3980447c3b247171f2b520957eb51/public/photos/f9fe0341-e48d-4f58-b2bb-644b6991b537-c0c5a982-b84a-41a1-a6f5-25409d8c24d4.png"
+        },
+        {
+          "name": "Triple Karmeliet",
+          "description": "Belgique_Tripel complexe, florale, vanillée et épicée. 8.4°",
+          "price": "5€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/b775db0cf93b18d55d21782fd2a6d5759d6c5201/public/photos/920563f6-26cf-4a33-aa14-88db9527dc2c-29bd34e6-9137-478a-923b-dc563946a540.png"
+        },
+        {
+          "name": "Kwak ",
+          "description": "Belgique_Ambrée riche et gourmande, notes de biscuit, banane, orange, caramel et épices. 8.4°",
+          "price": "5€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/44692efcaee59e21b94a8a6f3a4e975ce457d244/public/photos/4bf122cc-3cc3-495c-a62d-21cc924611ac-d9cf9a3c-fe7c-40f0-9b5b-8f5e352d4ed9.png"
+        },
+        {
+          "name": "Rince Cochon",
+          "description": "Belgique_Blonde forte, ronde, fruitée et légèrement épicée. 8.5°",
+          "price": "5€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/8d59880867dbfd58d7727ee072a00b311e2d2596/public/photos/7fb9f2da-c709-4a71-9f04-548b4fc5ef03-a4d44799-ce97-4bdd-9e16-3f08d7b589f7.png"
+        },
+        {
+          "name": "Hoagarden blanche ",
+          "description": "Belgique_Blanche douce et rafraîchissante, aux notes d’orange, coriandre, agrumes et épices. 4.9°",
+          "price": "5€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/b14920f31d3a17b00ccb82b991627d1d0129e2ff/public/photos/f1383f40-c217-406f-8d1d-1370046f9539-0d754355-ea9e-46c3-a2ab-78b62c99dcf3.png"
+        },
+        {
+          "name": "Leffe  blonde ",
+          "description": "Belgique_Blonde d’abbaye, douce, maltée, avec vanille et clou de girofle. 6.6°",
+          "price": "5€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/7d3588823ea32d8bd6d6b8f007c3e6fc0c1f2e14/public/photos/b64d4d6f-6bd9-48c2-b7b3-33aab326d23b-10af1dc6-182d-4214-939e-a067cc762e70.png"
         }
       ],
-      "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/430bc2880c8269d79cb107109478b43219436549/public/photos/b3473b08-9bc5-4a02-b362-abd117b1d342-image.jpg",
-      "style": "ardoise"
+      "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/6501e89ab097f529cffab5798dd7341fbb15d033/public/photos/c151e979-e224-49c3-994c-141232c0e784-478fef26-c35f-4900-8f34-4ca372f5578b.png",
+      "style": ""
     },
     {
       "category": "À partager… ou pas",
@@ -161,7 +220,7 @@
           "name": "Saucisson sec du terroir",
           "description": "Cèpes, nature ou piment d’Espelette",
           "price": "6 €",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/f71845d6d308c36d9494a68c1389f6acb85de321/public/photos/642de4d8-27d5-4043-b9ee-dd190c061425-img-3482.jpg"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/446e9d1d600fa49dc835c65b8eb7d9d877fd6e05/public/photos/7a6f975f-046e-462e-a1f7-c64131ebf48d-saucisson-04.jpg"
         },
         {
           "name": "Chips Lay’s 145 g",
@@ -169,7 +228,9 @@
           "price": "3 €",
           "image": "/photos/1788279441459-20251210-lay-s-chips-with-crab-jpg.jpg"
         }
-      ]
+      ],
+      "style": "",
+      "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/ce5654f9e677f1f4ec5ebf864b5ace5cc8a9215b/public/photos/0749fc72-953d-440d-a47a-cd85e6215387-c3166564-21fb-49bb-ae8a-4d57fd2ba558.png"
     },
     {
       "category": "Cocktails du moment",
@@ -184,7 +245,9 @@
           "description": "Rhum blanc martiniquais, jus de maracuja, sirop de grenadine",
           "price": "8 €"
         }
-      ]
+      ],
+      "style": "",
+      "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/5792045d9b66890d1ef5a7f3dcbd9486c50a05a6/public/photos/873ea70a-529a-445b-8ee6-7f3144f2dd25-dbf91f44-32e1-4b5b-a435-343d274cfb8e.png"
     },
     {
       "category": "Softs",
@@ -193,7 +256,9 @@
           "name": "Coca-Cola, Coca-Cola Zéro, Fuze Tea pêche, Schweppes, Orangina, Perrier, limonade et jus de fruits",
           "price": "3,50 €"
         }
-      ]
+      ],
+      "style": "",
+      "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/a0cd570317e9936e7ad5bf437fc0e8027fe57c80/public/photos/61b71ef8-a9f8-4fbc-b465-46ce4410f252-31d8f3b8-5772-4425-adc5-289daf6c37e5.png"
     },
     {
       "category": "Bières sans alcool",
@@ -201,15 +266,17 @@
         {
           "name": "Heineken 0.0 ",
           "price": "5 €",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/900850da22fc8c15639c655ffc434ea014ac2eea/public/photos/1942efd8-3ef3-4bb6-89e0-27e566fbb85a-glass-of-heineken-beer-23019967875.jpg"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/baaa8cb170f84e710987911c2fd7fd6f1c7c512d/public/photos/4e1603c5-38cb-4e1b-9ec8-9f4c97d62cbb-0964a514-5d96-4ae5-b032-a9a6e849ba97.png"
         },
         {
           "name": "Desperados 00",
           "description": "",
           "price": "5€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/17bba2cad30495eedbd6ddf989a6567b117f3bea/public/photos/9eda2ded-f90a-4df5-bed9-ca95c22b7ea2-desperados.jpg"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/8d791d1da7505d9f5848c31c3d10c0b837a7bbd0/public/photos/5c28bb7c-2993-4d8f-b7ee-112c34d9ea3e-028412c7-1167-4a38-bc8f-c09754a85822.png"
         }
-      ]
+      ],
+      "style": "",
+      "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/2ab371b6c4b870091bc6b53dbdaf1bedb58f17ea/public/photos/e67c6dc3-ba61-4707-8082-736e636b32f6-ea55ce67-fb44-4f9d-a5c9-21a3f54c87e2.png"
     },
     {
       "category": "Boissons chaudes",
@@ -234,7 +301,9 @@
           "name": "Cappuccino",
           "price": "3,20 €"
         }
-      ]
+      ],
+      "style": "",
+      "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/ccfd8a01e529e30abb19cd746d3f2db3e33f2a93/public/photos/53d099ef-3caf-435a-846e-6a9337641758-6c5eee1e-ac39-452c-88b3-9cfc1b210239.png"
     },
     {
       "category": "Apéritifs",
@@ -267,7 +336,9 @@
           "description": "Rouge ou blanc",
           "price": "4,50 €"
         }
-      ]
+      ],
+      "style": "",
+      "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/f82d0a1a2df11f865f02752ff5e4bb13be19bcad/public/photos/87b52088-f397-41c7-887b-0020744173ff-b3e57624-6ece-440e-b671-ebbe8f7ce10d.png"
     },
     {
       "category": "Notre sélection de vins",
@@ -283,51 +354,58 @@
           "price": "",
           "image": "/photos/1788365399106-saint-nicolas-de-bourgueil-eglise-jpg.jpg"
         }
-      ]
+      ],
+      "style": "",
+      "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/79f25bb3706a0a085a0410e76c9ebef91018dcdf/public/photos/ec3f8408-a575-43a6-856f-6b5ac48fe3b6-8df16d35-6a3a-488f-bf49-b077f9b1a343.png"
     },
     {
       "category": "Whiskys",
       "items": [
         {
           "name": "Sir Edwards",
-          "description": "Écosse",
-          "price": "6 €"
+          "description": "    Écosse_\n    Doux et rond, notes de bois, fruits secs et épices. ",
+          "price": "6 €",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/ac7158a6d1d0544411f7e948e16e725bfa74023c/public/photos/a83dbff3-2cd6-4980-aa99-ae2b2ab1a8c5-aa80fc3d-8f70-4146-bc38-dcfd3f78c35c.png"
         },
         {
           "name": "Jameson",
-          "description": "Irlande",
-          "price": "7 €"
+          "description": "    Irlande_\n    Souple et gourmand, notes de vanille, noix, épices et xérès.",
+          "price": "7 €",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/87f3be21b1ee74c5ef26f795ab0328943e2be124/public/photos/20b7e14e-4c5a-4404-b462-c4e43c649a93-648ee7fe-8b70-40ca-9fdc-a6af595dfbb6.png"
         },
         {
           "name": "Jack Daniel’s",
-          "description": "États-Unis",
-          "price": "7 €"
+          "description": "    Tennessee, États-Unis_\n    Rond et boisé, notes de caramel et de vanille. ",
+          "price": "7 €",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/3aa2e9afd13bb4e23c7bcc1eacbd56d7b65105c6/public/photos/db5278c9-31b0-4c36-9b34-d776b4cb4c8d-423d2bf3-fd74-41af-bdb7-af7da7295f31.png"
         },
         {
           "name": "Glenlivet",
-          "description": "Écosse",
-          "price": "8 €"
+          "description": "    Speyside, Écosse_\n    Doux et fruité, notes d’ananas, poire et vanille. ",
+          "price": "8 €",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/ce38438699f72e48c50d0e785fad2a9abc1f7642/public/photos/d9486bc9-ddd9-4a23-a145-0173861874c9-d76cb200-41b3-496f-9f4c-c0e4d330cacc.png"
         },
         {
           "name": "Togouchi",
-          "description": "Japon",
-          "price": "8 €"
+          "description": "    Hiroshima, Japon_\n    Fin et doux, notes de fruits, noix, vanille et épices. ",
+          "price": "8 €",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/6c59406d0ba5f06c0c051f2048e9ca32a2d0b471/public/photos/5790baa7-b27b-402b-a51e-ba24af71d0a9-73df8950-7ebb-4bef-8c75-b48fed7c76a5.png"
         },
         {
-          "name": "Yamagochi",
-          "price": "8 €"
-        },
-        {
-          "name": "Aberstone",
-          "description": "Légèrement tourbé",
-          "price": "8 €"
+          "name": "Aerstone",
+          "description": "    Écosse_\n    Légèrement tourbé, fumé, malté et chaleureux.",
+          "price": "8 €",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/24aeeb50c9d60cd2f689261c9eed15e7469b30f1/public/photos/2bb7b259-57ed-41ac-8bdb-566061534364-99922ba6-e803-4f99-a86f-6744748c9956.png"
         },
         {
           "name": "Big Peat",
-          "description": "Très tourbé",
-          "price": "8 €"
+          "description": "    Islay, Écosse_\n    Très tourbé, fumé et marin, notes de cendre et de sel.",
+          "price": "8 €",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/da79d43b7fbfef1eef02fe9cdcd68a354ca9c026/public/photos/0a2ec68a-af23-44e8-9fb3-2b15cd85cb87-877076f1-b512-4f53-9f2d-d42588bf8e61.png"
         }
-      ]
+      ],
+      "style": "",
+      "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/af19e3b64181cce30c835c77705265f05f62160a/public/photos/e103d3e6-0f18-415b-997d-acd3b1b3d8b2-7433b570-1d1c-4639-9959-a32e6b8b08f4.png"
     }
   ],
   "gallery": [
@@ -441,7 +519,10 @@
   ],
   "sectionPhotos": {
     "events": {
-      "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/4f76f886845e33980d95575f0fffae1b50b292ff/public/photos/84496737-eb33-4665-8db6-bd7b2f9462c3-img-3482.jpg"
+      "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/d0c83ff5a9182f5c732a7882c9e63cd9030b1ae8/public/photos/37c51d77-2998-4159-8d4b-361275d812c9-aa8e8004-f26e-4acc-98c8-8b49a8f50e52.png"
+    },
+    "story": {
+      "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/3709dc6d6c064ebb8ededecb76eadcf36c7e8343/public/photos/be4ed41e-5af6-4c87-b4ef-6252a6cf7d05-img-5440.jpg"
     }
   },
   "menuStyle": "ardoise",
