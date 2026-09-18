@@ -163,43 +163,43 @@
         },
         {
           "name": "Cherry Chouffe",
-          "description": "",
+          "description": "Belgique_Fruité et gourmand, notes de cerise mûre, fraise, amande et légère touche épicée. 8.0°",
           "price": "5€",
           "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/1d53d6474a19fd8d30d3fbd4b0e9e80fb659dea1/public/photos/6353bd67-f14d-41f8-90fb-7267595c4cf1-76671929-78ed-4fe9-bb2e-2502b3163e99.png"
         },
         {
           "name": "Duvel",
-          "description": "",
+          "description": "Belgique_Goût : Blonde forte, fruitée, sèche et finement amère. 8.5°",
           "price": "5€",
           "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/2e539ee799e3980447c3b247171f2b520957eb51/public/photos/f9fe0341-e48d-4f58-b2bb-644b6991b537-c0c5a982-b84a-41a1-a6f5-25409d8c24d4.png"
         },
         {
           "name": "Triple Karmeliet",
-          "description": "",
+          "description": "Belgique_Tripel complexe, florale, vanillée et épicée. 8.4°",
           "price": "5€",
           "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/b775db0cf93b18d55d21782fd2a6d5759d6c5201/public/photos/920563f6-26cf-4a33-aa14-88db9527dc2c-29bd34e6-9137-478a-923b-dc563946a540.png"
         },
         {
           "name": "Kwak ",
-          "description": "",
+          "description": "Belgique_Ambrée riche et gourmande, notes de biscuit, banane, orange, caramel et épices. 8.4°",
           "price": "5€",
           "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/44692efcaee59e21b94a8a6f3a4e975ce457d244/public/photos/4bf122cc-3cc3-495c-a62d-21cc924611ac-d9cf9a3c-fe7c-40f0-9b5b-8f5e352d4ed9.png"
         },
         {
           "name": "Rince Cochon",
-          "description": "",
+          "description": "Belgique_Blonde forte, ronde, fruitée et légèrement épicée. 8.5°",
           "price": "5€",
           "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/8d59880867dbfd58d7727ee072a00b311e2d2596/public/photos/7fb9f2da-c709-4a71-9f04-548b4fc5ef03-a4d44799-ce97-4bdd-9e16-3f08d7b589f7.png"
         },
         {
           "name": "Hoagarden blanche ",
-          "description": "",
+          "description": "Belgique_Blanche douce et rafraîchissante, aux notes d’orange, coriandre, agrumes et épices. 4.9°",
           "price": "5€",
           "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/b14920f31d3a17b00ccb82b991627d1d0129e2ff/public/photos/f1383f40-c217-406f-8d1d-1370046f9539-0d754355-ea9e-46c3-a2ab-78b62c99dcf3.png"
         },
         {
           "name": "Leffe  blonde ",
-          "description": "",
+          "description": "Belgique_Blonde d’abbaye, douce, maltée, avec vanille et clou de girofle. 6.6°",
           "price": "5€",
           "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/7d3588823ea32d8bd6d6b8f007c3e6fc0c1f2e14/public/photos/b64d4d6f-6bd9-48c2-b7b3-33aab326d23b-10af1dc6-182d-4214-939e-a067cc762e70.png"
         }
