@@ -32,7 +32,7 @@
   "daily": {
     "dateLabel": "Aujourd’hui",
     "startersTitle": "3 entrées au choix",
-    "mainsTitle": "3 plats au choix",
+    "mainsTitle": "2 plats au choix",
     "dessertsTitle": "3 desserts au choix",
     "suggestionSupplementText": "+4 € sur le prix du plat du jour ou de la formule choisie",
     "formulas": [
@@ -65,7 +65,7 @@
     "starters": [
       {
         "name": "Oeuf mayo",
-        "image": ""
+        "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/03dc87f4e884eee0ab6ae1fca0462a268673aee9/public/photos/37527a4b-ffa7-4bdf-8769-34117b17d4d2-image.jpg"
       },
       {
         "name": "Terrine du jour",
@@ -100,7 +100,8 @@
         "name": "Dessert du jour 2",
         "image": ""
       }
-    ]
+    ],
+    "theme": "bistrot"
   },
   "menu": [
     {
