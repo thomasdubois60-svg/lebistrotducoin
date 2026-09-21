@@ -218,6 +218,12 @@
           "image": "/photos/1785937341703-img-5882.jpeg"
         },
         {
+          "name": "Le Bist’Croq",
+          "description": "Croque monsieur maison (pain de mie,cheddar,jambon blanc,belchamel maison) ",
+          "price": "5€/8€ les deux",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/88f705f06d9acd915ed41c56741aed927aeaf53b/public/photos/c77b3949-3166-4aaf-9234-198ed357f8b1-0d8c647e-0054-4c15-be25-a3e3e546e82c.png"
+        },
+        {
           "name": "Saucisson sec du terroir",
           "description": "Cèpes, nature ou piment d’Espelette",
           "price": "6 €",
@@ -526,6 +532,7 @@
       "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/3709dc6d6c064ebb8ededecb76eadcf36c7e8343/public/photos/be4ed41e-5af6-4c87-b4ef-6252a6cf7d05-img-5440.jpg"
     }
   },
+  "translations": {},
   "menuStyle": "ardoise",
   "heroImageAlt": "",
   "loyaltyProgram": {
