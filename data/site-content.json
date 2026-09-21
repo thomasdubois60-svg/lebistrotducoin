@@ -64,15 +64,11 @@
     ],
     "starters": [
       {
-        "name": "Oeuf mayo",
-        "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/03dc87f4e884eee0ab6ae1fca0462a268673aee9/public/photos/37527a4b-ffa7-4bdf-8769-34117b17d4d2-image.jpg"
-      },
-      {
-        "name": "Terrine du jour",
+        "name": "Salade de pomme de terre ",
         "image": ""
       },
       {
-        "name": "Salade de pomme de terre ",
+        "name": "Nouveau entrée",
         "image": ""
       }
     ],
