@@ -349,17 +349,37 @@
         {
           "name": "Masfleury ",
           "description": "Rosé de Provence ",
-          "price": "12 cl:5 € · 25 cl:9€.  50cl:16€"
+          "price": "12 cl:5 €/25 cl:9€/50cl:16€"
         },
         {
           "name": "Saint-Nicolas-de-Bourgueil ",
           "description": "Rouge de Loire ",
-          "price": "12 cl:5€. 25 cl:9€. 50cl:16€"
+          "price": "12 cl:5€/25 cl:9€/50cl:16€"
         },
         {
-          "name": "Nouveau produit",
+          "name": "George",
           "description": "",
-          "price": ""
+          "price": "12cl:5,50€/25cl:10€/50cl:20€"
+        },
+        {
+          "name": "Malbec",
+          "description": "",
+          "price": "12cl:5.50€/25cl:10€/50cl:20€"
+        },
+        {
+          "name": "Figuerette ",
+          "description": "",
+          "price": "12cl:5€/25cl:9€/50cl:18€"
+        },
+        {
+          "name": "Coteaux du layon",
+          "description": "",
+          "price": "12cl:5€/25cl:9€/50cl:18€"
+        },
+        {
+          "name": "Chinon",
+          "description": "",
+          "price": "12cl:5€/25cl:9€/50cl:18€"
         }
       ],
       "style": "",
