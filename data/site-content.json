@@ -348,14 +348,13 @@
       "items": [
         {
           "name": "Masfleury — rosé de Provence",
-          "description": "12 cl:5 € · 25 cl:9€.  50cl:16€",
-          "price": ""
+          "description": "",
+          "price": "12 cl:5 € · 25 cl:9€.  50cl:16€"
         },
         {
           "name": "Saint-Nicolas-de-Bourgueil — rouge de Loire",
-          "description": "12 cl:5€. 25 cl:9€. 50cl:16€",
-          "price": "",
-          "image": "/photos/1788365399106-saint-nicolas-de-bourgueil-eglise-jpg.jpg"
+          "description": "",
+          "price": "12 cl:5€. 25 cl:9€. 50cl:16€"
         }
       ],
       "style": "",
