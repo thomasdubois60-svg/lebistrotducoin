@@ -1,11 +1,16 @@
 'use client'
-import { createContext, useContext, useEffect, useState } from 'react'
+import { createContext, useContext, useEffect, useState, useMemo } from 'react'
+import {useLanguage} from './language-provider'
+import {usePathname} from 'next/navigation'
+import {localizeContent} from '@/lib/content-translations'
 import { defaultContent, normalizeContent, SiteContent } from '@/lib/default-content'
 
-const ContentContext = createContext<SiteContent>(defaultContent)
+// Keep unpublished fallback photos out of the first render, including SSR.
+const initialContent = { ...defaultContent, heroImage: '', privatization: { ...defaultContent.privatization, photos: [] } }
+const ContentContext = createContext<SiteContent>(initialContent)
 
 export function ContentProvider({ children }: { children: React.ReactNode }) {
-  const [content, setContent] = useState(defaultContent)
+  const [content, setContent] = useState<SiteContent>(initialContent)
   useEffect(() => {
     let disposed = false
     let latestRequest = 0
@@ -35,6 +40,9 @@ export function ContentProvider({ children }: { children: React.ReactNode }) {
       window.removeEventListener('bistrot-content-updated', update)
     }
   }, [])
-  return <ContentContext.Provider value={content}>{children}</ContentContext.Provider>
+  const {locale}=useLanguage()
+  const pathname=usePathname()
+  const localized=useMemo(()=>localizeContent(content,pathname.startsWith('/administration')?'fr':locale),[content,locale,pathname])
+  return <ContentContext.Provider value={localized}>{children}</ContentContext.Provider>
 }
 export const useSiteContent = () => useContext(ContentContext)

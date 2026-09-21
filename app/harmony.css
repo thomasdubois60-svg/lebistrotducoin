@@ -1,0 +1,44 @@
+/* Shared presentation only: menu layouts and business components keep their own rules. */
+:root{--surface-radius:24px;--soft-shadow:0 8px 28px rgba(53,30,23,.055)}
+.container{max-width:1200px}
+.button{border-radius:999px;padding:16px 25px;min-height:48px;line-height:1.35;text-align:center;box-shadow:0 3px 12px rgba(25,15,12,.075);transition:background-color .18s ease,box-shadow .18s ease,transform .18s ease}
+.button:focus-visible,a:focus-visible,button:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #b78b56;outline-offset:4px}
+@media(hover:hover){.button:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(25,15,12,.12)}}
+.button:active{transform:scale(.98)}
+.page-hero{padding:clamp(44px,6vw,88px) 0;background:linear-gradient(135deg,#f6f0e7,#eee1d1);border-bottom:1px solid rgba(129,87,48,.12)}
+.page-hero h1{font-size:clamp(38px,5.5vw,68px);max-width:1000px;overflow-wrap:anywhere;line-height:1.1}
+.page-hero p{max-width:760px;line-height:1.75}
+.section{padding:clamp(48px,6vw,84px) 0}
+.wood-card,.contact-card,.event-card,.social-card,.empty-state,.club-form,.club-benefits,.member-login-card,.member-dashboard,.install-guide,.qr-card,.push-card,.install-prompt{border-radius:var(--surface-radius);box-shadow:var(--soft-shadow)}
+.wood-card{border:1px solid var(--line);padding:32px}
+.home-links{gap:18px 24px}.home-links a{padding:8px 0}
+.text-link,.footer a[href*="maps"],.contact-card a[href*="maps"]{text-underline-offset:5px}
+.footer a[href*="maps"],.contact-card a[href*="maps"]{text-decoration:underline}
+.story-photo{border-radius:32px;box-shadow:var(--soft-shadow);min-height:clamp(420px,52vw,720px)}
+.story-copy blockquote{border-radius:0 24px 24px 0;box-shadow:var(--soft-shadow)}
+.story-grid{gap:clamp(28px,5vw,64px)}
+.event-card{border:1px solid var(--line)}.event-card>img{aspect-ratio:16/10;height:auto;max-height:360px;object-fit:cover}
+.event-content{padding:28px}.event-content .eyebrow{display:inline-block;line-height:1.65;background:#f7eee2;border-radius:14px;padding:8px 12px;letter-spacing:.08em}
+.event-content h2{font-size:clamp(28px,3vw,38px);overflow-wrap:anywhere;margin-top:18px}
+.gallery-item{border-radius:24px}.gallery-item figcaption{border-radius:12px;max-width:calc(100% - 36px);overflow-wrap:anywhere}
+.privatization-gallery{gap:24px}.privatization-gallery .gallery-item:only-child{grid-column:1/-1;max-width:850px;width:100%;justify-self:center}
+.review-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}.social-card{border:1px solid var(--line);padding:24px;transition:transform .18s ease}
+.social-card:hover{transform:translateY(-2px)}
+.contact-card{padding:32px}.contact-card p{overflow-wrap:anywhere}.map{border-radius:24px;box-shadow:var(--soft-shadow)}
+.footer{border-top:3px solid #987044}.footer-grid{gap:30px}.footer p{color:#c4bcb5}.footer a{display:inline-block;padding:4px 0}.footer-bottom{color:#aaa}
+.club-form input,.member-login-card input{border-radius:12px;min-height:46px}.club-form input[type=checkbox]{min-height:20px;min-width:20px}
+.club-benefit,.club-advantage-card,.club-summary-grid article,.member-code-card,.club-dashboard-section,.promotion-card,.club-program-copy,.ios-install-help{border-radius:20px}
+.club-dashboard-section{overflow:hidden}.club-dashboard-section summary{padding:20px 24px;min-height:56px}.club-advantage-card{box-shadow:var(--soft-shadow);padding:24px;gap:22px}
+.member-code-card img,.club-advantage-card img{background:white;padding:12px;border-radius:18px;max-width:100%;object-fit:contain}
+.club-summary-grid article{padding:22px}.club-history-wrap{overflow-x:auto;max-width:100%}.club-history-table th{white-space:normal}.club-history-table td{overflow-wrap:anywhere}
+.club-form-grid>*{min-width:0}.member-dashboard-head>*{min-width:0}.club-advantage-card>*{min-width:0}
+.language-control{position:relative;display:inline-flex;align-items:center;justify-content:center;flex:0 0 78px;min-width:78px;height:44px;border:1px solid #9b8570;border-radius:999px;color:#fff;font:600 13px/1 system-ui;background:rgba(255,255,255,.045);order:3}
+.language-control select{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;font-size:16px}.language-control option{color:#251d18;background:#fff}
+.language-control:focus-within{outline:3px solid #d5ac7b;outline-offset:3px}.nav-wrap{gap:18px}.nav{min-width:0;flex-wrap:wrap;justify-content:flex-end}.brand{flex-shrink:0}
+.site-header .nav a{white-space:nowrap}.site-header .nav .button{min-height:40px}.site-header .nav-wrap{min-height:78px;height:auto;padding-top:10px;padding-bottom:10px}
+@media(max-width:1100px){.menu-button{display:block;order:4;min-width:44px;min-height:44px}.language-control{margin-left:auto;order:3}.nav{display:none;position:absolute;top:100%;left:14px;right:14px;border-radius:0 0 24px 24px;box-shadow:0 18px 32px #0003;background:#211b18;padding:18px;max-height:calc(100dvh - 100px);overflow-y:auto;flex-direction:column;align-items:stretch;gap:4px}.nav.open{display:flex}.nav a{min-height:44px;display:flex;align-items:center;padding:10px 14px;border-radius:12px}.nav a.active{background:#ffffff12}.site-header .nav-wrap{position:relative}.nav-wrap{gap:10px}}
+@media(max-width:800px){.container{width:calc(100% - 36px)}.hero h1{font-size:clamp(52px,13vw,72px)}.hero .actions{gap:12px}.page-hero{text-align:left}.page-hero h1{font-size:clamp(36px,9vw,52px)}.intro-grid,.contact-grid,.story-grid,.club-layout{grid-template-columns:minmax(0,1fr)}.feature-grid,.footer-grid{grid-template-columns:minmax(0,1fr)}.wood-card,.contact-card{padding:25px}.story-photo{min-height:440px}.event-content{padding:22px}.events-grid{gap:24px}.privatization-gallery .gallery-item{min-height:280px}.club-advantage-card{display:flex;flex-wrap:wrap}.club-advantage-card img{width:170px;height:170px}.club-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.member-dashboard,.member-login-card,.club-form,.club-benefits{padding:24px}.member-code-card{padding:24px}.footer{padding-top:42px}.footer-grid{gap:22px}}
+@media(min-width:801px) and (max-width:1100px){.club-layout{grid-template-columns:1fr 1fr}.story-grid{gap:32px}.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(prefers-reduced-motion:reduce){.button,.social-card,.nav,.gallery-item img{transition:none}.button:hover,.button:active,.social-card:hover{transform:none}}
+@media(min-width:1101px){.site-header .nav-wrap{max-width:1320px;width:calc(100% - 48px)}.site-header .nav{gap:12px;flex-wrap:nowrap}.site-header .nav a{font-size:12px}}
+.push-card h2{overflow-wrap:anywhere;hyphens:auto}

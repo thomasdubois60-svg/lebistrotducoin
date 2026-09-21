@@ -1,0 +1,24 @@
+.button.button {
+  border-radius: 999px;
+  padding: 17px 28px;
+  min-height: 54px;
+  line-height: 1.4;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(25, 15, 12, .1);
+  transition: background-color .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+
+@media (hover: hover) {
+  .button.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(25, 15, 12, .16);
+  }
+}
+
+.button.button:active { transform: translateY(0) scale(.98); }
+.button.button:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .button.button { transition: none; }
+  .button.button:hover, .button.button:active { transform: none; }
+}

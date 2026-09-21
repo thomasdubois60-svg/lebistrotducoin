@@ -1,4 +1,5 @@
 'use client'
+import {useLanguage} from '@/components/language-provider'
 
 import { useEffect, useState } from 'react'
 
@@ -15,6 +16,8 @@ const isStandalone = () => window.matchMedia('(display-mode: standalone)').match
 const isIOS = () => /iphone|ipad|ipod/i.test(navigator.userAgent)
 
 export function PushSubscriptionManager({ memberCode }: { memberCode?: string } = {}) {
+ const {t,locale}=useLanguage();
+
   const [status, setStatus] = useState<Status>('loading')
   const [message, setMessage] = useState('Vérification de votre appareil…')
   const [busy, setBusy] = useState(false)
@@ -79,10 +82,10 @@ export function PushSubscriptionManager({ memberCode }: { memberCode?: string } 
   }
 
   return <div className="push-card">
-    <h2>Notifications du Bistrot</h2>
-    <p>{message}</p>
-    {status === 'needs-install' && <div className="ios-install-help"><strong>Sur iPhone :</strong> touchez Partager, puis « Sur l’écran d’accueil ». Ouvrez ensuite l’icône LBDC et revenez sur cette page.</div>}
-    {status === 'ready' && <button className="button" onClick={subscribe} disabled={busy}>{busy ? 'Activation…' : 'Activer les notifications'}</button>}
-    {status === 'subscribed' && <button className="button secondary" onClick={unsubscribe} disabled={busy}>{busy ? 'Veuillez patienter…' : 'Désactiver les notifications'}</button>}
+    <h2>{t("Notifications du Bistrot")}</h2>
+    <p>{t(message)}</p>
+    {status === 'needs-install' && <div className="ios-install-help"><strong>{t("Sur iPhone :")}</strong> {t(" touchez Partager, puis « Sur l’écran d’accueil ». Ouvrez ensuite l’icône LBDC et revenez sur cette page.")}</div>}
+    {status === 'ready' && <button className="button" onClick={subscribe} disabled={busy}>{busy ? t("Activation…") : t("Activer les notifications")}</button>}
+    {status === 'subscribed' && <button className="button secondary" onClick={unsubscribe} disabled={busy}>{busy ? t("Veuillez patienter…") : t("Désactiver les notifications")}</button>}
   </div>
 }

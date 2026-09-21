@@ -18,6 +18,8 @@ export type ClubContent = {
   savingsMessage: string
 }
 export type SiteContent = {
+  translations?: Partial<Record<'en'|'es'|'pt'|'de',Record<string,{source:string;value:string}>>>
+
   menuStyle?: string
   heroImageAlt?: string
   sectionPhotos?: Record<string,{image?:string;alt?:string}>
@@ -187,7 +189,7 @@ export function normalizeContent(value: Partial<SiteContent> | null | undefined)
     galleryAlbums: normalizeGalleryAlbums({...value,gallery:Array.isArray(value?.gallery)?value.gallery:defaultContent.gallery}),
     gallery: value?.gallery?.length ? value.gallery : defaultContent.gallery,
     story: { ...defaultContent.story, ...(value?.story || {}), paragraphs: value?.story?.paragraphs?.length ? value.story.paragraphs : defaultContent.story.paragraphs },
-    privatization: { ...defaultContent.privatization, ...(value?.privatization || {}), photos: value?.privatization?.photos?.length ? value.privatization.photos : defaultContent.privatization.photos },
+    privatization: { ...defaultContent.privatization, ...(value?.privatization || {}), photos: Array.isArray(value?.privatization?.photos) ? value.privatization.photos : defaultContent.privatization.photos },
     events: value?.events || defaultContent.events,
     reviews: { ...defaultContent.reviews, ...(value?.reviews || {}) },
     socials: value?.socials || defaultContent.socials,

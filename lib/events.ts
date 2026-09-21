@@ -1,6 +1,6 @@
 import type { EventItem } from './default-content'
 
-export type ManagedEvent = EventItem & { time?: string; endDate?: string; endTime?: string }
+export type ManagedEvent = EventItem & { _sourceTitle?: string; time?: string; endDate?: string; endTime?: string }
 
 function parseEventDate(dateValue?: string, timeValue?: string, endOfDay = false) {
   const date = String(dateValue || '').trim()
@@ -35,12 +35,12 @@ export function featuredEvent(events: EventItem[], now = Date.now()) {
 }
 
 export function eventAnchor(event: ManagedEvent) {
-  const source = `${event.title}-${event.date}-${event.time || ''}`.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+  const source = `${event._sourceTitle||event.title}-${event.date}-${event.time || ''}`.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
   return `evenement-${source || 'bistrot'}`
 }
 
-export function eventDateLabel(event: ManagedEvent) {
+export function eventDateLabel(event: ManagedEvent, locale = 'fr-FR') {
   let date = event.date
-  if (/^\d{4}-\d{2}-\d{2}$/.test(event.date)) date = new Intl.DateTimeFormat('fr-FR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(`${event.date}T12:00:00`))
-  return [date, event.time ? `à ${event.time.replace(':', 'h')}` : ''].filter(Boolean).join(' ')
+  if (/^\d{4}-\d{2}-\d{2}$/.test(event.date)) date = new Intl.DateTimeFormat(locale, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(`${event.date}T12:00:00`))
+  return [date, event.time ? `${locale.startsWith('fr')?'à ':''}${event.time.replace(':',locale.startsWith('fr')?'h':':')}` : ''].filter(Boolean).join(' ')
 }
