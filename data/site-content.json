@@ -347,39 +347,46 @@
       "category": "Nos vins au verre et pichet ",
       "items": [
         {
-          "name": "Masfleury ",
-          "description": "Rosé de Provence ",
-          "price": "12 cl:5 €/25 cl:9€/50cl:16€"
-        },
-        {
-          "name": "Saint-Nicolas-de-Bourgueil ",
-          "description": "Rouge de Loire ",
-          "price": "12 cl:5€/25 cl:9€/50cl:16€"
-        },
-        {
-          "name": "George",
-          "description": "",
-          "price": "12cl:5,50€/25cl:10€/50cl:20€"
-        },
-        {
-          "name": "Malbec",
-          "description": "",
-          "price": "12cl:5.50€/25cl:10€/50cl:20€"
-        },
-        {
           "name": "Figuerette ",
           "description": "",
-          "price": "12cl:5€/25cl:9€/50cl:18€"
+          "price": "12cl:5€/25cl:9€/50cl:18€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/ab3d93c1cd6ccefa9259d99e60bd6e1526218efc/public/photos/2cd30bea-9116-4ca4-b64c-3b9836741eb5-27b8d6e7-1edd-4127-8098-e03e9d6c5175.png"
         },
         {
           "name": "Coteaux du layon",
           "description": "",
-          "price": "12cl:5€/25cl:9€/50cl:18€"
+          "price": "12cl:5€/25cl:9€/50cl:18€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/c6c0b7163df6a8f40f051f860c78bfd8b330b4fb/public/photos/6ba8be87-d7df-437d-8ac3-3c8b8b75b2be-986f98c7-1e78-4982-b27a-ffb23f75f577.png"
+        },
+        {
+          "name": "Masfleury ",
+          "description": "Rosé de Provence ",
+          "price": "12 cl:5 €/25 cl:9€/50cl:16€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/4ad0da5438ee76fd4e9c957861f612a7f4976af1/public/photos/434aada0-0c88-465e-8892-02749214a98b-68517395-99ed-49f8-8527-0a44bb64be61.png"
+        },
+        {
+          "name": "George",
+          "description": "",
+          "price": "12cl:5,50€/25cl:10€/50cl:20€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/5d487d01a031e06bd398c4f7d25677ee4e09ea07/public/photos/e9c0a911-aeb8-43a6-8710-ea378e221e65-1f7ab221-217b-4f74-b6eb-a987026e6b7c.png"
+        },
+        {
+          "name": "Saint-Nicolas-de-Bourgueil ",
+          "description": "Rouge de Loire ",
+          "price": "12 cl:5€/25 cl:9€/50cl:16€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/a9d0d7d9ca2b8067a5bf07906e07fcca4a9dcbe1/public/photos/e232948c-ebda-4d43-b6e5-854cc77805f7-e6888fe9-7143-459e-852e-683df49220dc.png"
         },
         {
           "name": "Chinon",
           "description": "",
-          "price": "12cl:5€/25cl:9€/50cl:18€"
+          "price": "12cl:5€/25cl:9€/50cl:18€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/f464fb9026872bf6e901e58303ad4a124b1b16cb/public/photos/427910f1-2036-40ec-b1f9-c490c74c8c6e-62baa748-b528-45e7-92d8-643fa0ea0a77.png"
+        },
+        {
+          "name": "Malbec",
+          "description": "",
+          "price": "12cl:5.50€/25cl:10€/50cl:20€",
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/4fd5a729f4c878a2ba0200a81e34d63e7d847391/public/photos/235654d1-c23f-4838-af62-94c4d27e36e5-3015f871-f1a3-4a80-b30a-d97774139474.png"
         }
       ],
       "style": "",
