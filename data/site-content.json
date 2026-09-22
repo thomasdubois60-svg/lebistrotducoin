@@ -434,7 +434,8 @@
           "price": "50€",
           "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/3b988a13b7b9803b4488397a723548d790643d50/public/photos/a10b393a-838f-4521-aefb-8899561b35d4-0aa1fef7-d761-4a3d-b308-f3f438556d82.png"
         }
-      ]
+      ],
+      "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/18631f8a41d538a51723a986f95cd390827136fd/public/photos/a00bb916-b91a-4d0c-9fa1-a48d4dd25943-8df16d35-6a3a-488f-bf49-b077f9b1a343.png"
     },
     {
       "category": "Whiskys",
@@ -630,7 +631,2448 @@
       "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/3709dc6d6c064ebb8ededecb76eadcf36c7e8343/public/photos/be4ed41e-5af6-4c87-b4ef-6252a6cf7d05-img-5440.jpg"
     }
   },
-  "translations": {},
+  "translations": {
+    "en": {
+      "general.closureMessage": {
+        "source": "Le Bistrot est exceptionnellement fermé jusqu’au 26/08/2026",
+        "value": "The Bistrot is exceptionally closed until 26/08/2026"
+      },
+      "general.reopeningBannerMessage": {
+        "source": "Le Bistrot Du Coin est de retour — Nous vous attendons !",
+        "value": "Le Bistrot Du Coin is back — We look forward to seeing you!"
+      },
+      "pageTexts.homeSlogan": {
+        "source": "Le Bistrot est avant tout un lieu où l’on vient se rencontrer, passer et partager de bons moments. Voilà ce que vous trouverez en poussant nos portes.",
+        "value": "Above all, the Bistrot is a place to meet, spend time together and share good moments. That is what awaits you when you walk through our doors."
+      },
+      "pageTexts.todayIntro": {
+        "source": "Une formule qui change au fil des envies du chef et des produits disponibles.",
+        "value": "A set menu that changes with the chef's inspiration and the ingredients available."
+      },
+      "pageTexts.menuIntro": {
+        "source": "Des recettes de bistrot, généreuses et sans détour.",
+        "value": "Generous, straightforward bistro cooking."
+      },
+      "pageTexts.galleryIntro": {
+        "source": "Quelques images de notre cuisine et de l’ambiance du Bistrot.",
+        "value": "A few glimpses of our food and the atmosphere at the Bistrot."
+      },
+      "pageTexts.contactIntro": {
+        "source": "Une question, une réservation ou simplement l’envie de venir nous voir ?",
+        "value": "A question, a booking, or simply feel like visiting us?"
+      },
+      "pageTexts.eventsIntro": {
+        "source": "Concerts, karaokés, soirées à thème et rendez-vous à ne pas manquer.",
+        "value": "Concerts, karaoke, themed evenings and dates for your diary."
+      },
+      "pageTexts.reviewsIntro": {
+        "source": "Retrouvez les avis de nos clients et suivez toute l’actualité du Bistrot.",
+        "value": "Read our guests' reviews and keep up with all the latest news from the Bistrot."
+      },
+      "daily.dateLabel": {
+        "source": "Aujourd’hui",
+        "value": "Today"
+      },
+      "daily.startersTitle": {
+        "source": "3 entrées au choix",
+        "value": "Choice of 3 starters"
+      },
+      "daily.mainsTitle": {
+        "source": "2 plats au choix",
+        "value": "Choice of 2 main courses"
+      },
+      "daily.dessertsTitle": {
+        "source": "3 desserts au choix",
+        "value": "Choice of 3 desserts"
+      },
+      "daily.suggestionSupplementText": {
+        "source": "+4 € sur le prix du plat du jour ou de la formule choisie",
+        "value": "€4 supplement on the daily special or your chosen set menu"
+      },
+      "daily.formulas.0.name": {
+        "source": "Entrée seule",
+        "value": "Starter only"
+      },
+      "daily.formulas.1.name": {
+        "source": "Plat du jour",
+        "value": "Daily special"
+      },
+      "daily.formulas.2.name": {
+        "source": "Dessert seul",
+        "value": "Dessert only"
+      },
+      "daily.formulas.3.name": {
+        "source": "Entrée + plat ou plat + dessert",
+        "value": "Starter + main or main + dessert"
+      },
+      "daily.formulas.4.name": {
+        "source": "Entrée + plat + dessert",
+        "value": "Starter + main + dessert"
+      },
+      "daily.starters.0.name": {
+        "source": "Salade de pomme de terre ",
+        "value": "Potato salad"
+      },
+      "daily.mains.0.name": {
+        "source": "saucisse",
+        "value": "Sausage"
+      },
+      "daily.mains.1.name": {
+        "source": "Plat du jour 2",
+        "value": "Daily special 2"
+      },
+      "daily.suggestion.name": {
+        "source": "Suggestion du chef",
+        "value": "Chef's suggestion"
+      },
+      "daily.suggestion.description": {
+        "source": "Faux filet et ses frites maison ",
+        "value": "Sirloin steak with homemade fries"
+      },
+      "daily.desserts.0.name": {
+        "source": "Dessert du jour 1",
+        "value": "Dessert of the day 1"
+      },
+      "daily.desserts.1.name": {
+        "source": "Dessert du jour 2",
+        "value": "Dessert of the day 2"
+      },
+      "menu.0.category": {
+        "source": "Nos pressions",
+        "value": "Draught beers"
+      },
+      "menu.0.items.0.name": {
+        "source": "Pelforth",
+        "value": "Pelforth"
+      },
+      "menu.0.items.0.description": {
+        "source": "Blonde française 5,8%",
+        "value": "French blonde beer, 5.8%"
+      },
+      "menu.0.items.1.name": {
+        "source": "Pélican blonde",
+        "value": "Pélican blonde"
+      },
+      "menu.0.items.1.description": {
+        "source": "Blonde française non filtrée 7.5%",
+        "value": "Unfiltered French blonde beer, 7.5%"
+      },
+      "menu.0.items.2.name": {
+        "source": "Gallia West IPA",
+        "value": "Gallia West IPA"
+      },
+      "menu.0.items.2.description": {
+        "source": "IPA française 6%",
+        "value": "French IPA, 6%"
+      },
+      "menu.0.items.3.name": {
+        "source": "Pélican rouge ",
+        "value": "Pélican rouge"
+      },
+      "menu.0.items.3.description": {
+        "source": "Bière rouge à la griotte 7,5%",
+        "value": "Red beer with sour cherry, 7.5%"
+      },
+      "menu.0.items.4.name": {
+        "source": "Desperados Sunlight ",
+        "value": "Desperados Sunlight"
+      },
+      "menu.0.items.4.description": {
+        "source": "Goût citron jaune/citron vert 4%",
+        "value": "Lemon and lime flavour, 4%"
+      },
+      "menu.1.category": {
+        "source": "Bières en bouteille",
+        "value": "Bottled beers"
+      },
+      "menu.1.items.0.name": {
+        "source": "Paix Dieu ",
+        "value": "Paix Dieu"
+      },
+      "menu.1.items.0.description": {
+        "source": " Belgique_ Blonde triple, fruitée, épicée et ronde. 10.0°",
+        "value": "Belgium — Blonde triple, fruity, spicy and rounded. 10.0%"
+      },
+      "menu.1.items.1.name": {
+        "source": "Orval",
+        "value": "Orval"
+      },
+      "menu.1.items.1.description": {
+        "source": "Belgique_ Trappiste sèche, houblonnée, avec une note sauvage. 6.2°",
+        "value": "Belgium — Dry, hoppy Trappist beer with a wild note. 6.2%"
+      },
+      "menu.1.items.2.name": {
+        "source": "Chouffe blonde ",
+        "value": "Chouffe blonde"
+      },
+      "menu.1.items.2.description": {
+        "source": "Belgique_Blonde fruitée, épicée et légèrement houblonnée. 8.0°",
+        "value": "Belgium — Fruity, spicy and lightly hopped blonde beer. 8.0%"
+      },
+      "menu.1.items.3.name": {
+        "source": "Cherry Chouffe",
+        "value": "Cherry Chouffe"
+      },
+      "menu.1.items.3.description": {
+        "source": "Belgique_Fruité et gourmand, notes de cerise mûre, fraise, amande et légère touche épicée. 8.0°",
+        "value": "Belgium — Rich and fruity, with ripe cherry, strawberry and almond notes and a hint of spice. 8.0%"
+      },
+      "menu.1.items.4.name": {
+        "source": "Duvel",
+        "value": "Duvel"
+      },
+      "menu.1.items.4.description": {
+        "source": "Belgique_Goût : Blonde forte, fruitée, sèche et finement amère. 8.5°",
+        "value": "Belgium — Strong blonde beer, fruity, dry and delicately bitter. 8.5%"
+      },
+      "menu.1.items.5.name": {
+        "source": "Triple Karmeliet",
+        "value": "Triple Karmeliet"
+      },
+      "menu.1.items.5.description": {
+        "source": "Belgique_Tripel complexe, florale, vanillée et épicée. 8.4°",
+        "value": "Belgium — Complex tripel with floral, vanilla and spice notes. 8.4%"
+      },
+      "menu.1.items.6.name": {
+        "source": "Kwak ",
+        "value": "Kwak"
+      },
+      "menu.1.items.6.description": {
+        "source": "Belgique_Ambrée riche et gourmande, notes de biscuit, banane, orange, caramel et épices. 8.4°",
+        "value": "Belgium — Rich, full-bodied amber beer with biscuit, banana, orange, caramel and spice notes. 8.4%"
+      },
+      "menu.1.items.7.name": {
+        "source": "Rince Cochon",
+        "value": "Rince Cochon"
+      },
+      "menu.1.items.7.description": {
+        "source": "Belgique_Blonde forte, ronde, fruitée et légèrement épicée. 8.5°",
+        "value": "Belgium — Strong blonde beer, rounded, fruity and lightly spiced. 8.5%"
+      },
+      "menu.1.items.8.name": {
+        "source": "Hoagarden blanche ",
+        "value": "Hoagarden blanche"
+      },
+      "menu.1.items.8.description": {
+        "source": "Belgique_Blanche douce et rafraîchissante, aux notes d’orange, coriandre, agrumes et épices. 4.9°",
+        "value": "Belgium — Smooth, refreshing wheat beer with orange, coriander, citrus and spice notes. 4.9%"
+      },
+      "menu.1.items.9.name": {
+        "source": "Leffe  blonde ",
+        "value": "Leffe  blonde"
+      },
+      "menu.1.items.9.description": {
+        "source": "Belgique_Blonde d’abbaye, douce, maltée, avec vanille et clou de girofle. 6.6°",
+        "value": "Belgium — Smooth, malty blonde abbey beer with vanilla and clove notes. 6.6%"
+      },
+      "menu.2.category": {
+        "source": "À partager… ou pas",
+        "value": "To share… or not"
+      },
+      "menu.2.items.0.name": {
+        "source": "Planche mixte",
+        "value": "Mixed sharing board"
+      },
+      "menu.2.items.0.description": {
+        "source": "Rosette de Lyon, chorizo, terrine du moment, jambon de pays, jambon blanc et sélection de 3 fromages",
+        "value": "Rosette de Lyon salami, chorizo, terrine of the moment, cured ham, cooked ham and a selection of 3 cheeses"
+      },
+      "menu.2.items.2.name": {
+        "source": "Saucisson sec du terroir",
+        "value": "Traditional dry-cured sausage"
+      },
+      "menu.2.items.2.description": {
+        "source": "Cèpes, nature ou piment d’Espelette",
+        "value": "Porcini mushroom, plain or Espelette pepper"
+      },
+      "menu.2.items.3.name": {
+        "source": "Chips Lay’s 145 g",
+        "value": "Lay’s crisps, 145 g"
+      },
+      "menu.2.items.3.description": {
+        "source": "Nature, barbecue…",
+        "value": "Ready salted, barbecue…"
+      },
+      "menu.3.category": {
+        "source": "Cocktails du moment",
+        "value": "Seasonal cocktails"
+      },
+      "menu.3.items.0.name": {
+        "source": "Tequila Sunrise",
+        "value": "Tequila Sunrise"
+      },
+      "menu.3.items.0.description": {
+        "source": "Tequila, jus d’orange, sirop de grenadine",
+        "value": "Tequila, orange juice and grenadine syrup"
+      },
+      "menu.3.items.1.name": {
+        "source": "Délices des îles",
+        "value": "Island Delight"
+      },
+      "menu.3.items.1.description": {
+        "source": "Rhum blanc martiniquais, jus de maracuja, sirop de grenadine",
+        "value": "White rum from Martinique, passion fruit juice and grenadine syrup"
+      },
+      "menu.4.category": {
+        "source": "Softs",
+        "value": "Soft drinks"
+      },
+      "menu.4.items.0.name": {
+        "source": "Coca-Cola, Coca-Cola Zéro, Fuze Tea pêche, Schweppes, Orangina, Perrier, limonade et jus de fruits",
+        "value": "Coca-Cola, Coca-Cola Zero, Fuze Tea peach, Schweppes, Orangina, Perrier, lemonade and fruit juices"
+      },
+      "menu.5.category": {
+        "source": "Bières sans alcool",
+        "value": "Alcohol-free beers"
+      },
+      "menu.5.items.0.name": {
+        "source": "Heineken 0.0 ",
+        "value": "Heineken 0.0"
+      },
+      "menu.5.items.1.name": {
+        "source": "Desperados 00",
+        "value": "Desperados 00"
+      },
+      "menu.6.category": {
+        "source": "Apéritifs",
+        "value": "Aperitifs"
+      },
+      "menu.6.items.0.name": {
+        "source": "Ricard",
+        "value": "Ricard"
+      },
+      "menu.6.items.1.name": {
+        "source": "Kir",
+        "value": "Kir"
+      },
+      "menu.6.items.1.description": {
+        "source": "Cassis, mûre, pêche ou framboise",
+        "value": "Blackcurrant, blackberry, peach or raspberry"
+      },
+      "menu.6.items.2.name": {
+        "source": "Kir pétillant",
+        "value": "Sparkling kir"
+      },
+      "menu.6.items.3.name": {
+        "source": "Pétillant nature",
+        "value": "Sparkling wine"
+      },
+      "menu.6.items.3.description": {
+        "source": "Blanc de blancs brut",
+        "value": "Brut blanc de blancs"
+      },
+      "menu.6.items.4.name": {
+        "source": "Porto",
+        "value": "Porto"
+      },
+      "menu.6.items.4.description": {
+        "source": "Rouge ou blanc",
+        "value": "Red or white"
+      },
+      "menu.6.items.5.name": {
+        "source": "Martini",
+        "value": "Martini"
+      },
+      "menu.6.items.5.description": {
+        "source": "Rouge ou blanc",
+        "value": "Red or white"
+      },
+      "menu.9.category": {
+        "source": "Whiskys",
+        "value": "Whiskies"
+      },
+      "menu.9.items.0.name": {
+        "source": "Sir Edwards",
+        "value": "Sir Edwards"
+      },
+      "menu.9.items.0.description": {
+        "source": "    Écosse_\n    Doux et rond, notes de bois, fruits secs et épices. ",
+        "value": "Scotland — Smooth and rounded, with wood, dried fruit and spice notes."
+      },
+      "menu.9.items.1.name": {
+        "source": "Jameson",
+        "value": "Jameson"
+      },
+      "menu.9.items.1.description": {
+        "source": "    Irlande_\n    Souple et gourmand, notes de vanille, noix, épices et xérès.",
+        "value": "Ireland — Smooth and rich, with vanilla, nut, spice and sherry notes."
+      },
+      "menu.9.items.2.name": {
+        "source": "Jack Daniel’s",
+        "value": "Jack Daniel’s"
+      },
+      "menu.9.items.2.description": {
+        "source": "    Tennessee, États-Unis_\n    Rond et boisé, notes de caramel et de vanille. ",
+        "value": "Tennessee, USA — Rounded and woody, with caramel and vanilla notes."
+      },
+      "menu.9.items.3.name": {
+        "source": "Glenlivet",
+        "value": "Glenlivet"
+      },
+      "menu.9.items.3.description": {
+        "source": "    Speyside, Écosse_\n    Doux et fruité, notes d’ananas, poire et vanille. ",
+        "value": "Speyside, Scotland — Smooth and fruity, with pineapple, pear and vanilla notes."
+      },
+      "menu.9.items.4.name": {
+        "source": "Togouchi",
+        "value": "Togouchi"
+      },
+      "menu.9.items.4.description": {
+        "source": "    Hiroshima, Japon_\n    Fin et doux, notes de fruits, noix, vanille et épices. ",
+        "value": "Hiroshima, Japan — Delicate and smooth, with fruit, nut, vanilla and spice notes."
+      },
+      "menu.9.items.5.name": {
+        "source": "Aerstone",
+        "value": "Aerstone"
+      },
+      "menu.9.items.5.description": {
+        "source": "    Écosse_\n    Légèrement tourbé, fumé, malté et chaleureux.",
+        "value": "Scotland — Lightly peated, smoky, malty and warming."
+      },
+      "menu.9.items.6.name": {
+        "source": "Big Peat",
+        "value": "Big Peat"
+      },
+      "menu.9.items.6.description": {
+        "source": "    Islay, Écosse_\n    Très tourbé, fumé et marin, notes de cendre et de sel.",
+        "value": "Islay, Scotland — Heavily peated, smoky and maritime, with ash and salt notes."
+      },
+      "menu.10.category": {
+        "source": "Boissons chaudes",
+        "value": "Hot drinks"
+      },
+      "menu.10.items.0.name": {
+        "source": "Expresso / Café serré",
+        "value": "Espresso / Ristretto"
+      },
+      "menu.10.items.1.name": {
+        "source": "Allongé / Noisette",
+        "value": "Long coffee / Espresso with a dash of milk"
+      },
+      "menu.10.items.2.name": {
+        "source": "Thé / Café crème",
+        "value": "Tea / Coffee with milk"
+      },
+      "menu.10.items.3.name": {
+        "source": "Chocolat chaud",
+        "value": "Hot chocolate"
+      },
+      "menu.10.items.4.name": {
+        "source": "Cappuccino",
+        "value": "Cappuccino"
+      },
+      "gallery.0.alt": {
+        "source": "Façade du Bistrot Du Coin",
+        "value": "The facade of Le Bistrot Du Coin"
+      },
+      "gallery.0.label": {
+        "source": "Le Bistrot",
+        "value": "Le Bistrot"
+      },
+      "gallery.1.alt": {
+        "source": "Bar et intérieur du restaurant",
+        "value": "Bar and restaurant interior"
+      },
+      "gallery.1.label": {
+        "source": "Notre ambiance",
+        "value": "Our atmosphere"
+      },
+      "gallery.2.alt": {
+        "source": "Assiette maison",
+        "value": "A homemade dish"
+      },
+      "gallery.2.label": {
+        "source": "Cuisine maison",
+        "value": "Homemade cooking"
+      },
+      "gallery.3.alt": {
+        "source": "Couscous du Bistrot",
+        "value": "Bistrot couscous"
+      },
+      "gallery.3.label": {
+        "source": "Plat du jour",
+        "value": "Daily special"
+      },
+      "gallery.4.alt": {
+        "source": "Pavé de saumon",
+        "value": "Salmon fillet"
+      },
+      "gallery.4.label": {
+        "source": "Produits frais",
+        "value": "Fresh ingredients"
+      },
+      "gallery.5.alt": {
+        "source": "Crevettes et riz",
+        "value": "Prawns and rice"
+      },
+      "gallery.5.label": {
+        "source": "Saveurs du moment",
+        "value": "Seasonal flavours"
+      },
+      "gallery.6.alt": {
+        "source": "Choucroute du Bistrot",
+        "value": "Bistrot sauerkraut platter"
+      },
+      "gallery.6.label": {
+        "source": "Générosité",
+        "value": "Generous portions"
+      },
+      "gallery.7.label": {
+        "source": "Nouvelle photo",
+        "value": "New photo"
+      },
+      "gallery.8.label": {
+        "source": "Langue de bœuf et son écrasé de pomme de terre maison",
+        "value": "Beef tongue with homemade crushed potatoes"
+      },
+      "gallery.9.label": {
+        "source": "Magret de canard ",
+        "value": "Duck breast"
+      },
+      "gallery.10.label": {
+        "source": "Nouvelle photo",
+        "value": "New photo"
+      },
+      "galleryAlbums.0.title": {
+        "source": "Le Bistrot ",
+        "value": "Le Bistrot"
+      },
+      "galleryAlbums.1.title": {
+        "source": "Nos entrées ",
+        "value": "Our starters"
+      },
+      "galleryAlbums.2.title": {
+        "source": "Galerie",
+        "value": "Gallery"
+      },
+      "galleryAlbums.3.title": {
+        "source": "Nos plats ",
+        "value": "Our main courses"
+      },
+      "galleryAlbums.4.title": {
+        "source": "Nos desserts",
+        "value": "Our desserts"
+      },
+      "story.eyebrow": {
+        "source": "Depuis 2021",
+        "value": "Since 2021"
+      },
+      "story.title": {
+        "source": "La petite histoire du Bistrot",
+        "value": "The story of our Bistrot"
+      },
+      "story.intro": {
+        "source": "C’est l’histoire de deux passionnés réunis autour du goût, de l’accueil et du plaisir de partager.",
+        "value": "This is the story of two enthusiasts brought together by good food, hospitality and the joy of sharing."
+      },
+      "story.paragraphs.0": {
+        "source": "Depuis tout petit, Ismaël rêvait d’ouvrir son propre restaurant. Il a suivi les études qui lui ont permis de faire de sa passion son métier. En 2006, après plusieurs années d’expérience, il ouvre son premier restaurant, qu’il revendra treize ans plus tard.",
+        "value": "Ever since he was a child, Ismaël dreamed of opening his own restaurant. He trained to turn his passion into his profession. In 2006, after several years of experience, he opened his first restaurant, which he sold thirteen years later."
+      },
+      "story.paragraphs.1": {
+        "source": "Thomas, lui, rêvait simplement de travailler avec plaisir. Il découvre la restauration en extra pendant ses études, en 2013, et se prend rapidement au jeu du service et de l’animation en salle.",
+        "value": "Thomas simply dreamed of enjoying his work. He discovered the restaurant world through part-time work while studying in 2013, and soon developed a passion for service and bringing the dining room to life."
+      },
+      "story.paragraphs.2": {
+        "source": "En 2019, les deux passionnés se rencontrent. Deux ans plus tard, le 2 novembre 2021, ils ouvrent ensemble Le Bistrot Du Coin : Ismaël pour régaler vos papilles en cuisine, et Thomas pour vous servir et faire vivre la salle.",
+        "value": "In 2019, the two enthusiasts met. Two years later, on 2 November 2021, they opened Le Bistrot Du Coin together: Ismaël delights your taste buds in the kitchen, while Thomas looks after you and brings the dining room to life."
+      },
+      "story.paragraphs.3": {
+        "source": "De cette rencontre est née une belle amitié, puis une adresse chaleureuse qui grandit chaque année grâce à vous.",
+        "value": "That meeting grew into a wonderful friendship, then into a welcoming place that continues to grow every year thanks to you."
+      },
+      "story.quote": {
+        "source": "Le Bistrot est avant tout un lieu où l’on vient se rencontrer, passer et partager de bons moments. Voilà ce que vous trouverez en poussant nos portes.",
+        "value": "Above all, the Bistrot is a place to meet, spend time together and share good moments. That is what awaits you when you walk through our doors."
+      },
+      "story.imageAlt": {
+        "source": "Le bar chaleureux du Bistrot Du Coin",
+        "value": "The welcoming bar at Le Bistrot Du Coin"
+      },
+      "privatization.title": {
+        "source": "Privatisez Le Bistrot",
+        "value": "Make the Bistrot yours"
+      },
+      "privatization.intro": {
+        "source": "Un moment rien qu’à vous, imaginé selon vos envies.",
+        "value": "A moment just for you, created around your wishes."
+      },
+      "privatization.text": {
+        "source": "Nous pouvons privatiser le restaurant sur devis et selon les souhaits du client : repas de famille, anniversaire, réception professionnelle ou soirée privée. Contactez-nous directement afin que nous construisions ensemble une proposition adaptée.",
+        "value": "The restaurant can be hired privately with a personalised quote: family meals, birthdays, business receptions or private parties. Contact us directly so we can put together a proposal that suits you."
+      },
+      "privatization.photos.0.alt": {
+        "source": "Salle du Bistrot",
+        "value": "The Bistrot dining room"
+      },
+      "privatization.photos.0.label": {
+        "source": "Un lieu à votre image",
+        "value": "A place that feels like you"
+      },
+      "privatization.photos.1.alt": {
+        "source": "Façade du Bistrot",
+        "value": "The Bistrot facade"
+      },
+      "privatization.photos.1.label": {
+        "source": "Le Bistrot Du Coin",
+        "value": "Le Bistrot Du Coin"
+      },
+      "reviews.title": {
+        "source": "Avis Google & réseaux sociaux",
+        "value": "Google reviews & social media"
+      },
+      "reviews.intro": {
+        "source": "Votre avis compte beaucoup pour nous. Consultez les témoignages de nos clients ou partagez votre expérience.",
+        "value": "Your opinion means a great deal to us. Read what our guests have to say or share your own experience."
+      },
+      "loyaltyProgram.title": {
+        "source": "Programme de fidélité permanent",
+        "value": "Ongoing loyalty programme"
+      },
+      "loyaltyProgram.description": {
+        "source": "10 formules achetées, la 11e offerte",
+        "value": "Buy 10 set menus, get the 11th free"
+      },
+      "loyaltyProgram.reward": {
+        "source": "Formule offerte",
+        "value": "Free set menu"
+      },
+      "loyaltyProgram.clientText": {
+        "source": "10 formules achetées, la 11e offerte",
+        "value": "Buy 10 set menus, get the 11th free"
+      }
+    },
+    "es": {
+      "general.closureMessage": {
+        "source": "Le Bistrot est exceptionnellement fermé jusqu’au 26/08/2026",
+        "value": "El Bistrot permanecerá cerrado excepcionalmente hasta el 26/08/2026"
+      },
+      "general.reopeningBannerMessage": {
+        "source": "Le Bistrot Du Coin est de retour — Nous vous attendons !",
+        "value": "Le Bistrot Du Coin vuelve a abrir. ¡Os esperamos!"
+      },
+      "pageTexts.homeSlogan": {
+        "source": "Le Bistrot est avant tout un lieu où l’on vient se rencontrer, passer et partager de bons moments. Voilà ce que vous trouverez en poussant nos portes.",
+        "value": "El Bistrot es, ante todo, un lugar para encontrarse, pasar tiempo juntos y compartir buenos momentos. Eso es lo que descubrirás al cruzar nuestras puertas."
+      },
+      "pageTexts.todayIntro": {
+        "source": "Une formule qui change au fil des envies du chef et des produits disponibles.",
+        "value": "Un menú que cambia según la inspiración del chef y los productos disponibles."
+      },
+      "pageTexts.menuIntro": {
+        "source": "Des recettes de bistrot, généreuses et sans détour.",
+        "value": "Recetas de bistrot, generosas y sin complicaciones."
+      },
+      "pageTexts.galleryIntro": {
+        "source": "Quelques images de notre cuisine et de l’ambiance du Bistrot.",
+        "value": "Unas imágenes de nuestra cocina y del ambiente del Bistrot."
+      },
+      "pageTexts.contactIntro": {
+        "source": "Une question, une réservation ou simplement l’envie de venir nous voir ?",
+        "value": "¿Una pregunta, una reserva o simplemente ganas de venir a vernos?"
+      },
+      "pageTexts.eventsIntro": {
+        "source": "Concerts, karaokés, soirées à thème et rendez-vous à ne pas manquer.",
+        "value": "Conciertos, karaoke, noches temáticas y citas que no te puedes perder."
+      },
+      "pageTexts.reviewsIntro": {
+        "source": "Retrouvez les avis de nos clients et suivez toute l’actualité du Bistrot.",
+        "value": "Consulta las opiniones de nuestros clientes y sigue todas las novedades del Bistrot."
+      },
+      "daily.dateLabel": {
+        "source": "Aujourd’hui",
+        "value": "Hoy"
+      },
+      "daily.startersTitle": {
+        "source": "3 entrées au choix",
+        "value": "3 entrantes a elegir"
+      },
+      "daily.mainsTitle": {
+        "source": "2 plats au choix",
+        "value": "2 platos principales a elegir"
+      },
+      "daily.dessertsTitle": {
+        "source": "3 desserts au choix",
+        "value": "3 postres a elegir"
+      },
+      "daily.suggestionSupplementText": {
+        "source": "+4 € sur le prix du plat du jour ou de la formule choisie",
+        "value": "Suplemento de 4 € sobre el plato del día o el menú elegido"
+      },
+      "daily.formulas.0.name": {
+        "source": "Entrée seule",
+        "value": "Solo entrante"
+      },
+      "daily.formulas.1.name": {
+        "source": "Plat du jour",
+        "value": "Plato del día"
+      },
+      "daily.formulas.2.name": {
+        "source": "Dessert seul",
+        "value": "Solo postre"
+      },
+      "daily.formulas.3.name": {
+        "source": "Entrée + plat ou plat + dessert",
+        "value": "Entrante + principal o principal + postre"
+      },
+      "daily.formulas.4.name": {
+        "source": "Entrée + plat + dessert",
+        "value": "Entrante + principal + postre"
+      },
+      "daily.starters.0.name": {
+        "source": "Salade de pomme de terre ",
+        "value": "Ensalada de patata"
+      },
+      "daily.mains.0.name": {
+        "source": "saucisse",
+        "value": "Salchicha"
+      },
+      "daily.mains.1.name": {
+        "source": "Plat du jour 2",
+        "value": "Plato del día 2"
+      },
+      "daily.suggestion.name": {
+        "source": "Suggestion du chef",
+        "value": "Sugerencia del chef"
+      },
+      "daily.suggestion.description": {
+        "source": "Faux filet et ses frites maison ",
+        "value": "Entrecot con patatas fritas caseras"
+      },
+      "daily.desserts.0.name": {
+        "source": "Dessert du jour 1",
+        "value": "Postre del día 1"
+      },
+      "daily.desserts.1.name": {
+        "source": "Dessert du jour 2",
+        "value": "Postre del día 2"
+      },
+      "menu.0.category": {
+        "source": "Nos pressions",
+        "value": "Cervezas de barril"
+      },
+      "menu.0.items.0.name": {
+        "source": "Pelforth",
+        "value": "Pelforth"
+      },
+      "menu.0.items.0.description": {
+        "source": "Blonde française 5,8%",
+        "value": "Cerveza rubia francesa, 5,8 %"
+      },
+      "menu.0.items.1.name": {
+        "source": "Pélican blonde",
+        "value": "Pélican blonde"
+      },
+      "menu.0.items.1.description": {
+        "source": "Blonde française non filtrée 7.5%",
+        "value": "Cerveza rubia francesa sin filtrar, 7,5 %"
+      },
+      "menu.0.items.2.name": {
+        "source": "Gallia West IPA",
+        "value": "Gallia West IPA"
+      },
+      "menu.0.items.2.description": {
+        "source": "IPA française 6%",
+        "value": "IPA francesa, 6 %"
+      },
+      "menu.0.items.3.name": {
+        "source": "Pélican rouge ",
+        "value": "Pélican rouge"
+      },
+      "menu.0.items.3.description": {
+        "source": "Bière rouge à la griotte 7,5%",
+        "value": "Cerveza roja con guinda, 7,5 %"
+      },
+      "menu.0.items.4.name": {
+        "source": "Desperados Sunlight ",
+        "value": "Desperados Sunlight"
+      },
+      "menu.0.items.4.description": {
+        "source": "Goût citron jaune/citron vert 4%",
+        "value": "Sabor a limón y lima, 4 %"
+      },
+      "menu.1.category": {
+        "source": "Bières en bouteille",
+        "value": "Cervezas de botella"
+      },
+      "menu.1.items.0.name": {
+        "source": "Paix Dieu ",
+        "value": "Paix Dieu"
+      },
+      "menu.1.items.0.description": {
+        "source": " Belgique_ Blonde triple, fruitée, épicée et ronde. 10.0°",
+        "value": "Bélgica — Triple rubia, afrutada, especiada y redonda. 10,0 %"
+      },
+      "menu.1.items.1.name": {
+        "source": "Orval",
+        "value": "Orval"
+      },
+      "menu.1.items.1.description": {
+        "source": "Belgique_ Trappiste sèche, houblonnée, avec une note sauvage. 6.2°",
+        "value": "Bélgica — Trapense seca y lupulada, con una nota salvaje. 6,2 %"
+      },
+      "menu.1.items.2.name": {
+        "source": "Chouffe blonde ",
+        "value": "Chouffe blonde"
+      },
+      "menu.1.items.2.description": {
+        "source": "Belgique_Blonde fruitée, épicée et légèrement houblonnée. 8.0°",
+        "value": "Bélgica — Rubia afrutada, especiada y ligeramente lupulada. 8,0 %"
+      },
+      "menu.1.items.3.name": {
+        "source": "Cherry Chouffe",
+        "value": "Cherry Chouffe"
+      },
+      "menu.1.items.3.description": {
+        "source": "Belgique_Fruité et gourmand, notes de cerise mûre, fraise, amande et légère touche épicée. 8.0°",
+        "value": "Bélgica — Afrutada y golosa, con notas de cereza madura, fresa, almendra y un ligero toque especiado. 8,0 %"
+      },
+      "menu.1.items.4.name": {
+        "source": "Duvel",
+        "value": "Duvel"
+      },
+      "menu.1.items.4.description": {
+        "source": "Belgique_Goût : Blonde forte, fruitée, sèche et finement amère. 8.5°",
+        "value": "Bélgica — Rubia fuerte, afrutada, seca y delicadamente amarga. 8,5 %"
+      },
+      "menu.1.items.5.name": {
+        "source": "Triple Karmeliet",
+        "value": "Triple Karmeliet"
+      },
+      "menu.1.items.5.description": {
+        "source": "Belgique_Tripel complexe, florale, vanillée et épicée. 8.4°",
+        "value": "Bélgica — Tripel compleja, floral, con notas de vainilla y especias. 8,4 %"
+      },
+      "menu.1.items.6.name": {
+        "source": "Kwak ",
+        "value": "Kwak"
+      },
+      "menu.1.items.6.description": {
+        "source": "Belgique_Ambrée riche et gourmande, notes de biscuit, banane, orange, caramel et épices. 8.4°",
+        "value": "Bélgica — Ámbar rica y golosa, con notas de galleta, plátano, naranja, caramelo y especias. 8,4 %"
+      },
+      "menu.1.items.7.name": {
+        "source": "Rince Cochon",
+        "value": "Rince Cochon"
+      },
+      "menu.1.items.7.description": {
+        "source": "Belgique_Blonde forte, ronde, fruitée et légèrement épicée. 8.5°",
+        "value": "Bélgica — Rubia fuerte, redonda, afrutada y ligeramente especiada. 8,5 %"
+      },
+      "menu.1.items.8.name": {
+        "source": "Hoagarden blanche ",
+        "value": "Hoagarden blanche"
+      },
+      "menu.1.items.8.description": {
+        "source": "Belgique_Blanche douce et rafraîchissante, aux notes d’orange, coriandre, agrumes et épices. 4.9°",
+        "value": "Bélgica — Cerveza blanca suave y refrescante, con notas de naranja, cilantro, cítricos y especias. 4,9 %"
+      },
+      "menu.1.items.9.name": {
+        "source": "Leffe  blonde ",
+        "value": "Leffe  blonde"
+      },
+      "menu.1.items.9.description": {
+        "source": "Belgique_Blonde d’abbaye, douce, maltée, avec vanille et clou de girofle. 6.6°",
+        "value": "Bélgica — Rubia de abadía suave y maltosa, con vainilla y clavo. 6,6 %"
+      },
+      "menu.2.category": {
+        "source": "À partager… ou pas",
+        "value": "Para compartir… o no"
+      },
+      "menu.2.items.0.name": {
+        "source": "Planche mixte",
+        "value": "Tabla mixta"
+      },
+      "menu.2.items.0.description": {
+        "source": "Rosette de Lyon, chorizo, terrine du moment, jambon de pays, jambon blanc et sélection de 3 fromages",
+        "value": "Rosette de Lyon, chorizo, terrina del momento, jamón curado, jamón cocido y selección de 3 quesos"
+      },
+      "menu.2.items.2.name": {
+        "source": "Saucisson sec du terroir",
+        "value": "Salchichón tradicional"
+      },
+      "menu.2.items.2.description": {
+        "source": "Cèpes, nature ou piment d’Espelette",
+        "value": "Con boletus, natural o con pimiento de Espelette"
+      },
+      "menu.2.items.3.name": {
+        "source": "Chips Lay’s 145 g",
+        "value": "Patatas fritas Lay’s, 145 g"
+      },
+      "menu.2.items.3.description": {
+        "source": "Nature, barbecue…",
+        "value": "Al punto de sal, barbacoa…"
+      },
+      "menu.3.category": {
+        "source": "Cocktails du moment",
+        "value": "Cócteles del momento"
+      },
+      "menu.3.items.0.name": {
+        "source": "Tequila Sunrise",
+        "value": "Tequila Sunrise"
+      },
+      "menu.3.items.0.description": {
+        "source": "Tequila, jus d’orange, sirop de grenadine",
+        "value": "Tequila, zumo de naranja y sirope de granadina"
+      },
+      "menu.3.items.1.name": {
+        "source": "Délices des îles",
+        "value": "Delicia de las islas"
+      },
+      "menu.3.items.1.description": {
+        "source": "Rhum blanc martiniquais, jus de maracuja, sirop de grenadine",
+        "value": "Ron blanco de Martinica, zumo de maracuyá y sirope de granadina"
+      },
+      "menu.4.category": {
+        "source": "Softs",
+        "value": "Refrescos"
+      },
+      "menu.4.items.0.name": {
+        "source": "Coca-Cola, Coca-Cola Zéro, Fuze Tea pêche, Schweppes, Orangina, Perrier, limonade et jus de fruits",
+        "value": "Coca-Cola, Coca-Cola Zero, Fuze Tea de melocotón, Schweppes, Orangina, Perrier, limonada y zumos de frutas"
+      },
+      "menu.5.category": {
+        "source": "Bières sans alcool",
+        "value": "Cervezas sin alcohol"
+      },
+      "menu.5.items.0.name": {
+        "source": "Heineken 0.0 ",
+        "value": "Heineken 0.0"
+      },
+      "menu.5.items.1.name": {
+        "source": "Desperados 00",
+        "value": "Desperados 00"
+      },
+      "menu.6.category": {
+        "source": "Apéritifs",
+        "value": "Aperitivos"
+      },
+      "menu.6.items.0.name": {
+        "source": "Ricard",
+        "value": "Ricard"
+      },
+      "menu.6.items.1.name": {
+        "source": "Kir",
+        "value": "Kir"
+      },
+      "menu.6.items.1.description": {
+        "source": "Cassis, mûre, pêche ou framboise",
+        "value": "Grosella negra, mora, melocotón o frambuesa"
+      },
+      "menu.6.items.2.name": {
+        "source": "Kir pétillant",
+        "value": "Kir espumoso"
+      },
+      "menu.6.items.3.name": {
+        "source": "Pétillant nature",
+        "value": "Vino espumoso"
+      },
+      "menu.6.items.3.description": {
+        "source": "Blanc de blancs brut",
+        "value": "Blanc de blancs brut"
+      },
+      "menu.6.items.4.name": {
+        "source": "Porto",
+        "value": "Porto"
+      },
+      "menu.6.items.4.description": {
+        "source": "Rouge ou blanc",
+        "value": "Tinto o blanco"
+      },
+      "menu.6.items.5.name": {
+        "source": "Martini",
+        "value": "Martini"
+      },
+      "menu.6.items.5.description": {
+        "source": "Rouge ou blanc",
+        "value": "Tinto o blanco"
+      },
+      "menu.9.category": {
+        "source": "Whiskys",
+        "value": "Whiskies"
+      },
+      "menu.9.items.0.name": {
+        "source": "Sir Edwards",
+        "value": "Sir Edwards"
+      },
+      "menu.9.items.0.description": {
+        "source": "    Écosse_\n    Doux et rond, notes de bois, fruits secs et épices. ",
+        "value": "Escocia — Suave y redondo, con notas de madera, frutos secos y especias."
+      },
+      "menu.9.items.1.name": {
+        "source": "Jameson",
+        "value": "Jameson"
+      },
+      "menu.9.items.1.description": {
+        "source": "    Irlande_\n    Souple et gourmand, notes de vanille, noix, épices et xérès.",
+        "value": "Irlanda — Suave y goloso, con notas de vainilla, nueces, especias y jerez."
+      },
+      "menu.9.items.2.name": {
+        "source": "Jack Daniel’s",
+        "value": "Jack Daniel’s"
+      },
+      "menu.9.items.2.description": {
+        "source": "    Tennessee, États-Unis_\n    Rond et boisé, notes de caramel et de vanille. ",
+        "value": "Tennessee, Estados Unidos — Redondo y amaderado, con notas de caramelo y vainilla."
+      },
+      "menu.9.items.3.name": {
+        "source": "Glenlivet",
+        "value": "Glenlivet"
+      },
+      "menu.9.items.3.description": {
+        "source": "    Speyside, Écosse_\n    Doux et fruité, notes d’ananas, poire et vanille. ",
+        "value": "Speyside, Escocia — Suave y afrutado, con notas de piña, pera y vainilla."
+      },
+      "menu.9.items.4.name": {
+        "source": "Togouchi",
+        "value": "Togouchi"
+      },
+      "menu.9.items.4.description": {
+        "source": "    Hiroshima, Japon_\n    Fin et doux, notes de fruits, noix, vanille et épices. ",
+        "value": "Hiroshima, Japón — Fino y suave, con notas de fruta, nueces, vainilla y especias."
+      },
+      "menu.9.items.5.name": {
+        "source": "Aerstone",
+        "value": "Aerstone"
+      },
+      "menu.9.items.5.description": {
+        "source": "    Écosse_\n    Légèrement tourbé, fumé, malté et chaleureux.",
+        "value": "Escocia — Ligeramente turbado, ahumado, maltoso y cálido."
+      },
+      "menu.9.items.6.name": {
+        "source": "Big Peat",
+        "value": "Big Peat"
+      },
+      "menu.9.items.6.description": {
+        "source": "    Islay, Écosse_\n    Très tourbé, fumé et marin, notes de cendre et de sel.",
+        "value": "Islay, Escocia — Muy turbado, ahumado y marino, con notas de ceniza y sal."
+      },
+      "menu.10.category": {
+        "source": "Boissons chaudes",
+        "value": "Bebidas calientes"
+      },
+      "menu.10.items.0.name": {
+        "source": "Expresso / Café serré",
+        "value": "Espreso / Café corto"
+      },
+      "menu.10.items.1.name": {
+        "source": "Allongé / Noisette",
+        "value": "Café largo / Cortado"
+      },
+      "menu.10.items.2.name": {
+        "source": "Thé / Café crème",
+        "value": "Té / Café con leche"
+      },
+      "menu.10.items.3.name": {
+        "source": "Chocolat chaud",
+        "value": "Chocolate caliente"
+      },
+      "menu.10.items.4.name": {
+        "source": "Cappuccino",
+        "value": "Cappuccino"
+      },
+      "gallery.0.alt": {
+        "source": "Façade du Bistrot Du Coin",
+        "value": "La fachada de Le Bistrot Du Coin"
+      },
+      "gallery.0.label": {
+        "source": "Le Bistrot",
+        "value": "Le Bistrot"
+      },
+      "gallery.1.alt": {
+        "source": "Bar et intérieur du restaurant",
+        "value": "Bar e interior del restaurante"
+      },
+      "gallery.1.label": {
+        "source": "Notre ambiance",
+        "value": "Nuestro ambiente"
+      },
+      "gallery.2.alt": {
+        "source": "Assiette maison",
+        "value": "Un plato casero"
+      },
+      "gallery.2.label": {
+        "source": "Cuisine maison",
+        "value": "Cocina casera"
+      },
+      "gallery.3.alt": {
+        "source": "Couscous du Bistrot",
+        "value": "Cuscús del Bistrot"
+      },
+      "gallery.3.label": {
+        "source": "Plat du jour",
+        "value": "Plato del día"
+      },
+      "gallery.4.alt": {
+        "source": "Pavé de saumon",
+        "value": "Lomo de salmón"
+      },
+      "gallery.4.label": {
+        "source": "Produits frais",
+        "value": "Productos frescos"
+      },
+      "gallery.5.alt": {
+        "source": "Crevettes et riz",
+        "value": "Gambas con arroz"
+      },
+      "gallery.5.label": {
+        "source": "Saveurs du moment",
+        "value": "Sabores del momento"
+      },
+      "gallery.6.alt": {
+        "source": "Choucroute du Bistrot",
+        "value": "Chucrut del Bistrot"
+      },
+      "gallery.6.label": {
+        "source": "Générosité",
+        "value": "Generosidad"
+      },
+      "gallery.7.label": {
+        "source": "Nouvelle photo",
+        "value": "Nueva foto"
+      },
+      "gallery.8.label": {
+        "source": "Langue de bœuf et son écrasé de pomme de terre maison",
+        "value": "Lengua de ternera con patatas machacadas caseras"
+      },
+      "gallery.9.label": {
+        "source": "Magret de canard ",
+        "value": "Magret de pato"
+      },
+      "gallery.10.label": {
+        "source": "Nouvelle photo",
+        "value": "Nueva foto"
+      },
+      "galleryAlbums.0.title": {
+        "source": "Le Bistrot ",
+        "value": "Le Bistrot"
+      },
+      "galleryAlbums.1.title": {
+        "source": "Nos entrées ",
+        "value": "Nuestros entrantes"
+      },
+      "galleryAlbums.2.title": {
+        "source": "Galerie",
+        "value": "Galería"
+      },
+      "galleryAlbums.3.title": {
+        "source": "Nos plats ",
+        "value": "Nuestros platos"
+      },
+      "galleryAlbums.4.title": {
+        "source": "Nos desserts",
+        "value": "Nuestros postres"
+      },
+      "story.eyebrow": {
+        "source": "Depuis 2021",
+        "value": "Desde 2021"
+      },
+      "story.title": {
+        "source": "La petite histoire du Bistrot",
+        "value": "La historia de nuestro Bistrot"
+      },
+      "story.intro": {
+        "source": "C’est l’histoire de deux passionnés réunis autour du goût, de l’accueil et du plaisir de partager.",
+        "value": "Esta es la historia de dos apasionados unidos por el buen gusto, la hospitalidad y el placer de compartir."
+      },
+      "story.paragraphs.0": {
+        "source": "Depuis tout petit, Ismaël rêvait d’ouvrir son propre restaurant. Il a suivi les études qui lui ont permis de faire de sa passion son métier. En 2006, après plusieurs années d’expérience, il ouvre son premier restaurant, qu’il revendra treize ans plus tard.",
+        "value": "Desde pequeño, Ismaël soñaba con abrir su propio restaurante. Estudió para convertir su pasión en su profesión. En 2006, tras varios años de experiencia, abrió su primer restaurante, que vendería trece años después."
+      },
+      "story.paragraphs.1": {
+        "source": "Thomas, lui, rêvait simplement de travailler avec plaisir. Il découvre la restauration en extra pendant ses études, en 2013, et se prend rapidement au jeu du service et de l’animation en salle.",
+        "value": "Thomas, por su parte, soñaba simplemente con disfrutar de su trabajo. Descubrió la restauración haciendo trabajos extra durante sus estudios, en 2013, y pronto se apasionó por el servicio y por dar vida a la sala."
+      },
+      "story.paragraphs.2": {
+        "source": "En 2019, les deux passionnés se rencontrent. Deux ans plus tard, le 2 novembre 2021, ils ouvrent ensemble Le Bistrot Du Coin : Ismaël pour régaler vos papilles en cuisine, et Thomas pour vous servir et faire vivre la salle.",
+        "value": "En 2019, los dos apasionados se conocieron. Dos años después, el 2 de noviembre de 2021, abrieron juntos Le Bistrot Du Coin: Ismaël para deleitar vuestro paladar en la cocina y Thomas para atenderos y dar vida a la sala."
+      },
+      "story.paragraphs.3": {
+        "source": "De cette rencontre est née une belle amitié, puis une adresse chaleureuse qui grandit chaque année grâce à vous.",
+        "value": "De aquel encuentro nació una hermosa amistad y, después, un lugar acogedor que crece cada año gracias a vosotros."
+      },
+      "story.quote": {
+        "source": "Le Bistrot est avant tout un lieu où l’on vient se rencontrer, passer et partager de bons moments. Voilà ce que vous trouverez en poussant nos portes.",
+        "value": "El Bistrot es, ante todo, un lugar para encontrarse, pasar tiempo juntos y compartir buenos momentos. Eso es lo que descubrirás al cruzar nuestras puertas."
+      },
+      "story.imageAlt": {
+        "source": "Le bar chaleureux du Bistrot Du Coin",
+        "value": "El acogedor bar de Le Bistrot Du Coin"
+      },
+      "privatization.title": {
+        "source": "Privatisez Le Bistrot",
+        "value": "Reserva el Bistrot en exclusiva"
+      },
+      "privatization.intro": {
+        "source": "Un moment rien qu’à vous, imaginé selon vos envies.",
+        "value": "Un momento solo para vosotros, pensado a vuestra medida."
+      },
+      "privatization.text": {
+        "source": "Nous pouvons privatiser le restaurant sur devis et selon les souhaits du client : repas de famille, anniversaire, réception professionnelle ou soirée privée. Contactez-nous directement afin que nous construisions ensemble une proposition adaptée.",
+        "value": "Podemos reservar el restaurante en exclusiva, con presupuesto a medida y según vuestros deseos: comidas familiares, cumpleaños, recepciones profesionales o fiestas privadas. Contactad directamente con nosotros para preparar juntos una propuesta adaptada."
+      },
+      "privatization.photos.0.alt": {
+        "source": "Salle du Bistrot",
+        "value": "La sala del Bistrot"
+      },
+      "privatization.photos.0.label": {
+        "source": "Un lieu à votre image",
+        "value": "Un lugar a vuestra medida"
+      },
+      "privatization.photos.1.alt": {
+        "source": "Façade du Bistrot",
+        "value": "La fachada del Bistrot"
+      },
+      "privatization.photos.1.label": {
+        "source": "Le Bistrot Du Coin",
+        "value": "Le Bistrot Du Coin"
+      },
+      "reviews.title": {
+        "source": "Avis Google & réseaux sociaux",
+        "value": "Opiniones de Google y redes sociales"
+      },
+      "reviews.intro": {
+        "source": "Votre avis compte beaucoup pour nous. Consultez les témoignages de nos clients ou partagez votre expérience.",
+        "value": "Tu opinión nos importa mucho. Consulta los testimonios de nuestros clientes o comparte tu experiencia."
+      },
+      "loyaltyProgram.title": {
+        "source": "Programme de fidélité permanent",
+        "value": "Programa de fidelidad permanente"
+      },
+      "loyaltyProgram.description": {
+        "source": "10 formules achetées, la 11e offerte",
+        "value": "Compra 10 menús y el 11.º es gratis"
+      },
+      "loyaltyProgram.reward": {
+        "source": "Formule offerte",
+        "value": "Menú gratis"
+      },
+      "loyaltyProgram.clientText": {
+        "source": "10 formules achetées, la 11e offerte",
+        "value": "Compra 10 menús y el 11.º es gratis"
+      }
+    },
+    "pt": {
+      "general.closureMessage": {
+        "source": "Le Bistrot est exceptionnellement fermé jusqu’au 26/08/2026",
+        "value": "O Bistrot está excecionalmente encerrado até 26/08/2026"
+      },
+      "general.reopeningBannerMessage": {
+        "source": "Le Bistrot Du Coin est de retour — Nous vous attendons !",
+        "value": "O Le Bistrot Du Coin está de volta — Esperamos por si!"
+      },
+      "pageTexts.homeSlogan": {
+        "source": "Le Bistrot est avant tout un lieu où l’on vient se rencontrer, passer et partager de bons moments. Voilà ce que vous trouverez en poussant nos portes.",
+        "value": "O Bistrot é, acima de tudo, um lugar para nos encontrarmos, passarmos tempo juntos e partilharmos bons momentos. É isso que encontrará ao entrar."
+      },
+      "pageTexts.todayIntro": {
+        "source": "Une formule qui change au fil des envies du chef et des produits disponibles.",
+        "value": "Um menu que muda ao sabor da inspiração do chef e dos produtos disponíveis."
+      },
+      "pageTexts.menuIntro": {
+        "source": "Des recettes de bistrot, généreuses et sans détour.",
+        "value": "Receitas de bistrot, generosas e sem complicações."
+      },
+      "pageTexts.galleryIntro": {
+        "source": "Quelques images de notre cuisine et de l’ambiance du Bistrot.",
+        "value": "Algumas imagens da nossa cozinha e do ambiente do Bistrot."
+      },
+      "pageTexts.contactIntro": {
+        "source": "Une question, une réservation ou simplement l’envie de venir nous voir ?",
+        "value": "Tem uma pergunta, quer reservar ou simplesmente fazer-nos uma visita?"
+      },
+      "pageTexts.eventsIntro": {
+        "source": "Concerts, karaokés, soirées à thème et rendez-vous à ne pas manquer.",
+        "value": "Concertos, karaoke, noites temáticas e encontros a não perder."
+      },
+      "pageTexts.reviewsIntro": {
+        "source": "Retrouvez les avis de nos clients et suivez toute l’actualité du Bistrot.",
+        "value": "Leia as opiniões dos nossos clientes e acompanhe todas as novidades do Bistrot."
+      },
+      "daily.dateLabel": {
+        "source": "Aujourd’hui",
+        "value": "Hoje"
+      },
+      "daily.startersTitle": {
+        "source": "3 entrées au choix",
+        "value": "3 entradas à escolha"
+      },
+      "daily.mainsTitle": {
+        "source": "2 plats au choix",
+        "value": "2 pratos principais à escolha"
+      },
+      "daily.dessertsTitle": {
+        "source": "3 desserts au choix",
+        "value": "3 sobremesas à escolha"
+      },
+      "daily.suggestionSupplementText": {
+        "source": "+4 € sur le prix du plat du jour ou de la formule choisie",
+        "value": "Suplemento de 4 € sobre o prato do dia ou o menu escolhido"
+      },
+      "daily.formulas.0.name": {
+        "source": "Entrée seule",
+        "value": "Só entrada"
+      },
+      "daily.formulas.1.name": {
+        "source": "Plat du jour",
+        "value": "Prato do dia"
+      },
+      "daily.formulas.2.name": {
+        "source": "Dessert seul",
+        "value": "Só sobremesa"
+      },
+      "daily.formulas.3.name": {
+        "source": "Entrée + plat ou plat + dessert",
+        "value": "Entrada + prato ou prato + sobremesa"
+      },
+      "daily.formulas.4.name": {
+        "source": "Entrée + plat + dessert",
+        "value": "Entrada + prato + sobremesa"
+      },
+      "daily.starters.0.name": {
+        "source": "Salade de pomme de terre ",
+        "value": "Salada de batata"
+      },
+      "daily.mains.0.name": {
+        "source": "saucisse",
+        "value": "Salsicha"
+      },
+      "daily.mains.1.name": {
+        "source": "Plat du jour 2",
+        "value": "Prato do dia 2"
+      },
+      "daily.suggestion.name": {
+        "source": "Suggestion du chef",
+        "value": "Sugestão do chef"
+      },
+      "daily.suggestion.description": {
+        "source": "Faux filet et ses frites maison ",
+        "value": "Bife do lombo com batatas fritas caseiras"
+      },
+      "daily.desserts.0.name": {
+        "source": "Dessert du jour 1",
+        "value": "Sobremesa do dia 1"
+      },
+      "daily.desserts.1.name": {
+        "source": "Dessert du jour 2",
+        "value": "Sobremesa do dia 2"
+      },
+      "menu.0.category": {
+        "source": "Nos pressions",
+        "value": "Cervejas à pressão"
+      },
+      "menu.0.items.0.name": {
+        "source": "Pelforth",
+        "value": "Pelforth"
+      },
+      "menu.0.items.0.description": {
+        "source": "Blonde française 5,8%",
+        "value": "Cerveja loira francesa, 5,8%"
+      },
+      "menu.0.items.1.name": {
+        "source": "Pélican blonde",
+        "value": "Pélican blonde"
+      },
+      "menu.0.items.1.description": {
+        "source": "Blonde française non filtrée 7.5%",
+        "value": "Cerveja loira francesa não filtrada, 7,5%"
+      },
+      "menu.0.items.2.name": {
+        "source": "Gallia West IPA",
+        "value": "Gallia West IPA"
+      },
+      "menu.0.items.2.description": {
+        "source": "IPA française 6%",
+        "value": "IPA francesa, 6%"
+      },
+      "menu.0.items.3.name": {
+        "source": "Pélican rouge ",
+        "value": "Pélican rouge"
+      },
+      "menu.0.items.3.description": {
+        "source": "Bière rouge à la griotte 7,5%",
+        "value": "Cerveja vermelha com ginja, 7,5%"
+      },
+      "menu.0.items.4.name": {
+        "source": "Desperados Sunlight ",
+        "value": "Desperados Sunlight"
+      },
+      "menu.0.items.4.description": {
+        "source": "Goût citron jaune/citron vert 4%",
+        "value": "Sabor a limão e lima, 4%"
+      },
+      "menu.1.category": {
+        "source": "Bières en bouteille",
+        "value": "Cervejas de garrafa"
+      },
+      "menu.1.items.0.name": {
+        "source": "Paix Dieu ",
+        "value": "Paix Dieu"
+      },
+      "menu.1.items.0.description": {
+        "source": " Belgique_ Blonde triple, fruitée, épicée et ronde. 10.0°",
+        "value": "Bélgica — Tripel loira, frutada, especiada e redonda. 10,0%"
+      },
+      "menu.1.items.1.name": {
+        "source": "Orval",
+        "value": "Orval"
+      },
+      "menu.1.items.1.description": {
+        "source": "Belgique_ Trappiste sèche, houblonnée, avec une note sauvage. 6.2°",
+        "value": "Bélgica — Trapista seca e lupulada, com uma nota selvagem. 6,2%"
+      },
+      "menu.1.items.2.name": {
+        "source": "Chouffe blonde ",
+        "value": "Chouffe blonde"
+      },
+      "menu.1.items.2.description": {
+        "source": "Belgique_Blonde fruitée, épicée et légèrement houblonnée. 8.0°",
+        "value": "Bélgica — Loira frutada, especiada e ligeiramente lupulada. 8,0%"
+      },
+      "menu.1.items.3.name": {
+        "source": "Cherry Chouffe",
+        "value": "Cherry Chouffe"
+      },
+      "menu.1.items.3.description": {
+        "source": "Belgique_Fruité et gourmand, notes de cerise mûre, fraise, amande et légère touche épicée. 8.0°",
+        "value": "Bélgica — Frutada e gulosa, com notas de cereja madura, morango, amêndoa e um ligeiro toque de especiarias. 8,0%"
+      },
+      "menu.1.items.4.name": {
+        "source": "Duvel",
+        "value": "Duvel"
+      },
+      "menu.1.items.4.description": {
+        "source": "Belgique_Goût : Blonde forte, fruitée, sèche et finement amère. 8.5°",
+        "value": "Bélgica — Loira forte, frutada, seca e delicadamente amarga. 8,5%"
+      },
+      "menu.1.items.5.name": {
+        "source": "Triple Karmeliet",
+        "value": "Triple Karmeliet"
+      },
+      "menu.1.items.5.description": {
+        "source": "Belgique_Tripel complexe, florale, vanillée et épicée. 8.4°",
+        "value": "Bélgica — Tripel complexa, floral, com notas de baunilha e especiarias. 8,4%"
+      },
+      "menu.1.items.6.name": {
+        "source": "Kwak ",
+        "value": "Kwak"
+      },
+      "menu.1.items.6.description": {
+        "source": "Belgique_Ambrée riche et gourmande, notes de biscuit, banane, orange, caramel et épices. 8.4°",
+        "value": "Bélgica — Âmbar rica e gulosa, com notas de bolacha, banana, laranja, caramelo e especiarias. 8,4%"
+      },
+      "menu.1.items.7.name": {
+        "source": "Rince Cochon",
+        "value": "Rince Cochon"
+      },
+      "menu.1.items.7.description": {
+        "source": "Belgique_Blonde forte, ronde, fruitée et légèrement épicée. 8.5°",
+        "value": "Bélgica — Loira forte, redonda, frutada e ligeiramente especiada. 8,5%"
+      },
+      "menu.1.items.8.name": {
+        "source": "Hoagarden blanche ",
+        "value": "Hoagarden blanche"
+      },
+      "menu.1.items.8.description": {
+        "source": "Belgique_Blanche douce et rafraîchissante, aux notes d’orange, coriandre, agrumes et épices. 4.9°",
+        "value": "Bélgica — Cerveja branca suave e refrescante, com notas de laranja, coentros, citrinos e especiarias. 4,9%"
+      },
+      "menu.1.items.9.name": {
+        "source": "Leffe  blonde ",
+        "value": "Leffe  blonde"
+      },
+      "menu.1.items.9.description": {
+        "source": "Belgique_Blonde d’abbaye, douce, maltée, avec vanille et clou de girofle. 6.6°",
+        "value": "Bélgica — Loira de abadia suave e maltada, com baunilha e cravinho. 6,6%"
+      },
+      "menu.2.category": {
+        "source": "À partager… ou pas",
+        "value": "Para partilhar… ou não"
+      },
+      "menu.2.items.0.name": {
+        "source": "Planche mixte",
+        "value": "Tábua mista"
+      },
+      "menu.2.items.0.description": {
+        "source": "Rosette de Lyon, chorizo, terrine du moment, jambon de pays, jambon blanc et sélection de 3 fromages",
+        "value": "Rosette de Lyon, chouriço, terrina do momento, presunto, fiambre e uma seleção de 3 queijos"
+      },
+      "menu.2.items.2.name": {
+        "source": "Saucisson sec du terroir",
+        "value": "Salsichão seco tradicional"
+      },
+      "menu.2.items.2.description": {
+        "source": "Cèpes, nature ou piment d’Espelette",
+        "value": "Com cogumelos porcini, simples ou com pimento de Espelette"
+      },
+      "menu.2.items.3.name": {
+        "source": "Chips Lay’s 145 g",
+        "value": "Batatas fritas Lay’s, 145 g"
+      },
+      "menu.2.items.3.description": {
+        "source": "Nature, barbecue…",
+        "value": "Simples, barbecue…"
+      },
+      "menu.3.category": {
+        "source": "Cocktails du moment",
+        "value": "Cocktails do momento"
+      },
+      "menu.3.items.0.name": {
+        "source": "Tequila Sunrise",
+        "value": "Tequila Sunrise"
+      },
+      "menu.3.items.0.description": {
+        "source": "Tequila, jus d’orange, sirop de grenadine",
+        "value": "Tequila, sumo de laranja e xarope de grenadina"
+      },
+      "menu.3.items.1.name": {
+        "source": "Délices des îles",
+        "value": "Delícia das ilhas"
+      },
+      "menu.3.items.1.description": {
+        "source": "Rhum blanc martiniquais, jus de maracuja, sirop de grenadine",
+        "value": "Rum branco da Martinica, sumo de maracujá e xarope de grenadina"
+      },
+      "menu.4.category": {
+        "source": "Softs",
+        "value": "Refrigerantes"
+      },
+      "menu.4.items.0.name": {
+        "source": "Coca-Cola, Coca-Cola Zéro, Fuze Tea pêche, Schweppes, Orangina, Perrier, limonade et jus de fruits",
+        "value": "Coca-Cola, Coca-Cola Zero, Fuze Tea de pêssego, Schweppes, Orangina, Perrier, limonada e sumos de fruta"
+      },
+      "menu.5.category": {
+        "source": "Bières sans alcool",
+        "value": "Cervejas sem álcool"
+      },
+      "menu.5.items.0.name": {
+        "source": "Heineken 0.0 ",
+        "value": "Heineken 0.0"
+      },
+      "menu.5.items.1.name": {
+        "source": "Desperados 00",
+        "value": "Desperados 00"
+      },
+      "menu.6.category": {
+        "source": "Apéritifs",
+        "value": "Aperitivos"
+      },
+      "menu.6.items.0.name": {
+        "source": "Ricard",
+        "value": "Ricard"
+      },
+      "menu.6.items.1.name": {
+        "source": "Kir",
+        "value": "Kir"
+      },
+      "menu.6.items.1.description": {
+        "source": "Cassis, mûre, pêche ou framboise",
+        "value": "Groselha preta, amora, pêssego ou framboesa"
+      },
+      "menu.6.items.2.name": {
+        "source": "Kir pétillant",
+        "value": "Kir espumante"
+      },
+      "menu.6.items.3.name": {
+        "source": "Pétillant nature",
+        "value": "Vinho espumante"
+      },
+      "menu.6.items.3.description": {
+        "source": "Blanc de blancs brut",
+        "value": "Blanc de blancs bruto"
+      },
+      "menu.6.items.4.name": {
+        "source": "Porto",
+        "value": "Porto"
+      },
+      "menu.6.items.4.description": {
+        "source": "Rouge ou blanc",
+        "value": "Tinto ou branco"
+      },
+      "menu.6.items.5.name": {
+        "source": "Martini",
+        "value": "Martini"
+      },
+      "menu.6.items.5.description": {
+        "source": "Rouge ou blanc",
+        "value": "Tinto ou branco"
+      },
+      "menu.9.category": {
+        "source": "Whiskys",
+        "value": "Whiskies"
+      },
+      "menu.9.items.0.name": {
+        "source": "Sir Edwards",
+        "value": "Sir Edwards"
+      },
+      "menu.9.items.0.description": {
+        "source": "    Écosse_\n    Doux et rond, notes de bois, fruits secs et épices. ",
+        "value": "Escócia — Suave e redondo, com notas de madeira, frutos secos e especiarias."
+      },
+      "menu.9.items.1.name": {
+        "source": "Jameson",
+        "value": "Jameson"
+      },
+      "menu.9.items.1.description": {
+        "source": "    Irlande_\n    Souple et gourmand, notes de vanille, noix, épices et xérès.",
+        "value": "Irlanda — Suave e rico, com notas de baunilha, nozes, especiarias e xerez."
+      },
+      "menu.9.items.2.name": {
+        "source": "Jack Daniel’s",
+        "value": "Jack Daniel’s"
+      },
+      "menu.9.items.2.description": {
+        "source": "    Tennessee, États-Unis_\n    Rond et boisé, notes de caramel et de vanille. ",
+        "value": "Tennessee, Estados Unidos — Redondo e amadeirado, com notas de caramelo e baunilha."
+      },
+      "menu.9.items.3.name": {
+        "source": "Glenlivet",
+        "value": "Glenlivet"
+      },
+      "menu.9.items.3.description": {
+        "source": "    Speyside, Écosse_\n    Doux et fruité, notes d’ananas, poire et vanille. ",
+        "value": "Speyside, Escócia — Suave e frutado, com notas de ananás, pera e baunilha."
+      },
+      "menu.9.items.4.name": {
+        "source": "Togouchi",
+        "value": "Togouchi"
+      },
+      "menu.9.items.4.description": {
+        "source": "    Hiroshima, Japon_\n    Fin et doux, notes de fruits, noix, vanille et épices. ",
+        "value": "Hiroshima, Japão — Delicado e suave, com notas de fruta, nozes, baunilha e especiarias."
+      },
+      "menu.9.items.5.name": {
+        "source": "Aerstone",
+        "value": "Aerstone"
+      },
+      "menu.9.items.5.description": {
+        "source": "    Écosse_\n    Légèrement tourbé, fumé, malté et chaleureux.",
+        "value": "Escócia — Ligeiramente turfado, fumado, maltado e quente."
+      },
+      "menu.9.items.6.name": {
+        "source": "Big Peat",
+        "value": "Big Peat"
+      },
+      "menu.9.items.6.description": {
+        "source": "    Islay, Écosse_\n    Très tourbé, fumé et marin, notes de cendre et de sel.",
+        "value": "Islay, Escócia — Muito turfado, fumado e marítimo, com notas de cinza e sal."
+      },
+      "menu.10.category": {
+        "source": "Boissons chaudes",
+        "value": "Bebidas quentes"
+      },
+      "menu.10.items.0.name": {
+        "source": "Expresso / Café serré",
+        "value": "Expresso / Café curto"
+      },
+      "menu.10.items.1.name": {
+        "source": "Allongé / Noisette",
+        "value": "Café cheio / Expresso com um pouco de leite"
+      },
+      "menu.10.items.2.name": {
+        "source": "Thé / Café crème",
+        "value": "Chá / Café com leite"
+      },
+      "menu.10.items.3.name": {
+        "source": "Chocolat chaud",
+        "value": "Chocolate quente"
+      },
+      "menu.10.items.4.name": {
+        "source": "Cappuccino",
+        "value": "Cappuccino"
+      },
+      "gallery.0.alt": {
+        "source": "Façade du Bistrot Du Coin",
+        "value": "A fachada do Le Bistrot Du Coin"
+      },
+      "gallery.0.label": {
+        "source": "Le Bistrot",
+        "value": "Le Bistrot"
+      },
+      "gallery.1.alt": {
+        "source": "Bar et intérieur du restaurant",
+        "value": "Bar e interior do restaurante"
+      },
+      "gallery.1.label": {
+        "source": "Notre ambiance",
+        "value": "O nosso ambiente"
+      },
+      "gallery.2.alt": {
+        "source": "Assiette maison",
+        "value": "Um prato caseiro"
+      },
+      "gallery.2.label": {
+        "source": "Cuisine maison",
+        "value": "Cozinha caseira"
+      },
+      "gallery.3.alt": {
+        "source": "Couscous du Bistrot",
+        "value": "Cuscuz do Bistrot"
+      },
+      "gallery.3.label": {
+        "source": "Plat du jour",
+        "value": "Prato do dia"
+      },
+      "gallery.4.alt": {
+        "source": "Pavé de saumon",
+        "value": "Lombo de salmão"
+      },
+      "gallery.4.label": {
+        "source": "Produits frais",
+        "value": "Produtos frescos"
+      },
+      "gallery.5.alt": {
+        "source": "Crevettes et riz",
+        "value": "Camarão com arroz"
+      },
+      "gallery.5.label": {
+        "source": "Saveurs du moment",
+        "value": "Sabores do momento"
+      },
+      "gallery.6.alt": {
+        "source": "Choucroute du Bistrot",
+        "value": "Chucrute do Bistrot"
+      },
+      "gallery.6.label": {
+        "source": "Générosité",
+        "value": "Generosidade"
+      },
+      "gallery.7.label": {
+        "source": "Nouvelle photo",
+        "value": "Nova fotografia"
+      },
+      "gallery.8.label": {
+        "source": "Langue de bœuf et son écrasé de pomme de terre maison",
+        "value": "Língua de vaca com batata esmagada caseira"
+      },
+      "gallery.9.label": {
+        "source": "Magret de canard ",
+        "value": "Magret de pato"
+      },
+      "gallery.10.label": {
+        "source": "Nouvelle photo",
+        "value": "Nova fotografia"
+      },
+      "galleryAlbums.0.title": {
+        "source": "Le Bistrot ",
+        "value": "Le Bistrot"
+      },
+      "galleryAlbums.1.title": {
+        "source": "Nos entrées ",
+        "value": "As nossas entradas"
+      },
+      "galleryAlbums.2.title": {
+        "source": "Galerie",
+        "value": "Galeria"
+      },
+      "galleryAlbums.3.title": {
+        "source": "Nos plats ",
+        "value": "Os nossos pratos"
+      },
+      "galleryAlbums.4.title": {
+        "source": "Nos desserts",
+        "value": "As nossas sobremesas"
+      },
+      "story.eyebrow": {
+        "source": "Depuis 2021",
+        "value": "Desde 2021"
+      },
+      "story.title": {
+        "source": "La petite histoire du Bistrot",
+        "value": "A história do nosso Bistrot"
+      },
+      "story.intro": {
+        "source": "C’est l’histoire de deux passionnés réunis autour du goût, de l’accueil et du plaisir de partager.",
+        "value": "Esta é a história de dois apaixonados unidos pelo gosto, pela hospitalidade e pelo prazer de partilhar."
+      },
+      "story.paragraphs.0": {
+        "source": "Depuis tout petit, Ismaël rêvait d’ouvrir son propre restaurant. Il a suivi les études qui lui ont permis de faire de sa passion son métier. En 2006, après plusieurs années d’expérience, il ouvre son premier restaurant, qu’il revendra treize ans plus tard.",
+        "value": "Desde pequeno, Ismaël sonhava abrir o seu próprio restaurante. Seguiu os estudos que lhe permitiram transformar a paixão em profissão. Em 2006, após vários anos de experiência, abriu o primeiro restaurante, que venderia treze anos mais tarde."
+      },
+      "story.paragraphs.1": {
+        "source": "Thomas, lui, rêvait simplement de travailler avec plaisir. Il découvre la restauration en extra pendant ses études, en 2013, et se prend rapidement au jeu du service et de l’animation en salle.",
+        "value": "Thomas, por seu lado, sonhava simplesmente trabalhar com prazer. Descobriu a restauração fazendo trabalhos extra durante os estudos, em 2013, e rapidamente ganhou gosto pelo serviço e por dar vida à sala."
+      },
+      "story.paragraphs.2": {
+        "source": "En 2019, les deux passionnés se rencontrent. Deux ans plus tard, le 2 novembre 2021, ils ouvrent ensemble Le Bistrot Du Coin : Ismaël pour régaler vos papilles en cuisine, et Thomas pour vous servir et faire vivre la salle.",
+        "value": "Em 2019, os dois apaixonados conheceram-se. Dois anos depois, a 2 de novembro de 2021, abriram juntos o Le Bistrot Du Coin: Ismaël para deliciar o seu paladar na cozinha e Thomas para o receber e dar vida à sala."
+      },
+      "story.paragraphs.3": {
+        "source": "De cette rencontre est née une belle amitié, puis une adresse chaleureuse qui grandit chaque année grâce à vous.",
+        "value": "Desse encontro nasceu uma bela amizade e, depois, um espaço acolhedor que cresce todos os anos graças a si."
+      },
+      "story.quote": {
+        "source": "Le Bistrot est avant tout un lieu où l’on vient se rencontrer, passer et partager de bons moments. Voilà ce que vous trouverez en poussant nos portes.",
+        "value": "O Bistrot é, acima de tudo, um lugar para nos encontrarmos, passarmos tempo juntos e partilharmos bons momentos. É isso que encontrará ao entrar."
+      },
+      "story.imageAlt": {
+        "source": "Le bar chaleureux du Bistrot Du Coin",
+        "value": "O bar acolhedor do Le Bistrot Du Coin"
+      },
+      "privatization.title": {
+        "source": "Privatisez Le Bistrot",
+        "value": "Reserve o Bistrot em exclusivo"
+      },
+      "privatization.intro": {
+        "source": "Un moment rien qu’à vous, imaginé selon vos envies.",
+        "value": "Um momento só para si, pensado à sua medida."
+      },
+      "privatization.text": {
+        "source": "Nous pouvons privatiser le restaurant sur devis et selon les souhaits du client : repas de famille, anniversaire, réception professionnelle ou soirée privée. Contactez-nous directement afin que nous construisions ensemble une proposition adaptée.",
+        "value": "Podemos reservar o restaurante em exclusivo, mediante orçamento e de acordo com os seus desejos: refeições de família, aniversários, receções profissionais ou festas privadas. Contacte-nos diretamente para prepararmos em conjunto uma proposta à sua medida."
+      },
+      "privatization.photos.0.alt": {
+        "source": "Salle du Bistrot",
+        "value": "A sala do Bistrot"
+      },
+      "privatization.photos.0.label": {
+        "source": "Un lieu à votre image",
+        "value": "Um espaço à sua medida"
+      },
+      "privatization.photos.1.alt": {
+        "source": "Façade du Bistrot",
+        "value": "A fachada do Bistrot"
+      },
+      "privatization.photos.1.label": {
+        "source": "Le Bistrot Du Coin",
+        "value": "Le Bistrot Du Coin"
+      },
+      "reviews.title": {
+        "source": "Avis Google & réseaux sociaux",
+        "value": "Avaliações Google e redes sociais"
+      },
+      "reviews.intro": {
+        "source": "Votre avis compte beaucoup pour nous. Consultez les témoignages de nos clients ou partagez votre expérience.",
+        "value": "A sua opinião é muito importante para nós. Leia os testemunhos dos nossos clientes ou partilhe a sua experiência."
+      },
+      "loyaltyProgram.title": {
+        "source": "Programme de fidélité permanent",
+        "value": "Programa de fidelidade permanente"
+      },
+      "loyaltyProgram.description": {
+        "source": "10 formules achetées, la 11e offerte",
+        "value": "Compre 10 menus e receba o 11.º de oferta"
+      },
+      "loyaltyProgram.reward": {
+        "source": "Formule offerte",
+        "value": "Menu oferecido"
+      },
+      "loyaltyProgram.clientText": {
+        "source": "10 formules achetées, la 11e offerte",
+        "value": "Compre 10 menus e receba o 11.º de oferta"
+      }
+    },
+    "de": {
+      "general.closureMessage": {
+        "source": "Le Bistrot est exceptionnellement fermé jusqu’au 26/08/2026",
+        "value": "Das Bistrot ist ausnahmsweise bis zum 26.08.2026 geschlossen"
+      },
+      "general.reopeningBannerMessage": {
+        "source": "Le Bistrot Du Coin est de retour — Nous vous attendons !",
+        "value": "Le Bistrot Du Coin ist wieder da — Wir freuen uns auf Sie!"
+      },
+      "pageTexts.homeSlogan": {
+        "source": "Le Bistrot est avant tout un lieu où l’on vient se rencontrer, passer et partager de bons moments. Voilà ce que vous trouverez en poussant nos portes.",
+        "value": "Das Bistrot ist vor allem ein Ort, an dem Menschen zusammenkommen, Zeit miteinander verbringen und schöne Momente teilen. Genau das erwartet Sie, wenn Sie bei uns eintreten."
+      },
+      "pageTexts.todayIntro": {
+        "source": "Une formule qui change au fil des envies du chef et des produits disponibles.",
+        "value": "Ein Menü, das sich nach den Ideen des Küchenchefs und den verfügbaren Zutaten richtet."
+      },
+      "pageTexts.menuIntro": {
+        "source": "Des recettes de bistrot, généreuses et sans détour.",
+        "value": "Großzügige, unkomplizierte Bistroküche."
+      },
+      "pageTexts.galleryIntro": {
+        "source": "Quelques images de notre cuisine et de l’ambiance du Bistrot.",
+        "value": "Ein paar Eindrücke von unserer Küche und der Atmosphäre im Bistrot."
+      },
+      "pageTexts.contactIntro": {
+        "source": "Une question, une réservation ou simplement l’envie de venir nous voir ?",
+        "value": "Eine Frage, eine Reservierung oder einfach Lust, uns zu besuchen?"
+      },
+      "pageTexts.eventsIntro": {
+        "source": "Concerts, karaokés, soirées à thème et rendez-vous à ne pas manquer.",
+        "value": "Konzerte, Karaoke, Themenabende und Termine, die Sie nicht verpassen sollten."
+      },
+      "pageTexts.reviewsIntro": {
+        "source": "Retrouvez les avis de nos clients et suivez toute l’actualité du Bistrot.",
+        "value": "Lesen Sie die Bewertungen unserer Gäste und erfahren Sie alle Neuigkeiten aus dem Bistrot."
+      },
+      "daily.dateLabel": {
+        "source": "Aujourd’hui",
+        "value": "Heute"
+      },
+      "daily.startersTitle": {
+        "source": "3 entrées au choix",
+        "value": "3 Vorspeisen zur Auswahl"
+      },
+      "daily.mainsTitle": {
+        "source": "2 plats au choix",
+        "value": "2 Hauptgerichte zur Auswahl"
+      },
+      "daily.dessertsTitle": {
+        "source": "3 desserts au choix",
+        "value": "3 Desserts zur Auswahl"
+      },
+      "daily.suggestionSupplementText": {
+        "source": "+4 € sur le prix du plat du jour ou de la formule choisie",
+        "value": "4 € Aufpreis zum Tagesgericht oder zum gewählten Menü"
+      },
+      "daily.formulas.0.name": {
+        "source": "Entrée seule",
+        "value": "Nur Vorspeise"
+      },
+      "daily.formulas.1.name": {
+        "source": "Plat du jour",
+        "value": "Tagesgericht"
+      },
+      "daily.formulas.2.name": {
+        "source": "Dessert seul",
+        "value": "Nur Dessert"
+      },
+      "daily.formulas.3.name": {
+        "source": "Entrée + plat ou plat + dessert",
+        "value": "Vorspeise + Hauptgericht oder Hauptgericht + Dessert"
+      },
+      "daily.formulas.4.name": {
+        "source": "Entrée + plat + dessert",
+        "value": "Vorspeise + Hauptgericht + Dessert"
+      },
+      "daily.starters.0.name": {
+        "source": "Salade de pomme de terre ",
+        "value": "Kartoffelsalat"
+      },
+      "daily.mains.0.name": {
+        "source": "saucisse",
+        "value": "Bratwurst"
+      },
+      "daily.mains.1.name": {
+        "source": "Plat du jour 2",
+        "value": "Tagesgericht 2"
+      },
+      "daily.suggestion.name": {
+        "source": "Suggestion du chef",
+        "value": "Empfehlung des Küchenchefs"
+      },
+      "daily.suggestion.description": {
+        "source": "Faux filet et ses frites maison ",
+        "value": "Rumpsteak mit hausgemachten Pommes frites"
+      },
+      "daily.desserts.0.name": {
+        "source": "Dessert du jour 1",
+        "value": "Dessert des Tages 1"
+      },
+      "daily.desserts.1.name": {
+        "source": "Dessert du jour 2",
+        "value": "Dessert des Tages 2"
+      },
+      "menu.0.category": {
+        "source": "Nos pressions",
+        "value": "Biere vom Fass"
+      },
+      "menu.0.items.0.name": {
+        "source": "Pelforth",
+        "value": "Pelforth"
+      },
+      "menu.0.items.0.description": {
+        "source": "Blonde française 5,8%",
+        "value": "Französisches helles Bier, 5,8 %"
+      },
+      "menu.0.items.1.name": {
+        "source": "Pélican blonde",
+        "value": "Pélican blonde"
+      },
+      "menu.0.items.1.description": {
+        "source": "Blonde française non filtrée 7.5%",
+        "value": "Ungefiltertes französisches helles Bier, 7,5 %"
+      },
+      "menu.0.items.2.name": {
+        "source": "Gallia West IPA",
+        "value": "Gallia West IPA"
+      },
+      "menu.0.items.2.description": {
+        "source": "IPA française 6%",
+        "value": "Französisches IPA, 6 %"
+      },
+      "menu.0.items.3.name": {
+        "source": "Pélican rouge ",
+        "value": "Pélican rouge"
+      },
+      "menu.0.items.3.description": {
+        "source": "Bière rouge à la griotte 7,5%",
+        "value": "Rotes Bier mit Sauerkirsche, 7,5 %"
+      },
+      "menu.0.items.4.name": {
+        "source": "Desperados Sunlight ",
+        "value": "Desperados Sunlight"
+      },
+      "menu.0.items.4.description": {
+        "source": "Goût citron jaune/citron vert 4%",
+        "value": "Zitronen- und Limettengeschmack, 4 %"
+      },
+      "menu.1.category": {
+        "source": "Bières en bouteille",
+        "value": "Flaschenbiere"
+      },
+      "menu.1.items.0.name": {
+        "source": "Paix Dieu ",
+        "value": "Paix Dieu"
+      },
+      "menu.1.items.0.description": {
+        "source": " Belgique_ Blonde triple, fruitée, épicée et ronde. 10.0°",
+        "value": "Belgien — Helles Tripel, fruchtig, würzig und rund. 10,0 %"
+      },
+      "menu.1.items.1.name": {
+        "source": "Orval",
+        "value": "Orval"
+      },
+      "menu.1.items.1.description": {
+        "source": "Belgique_ Trappiste sèche, houblonnée, avec une note sauvage. 6.2°",
+        "value": "Belgien — Trockenes, hopfiges Trappistenbier mit einer wilden Note. 6,2 %"
+      },
+      "menu.1.items.2.name": {
+        "source": "Chouffe blonde ",
+        "value": "Chouffe blonde"
+      },
+      "menu.1.items.2.description": {
+        "source": "Belgique_Blonde fruitée, épicée et légèrement houblonnée. 8.0°",
+        "value": "Belgien — Fruchtiges, würziges und leicht hopfiges helles Bier. 8,0 %"
+      },
+      "menu.1.items.3.name": {
+        "source": "Cherry Chouffe",
+        "value": "Cherry Chouffe"
+      },
+      "menu.1.items.3.description": {
+        "source": "Belgique_Fruité et gourmand, notes de cerise mûre, fraise, amande et légère touche épicée. 8.0°",
+        "value": "Belgien — Fruchtig und vollmundig, mit Noten von reifen Kirschen, Erdbeeren, Mandeln und einer leichten Würze. 8,0 %"
+      },
+      "menu.1.items.4.name": {
+        "source": "Duvel",
+        "value": "Duvel"
+      },
+      "menu.1.items.4.description": {
+        "source": "Belgique_Goût : Blonde forte, fruitée, sèche et finement amère. 8.5°",
+        "value": "Belgien — Starkes helles Bier, fruchtig, trocken und feinherb. 8,5 %"
+      },
+      "menu.1.items.5.name": {
+        "source": "Triple Karmeliet",
+        "value": "Triple Karmeliet"
+      },
+      "menu.1.items.5.description": {
+        "source": "Belgique_Tripel complexe, florale, vanillée et épicée. 8.4°",
+        "value": "Belgien — Komplexes Tripel mit floralen Noten, Vanille und Gewürzen. 8,4 %"
+      },
+      "menu.1.items.6.name": {
+        "source": "Kwak ",
+        "value": "Kwak"
+      },
+      "menu.1.items.6.description": {
+        "source": "Belgique_Ambrée riche et gourmande, notes de biscuit, banane, orange, caramel et épices. 8.4°",
+        "value": "Belgien — Vollmundiges bernsteinfarbenes Bier mit Noten von Gebäck, Banane, Orange, Karamell und Gewürzen. 8,4 %"
+      },
+      "menu.1.items.7.name": {
+        "source": "Rince Cochon",
+        "value": "Rince Cochon"
+      },
+      "menu.1.items.7.description": {
+        "source": "Belgique_Blonde forte, ronde, fruitée et légèrement épicée. 8.5°",
+        "value": "Belgien — Starkes helles Bier, rund, fruchtig und leicht würzig. 8,5 %"
+      },
+      "menu.1.items.8.name": {
+        "source": "Hoagarden blanche ",
+        "value": "Hoagarden blanche"
+      },
+      "menu.1.items.8.description": {
+        "source": "Belgique_Blanche douce et rafraîchissante, aux notes d’orange, coriandre, agrumes et épices. 4.9°",
+        "value": "Belgien — Mildes, erfrischendes Weißbier mit Noten von Orange, Koriander, Zitrusfrüchten und Gewürzen. 4,9 %"
+      },
+      "menu.1.items.9.name": {
+        "source": "Leffe  blonde ",
+        "value": "Leffe  blonde"
+      },
+      "menu.1.items.9.description": {
+        "source": "Belgique_Blonde d’abbaye, douce, maltée, avec vanille et clou de girofle. 6.6°",
+        "value": "Belgien — Mildes, malziges helles Abteibier mit Vanille und Gewürznelke. 6,6 %"
+      },
+      "menu.2.category": {
+        "source": "À partager… ou pas",
+        "value": "Zum Teilen … oder auch nicht"
+      },
+      "menu.2.items.0.name": {
+        "source": "Planche mixte",
+        "value": "Gemischte Platte"
+      },
+      "menu.2.items.0.description": {
+        "source": "Rosette de Lyon, chorizo, terrine du moment, jambon de pays, jambon blanc et sélection de 3 fromages",
+        "value": "Rosette-de-Lyon-Salami, Chorizo, wechselnde Terrine, Rohschinken, Kochschinken und eine Auswahl von 3 Käsesorten"
+      },
+      "menu.2.items.2.name": {
+        "source": "Saucisson sec du terroir",
+        "value": "Traditionelle luftgetrocknete Salami"
+      },
+      "menu.2.items.2.description": {
+        "source": "Cèpes, nature ou piment d’Espelette",
+        "value": "Mit Steinpilzen, natur oder mit Piment d’Espelette"
+      },
+      "menu.2.items.3.name": {
+        "source": "Chips Lay’s 145 g",
+        "value": "Lay’s Chips, 145 g"
+      },
+      "menu.2.items.3.description": {
+        "source": "Nature, barbecue…",
+        "value": "Gesalzen, Barbecue …"
+      },
+      "menu.3.category": {
+        "source": "Cocktails du moment",
+        "value": "Aktuelle Cocktails"
+      },
+      "menu.3.items.0.name": {
+        "source": "Tequila Sunrise",
+        "value": "Tequila Sunrise"
+      },
+      "menu.3.items.0.description": {
+        "source": "Tequila, jus d’orange, sirop de grenadine",
+        "value": "Tequila, Orangensaft und Grenadinesirup"
+      },
+      "menu.3.items.1.name": {
+        "source": "Délices des îles",
+        "value": "Inselgenuss"
+      },
+      "menu.3.items.1.description": {
+        "source": "Rhum blanc martiniquais, jus de maracuja, sirop de grenadine",
+        "value": "Weißer Rum aus Martinique, Maracujasaft und Grenadinesirup"
+      },
+      "menu.4.category": {
+        "source": "Softs",
+        "value": "Alkoholfreie Getränke"
+      },
+      "menu.4.items.0.name": {
+        "source": "Coca-Cola, Coca-Cola Zéro, Fuze Tea pêche, Schweppes, Orangina, Perrier, limonade et jus de fruits",
+        "value": "Coca-Cola, Coca-Cola Zero, Fuze Tea Pfirsich, Schweppes, Orangina, Perrier, Limonade und Fruchtsäfte"
+      },
+      "menu.5.category": {
+        "source": "Bières sans alcool",
+        "value": "Alkoholfreie Biere"
+      },
+      "menu.5.items.0.name": {
+        "source": "Heineken 0.0 ",
+        "value": "Heineken 0.0"
+      },
+      "menu.5.items.1.name": {
+        "source": "Desperados 00",
+        "value": "Desperados 00"
+      },
+      "menu.6.category": {
+        "source": "Apéritifs",
+        "value": "Aperitifs"
+      },
+      "menu.6.items.0.name": {
+        "source": "Ricard",
+        "value": "Ricard"
+      },
+      "menu.6.items.1.name": {
+        "source": "Kir",
+        "value": "Kir"
+      },
+      "menu.6.items.1.description": {
+        "source": "Cassis, mûre, pêche ou framboise",
+        "value": "Schwarze Johannisbeere, Brombeere, Pfirsich oder Himbeere"
+      },
+      "menu.6.items.2.name": {
+        "source": "Kir pétillant",
+        "value": "Kir mit Schaumwein"
+      },
+      "menu.6.items.3.name": {
+        "source": "Pétillant nature",
+        "value": "Schaumwein"
+      },
+      "menu.6.items.3.description": {
+        "source": "Blanc de blancs brut",
+        "value": "Blanc de Blancs brut"
+      },
+      "menu.6.items.4.name": {
+        "source": "Porto",
+        "value": "Porto"
+      },
+      "menu.6.items.4.description": {
+        "source": "Rouge ou blanc",
+        "value": "Rot oder weiß"
+      },
+      "menu.6.items.5.name": {
+        "source": "Martini",
+        "value": "Martini"
+      },
+      "menu.6.items.5.description": {
+        "source": "Rouge ou blanc",
+        "value": "Rot oder weiß"
+      },
+      "menu.9.category": {
+        "source": "Whiskys",
+        "value": "Whiskys"
+      },
+      "menu.9.items.0.name": {
+        "source": "Sir Edwards",
+        "value": "Sir Edwards"
+      },
+      "menu.9.items.0.description": {
+        "source": "    Écosse_\n    Doux et rond, notes de bois, fruits secs et épices. ",
+        "value": "Schottland — Mild und rund, mit Noten von Holz, Trockenfrüchten und Gewürzen."
+      },
+      "menu.9.items.1.name": {
+        "source": "Jameson",
+        "value": "Jameson"
+      },
+      "menu.9.items.1.description": {
+        "source": "    Irlande_\n    Souple et gourmand, notes de vanille, noix, épices et xérès.",
+        "value": "Irland — Weich und vollmundig, mit Noten von Vanille, Nüssen, Gewürzen und Sherry."
+      },
+      "menu.9.items.2.name": {
+        "source": "Jack Daniel’s",
+        "value": "Jack Daniel’s"
+      },
+      "menu.9.items.2.description": {
+        "source": "    Tennessee, États-Unis_\n    Rond et boisé, notes de caramel et de vanille. ",
+        "value": "Tennessee, USA — Rund und holzig, mit Karamell- und Vanillenoten."
+      },
+      "menu.9.items.3.name": {
+        "source": "Glenlivet",
+        "value": "Glenlivet"
+      },
+      "menu.9.items.3.description": {
+        "source": "    Speyside, Écosse_\n    Doux et fruité, notes d’ananas, poire et vanille. ",
+        "value": "Speyside, Schottland — Mild und fruchtig, mit Noten von Ananas, Birne und Vanille."
+      },
+      "menu.9.items.4.name": {
+        "source": "Togouchi",
+        "value": "Togouchi"
+      },
+      "menu.9.items.4.description": {
+        "source": "    Hiroshima, Japon_\n    Fin et doux, notes de fruits, noix, vanille et épices. ",
+        "value": "Hiroshima, Japan — Fein und mild, mit Noten von Früchten, Nüssen, Vanille und Gewürzen."
+      },
+      "menu.9.items.5.name": {
+        "source": "Aerstone",
+        "value": "Aerstone"
+      },
+      "menu.9.items.5.description": {
+        "source": "    Écosse_\n    Légèrement tourbé, fumé, malté et chaleureux.",
+        "value": "Schottland — Leicht torfig, rauchig, malzig und wärmend."
+      },
+      "menu.9.items.6.name": {
+        "source": "Big Peat",
+        "value": "Big Peat"
+      },
+      "menu.9.items.6.description": {
+        "source": "    Islay, Écosse_\n    Très tourbé, fumé et marin, notes de cendre et de sel.",
+        "value": "Islay, Schottland — Kräftig torfig, rauchig und maritim, mit Asche- und Salznoten."
+      },
+      "menu.10.category": {
+        "source": "Boissons chaudes",
+        "value": "Heißgetränke"
+      },
+      "menu.10.items.0.name": {
+        "source": "Expresso / Café serré",
+        "value": "Espresso / Ristretto"
+      },
+      "menu.10.items.1.name": {
+        "source": "Allongé / Noisette",
+        "value": "Verlängerter / Espresso mit einem Schuss Milch"
+      },
+      "menu.10.items.2.name": {
+        "source": "Thé / Café crème",
+        "value": "Tee / Milchkaffee"
+      },
+      "menu.10.items.3.name": {
+        "source": "Chocolat chaud",
+        "value": "Heiße Schokolade"
+      },
+      "menu.10.items.4.name": {
+        "source": "Cappuccino",
+        "value": "Cappuccino"
+      },
+      "gallery.0.alt": {
+        "source": "Façade du Bistrot Du Coin",
+        "value": "Die Fassade von Le Bistrot Du Coin"
+      },
+      "gallery.0.label": {
+        "source": "Le Bistrot",
+        "value": "Le Bistrot"
+      },
+      "gallery.1.alt": {
+        "source": "Bar et intérieur du restaurant",
+        "value": "Bar und Innenraum des Restaurants"
+      },
+      "gallery.1.label": {
+        "source": "Notre ambiance",
+        "value": "Unsere Atmosphäre"
+      },
+      "gallery.2.alt": {
+        "source": "Assiette maison",
+        "value": "Ein hausgemachtes Gericht"
+      },
+      "gallery.2.label": {
+        "source": "Cuisine maison",
+        "value": "Hausgemachte Küche"
+      },
+      "gallery.3.alt": {
+        "source": "Couscous du Bistrot",
+        "value": "Couscous des Bistrots"
+      },
+      "gallery.3.label": {
+        "source": "Plat du jour",
+        "value": "Tagesgericht"
+      },
+      "gallery.4.alt": {
+        "source": "Pavé de saumon",
+        "value": "Lachsfilet"
+      },
+      "gallery.4.label": {
+        "source": "Produits frais",
+        "value": "Frische Zutaten"
+      },
+      "gallery.5.alt": {
+        "source": "Crevettes et riz",
+        "value": "Garnelen mit Reis"
+      },
+      "gallery.5.label": {
+        "source": "Saveurs du moment",
+        "value": "Aktuelle Geschmackserlebnisse"
+      },
+      "gallery.6.alt": {
+        "source": "Choucroute du Bistrot",
+        "value": "Sauerkrautplatte des Bistrots"
+      },
+      "gallery.6.label": {
+        "source": "Générosité",
+        "value": "Großzügigkeit"
+      },
+      "gallery.7.label": {
+        "source": "Nouvelle photo",
+        "value": "Neues Foto"
+      },
+      "gallery.8.label": {
+        "source": "Langue de bœuf et son écrasé de pomme de terre maison",
+        "value": "Rinderzunge mit hausgemachtem Kartoffelstampf"
+      },
+      "gallery.9.label": {
+        "source": "Magret de canard ",
+        "value": "Entenbrust"
+      },
+      "gallery.10.label": {
+        "source": "Nouvelle photo",
+        "value": "Neues Foto"
+      },
+      "galleryAlbums.0.title": {
+        "source": "Le Bistrot ",
+        "value": "Le Bistrot"
+      },
+      "galleryAlbums.1.title": {
+        "source": "Nos entrées ",
+        "value": "Unsere Vorspeisen"
+      },
+      "galleryAlbums.2.title": {
+        "source": "Galerie",
+        "value": "Galerie"
+      },
+      "galleryAlbums.3.title": {
+        "source": "Nos plats ",
+        "value": "Unsere Hauptgerichte"
+      },
+      "galleryAlbums.4.title": {
+        "source": "Nos desserts",
+        "value": "Unsere Desserts"
+      },
+      "story.eyebrow": {
+        "source": "Depuis 2021",
+        "value": "Seit 2021"
+      },
+      "story.title": {
+        "source": "La petite histoire du Bistrot",
+        "value": "Die Geschichte unseres Bistrots"
+      },
+      "story.intro": {
+        "source": "C’est l’histoire de deux passionnés réunis autour du goût, de l’accueil et du plaisir de partager.",
+        "value": "Dies ist die Geschichte zweier leidenschaftlicher Gastgeber, verbunden durch guten Geschmack, Gastfreundschaft und die Freude am Teilen."
+      },
+      "story.paragraphs.0": {
+        "source": "Depuis tout petit, Ismaël rêvait d’ouvrir son propre restaurant. Il a suivi les études qui lui ont permis de faire de sa passion son métier. En 2006, après plusieurs années d’expérience, il ouvre son premier restaurant, qu’il revendra treize ans plus tard.",
+        "value": "Schon als Kind träumte Ismaël davon, ein eigenes Restaurant zu eröffnen. Mit seiner Ausbildung machte er seine Leidenschaft zum Beruf. 2006 eröffnete er nach mehreren Jahren Berufserfahrung sein erstes Restaurant, das er dreizehn Jahre später verkaufte."
+      },
+      "story.paragraphs.1": {
+        "source": "Thomas, lui, rêvait simplement de travailler avec plaisir. Il découvre la restauration en extra pendant ses études, en 2013, et se prend rapidement au jeu du service et de l’animation en salle.",
+        "value": "Thomas träumte einfach davon, mit Freude zu arbeiten. 2013 entdeckte er die Gastronomie bei Nebenjobs während seines Studiums und fand schnell Gefallen daran, Gäste zu bedienen und Leben in den Gastraum zu bringen."
+      },
+      "story.paragraphs.2": {
+        "source": "En 2019, les deux passionnés se rencontrent. Deux ans plus tard, le 2 novembre 2021, ils ouvrent ensemble Le Bistrot Du Coin : Ismaël pour régaler vos papilles en cuisine, et Thomas pour vous servir et faire vivre la salle.",
+        "value": "2019 lernten sich die beiden kennen. Zwei Jahre später, am 2. November 2021, eröffneten sie gemeinsam Le Bistrot Du Coin: Ismaël verwöhnt Ihren Gaumen in der Küche, während Thomas Sie bedient und für Leben im Gastraum sorgt."
+      },
+      "story.paragraphs.3": {
+        "source": "De cette rencontre est née une belle amitié, puis une adresse chaleureuse qui grandit chaque année grâce à vous.",
+        "value": "Aus dieser Begegnung entstand eine wunderbare Freundschaft und schließlich ein gastlicher Ort, der dank Ihnen jedes Jahr weiterwächst."
+      },
+      "story.quote": {
+        "source": "Le Bistrot est avant tout un lieu où l’on vient se rencontrer, passer et partager de bons moments. Voilà ce que vous trouverez en poussant nos portes.",
+        "value": "Das Bistrot ist vor allem ein Ort, an dem Menschen zusammenkommen, Zeit miteinander verbringen und schöne Momente teilen. Genau das erwartet Sie, wenn Sie bei uns eintreten."
+      },
+      "story.imageAlt": {
+        "source": "Le bar chaleureux du Bistrot Du Coin",
+        "value": "Die gemütliche Bar im Le Bistrot Du Coin"
+      },
+      "privatization.title": {
+        "source": "Privatisez Le Bistrot",
+        "value": "Das Bistrot ganz für Sie"
+      },
+      "privatization.intro": {
+        "source": "Un moment rien qu’à vous, imaginé selon vos envies.",
+        "value": "Ein Moment nur für Sie, ganz nach Ihren Wünschen gestaltet."
+      },
+      "privatization.text": {
+        "source": "Nous pouvons privatiser le restaurant sur devis et selon les souhaits du client : repas de famille, anniversaire, réception professionnelle ou soirée privée. Contactez-nous directement afin que nous construisions ensemble une proposition adaptée.",
+        "value": "Sie können das Restaurant nach Ihren Wünschen exklusiv buchen: für Familienessen, Geburtstage, geschäftliche Empfänge oder private Feiern. Kontaktieren Sie uns direkt, damit wir gemeinsam ein passendes Angebot für Sie erstellen können."
+      },
+      "privatization.photos.0.alt": {
+        "source": "Salle du Bistrot",
+        "value": "Der Gastraum des Bistrots"
+      },
+      "privatization.photos.0.label": {
+        "source": "Un lieu à votre image",
+        "value": "Ein Ort ganz nach Ihren Wünschen"
+      },
+      "privatization.photos.1.alt": {
+        "source": "Façade du Bistrot",
+        "value": "Die Fassade des Bistrots"
+      },
+      "privatization.photos.1.label": {
+        "source": "Le Bistrot Du Coin",
+        "value": "Le Bistrot Du Coin"
+      },
+      "reviews.title": {
+        "source": "Avis Google & réseaux sociaux",
+        "value": "Google-Bewertungen & soziale Medien"
+      },
+      "reviews.intro": {
+        "source": "Votre avis compte beaucoup pour nous. Consultez les témoignages de nos clients ou partagez votre expérience.",
+        "value": "Ihre Meinung bedeutet uns viel. Lesen Sie die Erfahrungen unserer Gäste oder teilen Sie Ihre eigenen."
+      },
+      "loyaltyProgram.title": {
+        "source": "Programme de fidélité permanent",
+        "value": "Dauerhaftes Treueprogramm"
+      },
+      "loyaltyProgram.description": {
+        "source": "10 formules achetées, la 11e offerte",
+        "value": "10 Menüs kaufen, das 11. gratis erhalten"
+      },
+      "loyaltyProgram.reward": {
+        "source": "Formule offerte",
+        "value": "Kostenloses Menü"
+      },
+      "loyaltyProgram.clientText": {
+        "source": "10 formules achetées, la 11e offerte",
+        "value": "10 Menüs kaufen, das 11. gratis erhalten"
+      }
+    }
+  },
   "menuStyle": "ardoise",
   "heroImageAlt": "",
   "loyaltyProgram": {
