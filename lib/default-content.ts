@@ -1,7 +1,7 @@
 import {normalizeLoyaltyProgram} from './loyalty-program'
 import type {LoyaltyProgram} from './loyalty-program'
 import { normalizeGalleryAlbums, GalleryAlbum } from './gallery-albums'
-export type MenuItem = { name: string; description?: string; price?: string; image?: string; imageAlt?: string }
+export type MenuItem = { wineType?: 'red' | 'white' | 'rose' | 'sparkling' | ''; name: string; description?: string; price?: string; image?: string; imageAlt?: string }
 export type MenuSection = { category: string; id?: string; headerImage?: string; subtitle?: string; style?: string; items: MenuItem[] }
 export type GalleryItem = { src: string; alt: string; label: string }
 export type FormulaItem = { name: string; price: string; description?: string; takeawayPrice?: string }
