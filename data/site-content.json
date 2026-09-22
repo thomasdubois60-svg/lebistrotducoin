@@ -380,55 +380,64 @@
           "name": "Figuerette 75cl",
           "description": "",
           "price": "24€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/80c714547ca1b09baf6e6ea800e547cc7861430e/public/photos/fcaf07ce-fb1f-45cd-b75b-4506ad90224d-27b8d6e7-1edd-4127-8098-e03e9d6c5175.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/80c714547ca1b09baf6e6ea800e547cc7861430e/public/photos/fcaf07ce-fb1f-45cd-b75b-4506ad90224d-27b8d6e7-1edd-4127-8098-e03e9d6c5175.png",
+          "wineType": "white"
         },
         {
           "name": "Coteaux du layon 75cl",
           "description": "",
           "price": "24€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/53f7f6f6d611690792e5c9b4626d596f32f373bb/public/photos/80ff2117-4c54-410a-a699-d5a10208df0c-986f98c7-1e78-4982-b27a-ffb23f75f577.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/53f7f6f6d611690792e5c9b4626d596f32f373bb/public/photos/80ff2117-4c54-410a-a699-d5a10208df0c-986f98c7-1e78-4982-b27a-ffb23f75f577.png",
+          "wineType": "white"
         },
         {
           "name": "MasFleurey 75cl",
           "description": "",
           "price": "24€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/646d77a126adc5bd51f3884477356dc254217488/public/photos/2dbd92b8-a7e3-48f8-9187-3baa6fb7b555-68517395-99ed-49f8-8527-0a44bb64be61.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/646d77a126adc5bd51f3884477356dc254217488/public/photos/2dbd92b8-a7e3-48f8-9187-3baa6fb7b555-68517395-99ed-49f8-8527-0a44bb64be61.png",
+          "wineType": "rose"
         },
         {
           "name": "Saint Nicolas de Bourgueil 75cl",
           "description": "",
           "price": "24€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/f7229cd54ab3192a78838246f0c5e8ea45aa08d5/public/photos/417b191d-df49-4ff7-a24a-823e02c74ab2-e6888fe9-7143-459e-852e-683df49220dc.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/f7229cd54ab3192a78838246f0c5e8ea45aa08d5/public/photos/417b191d-df49-4ff7-a24a-823e02c74ab2-e6888fe9-7143-459e-852e-683df49220dc.png",
+          "wineType": "red"
         },
         {
           "name": "Chinon 75cl",
           "description": "",
           "price": "24€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/230896be023decd7a34233da08d7ba0fbf8e34ae/public/photos/2e59291c-ddd7-450e-a74f-85634729f73b-62baa748-b528-45e7-92d8-643fa0ea0a77.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/230896be023decd7a34233da08d7ba0fbf8e34ae/public/photos/2e59291c-ddd7-450e-a74f-85634729f73b-62baa748-b528-45e7-92d8-643fa0ea0a77.png",
+          "wineType": "red"
         },
         {
           "name": "Malbec 75cl",
           "description": "",
           "price": "24€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/6b48807707205292696731adaf9ebdd697272b46/public/photos/bb9977c5-fd74-4b9b-a91c-56b4202eccf6-3015f871-f1a3-4a80-b30a-d97774139474.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/6b48807707205292696731adaf9ebdd697272b46/public/photos/bb9977c5-fd74-4b9b-a91c-56b4202eccf6-3015f871-f1a3-4a80-b30a-d97774139474.png",
+          "wineType": "red"
         },
         {
           "name": "Corbières de George 75cl",
           "description": "",
           "price": "24€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/57936432e6ce4f960529ecdb06c1667f8cb47b5e/public/photos/5b3934b1-330e-4642-9f6f-d10b4a1d5ab7-1f7ab221-217b-4f74-b6eb-a987026e6b7c.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/57936432e6ce4f960529ecdb06c1667f8cb47b5e/public/photos/5b3934b1-330e-4642-9f6f-d10b4a1d5ab7-1f7ab221-217b-4f74-b6eb-a987026e6b7c.png",
+          "wineType": "red"
         },
         {
           "name": "Château la Grille 75cl",
           "description": "",
           "price": "38€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/f62dd5181ac84d799d66b0f302800ade63543cf4/public/photos/0c8f96f3-19a7-4655-a04b-fd4b6554723e-64f85b39-4f4c-4337-b0cd-8864b6194a5f.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/f62dd5181ac84d799d66b0f302800ade63543cf4/public/photos/0c8f96f3-19a7-4655-a04b-fd4b6554723e-64f85b39-4f4c-4337-b0cd-8864b6194a5f.png",
+          "wineType": "red"
         },
         {
           "name": "Saint Joseph 75cl",
           "description": "",
           "price": "38€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/035157de02e117f36ff78d96eacfdacd89d26768/public/photos/73cfa03e-cad1-4080-b1a8-44084c37bc24-7ed766d8-9769-4869-b3a0-2b552d033712.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/035157de02e117f36ff78d96eacfdacd89d26768/public/photos/73cfa03e-cad1-4080-b1a8-44084c37bc24-7ed766d8-9769-4869-b3a0-2b552d033712.png",
+          "wineType": "red"
         },
         {
           "name": "Givry 1er Cru 75cl",
@@ -439,7 +448,8 @@
           "name": "Nuits Saint George Vieilles Vignes 75cl",
           "description": "",
           "price": "50€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/3b988a13b7b9803b4488397a723548d790643d50/public/photos/a10b393a-838f-4521-aefb-8899561b35d4-0aa1fef7-d761-4a3d-b308-f3f438556d82.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/3b988a13b7b9803b4488397a723548d790643d50/public/photos/a10b393a-838f-4521-aefb-8899561b35d4-0aa1fef7-d761-4a3d-b308-f3f438556d82.png",
+          "wineType": "red"
         }
       ],
       "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/18631f8a41d538a51723a986f95cd390827136fd/public/photos/a00bb916-b91a-4d0c-9fa1-a48d4dd25943-8df16d35-6a3a-488f-bf49-b077f9b1a343.png"
