@@ -3096,8 +3096,8 @@
     "title": "Programme de fidélité permanent",
     "description": "10 formules achetées, la 11e offerte",
     "threshold": 10,
-    "reward": "Formule offerte",
-    "clientText": "10 formules achetées, la 11e offerte",
+    "reward": "La 11e Formule offerte",
+    "clientText": "",
     "rewardValue": null,
     "enabled": true
   },
