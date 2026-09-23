@@ -97,7 +97,7 @@
         "image": ""
       }
     ],
-    "theme": "bistrot"
+    "theme": "nuit"
   },
   "menu": [
     {
@@ -321,45 +321,52 @@
       "items": [
         {
           "name": "Figuerette ",
-          "description": "",
+          "description": "    Domaine de la Clapière – Figuerette Pays d’Oc 2023\n    Blanc frais et aromatique, aux notes de fruits blancs, d’agrumes et de fleurs, avec une finale légère et désaltérante.",
           "price": "12cl:5€/25cl:9€/50cl:18€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/ab3d93c1cd6ccefa9259d99e60bd6e1526218efc/public/photos/2cd30bea-9116-4ca4-b64c-3b9836741eb5-27b8d6e7-1edd-4127-8098-e03e9d6c5175.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/ab3d93c1cd6ccefa9259d99e60bd6e1526218efc/public/photos/2cd30bea-9116-4ca4-b64c-3b9836741eb5-27b8d6e7-1edd-4127-8098-e03e9d6c5175.png",
+          "wineType": "white"
         },
         {
           "name": "Coteaux du layon",
-          "description": "",
+          "description": "    Domaine du Petit Métris – Coteaux du Layon 2024\n    Blanc moelleux et gourmand, aux notes de fruits jaunes, de miel et de fleurs, équilibré par une belle fraîcheur.",
           "price": "12cl:5€/25cl:9€/50cl:18€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/c6c0b7163df6a8f40f051f860c78bfd8b330b4fb/public/photos/6ba8be87-d7df-437d-8ac3-3c8b8b75b2be-986f98c7-1e78-4982-b27a-ffb23f75f577.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/c6c0b7163df6a8f40f051f860c78bfd8b330b4fb/public/photos/6ba8be87-d7df-437d-8ac3-3c8b8b75b2be-986f98c7-1e78-4982-b27a-ffb23f75f577.png",
+          "wineType": "white"
         },
         {
-          "name": "Masfleury ",
-          "description": "Rosé de Provence ",
+          "name": "Masfleurey",
+          "description": "    Masfleurey – Côtes de Provence Rosé 2024\n    Rosé frais et délicat, aux notes de petits fruits rouges, d’agrumes et de fleurs, avec une finale légère.",
           "price": "12 cl:5 €/25 cl:9€/50cl:16€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/4ad0da5438ee76fd4e9c957861f612a7f4976af1/public/photos/434aada0-0c88-465e-8892-02749214a98b-68517395-99ed-49f8-8527-0a44bb64be61.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/4ad0da5438ee76fd4e9c957861f612a7f4976af1/public/photos/434aada0-0c88-465e-8892-02749214a98b-68517395-99ed-49f8-8527-0a44bb64be61.png",
+          "wineType": "rose"
         },
         {
           "name": "George",
-          "description": "",
+          "description": "    Les Corbières de Georges – Gérard Bertrand 2022\n    Rouge généreux et méditerranéen, aux notes de fruits mûrs, d’épices et de garrigue.",
           "price": "12cl:5,50€/25cl:10€/50cl:20€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/5d487d01a031e06bd398c4f7d25677ee4e09ea07/public/photos/e9c0a911-aeb8-43a6-8710-ea378e221e65-1f7ab221-217b-4f74-b6eb-a987026e6b7c.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/5d487d01a031e06bd398c4f7d25677ee4e09ea07/public/photos/e9c0a911-aeb8-43a6-8710-ea378e221e65-1f7ab221-217b-4f74-b6eb-a987026e6b7c.png",
+          "wineType": "red"
         },
         {
           "name": "Saint-Nicolas-de-Bourgueil ",
-          "description": "Rouge de Loire ",
+          "description": "    Saint-Nicolas-de-Bourgueil – La Gardière 2025\n    Rouge souple et fruité, aux notes de fruits rouges, avec une belle fraîcheur et des tanins légers.",
           "price": "12 cl:5€/25 cl:9€/50cl:16€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/a9d0d7d9ca2b8067a5bf07906e07fcca4a9dcbe1/public/photos/e232948c-ebda-4d43-b6e5-854cc77805f7-e6888fe9-7143-459e-852e-683df49220dc.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/a9d0d7d9ca2b8067a5bf07906e07fcca4a9dcbe1/public/photos/e232948c-ebda-4d43-b6e5-854cc77805f7-e6888fe9-7143-459e-852e-683df49220dc.png",
+          "wineType": "red"
         },
         {
           "name": "Chinon",
-          "description": "",
+          "description": "    Granges de la Perrière – Chinon\n    Rouge frais et gourmand, marqué par les fruits rouges, une touche végétale fine et une finale souple.",
           "price": "12cl:5€/25cl:9€/50cl:18€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/f464fb9026872bf6e901e58303ad4a124b1b16cb/public/photos/427910f1-2036-40ec-b1f9-c490c74c8c6e-62baa748-b528-45e7-92d8-643fa0ea0a77.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/f464fb9026872bf6e901e58303ad4a124b1b16cb/public/photos/427910f1-2036-40ec-b1f9-c490c74c8c6e-62baa748-b528-45e7-92d8-643fa0ea0a77.png",
+          "wineType": "red"
         },
         {
           "name": "Malbec",
-          "description": "",
+          "description": "    Château Malbec – Bordeaux 2021\n    Rouge rond et équilibré, aux arômes de fruits noirs, d’épices douces et de légères notes boisées.",
           "price": "12cl:5.50€/25cl:10€/50cl:20€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/4fd5a729f4c878a2ba0200a81e34d63e7d847391/public/photos/235654d1-c23f-4838-af62-94c4d27e36e5-3015f871-f1a3-4a80-b30a-d97774139474.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/4fd5a729f4c878a2ba0200a81e34d63e7d847391/public/photos/235654d1-c23f-4838-af62-94c4d27e36e5-3015f871-f1a3-4a80-b30a-d97774139474.png",
+          "wineType": "red"
         }
       ],
       "style": "",
@@ -371,68 +378,78 @@
       "items": [
         {
           "name": "Figuerette 75cl",
-          "description": "",
+          "description": "    Domaine de la Clapière – Figuerette Pays d’Oc 2023\n    Blanc frais et aromatique, aux notes de fruits blancs, d’agrumes et de fleurs, avec une finale légère et désaltérante.",
           "price": "24€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/80c714547ca1b09baf6e6ea800e547cc7861430e/public/photos/fcaf07ce-fb1f-45cd-b75b-4506ad90224d-27b8d6e7-1edd-4127-8098-e03e9d6c5175.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/80c714547ca1b09baf6e6ea800e547cc7861430e/public/photos/fcaf07ce-fb1f-45cd-b75b-4506ad90224d-27b8d6e7-1edd-4127-8098-e03e9d6c5175.png",
+          "wineType": "white"
         },
         {
           "name": "Coteaux du layon 75cl",
-          "description": "",
+          "description": "    Domaine du Petit Métris – Coteaux du Layon 2024\n    Blanc moelleux et gourmand, aux notes de fruits jaunes, de miel et de fleurs, équilibré par une belle fraîcheur.",
           "price": "24€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/53f7f6f6d611690792e5c9b4626d596f32f373bb/public/photos/80ff2117-4c54-410a-a699-d5a10208df0c-986f98c7-1e78-4982-b27a-ffb23f75f577.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/53f7f6f6d611690792e5c9b4626d596f32f373bb/public/photos/80ff2117-4c54-410a-a699-d5a10208df0c-986f98c7-1e78-4982-b27a-ffb23f75f577.png",
+          "wineType": "white"
         },
         {
           "name": "MasFleurey 75cl",
-          "description": "",
+          "description": "    Masfleurey – Côtes de Provence Rosé 2024\n    Rosé frais et délicat, aux notes de petits fruits rouges, d’agrumes et de fleurs, avec une finale légère.",
           "price": "24€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/646d77a126adc5bd51f3884477356dc254217488/public/photos/2dbd92b8-a7e3-48f8-9187-3baa6fb7b555-68517395-99ed-49f8-8527-0a44bb64be61.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/646d77a126adc5bd51f3884477356dc254217488/public/photos/2dbd92b8-a7e3-48f8-9187-3baa6fb7b555-68517395-99ed-49f8-8527-0a44bb64be61.png",
+          "wineType": "rose"
         },
         {
           "name": "Saint Nicolas de Bourgueil 75cl",
-          "description": "",
+          "description": "    Saint-Nicolas-de-Bourgueil – La Gardière 2025\n    Rouge souple et fruité, aux notes de fruits rouges, avec une belle fraîcheur et des tanins légers.",
           "price": "24€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/f7229cd54ab3192a78838246f0c5e8ea45aa08d5/public/photos/417b191d-df49-4ff7-a24a-823e02c74ab2-e6888fe9-7143-459e-852e-683df49220dc.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/f7229cd54ab3192a78838246f0c5e8ea45aa08d5/public/photos/417b191d-df49-4ff7-a24a-823e02c74ab2-e6888fe9-7143-459e-852e-683df49220dc.png",
+          "wineType": "red"
         },
         {
           "name": "Chinon 75cl",
-          "description": "",
+          "description": "    Granges de la Perrière – Chinon\n    Rouge frais et gourmand, marqué par les fruits rouges, une touche végétale fine et une finale souple.",
           "price": "24€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/230896be023decd7a34233da08d7ba0fbf8e34ae/public/photos/2e59291c-ddd7-450e-a74f-85634729f73b-62baa748-b528-45e7-92d8-643fa0ea0a77.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/230896be023decd7a34233da08d7ba0fbf8e34ae/public/photos/2e59291c-ddd7-450e-a74f-85634729f73b-62baa748-b528-45e7-92d8-643fa0ea0a77.png",
+          "wineType": "red"
         },
         {
           "name": "Malbec 75cl",
-          "description": "",
+          "description": "    Château Malbec – Bordeaux 2021\n    Rouge rond et équilibré, aux arômes de fruits noirs, d’épices douces et de légères notes boisées.",
           "price": "24€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/6b48807707205292696731adaf9ebdd697272b46/public/photos/bb9977c5-fd74-4b9b-a91c-56b4202eccf6-3015f871-f1a3-4a80-b30a-d97774139474.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/6b48807707205292696731adaf9ebdd697272b46/public/photos/bb9977c5-fd74-4b9b-a91c-56b4202eccf6-3015f871-f1a3-4a80-b30a-d97774139474.png",
+          "wineType": "red"
         },
         {
           "name": "Corbières de George 75cl",
-          "description": "",
+          "description": "    Les Corbières de Georges – Gérard Bertrand 2022\n    Rouge généreux et méditerranéen, aux notes de fruits mûrs, d’épices et de garrigue.",
           "price": "24€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/57936432e6ce4f960529ecdb06c1667f8cb47b5e/public/photos/5b3934b1-330e-4642-9f6f-d10b4a1d5ab7-1f7ab221-217b-4f74-b6eb-a987026e6b7c.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/57936432e6ce4f960529ecdb06c1667f8cb47b5e/public/photos/5b3934b1-330e-4642-9f6f-d10b4a1d5ab7-1f7ab221-217b-4f74-b6eb-a987026e6b7c.png",
+          "wineType": "red"
         },
         {
           "name": "Château la Grille 75cl",
-          "description": "",
+          "description": "    Château de La Grille – Chinon 2021\n    Rouge élégant et structuré, aux arômes de fruits rouges et noirs, avec des notes épicées et une belle longueur.",
           "price": "38€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/f62dd5181ac84d799d66b0f302800ade63543cf4/public/photos/0c8f96f3-19a7-4655-a04b-fd4b6554723e-64f85b39-4f4c-4337-b0cd-8864b6194a5f.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/f62dd5181ac84d799d66b0f302800ade63543cf4/public/photos/0c8f96f3-19a7-4655-a04b-fd4b6554723e-64f85b39-4f4c-4337-b0cd-8864b6194a5f.png",
+          "wineType": "red"
         },
         {
           "name": "Saint Joseph 75cl",
-          "description": "",
+          "description": "    Saint-Joseph – Les Rochins 2023\n    Rouge fin et épicé, aux notes de fruits noirs, de poivre et de violette, avec une belle fraîcheur en bouche.",
           "price": "38€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/035157de02e117f36ff78d96eacfdacd89d26768/public/photos/73cfa03e-cad1-4080-b1a8-44084c37bc24-7ed766d8-9769-4869-b3a0-2b552d033712.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/035157de02e117f36ff78d96eacfdacd89d26768/public/photos/73cfa03e-cad1-4080-b1a8-44084c37bc24-7ed766d8-9769-4869-b3a0-2b552d033712.png",
+          "wineType": "red"
         },
         {
           "name": "Givry 1er Cru 75cl",
-          "description": "",
+          "description": "    Domaine Vincent Lumpp – Givry 1er Cru “Le Vigron” 2022\n    Bourgogne rouge fin et élégant, aux notes de cerise, de petits fruits rouges et d’épices, avec une belle finesse.",
           "price": "50€"
         },
         {
           "name": "Nuits Saint George Vieilles Vignes 75cl",
-          "description": "",
+          "description": "    Louis Fleurot – Nuits-Saint-Georges “Vieilles Vignes” 2021\n    Bourgogne rouge élégant et profond, aux notes de cerise, de fruits rouges, d’épices et de sous-bois.",
           "price": "50€",
-          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/3b988a13b7b9803b4488397a723548d790643d50/public/photos/a10b393a-838f-4521-aefb-8899561b35d4-0aa1fef7-d761-4a3d-b308-f3f438556d82.png"
+          "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/3b988a13b7b9803b4488397a723548d790643d50/public/photos/a10b393a-838f-4521-aefb-8899561b35d4-0aa1fef7-d761-4a3d-b308-f3f438556d82.png",
+          "wineType": "red"
         }
       ],
       "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/18631f8a41d538a51723a986f95cd390827136fd/public/photos/a00bb916-b91a-4d0c-9fa1-a48d4dd25943-8df16d35-6a3a-488f-bf49-b077f9b1a343.png"
@@ -3079,8 +3096,8 @@
     "title": "Programme de fidélité permanent",
     "description": "10 formules achetées, la 11e offerte",
     "threshold": 10,
-    "reward": "Formule offerte",
-    "clientText": "10 formules achetées, la 11e offerte",
+    "reward": "La 11e Formule offerte",
+    "clientText": "",
     "rewardValue": null,
     "enabled": true
   },
