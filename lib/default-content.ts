@@ -34,7 +34,7 @@ export type SiteContent = {
   story: { eyebrow: string; title: string; intro: string; paragraphs: string[]; quote: string; image: string; imageAlt: string }
   privatization: { title: string; intro: string; text: string; photos: GalleryItem[] }
   events: EventItem[]
-  reviews: { title: string; intro: string; googleReviewsUrl: string; googleReviewWriteUrl: string }
+  reviews: { googlePlaceId?: string; title: string; intro: string; googleReviewsUrl: string; googleReviewWriteUrl: string }
   socials: SocialLink[]
   club: ClubContent
 }

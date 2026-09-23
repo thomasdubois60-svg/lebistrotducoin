@@ -1,0 +1,1 @@
+export function preparePhoto(file:File):Promise<File>;export function photoRequest(url:string,options?:RequestInit,timeoutMs?:number):Promise<any>;

@@ -15,7 +15,9 @@
     "@vercel/analytics": "^2.0.0",
     "web-push": "^3.6.7",
     "qrcode": "^1.5.4",
-    "html5-qrcode": "^2.3.8"
+    "html5-qrcode": "^2.3.8",
+    "sharp": "0.34.3",
+    "heic-to": "1.5.2"
   },
   "devDependencies": {
     "@types/node": "24.0.0",

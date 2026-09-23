@@ -1,0 +1,1 @@
+import {NextRequest} from 'next/server';import {photoResponse} from '@/lib/final-features';export async function GET(r:NextRequest){try{return await photoResponse(r.nextUrl.searchParams.get('id')||'',r.nextUrl.searchParams.get('photo')||'')}catch{return new Response(null,{status:503})}}

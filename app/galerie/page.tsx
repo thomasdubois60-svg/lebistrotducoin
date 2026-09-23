@@ -1,27 +1,24 @@
 'use client'
 import {useLanguage} from '@/components/language-provider'
-import { useRef, useState, useEffect } from 'react'
-import { PageHero } from '@/components/page-hero'
-import { useSiteContent } from '@/components/content-provider'
-import { normalizeGalleryAlbums, GalleryAlbum, AlbumPhoto } from '@/lib/gallery-albums'
+import {useRef,useState,useEffect} from 'react'
+import {PageHero} from '@/components/page-hero'
+import {useSiteContent} from '@/components/content-provider'
+import {normalizeGalleryAlbums,GalleryAlbum} from '@/lib/gallery-albums'
 import styles from './gallery.module.css'
-const validImage = (value: string) => value.trim().startsWith('/photos/') || /^https:\/\//i.test(value.trim())
-
-function Album({ album, onOpen }: { album: GalleryAlbum; onOpen: (photo: AlbumPhoto, title: string) => void }) {
-  const {t}=useLanguage()
-  return <section className={styles.album} id="gallery-photos" aria-labelledby="gallery-album-title"><div className={styles.heading}><h2 id="gallery-album-title">{album.title || t('Album')}</h2><span className={styles.count}>{t(album.photos.length===1?'1 photo':'{count} photos',{count:album.photos.length})}</span></div><div className={styles.grid}>{album.photos.map((photo,index)=><figure className={styles.photo} key={photo.id}><button type="button" onClick={()=>onOpen(photo,album.title)} aria-label={`${t('Agrandir la photo')} ${index+1} — ${album.title}`}><img src={photo.image.trim()} alt={photo.imageAlt||photo.label||''} loading={index<4?'eager':'lazy'} decoding="async"/><span className={styles.enlarge} aria-hidden="true">↗</span></button>{photo.label&&<figcaption>{photo.label}</figcaption>}</figure>)}</div></section>
+const validImage=(v:string)=>v.trim().startsWith('/photos/')||/^https:\/\//i.test(v.trim())
+function Album({album,onOpen}:{album:GalleryAlbum;onOpen:(index:number)=>void}){
+ const {t}=useLanguage(),track=useRef<HTMLDivElement>(null);const [position,setPosition]=useState(0),[atEnd,setAtEnd]=useState(false)
+ useEffect(()=>{const el=track.current;if(!el)return;const measure=()=>setAtEnd(el.scrollLeft+el.clientWidth>=el.scrollWidth-2);const observer=new ResizeObserver(measure);observer.observe(el);measure();return()=>observer.disconnect()},[])
+ const move=(direction:number)=>{const el=track.current;if(!el)return;const next=Math.max(0,Math.min(album.photos.length-1,position+direction));const photo=el.children[next] as HTMLElement;el.scrollTo({left:photo.offsetLeft-el.offsetLeft,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})}
+ return <section className={styles.album} id="gallery-photos" aria-labelledby="gallery-album-title"><div className={styles.heading}><h2 id="gallery-album-title">{album.title||t('Album')}</h2><span className={styles.count}>{position+1} / {album.photos.length}</span></div><div ref={track} className={styles.track} onScroll={()=>{const el=track.current;if(!el)return;const offsets=Array.from(el.children).map(child=>Math.abs((child as HTMLElement).offsetLeft-el.offsetLeft-el.scrollLeft));setPosition(offsets.indexOf(Math.min(...offsets)));setAtEnd(el.scrollLeft+el.clientWidth>=el.scrollWidth-2)}}>{album.photos.map((photo,index)=><figure className={styles.photo} key={photo.id}><button type="button" onClick={()=>onOpen(index)} aria-label={t('Agrandir la photo')+' '+(index+1)+' — '+album.title}><img src={photo.image.trim()} alt={photo.imageAlt||photo.label||''} loading={index<4?'eager':'lazy'}/><span className={styles.enlarge} aria-hidden="true">↗</span></button>{photo.label&&<figcaption>{photo.label}</figcaption>}</figure>)}</div>{album.photos.length>1&&<div className={styles.navigation}><button type="button" onClick={()=>move(-1)} disabled={position===0} aria-label={t('Photo précédente')}>←</button><button type="button" onClick={()=>move(1)} disabled={atEnd} aria-label={t('Photo suivante')}>→</button></div>}</section>
 }
-
-export default function GalleryPage() {
- const {t}=useLanguage();
-
-  const content = useSiteContent()
-  const albums = normalizeGalleryAlbums(content).map(album => ({ ...album, photos: album.photos.filter(photo => validImage(photo.image)) })).filter(album => album.photos.length)
-  const [albumId,setAlbumId]=useState<string|null>(null)
-  const activeAlbum=albums.find(album=>album.id===albumId)||albums[0]
-  const dialog = useRef<HTMLDialogElement>(null)
-  const [selected, setSelected] = useState<{photo: AlbumPhoto; title: string} | null>(null)
-  useEffect(() => { if (!selected) return; const previous = document.body.style.overflow; document.body.style.overflow = 'hidden'; return () => { document.body.style.overflow = previous } }, [selected])
-  const open = (photo: AlbumPhoto, title: string) => { setSelected({ photo, title }); dialog.current?.showModal() }
-  return <div className={styles.gallery}><PageHero eyebrow={t("Ambiance & assiettes")} title={t("Galerie")} text={content.pageTexts.galleryIntro}/><section className={styles.collection}><div className="container">{albums.length>0&&<div className={styles.albums} role="group" aria-label={t('Choisir un album')}>{albums.map(album=><button type="button" key={album.id} aria-pressed={activeAlbum?.id===album.id} aria-controls="gallery-photos" onClick={()=>setAlbumId(album.id)}>{album.title||t('Album')}</button>)}</div>}{activeAlbum&&<Album key={activeAlbum.id} album={activeAlbum} onOpen={open}/>}</div></section><dialog ref={dialog} className={styles.lightbox} aria-label={t("Photo agrandie")} onClose={() => setSelected(null)} onClick={event => { if (event.target === event.currentTarget) dialog.current?.close() }}><button type="button" className={styles.close} onClick={() => dialog.current?.close()} aria-label={t("Fermer la photo")}>{t("Fermer ×")}</button>{selected && <figure><img src={selected.photo.image.trim()} alt={selected.photo.imageAlt || selected.photo.label || ''}/><figcaption>{selected.photo.label || selected.title}</figcaption></figure>}</dialog></div>
+export default function GalleryPage(){
+ const {t}=useLanguage(),content=useSiteContent();const albums=normalizeGalleryAlbums(content).map(a=>({...a,photos:a.photos.filter(p=>validImage(p.image))})).filter(a=>a.photos.length)
+ const [albumId,setAlbumId]=useState<string|null>(null),[selected,setSelected]=useState<number|null>(null);const album=albums.find(a=>a.id===albumId)||albums[0],dialog=useRef<HTMLDialogElement>(null),touch=useRef<{x:number;y:number}|null>(null),opener=useRef<HTMLElement|null>(null)
+ const photo=selected!==null?album?.photos[selected]:null
+ const step=(n:number)=>setSelected(i=>i===null||!album?null:(i+n+album.photos.length)%album.photos.length)
+ useEffect(()=>{if(selected===null)return;const old=document.body.style.overflow;document.body.style.overflow='hidden';return()=>{document.body.style.overflow=old}},[selected!==null])
+ useEffect(()=>{if(selected!==null&&!photo){dialog.current?.close();setSelected(null)}},[photo,selected])
+ const open=(i:number)=>{opener.current=document.activeElement as HTMLElement;setSelected(i);dialog.current?.showModal()}
+ return <div className={styles.gallery}><PageHero eyebrow={t('Ambiance & assiettes')} title={t('Galerie')} text={content.pageTexts.galleryIntro}/><section className={styles.collection}><div className="container">{albums.length>0&&<div className={styles.albums} role="group" aria-label={t('Choisir un album')}>{albums.map(a=><button type="button" key={a.id} aria-pressed={album?.id===a.id} aria-controls="gallery-photos" onClick={()=>setAlbumId(a.id)}>{a.title||t('Album')}</button>)}</div>}{album&&<Album key={album.id} album={album} onOpen={open}/>}</div></section><dialog ref={dialog} className={styles.lightbox} aria-label={t('Photo agrandie')} onClose={()=>{setSelected(null);opener.current?.focus()}} onKeyDown={e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();step(e.key==='ArrowRight'?1:-1)}}} onClick={e=>{if(e.target===e.currentTarget)dialog.current?.close()}}><button className={styles.close} type="button" onClick={()=>dialog.current?.close()}>{t('Fermer ×')}</button>{photo&&<><figure onTouchStart={e=>{if(e.touches.length===1)touch.current={x:e.touches[0].clientX,y:e.touches[0].clientY};else touch.current=null}} onTouchEnd={e=>{const start=touch.current;touch.current=null;if(!start)return;const dx=e.changedTouches[0].clientX-start.x,dy=e.changedTouches[0].clientY-start.y;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.5)step(dx<0?1:-1)}}><img src={photo.image.trim()} alt={photo.imageAlt||photo.label||''}/><figcaption>{photo.label||album.title}</figcaption></figure><div className={styles.navigation}><button type="button" disabled={album.photos.length<2} onClick={()=>step(-1)} aria-label={t('Photo précédente')}>←</button><span aria-live="polite">{(selected||0)+1} / {album.photos.length}</span><button type="button" disabled={album.photos.length<2} onClick={()=>step(1)} aria-label={t('Photo suivante')}>→</button></div></>}</dialog></div>
 }
