@@ -504,6 +504,32 @@
       "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/af19e3b64181cce30c835c77705265f05f62160a/public/photos/e103d3e6-0f18-415b-997d-acd3b1b3d8b2-7433b570-1d1c-4639-9959-a32e6b8b08f4.png"
     },
     {
+      "id": "4776c62e-12c6-4638-825a-feb8e4aff792",
+      "category": "Rhum",
+      "items": [
+        {
+          "name": "Captain Morgan ",
+          "description": "",
+          "price": "6€´"
+        },
+        {
+          "name": "Kraken",
+          "description": "",
+          "price": "7€"
+        },
+        {
+          "name": "Diplomatico blanc",
+          "description": "",
+          "price": "7€"
+        },
+        {
+          "name": "Dom Papa",
+          "description": "",
+          "price": "8€"
+        }
+      ]
+    },
+    {
       "category": "Boissons chaudes",
       "items": [
         {
@@ -1257,6 +1283,30 @@
       "loyaltyProgram.clientText": {
         "source": "10 formules achetées, la 11e offerte",
         "value": "Buy 10 set menus, get the 11th free"
+      },
+      "menu.11.category": {
+        "source": "Boissons chaudes",
+        "value": "Hot drinks"
+      },
+      "menu.11.items.0.name": {
+        "source": "Expresso / Café serré",
+        "value": "Espresso / Ristretto"
+      },
+      "menu.11.items.1.name": {
+        "source": "Allongé / Noisette",
+        "value": "Long coffee / Espresso with a dash of milk"
+      },
+      "menu.11.items.2.name": {
+        "source": "Thé / Café crème",
+        "value": "Tea / Coffee with milk"
+      },
+      "menu.11.items.3.name": {
+        "source": "Chocolat chaud",
+        "value": "Hot chocolate"
+      },
+      "menu.11.items.4.name": {
+        "source": "Cappuccino",
+        "value": "Cappuccino"
       }
     },
     "es": {
@@ -1867,6 +1917,30 @@
       "loyaltyProgram.clientText": {
         "source": "10 formules achetées, la 11e offerte",
         "value": "Compra 10 menús y el 11.º es gratis"
+      },
+      "menu.11.category": {
+        "source": "Boissons chaudes",
+        "value": "Bebidas calientes"
+      },
+      "menu.11.items.0.name": {
+        "source": "Expresso / Café serré",
+        "value": "Espreso / Café corto"
+      },
+      "menu.11.items.1.name": {
+        "source": "Allongé / Noisette",
+        "value": "Café largo / Cortado"
+      },
+      "menu.11.items.2.name": {
+        "source": "Thé / Café crème",
+        "value": "Té / Café con leche"
+      },
+      "menu.11.items.3.name": {
+        "source": "Chocolat chaud",
+        "value": "Chocolate caliente"
+      },
+      "menu.11.items.4.name": {
+        "source": "Cappuccino",
+        "value": "Cappuccino"
       }
     },
     "pt": {
@@ -2477,6 +2551,30 @@
       "loyaltyProgram.clientText": {
         "source": "10 formules achetées, la 11e offerte",
         "value": "Compre 10 menus e receba o 11.º de oferta"
+      },
+      "menu.11.category": {
+        "source": "Boissons chaudes",
+        "value": "Bebidas quentes"
+      },
+      "menu.11.items.0.name": {
+        "source": "Expresso / Café serré",
+        "value": "Expresso / Café curto"
+      },
+      "menu.11.items.1.name": {
+        "source": "Allongé / Noisette",
+        "value": "Café cheio / Expresso com um pouco de leite"
+      },
+      "menu.11.items.2.name": {
+        "source": "Thé / Café crème",
+        "value": "Chá / Café com leite"
+      },
+      "menu.11.items.3.name": {
+        "source": "Chocolat chaud",
+        "value": "Chocolate quente"
+      },
+      "menu.11.items.4.name": {
+        "source": "Cappuccino",
+        "value": "Cappuccino"
       }
     },
     "de": {
@@ -3087,6 +3185,30 @@
       "loyaltyProgram.clientText": {
         "source": "10 formules achetées, la 11e offerte",
         "value": "10 Menüs kaufen, das 11. gratis erhalten"
+      },
+      "menu.11.category": {
+        "source": "Boissons chaudes",
+        "value": "Heißgetränke"
+      },
+      "menu.11.items.0.name": {
+        "source": "Expresso / Café serré",
+        "value": "Espresso / Ristretto"
+      },
+      "menu.11.items.1.name": {
+        "source": "Allongé / Noisette",
+        "value": "Verlängerter / Espresso mit einem Schuss Milch"
+      },
+      "menu.11.items.2.name": {
+        "source": "Thé / Café crème",
+        "value": "Tee / Milchkaffee"
+      },
+      "menu.11.items.3.name": {
+        "source": "Chocolat chaud",
+        "value": "Heiße Schokolade"
+      },
+      "menu.11.items.4.name": {
+        "source": "Cappuccino",
+        "value": "Cappuccino"
       }
     }
   },
