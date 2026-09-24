@@ -508,14 +508,14 @@
       "category": "Rhum",
       "items": [
         {
-          "name": "Kraken",
-          "description": "",
-          "price": "7€"
-        },
-        {
           "name": "Captain Morgan ",
           "description": "",
           "price": "6€´"
+        },
+        {
+          "name": "Kraken",
+          "description": "",
+          "price": "7€"
         },
         {
           "name": "Diplomatico blanc",
