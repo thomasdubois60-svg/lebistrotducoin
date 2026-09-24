@@ -101,6 +101,42 @@
   },
   "menu": [
     {
+      "id": "af2ec106-8dc3-4191-b3a7-4d225f2a4636",
+      "category": "Digestifs",
+      "items": [
+        {
+          "name": "Get 27",
+          "description": "",
+          "price": "6€"
+        },
+        {
+          "name": "Menthe Pastille",
+          "description": "",
+          "price": "6€"
+        },
+        {
+          "name": "Cognac",
+          "description": "",
+          "price": "6€"
+        },
+        {
+          "name": "Armagnac",
+          "description": "",
+          "price": "6€"
+        },
+        {
+          "name": "Calvados",
+          "description": "",
+          "price": "6€"
+        },
+        {
+          "name": "Poire",
+          "description": "",
+          "price": "6€"
+        }
+      ]
+    },
+    {
       "category": "Nos pressions",
       "items": [
         {
@@ -1307,6 +1343,194 @@
       "menu.11.items.4.name": {
         "source": "Cappuccino",
         "value": "Cappuccino"
+      },
+      "menu.2.items.1.name": {
+        "source": "Orval",
+        "value": "Orval"
+      },
+      "menu.2.items.1.description": {
+        "source": "Belgique_ Trappiste sèche, houblonnée, avec une note sauvage. 6.2°",
+        "value": "Belgium — Dry, hoppy Trappist beer with a wild note. 6.2%"
+      },
+      "menu.2.items.4.name": {
+        "source": "Duvel",
+        "value": "Duvel"
+      },
+      "menu.2.items.4.description": {
+        "source": "Belgique_Goût : Blonde forte, fruitée, sèche et finement amère. 8.5°",
+        "value": "Belgium — Strong blonde beer, fruity, dry and delicately bitter. 8.5%"
+      },
+      "menu.2.items.5.name": {
+        "source": "Triple Karmeliet",
+        "value": "Triple Karmeliet"
+      },
+      "menu.2.items.5.description": {
+        "source": "Belgique_Tripel complexe, florale, vanillée et épicée. 8.4°",
+        "value": "Belgium — Complex tripel with floral, vanilla and spice notes. 8.4%"
+      },
+      "menu.2.items.6.name": {
+        "source": "Kwak ",
+        "value": "Kwak"
+      },
+      "menu.2.items.6.description": {
+        "source": "Belgique_Ambrée riche et gourmande, notes de biscuit, banane, orange, caramel et épices. 8.4°",
+        "value": "Belgium — Rich, full-bodied amber beer with biscuit, banana, orange, caramel and spice notes. 8.4%"
+      },
+      "menu.2.items.7.name": {
+        "source": "Rince Cochon",
+        "value": "Rince Cochon"
+      },
+      "menu.2.items.7.description": {
+        "source": "Belgique_Blonde forte, ronde, fruitée et légèrement épicée. 8.5°",
+        "value": "Belgium — Strong blonde beer, rounded, fruity and lightly spiced. 8.5%"
+      },
+      "menu.2.items.8.name": {
+        "source": "Hoagarden blanche ",
+        "value": "Hoagarden blanche"
+      },
+      "menu.2.items.8.description": {
+        "source": "Belgique_Blanche douce et rafraîchissante, aux notes d’orange, coriandre, agrumes et épices. 4.9°",
+        "value": "Belgium — Smooth, refreshing wheat beer with orange, coriander, citrus and spice notes. 4.9%"
+      },
+      "menu.2.items.9.name": {
+        "source": "Leffe  blonde ",
+        "value": "Leffe  blonde"
+      },
+      "menu.2.items.9.description": {
+        "source": "Belgique_Blonde d’abbaye, douce, maltée, avec vanille et clou de girofle. 6.6°",
+        "value": "Belgium — Smooth, malty blonde abbey beer with vanilla and clove notes. 6.6%"
+      },
+      "menu.3.items.2.name": {
+        "source": "Saucisson sec du terroir",
+        "value": "Traditional dry-cured sausage"
+      },
+      "menu.3.items.2.description": {
+        "source": "Cèpes, nature ou piment d’Espelette",
+        "value": "Porcini mushroom, plain or Espelette pepper"
+      },
+      "menu.3.items.3.name": {
+        "source": "Chips Lay’s 145 g",
+        "value": "Lay’s crisps, 145 g"
+      },
+      "menu.3.items.3.description": {
+        "source": "Nature, barbecue…",
+        "value": "Ready salted, barbecue…"
+      },
+      "menu.4.items.0.description": {
+        "source": "Tequila, jus d’orange, sirop de grenadine",
+        "value": "Tequila, orange juice and grenadine syrup"
+      },
+      "menu.4.items.1.name": {
+        "source": "Délices des îles",
+        "value": "Island Delight"
+      },
+      "menu.4.items.1.description": {
+        "source": "Rhum blanc martiniquais, jus de maracuja, sirop de grenadine",
+        "value": "White rum from Martinique, passion fruit juice and grenadine syrup"
+      },
+      "menu.7.category": {
+        "source": "Apéritifs",
+        "value": "Aperitifs"
+      },
+      "menu.7.items.0.name": {
+        "source": "Ricard",
+        "value": "Ricard"
+      },
+      "menu.7.items.1.name": {
+        "source": "Kir",
+        "value": "Kir"
+      },
+      "menu.7.items.1.description": {
+        "source": "Cassis, mûre, pêche ou framboise",
+        "value": "Blackcurrant, blackberry, peach or raspberry"
+      },
+      "menu.7.items.2.name": {
+        "source": "Kir pétillant",
+        "value": "Sparkling kir"
+      },
+      "menu.7.items.3.name": {
+        "source": "Pétillant nature",
+        "value": "Sparkling wine"
+      },
+      "menu.7.items.3.description": {
+        "source": "Blanc de blancs brut",
+        "value": "Brut blanc de blancs"
+      },
+      "menu.7.items.4.name": {
+        "source": "Porto",
+        "value": "Porto"
+      },
+      "menu.7.items.4.description": {
+        "source": "Rouge ou blanc",
+        "value": "Red or white"
+      },
+      "menu.7.items.5.name": {
+        "source": "Martini",
+        "value": "Martini"
+      },
+      "menu.7.items.5.description": {
+        "source": "Rouge ou blanc",
+        "value": "Red or white"
+      },
+      "menu.10.items.0.description": {
+        "source": "    Écosse_\n    Doux et rond, notes de bois, fruits secs et épices. ",
+        "value": "Scotland — Smooth and rounded, with wood, dried fruit and spice notes."
+      },
+      "menu.10.items.1.description": {
+        "source": "    Irlande_\n    Souple et gourmand, notes de vanille, noix, épices et xérès.",
+        "value": "Ireland — Smooth and rich, with vanilla, nut, spice and sherry notes."
+      },
+      "menu.10.items.2.description": {
+        "source": "    Tennessee, États-Unis_\n    Rond et boisé, notes de caramel et de vanille. ",
+        "value": "Tennessee, USA — Rounded and woody, with caramel and vanilla notes."
+      },
+      "menu.10.items.3.description": {
+        "source": "    Speyside, Écosse_\n    Doux et fruité, notes d’ananas, poire et vanille. ",
+        "value": "Speyside, Scotland — Smooth and fruity, with pineapple, pear and vanilla notes."
+      },
+      "menu.10.items.4.description": {
+        "source": "    Hiroshima, Japon_\n    Fin et doux, notes de fruits, noix, vanille et épices. ",
+        "value": "Hiroshima, Japan — Delicate and smooth, with fruit, nut, vanilla and spice notes."
+      },
+      "menu.10.items.5.name": {
+        "source": "Aerstone",
+        "value": "Aerstone"
+      },
+      "menu.10.items.5.description": {
+        "source": "    Écosse_\n    Légèrement tourbé, fumé, malté et chaleureux.",
+        "value": "Scotland — Lightly peated, smoky, malty and warming."
+      },
+      "menu.10.items.6.name": {
+        "source": "Big Peat",
+        "value": "Big Peat"
+      },
+      "menu.10.items.6.description": {
+        "source": "    Islay, Écosse_\n    Très tourbé, fumé et marin, notes de cendre et de sel.",
+        "value": "Islay, Scotland — Heavily peated, smoky and maritime, with ash and salt notes."
+      },
+      "menu.12.category": {
+        "source": "Boissons chaudes",
+        "value": "Hot drinks"
+      },
+      "menu.12.items.0.name": {
+        "source": "Expresso / Café serré",
+        "value": "Espresso / Ristretto"
+      },
+      "menu.12.items.1.name": {
+        "source": "Allongé / Noisette",
+        "value": "Long coffee / Espresso with a dash of milk"
+      },
+      "menu.12.items.2.name": {
+        "source": "Thé / Café crème",
+        "value": "Tea / Coffee with milk"
+      },
+      "menu.12.items.3.name": {
+        "source": "Chocolat chaud",
+        "value": "Hot chocolate"
+      },
+      "menu.12.items.4.name": {
+        "source": "Cappuccino",
+        "value": "Cappuccino"
       }
     },
     "es": {
@@ -1939,6 +2163,194 @@
         "value": "Chocolate caliente"
       },
       "menu.11.items.4.name": {
+        "source": "Cappuccino",
+        "value": "Cappuccino"
+      },
+      "menu.2.items.1.name": {
+        "source": "Orval",
+        "value": "Orval"
+      },
+      "menu.2.items.1.description": {
+        "source": "Belgique_ Trappiste sèche, houblonnée, avec une note sauvage. 6.2°",
+        "value": "Bélgica — Trapense seca y lupulada, con una nota salvaje. 6,2 %"
+      },
+      "menu.2.items.4.name": {
+        "source": "Duvel",
+        "value": "Duvel"
+      },
+      "menu.2.items.4.description": {
+        "source": "Belgique_Goût : Blonde forte, fruitée, sèche et finement amère. 8.5°",
+        "value": "Bélgica — Rubia fuerte, afrutada, seca y delicadamente amarga. 8,5 %"
+      },
+      "menu.2.items.5.name": {
+        "source": "Triple Karmeliet",
+        "value": "Triple Karmeliet"
+      },
+      "menu.2.items.5.description": {
+        "source": "Belgique_Tripel complexe, florale, vanillée et épicée. 8.4°",
+        "value": "Bélgica — Tripel compleja, floral, con notas de vainilla y especias. 8,4 %"
+      },
+      "menu.2.items.6.name": {
+        "source": "Kwak ",
+        "value": "Kwak"
+      },
+      "menu.2.items.6.description": {
+        "source": "Belgique_Ambrée riche et gourmande, notes de biscuit, banane, orange, caramel et épices. 8.4°",
+        "value": "Bélgica — Ámbar rica y golosa, con notas de galleta, plátano, naranja, caramelo y especias. 8,4 %"
+      },
+      "menu.2.items.7.name": {
+        "source": "Rince Cochon",
+        "value": "Rince Cochon"
+      },
+      "menu.2.items.7.description": {
+        "source": "Belgique_Blonde forte, ronde, fruitée et légèrement épicée. 8.5°",
+        "value": "Bélgica — Rubia fuerte, redonda, afrutada y ligeramente especiada. 8,5 %"
+      },
+      "menu.2.items.8.name": {
+        "source": "Hoagarden blanche ",
+        "value": "Hoagarden blanche"
+      },
+      "menu.2.items.8.description": {
+        "source": "Belgique_Blanche douce et rafraîchissante, aux notes d’orange, coriandre, agrumes et épices. 4.9°",
+        "value": "Bélgica — Cerveza blanca suave y refrescante, con notas de naranja, cilantro, cítricos y especias. 4,9 %"
+      },
+      "menu.2.items.9.name": {
+        "source": "Leffe  blonde ",
+        "value": "Leffe  blonde"
+      },
+      "menu.2.items.9.description": {
+        "source": "Belgique_Blonde d’abbaye, douce, maltée, avec vanille et clou de girofle. 6.6°",
+        "value": "Bélgica — Rubia de abadía suave y maltosa, con vainilla y clavo. 6,6 %"
+      },
+      "menu.3.items.2.name": {
+        "source": "Saucisson sec du terroir",
+        "value": "Salchichón tradicional"
+      },
+      "menu.3.items.2.description": {
+        "source": "Cèpes, nature ou piment d’Espelette",
+        "value": "Con boletus, natural o con pimiento de Espelette"
+      },
+      "menu.3.items.3.name": {
+        "source": "Chips Lay’s 145 g",
+        "value": "Patatas fritas Lay’s, 145 g"
+      },
+      "menu.3.items.3.description": {
+        "source": "Nature, barbecue…",
+        "value": "Al punto de sal, barbacoa…"
+      },
+      "menu.4.items.0.description": {
+        "source": "Tequila, jus d’orange, sirop de grenadine",
+        "value": "Tequila, zumo de naranja y sirope de granadina"
+      },
+      "menu.4.items.1.name": {
+        "source": "Délices des îles",
+        "value": "Delicia de las islas"
+      },
+      "menu.4.items.1.description": {
+        "source": "Rhum blanc martiniquais, jus de maracuja, sirop de grenadine",
+        "value": "Ron blanco de Martinica, zumo de maracuyá y sirope de granadina"
+      },
+      "menu.7.category": {
+        "source": "Apéritifs",
+        "value": "Aperitivos"
+      },
+      "menu.7.items.0.name": {
+        "source": "Ricard",
+        "value": "Ricard"
+      },
+      "menu.7.items.1.name": {
+        "source": "Kir",
+        "value": "Kir"
+      },
+      "menu.7.items.1.description": {
+        "source": "Cassis, mûre, pêche ou framboise",
+        "value": "Grosella negra, mora, melocotón o frambuesa"
+      },
+      "menu.7.items.2.name": {
+        "source": "Kir pétillant",
+        "value": "Kir espumoso"
+      },
+      "menu.7.items.3.name": {
+        "source": "Pétillant nature",
+        "value": "Vino espumoso"
+      },
+      "menu.7.items.3.description": {
+        "source": "Blanc de blancs brut",
+        "value": "Blanc de blancs brut"
+      },
+      "menu.7.items.4.name": {
+        "source": "Porto",
+        "value": "Porto"
+      },
+      "menu.7.items.4.description": {
+        "source": "Rouge ou blanc",
+        "value": "Tinto o blanco"
+      },
+      "menu.7.items.5.name": {
+        "source": "Martini",
+        "value": "Martini"
+      },
+      "menu.7.items.5.description": {
+        "source": "Rouge ou blanc",
+        "value": "Tinto o blanco"
+      },
+      "menu.10.items.0.description": {
+        "source": "    Écosse_\n    Doux et rond, notes de bois, fruits secs et épices. ",
+        "value": "Escocia — Suave y redondo, con notas de madera, frutos secos y especias."
+      },
+      "menu.10.items.1.description": {
+        "source": "    Irlande_\n    Souple et gourmand, notes de vanille, noix, épices et xérès.",
+        "value": "Irlanda — Suave y goloso, con notas de vainilla, nueces, especias y jerez."
+      },
+      "menu.10.items.2.description": {
+        "source": "    Tennessee, États-Unis_\n    Rond et boisé, notes de caramel et de vanille. ",
+        "value": "Tennessee, Estados Unidos — Redondo y amaderado, con notas de caramelo y vainilla."
+      },
+      "menu.10.items.3.description": {
+        "source": "    Speyside, Écosse_\n    Doux et fruité, notes d’ananas, poire et vanille. ",
+        "value": "Speyside, Escocia — Suave y afrutado, con notas de piña, pera y vainilla."
+      },
+      "menu.10.items.4.description": {
+        "source": "    Hiroshima, Japon_\n    Fin et doux, notes de fruits, noix, vanille et épices. ",
+        "value": "Hiroshima, Japón — Fino y suave, con notas de fruta, nueces, vainilla y especias."
+      },
+      "menu.10.items.5.name": {
+        "source": "Aerstone",
+        "value": "Aerstone"
+      },
+      "menu.10.items.5.description": {
+        "source": "    Écosse_\n    Légèrement tourbé, fumé, malté et chaleureux.",
+        "value": "Escocia — Ligeramente turbado, ahumado, maltoso y cálido."
+      },
+      "menu.10.items.6.name": {
+        "source": "Big Peat",
+        "value": "Big Peat"
+      },
+      "menu.10.items.6.description": {
+        "source": "    Islay, Écosse_\n    Très tourbé, fumé et marin, notes de cendre et de sel.",
+        "value": "Islay, Escocia — Muy turbado, ahumado y marino, con notas de ceniza y sal."
+      },
+      "menu.12.category": {
+        "source": "Boissons chaudes",
+        "value": "Bebidas calientes"
+      },
+      "menu.12.items.0.name": {
+        "source": "Expresso / Café serré",
+        "value": "Espreso / Café corto"
+      },
+      "menu.12.items.1.name": {
+        "source": "Allongé / Noisette",
+        "value": "Café largo / Cortado"
+      },
+      "menu.12.items.2.name": {
+        "source": "Thé / Café crème",
+        "value": "Té / Café con leche"
+      },
+      "menu.12.items.3.name": {
+        "source": "Chocolat chaud",
+        "value": "Chocolate caliente"
+      },
+      "menu.12.items.4.name": {
         "source": "Cappuccino",
         "value": "Cappuccino"
       }
@@ -2575,6 +2987,194 @@
       "menu.11.items.4.name": {
         "source": "Cappuccino",
         "value": "Cappuccino"
+      },
+      "menu.2.items.1.name": {
+        "source": "Orval",
+        "value": "Orval"
+      },
+      "menu.2.items.1.description": {
+        "source": "Belgique_ Trappiste sèche, houblonnée, avec une note sauvage. 6.2°",
+        "value": "Bélgica — Trapista seca e lupulada, com uma nota selvagem. 6,2%"
+      },
+      "menu.2.items.4.name": {
+        "source": "Duvel",
+        "value": "Duvel"
+      },
+      "menu.2.items.4.description": {
+        "source": "Belgique_Goût : Blonde forte, fruitée, sèche et finement amère. 8.5°",
+        "value": "Bélgica — Loira forte, frutada, seca e delicadamente amarga. 8,5%"
+      },
+      "menu.2.items.5.name": {
+        "source": "Triple Karmeliet",
+        "value": "Triple Karmeliet"
+      },
+      "menu.2.items.5.description": {
+        "source": "Belgique_Tripel complexe, florale, vanillée et épicée. 8.4°",
+        "value": "Bélgica — Tripel complexa, floral, com notas de baunilha e especiarias. 8,4%"
+      },
+      "menu.2.items.6.name": {
+        "source": "Kwak ",
+        "value": "Kwak"
+      },
+      "menu.2.items.6.description": {
+        "source": "Belgique_Ambrée riche et gourmande, notes de biscuit, banane, orange, caramel et épices. 8.4°",
+        "value": "Bélgica — Âmbar rica e gulosa, com notas de bolacha, banana, laranja, caramelo e especiarias. 8,4%"
+      },
+      "menu.2.items.7.name": {
+        "source": "Rince Cochon",
+        "value": "Rince Cochon"
+      },
+      "menu.2.items.7.description": {
+        "source": "Belgique_Blonde forte, ronde, fruitée et légèrement épicée. 8.5°",
+        "value": "Bélgica — Loira forte, redonda, frutada e ligeiramente especiada. 8,5%"
+      },
+      "menu.2.items.8.name": {
+        "source": "Hoagarden blanche ",
+        "value": "Hoagarden blanche"
+      },
+      "menu.2.items.8.description": {
+        "source": "Belgique_Blanche douce et rafraîchissante, aux notes d’orange, coriandre, agrumes et épices. 4.9°",
+        "value": "Bélgica — Cerveja branca suave e refrescante, com notas de laranja, coentros, citrinos e especiarias. 4,9%"
+      },
+      "menu.2.items.9.name": {
+        "source": "Leffe  blonde ",
+        "value": "Leffe  blonde"
+      },
+      "menu.2.items.9.description": {
+        "source": "Belgique_Blonde d’abbaye, douce, maltée, avec vanille et clou de girofle. 6.6°",
+        "value": "Bélgica — Loira de abadia suave e maltada, com baunilha e cravinho. 6,6%"
+      },
+      "menu.3.items.2.name": {
+        "source": "Saucisson sec du terroir",
+        "value": "Salsichão seco tradicional"
+      },
+      "menu.3.items.2.description": {
+        "source": "Cèpes, nature ou piment d’Espelette",
+        "value": "Com cogumelos porcini, simples ou com pimento de Espelette"
+      },
+      "menu.3.items.3.name": {
+        "source": "Chips Lay’s 145 g",
+        "value": "Batatas fritas Lay’s, 145 g"
+      },
+      "menu.3.items.3.description": {
+        "source": "Nature, barbecue…",
+        "value": "Simples, barbecue…"
+      },
+      "menu.4.items.0.description": {
+        "source": "Tequila, jus d’orange, sirop de grenadine",
+        "value": "Tequila, sumo de laranja e xarope de grenadina"
+      },
+      "menu.4.items.1.name": {
+        "source": "Délices des îles",
+        "value": "Delícia das ilhas"
+      },
+      "menu.4.items.1.description": {
+        "source": "Rhum blanc martiniquais, jus de maracuja, sirop de grenadine",
+        "value": "Rum branco da Martinica, sumo de maracujá e xarope de grenadina"
+      },
+      "menu.7.category": {
+        "source": "Apéritifs",
+        "value": "Aperitivos"
+      },
+      "menu.7.items.0.name": {
+        "source": "Ricard",
+        "value": "Ricard"
+      },
+      "menu.7.items.1.name": {
+        "source": "Kir",
+        "value": "Kir"
+      },
+      "menu.7.items.1.description": {
+        "source": "Cassis, mûre, pêche ou framboise",
+        "value": "Groselha preta, amora, pêssego ou framboesa"
+      },
+      "menu.7.items.2.name": {
+        "source": "Kir pétillant",
+        "value": "Kir espumante"
+      },
+      "menu.7.items.3.name": {
+        "source": "Pétillant nature",
+        "value": "Vinho espumante"
+      },
+      "menu.7.items.3.description": {
+        "source": "Blanc de blancs brut",
+        "value": "Blanc de blancs bruto"
+      },
+      "menu.7.items.4.name": {
+        "source": "Porto",
+        "value": "Porto"
+      },
+      "menu.7.items.4.description": {
+        "source": "Rouge ou blanc",
+        "value": "Tinto ou branco"
+      },
+      "menu.7.items.5.name": {
+        "source": "Martini",
+        "value": "Martini"
+      },
+      "menu.7.items.5.description": {
+        "source": "Rouge ou blanc",
+        "value": "Tinto ou branco"
+      },
+      "menu.10.items.0.description": {
+        "source": "    Écosse_\n    Doux et rond, notes de bois, fruits secs et épices. ",
+        "value": "Escócia — Suave e redondo, com notas de madeira, frutos secos e especiarias."
+      },
+      "menu.10.items.1.description": {
+        "source": "    Irlande_\n    Souple et gourmand, notes de vanille, noix, épices et xérès.",
+        "value": "Irlanda — Suave e rico, com notas de baunilha, nozes, especiarias e xerez."
+      },
+      "menu.10.items.2.description": {
+        "source": "    Tennessee, États-Unis_\n    Rond et boisé, notes de caramel et de vanille. ",
+        "value": "Tennessee, Estados Unidos — Redondo e amadeirado, com notas de caramelo e baunilha."
+      },
+      "menu.10.items.3.description": {
+        "source": "    Speyside, Écosse_\n    Doux et fruité, notes d’ananas, poire et vanille. ",
+        "value": "Speyside, Escócia — Suave e frutado, com notas de ananás, pera e baunilha."
+      },
+      "menu.10.items.4.description": {
+        "source": "    Hiroshima, Japon_\n    Fin et doux, notes de fruits, noix, vanille et épices. ",
+        "value": "Hiroshima, Japão — Delicado e suave, com notas de fruta, nozes, baunilha e especiarias."
+      },
+      "menu.10.items.5.name": {
+        "source": "Aerstone",
+        "value": "Aerstone"
+      },
+      "menu.10.items.5.description": {
+        "source": "    Écosse_\n    Légèrement tourbé, fumé, malté et chaleureux.",
+        "value": "Escócia — Ligeiramente turfado, fumado, maltado e quente."
+      },
+      "menu.10.items.6.name": {
+        "source": "Big Peat",
+        "value": "Big Peat"
+      },
+      "menu.10.items.6.description": {
+        "source": "    Islay, Écosse_\n    Très tourbé, fumé et marin, notes de cendre et de sel.",
+        "value": "Islay, Escócia — Muito turfado, fumado e marítimo, com notas de cinza e sal."
+      },
+      "menu.12.category": {
+        "source": "Boissons chaudes",
+        "value": "Bebidas quentes"
+      },
+      "menu.12.items.0.name": {
+        "source": "Expresso / Café serré",
+        "value": "Expresso / Café curto"
+      },
+      "menu.12.items.1.name": {
+        "source": "Allongé / Noisette",
+        "value": "Café cheio / Expresso com um pouco de leite"
+      },
+      "menu.12.items.2.name": {
+        "source": "Thé / Café crème",
+        "value": "Chá / Café com leite"
+      },
+      "menu.12.items.3.name": {
+        "source": "Chocolat chaud",
+        "value": "Chocolate quente"
+      },
+      "menu.12.items.4.name": {
+        "source": "Cappuccino",
+        "value": "Cappuccino"
       }
     },
     "de": {
@@ -3207,6 +3807,194 @@
         "value": "Heiße Schokolade"
       },
       "menu.11.items.4.name": {
+        "source": "Cappuccino",
+        "value": "Cappuccino"
+      },
+      "menu.2.items.1.name": {
+        "source": "Orval",
+        "value": "Orval"
+      },
+      "menu.2.items.1.description": {
+        "source": "Belgique_ Trappiste sèche, houblonnée, avec une note sauvage. 6.2°",
+        "value": "Belgien — Trockenes, hopfiges Trappistenbier mit einer wilden Note. 6,2 %"
+      },
+      "menu.2.items.4.name": {
+        "source": "Duvel",
+        "value": "Duvel"
+      },
+      "menu.2.items.4.description": {
+        "source": "Belgique_Goût : Blonde forte, fruitée, sèche et finement amère. 8.5°",
+        "value": "Belgien — Starkes helles Bier, fruchtig, trocken und feinherb. 8,5 %"
+      },
+      "menu.2.items.5.name": {
+        "source": "Triple Karmeliet",
+        "value": "Triple Karmeliet"
+      },
+      "menu.2.items.5.description": {
+        "source": "Belgique_Tripel complexe, florale, vanillée et épicée. 8.4°",
+        "value": "Belgien — Komplexes Tripel mit floralen Noten, Vanille und Gewürzen. 8,4 %"
+      },
+      "menu.2.items.6.name": {
+        "source": "Kwak ",
+        "value": "Kwak"
+      },
+      "menu.2.items.6.description": {
+        "source": "Belgique_Ambrée riche et gourmande, notes de biscuit, banane, orange, caramel et épices. 8.4°",
+        "value": "Belgien — Vollmundiges bernsteinfarbenes Bier mit Noten von Gebäck, Banane, Orange, Karamell und Gewürzen. 8,4 %"
+      },
+      "menu.2.items.7.name": {
+        "source": "Rince Cochon",
+        "value": "Rince Cochon"
+      },
+      "menu.2.items.7.description": {
+        "source": "Belgique_Blonde forte, ronde, fruitée et légèrement épicée. 8.5°",
+        "value": "Belgien — Starkes helles Bier, rund, fruchtig und leicht würzig. 8,5 %"
+      },
+      "menu.2.items.8.name": {
+        "source": "Hoagarden blanche ",
+        "value": "Hoagarden blanche"
+      },
+      "menu.2.items.8.description": {
+        "source": "Belgique_Blanche douce et rafraîchissante, aux notes d’orange, coriandre, agrumes et épices. 4.9°",
+        "value": "Belgien — Mildes, erfrischendes Weißbier mit Noten von Orange, Koriander, Zitrusfrüchten und Gewürzen. 4,9 %"
+      },
+      "menu.2.items.9.name": {
+        "source": "Leffe  blonde ",
+        "value": "Leffe  blonde"
+      },
+      "menu.2.items.9.description": {
+        "source": "Belgique_Blonde d’abbaye, douce, maltée, avec vanille et clou de girofle. 6.6°",
+        "value": "Belgien — Mildes, malziges helles Abteibier mit Vanille und Gewürznelke. 6,6 %"
+      },
+      "menu.3.items.2.name": {
+        "source": "Saucisson sec du terroir",
+        "value": "Traditionelle luftgetrocknete Salami"
+      },
+      "menu.3.items.2.description": {
+        "source": "Cèpes, nature ou piment d’Espelette",
+        "value": "Mit Steinpilzen, natur oder mit Piment d’Espelette"
+      },
+      "menu.3.items.3.name": {
+        "source": "Chips Lay’s 145 g",
+        "value": "Lay’s Chips, 145 g"
+      },
+      "menu.3.items.3.description": {
+        "source": "Nature, barbecue…",
+        "value": "Gesalzen, Barbecue …"
+      },
+      "menu.4.items.0.description": {
+        "source": "Tequila, jus d’orange, sirop de grenadine",
+        "value": "Tequila, Orangensaft und Grenadinesirup"
+      },
+      "menu.4.items.1.name": {
+        "source": "Délices des îles",
+        "value": "Inselgenuss"
+      },
+      "menu.4.items.1.description": {
+        "source": "Rhum blanc martiniquais, jus de maracuja, sirop de grenadine",
+        "value": "Weißer Rum aus Martinique, Maracujasaft und Grenadinesirup"
+      },
+      "menu.7.category": {
+        "source": "Apéritifs",
+        "value": "Aperitifs"
+      },
+      "menu.7.items.0.name": {
+        "source": "Ricard",
+        "value": "Ricard"
+      },
+      "menu.7.items.1.name": {
+        "source": "Kir",
+        "value": "Kir"
+      },
+      "menu.7.items.1.description": {
+        "source": "Cassis, mûre, pêche ou framboise",
+        "value": "Schwarze Johannisbeere, Brombeere, Pfirsich oder Himbeere"
+      },
+      "menu.7.items.2.name": {
+        "source": "Kir pétillant",
+        "value": "Kir mit Schaumwein"
+      },
+      "menu.7.items.3.name": {
+        "source": "Pétillant nature",
+        "value": "Schaumwein"
+      },
+      "menu.7.items.3.description": {
+        "source": "Blanc de blancs brut",
+        "value": "Blanc de Blancs brut"
+      },
+      "menu.7.items.4.name": {
+        "source": "Porto",
+        "value": "Porto"
+      },
+      "menu.7.items.4.description": {
+        "source": "Rouge ou blanc",
+        "value": "Rot oder weiß"
+      },
+      "menu.7.items.5.name": {
+        "source": "Martini",
+        "value": "Martini"
+      },
+      "menu.7.items.5.description": {
+        "source": "Rouge ou blanc",
+        "value": "Rot oder weiß"
+      },
+      "menu.10.items.0.description": {
+        "source": "    Écosse_\n    Doux et rond, notes de bois, fruits secs et épices. ",
+        "value": "Schottland — Mild und rund, mit Noten von Holz, Trockenfrüchten und Gewürzen."
+      },
+      "menu.10.items.1.description": {
+        "source": "    Irlande_\n    Souple et gourmand, notes de vanille, noix, épices et xérès.",
+        "value": "Irland — Weich und vollmundig, mit Noten von Vanille, Nüssen, Gewürzen und Sherry."
+      },
+      "menu.10.items.2.description": {
+        "source": "    Tennessee, États-Unis_\n    Rond et boisé, notes de caramel et de vanille. ",
+        "value": "Tennessee, USA — Rund und holzig, mit Karamell- und Vanillenoten."
+      },
+      "menu.10.items.3.description": {
+        "source": "    Speyside, Écosse_\n    Doux et fruité, notes d’ananas, poire et vanille. ",
+        "value": "Speyside, Schottland — Mild und fruchtig, mit Noten von Ananas, Birne und Vanille."
+      },
+      "menu.10.items.4.description": {
+        "source": "    Hiroshima, Japon_\n    Fin et doux, notes de fruits, noix, vanille et épices. ",
+        "value": "Hiroshima, Japan — Fein und mild, mit Noten von Früchten, Nüssen, Vanille und Gewürzen."
+      },
+      "menu.10.items.5.name": {
+        "source": "Aerstone",
+        "value": "Aerstone"
+      },
+      "menu.10.items.5.description": {
+        "source": "    Écosse_\n    Légèrement tourbé, fumé, malté et chaleureux.",
+        "value": "Schottland — Leicht torfig, rauchig, malzig und wärmend."
+      },
+      "menu.10.items.6.name": {
+        "source": "Big Peat",
+        "value": "Big Peat"
+      },
+      "menu.10.items.6.description": {
+        "source": "    Islay, Écosse_\n    Très tourbé, fumé et marin, notes de cendre et de sel.",
+        "value": "Islay, Schottland — Kräftig torfig, rauchig und maritim, mit Asche- und Salznoten."
+      },
+      "menu.12.category": {
+        "source": "Boissons chaudes",
+        "value": "Heißgetränke"
+      },
+      "menu.12.items.0.name": {
+        "source": "Expresso / Café serré",
+        "value": "Espresso / Ristretto"
+      },
+      "menu.12.items.1.name": {
+        "source": "Allongé / Noisette",
+        "value": "Verlängerter / Espresso mit einem Schuss Milch"
+      },
+      "menu.12.items.2.name": {
+        "source": "Thé / Café crème",
+        "value": "Tee / Milchkaffee"
+      },
+      "menu.12.items.3.name": {
+        "source": "Chocolat chaud",
+        "value": "Heiße Schokolade"
+      },
+      "menu.12.items.4.name": {
         "source": "Cappuccino",
         "value": "Cappuccino"
       }
