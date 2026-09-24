@@ -291,8 +291,49 @@
       "category": "Softs",
       "items": [
         {
-          "name": "Coca-Cola, Coca-Cola Zéro, Fuze Tea pêche, Schweppes, Orangina, Perrier, limonade et jus de fruits",
-          "price": "3,50 €"
+          "name": "Coca-Cola (Original, Zéro sucre ou Cherry) ",
+          "price": "3,50 €",
+          "description": "33cl"
+        },
+        {
+          "name": "Orangina",
+          "description": "33cl",
+          "price": "3,50€"
+        },
+        {
+          "name": "Perrier",
+          "description": "33cl (Supplément rondelles ou sirop 0,20€)",
+          "price": "3,50€"
+        },
+        {
+          "name": "Schweppes (Tonic ou Agrumes)",
+          "description": "33cl",
+          "price": "3,50€"
+        },
+        {
+          "name": "Limonade (Lorina)",
+          "description": "33cl",
+          "price": "3,50€"
+        },
+        {
+          "name": "Diabolo (Lorina+sirop)",
+          "description": "33cl (grenadine, fraise, citron, menthe, menthe glaciale, violette, cassis, cerise, pêche, framboise)",
+          "price": "3,70€"
+        },
+        {
+          "name": "Jus de fruits",
+          "description": "25cl (orange, abricot, ananas, pomme, fraise, tomate)",
+          "price": "3,50€"
+        },
+        {
+          "name": "Oasis tropical",
+          "description": "33cl",
+          "price": "3,50€"
+        },
+        {
+          "name": "Redbull",
+          "description": "25cl",
+          "price": "4,50€"
         }
       ],
       "style": "",
