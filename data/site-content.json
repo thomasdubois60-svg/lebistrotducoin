@@ -568,6 +568,54 @@
           "price": "50€",
           "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/3b988a13b7b9803b4488397a723548d790643d50/public/photos/a10b393a-838f-4521-aefb-8899561b35d4-0aa1fef7-d761-4a3d-b308-f3f438556d82.png",
           "wineType": "red"
+        },
+        {
+          "name": "Test",
+          "description": "C’est trop bon ce vin",
+          "price": "500",
+          "wineType": "sparkling",
+          "i18n": {
+            "en": {
+              "name": {
+                "source": "Test",
+                "value": "Test"
+              },
+              "description": {
+                "source": "C’est trop bon ce vin",
+                "value": "This wine is absolutely lovely"
+              }
+            },
+            "es": {
+              "name": {
+                "source": "Test",
+                "value": "Prueba"
+              },
+              "description": {
+                "source": "C’est trop bon ce vin",
+                "value": "Este vino está buenísimo"
+              }
+            },
+            "pt": {
+              "name": {
+                "source": "Test",
+                "value": "Teste"
+              },
+              "description": {
+                "source": "C’est trop bon ce vin",
+                "value": "Este vinho é mesmo bom"
+              }
+            },
+            "de": {
+              "name": {
+                "source": "Test",
+                "value": "Test"
+              },
+              "description": {
+                "source": "C’est trop bon ce vin",
+                "value": "Dieser Wein schmeckt einfach köstlich."
+              }
+            }
+          }
         }
       ],
       "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/18631f8a41d538a51723a986f95cd390827136fd/public/photos/a00bb916-b91a-4d0c-9fa1-a48d4dd25943-8df16d35-6a3a-488f-bf49-b077f9b1a343.png",
