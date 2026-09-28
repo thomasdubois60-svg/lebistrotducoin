@@ -247,6 +247,41 @@
           "name": "Délices des îles",
           "description": "Rhum blanc martiniquais, jus de maracuja, sirop de grenadine",
           "price": "8 €"
+        },
+        {
+          "name": "Apérol Spritz",
+          "description": "Apérol, pétillant, perrier",
+          "price": "8€"
+        },
+        {
+          "name": "Campari Spritz",
+          "description": "Campari, pétillant, perrier",
+          "price": "8€"
+        },
+        {
+          "name": "Sarti Spritz",
+          "description": "Sarti (goût litchi), pétillant, perrier",
+          "price": "8€"
+        },
+        {
+          "name": "Gin Tonic",
+          "description": "Gin Gibson, schweppes tonic ou agrumes",
+          "price": "8€"
+        },
+        {
+          "name": "Bistrot Passion",
+          "description": "Vodka, jus maraccuja, grenadine",
+          "price": "8€"
+        },
+        {
+          "name": "Moscow Mules",
+          "description": "Vodka, ginger beer, citron vert",
+          "price": "8€"
+        },
+        {
+          "name": "London Mule",
+          "description": "Gin, Ginger beer, citron vert",
+          "price": "8€"
         }
       ],
       "style": "",
@@ -256,8 +291,49 @@
       "category": "Softs",
       "items": [
         {
-          "name": "Coca-Cola, Coca-Cola Zéro, Fuze Tea pêche, Schweppes, Orangina, Perrier, limonade et jus de fruits",
-          "price": "3,50 €"
+          "name": "Coca-Cola (Original, Zéro sucre ou Cherry) ",
+          "price": "3,50 €",
+          "description": "33cl"
+        },
+        {
+          "name": "Orangina",
+          "description": "33cl",
+          "price": "3,50€"
+        },
+        {
+          "name": "Perrier",
+          "description": "33cl (Supplément rondelles ou sirop 0,20€)",
+          "price": "3,50€"
+        },
+        {
+          "name": "Schweppes (Tonic ou Agrumes)",
+          "description": "33cl",
+          "price": "3,50€"
+        },
+        {
+          "name": "Limonade (Lorina)",
+          "description": "33cl",
+          "price": "3,50€"
+        },
+        {
+          "name": "Diabolo (Lorina+sirop)",
+          "description": "33cl (grenadine, fraise, citron, menthe, menthe glaciale, violette, cassis, cerise, pêche, framboise)",
+          "price": "3,70€"
+        },
+        {
+          "name": "Jus de fruits",
+          "description": "25cl (orange, abricot, ananas, pomme, fraise, tomate)",
+          "price": "3,50€"
+        },
+        {
+          "name": "Oasis tropical",
+          "description": "33cl",
+          "price": "3,50€"
+        },
+        {
+          "name": "Redbull",
+          "description": "25cl",
+          "price": "4,50€"
         }
       ],
       "style": "",
@@ -526,6 +602,42 @@
           "name": "Dom Papa",
           "description": "",
           "price": "8€"
+        }
+      ]
+    },
+    {
+      "id": "af2ec106-8dc3-4191-b3a7-4d225f2a4636",
+      "category": "Digestifs",
+      "items": [
+        {
+          "name": "Get 27",
+          "description": "",
+          "price": "6€"
+        },
+        {
+          "name": "Menthe Pastille",
+          "description": "",
+          "price": "6€"
+        },
+        {
+          "name": "Cognac",
+          "description": "",
+          "price": "6€"
+        },
+        {
+          "name": "Armagnac",
+          "description": "",
+          "price": "6€"
+        },
+        {
+          "name": "Calvados",
+          "description": "",
+          "price": "6€"
+        },
+        {
+          "name": "Poire",
+          "description": "",
+          "price": "6€"
         }
       ]
     },
@@ -1307,6 +1419,30 @@
       "menu.11.items.4.name": {
         "source": "Cappuccino",
         "value": "Cappuccino"
+      },
+      "menu.12.category": {
+        "source": "Boissons chaudes",
+        "value": "Hot drinks"
+      },
+      "menu.12.items.0.name": {
+        "source": "Expresso / Café serré",
+        "value": "Espresso / Ristretto"
+      },
+      "menu.12.items.1.name": {
+        "source": "Allongé / Noisette",
+        "value": "Long coffee / Espresso with a dash of milk"
+      },
+      "menu.12.items.2.name": {
+        "source": "Thé / Café crème",
+        "value": "Tea / Coffee with milk"
+      },
+      "menu.12.items.3.name": {
+        "source": "Chocolat chaud",
+        "value": "Hot chocolate"
+      },
+      "menu.12.items.4.name": {
+        "source": "Cappuccino",
+        "value": "Cappuccino"
       }
     },
     "es": {
@@ -1939,6 +2075,30 @@
         "value": "Chocolate caliente"
       },
       "menu.11.items.4.name": {
+        "source": "Cappuccino",
+        "value": "Cappuccino"
+      },
+      "menu.12.category": {
+        "source": "Boissons chaudes",
+        "value": "Bebidas calientes"
+      },
+      "menu.12.items.0.name": {
+        "source": "Expresso / Café serré",
+        "value": "Espreso / Café corto"
+      },
+      "menu.12.items.1.name": {
+        "source": "Allongé / Noisette",
+        "value": "Café largo / Cortado"
+      },
+      "menu.12.items.2.name": {
+        "source": "Thé / Café crème",
+        "value": "Té / Café con leche"
+      },
+      "menu.12.items.3.name": {
+        "source": "Chocolat chaud",
+        "value": "Chocolate caliente"
+      },
+      "menu.12.items.4.name": {
         "source": "Cappuccino",
         "value": "Cappuccino"
       }
@@ -2575,6 +2735,30 @@
       "menu.11.items.4.name": {
         "source": "Cappuccino",
         "value": "Cappuccino"
+      },
+      "menu.12.category": {
+        "source": "Boissons chaudes",
+        "value": "Bebidas quentes"
+      },
+      "menu.12.items.0.name": {
+        "source": "Expresso / Café serré",
+        "value": "Expresso / Café curto"
+      },
+      "menu.12.items.1.name": {
+        "source": "Allongé / Noisette",
+        "value": "Café cheio / Expresso com um pouco de leite"
+      },
+      "menu.12.items.2.name": {
+        "source": "Thé / Café crème",
+        "value": "Chá / Café com leite"
+      },
+      "menu.12.items.3.name": {
+        "source": "Chocolat chaud",
+        "value": "Chocolate quente"
+      },
+      "menu.12.items.4.name": {
+        "source": "Cappuccino",
+        "value": "Cappuccino"
       }
     },
     "de": {
@@ -3207,6 +3391,30 @@
         "value": "Heiße Schokolade"
       },
       "menu.11.items.4.name": {
+        "source": "Cappuccino",
+        "value": "Cappuccino"
+      },
+      "menu.12.category": {
+        "source": "Boissons chaudes",
+        "value": "Heißgetränke"
+      },
+      "menu.12.items.0.name": {
+        "source": "Expresso / Café serré",
+        "value": "Espresso / Ristretto"
+      },
+      "menu.12.items.1.name": {
+        "source": "Allongé / Noisette",
+        "value": "Verlängerter / Espresso mit einem Schuss Milch"
+      },
+      "menu.12.items.2.name": {
+        "source": "Thé / Café crème",
+        "value": "Tee / Milchkaffee"
+      },
+      "menu.12.items.3.name": {
+        "source": "Chocolat chaud",
+        "value": "Heiße Schokolade"
+      },
+      "menu.12.items.4.name": {
         "source": "Cappuccino",
         "value": "Cappuccino"
       }
