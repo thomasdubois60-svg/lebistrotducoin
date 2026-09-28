@@ -457,7 +457,49 @@
           "description": "    Domaine de la Clapière – Figuerette Pays d’Oc 2023\n    Blanc frais et aromatique, aux notes de fruits blancs, d’agrumes et de fleurs, avec une finale légère et désaltérante.",
           "price": "24€",
           "image": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/80c714547ca1b09baf6e6ea800e547cc7861430e/public/photos/fcaf07ce-fb1f-45cd-b75b-4506ad90224d-27b8d6e7-1edd-4127-8098-e03e9d6c5175.png",
-          "wineType": "white"
+          "wineType": "white",
+          "i18n": {
+            "en": {
+              "name": {
+                "source": "Figuerette 75cl",
+                "value": "Figuerette 75cl"
+              },
+              "description": {
+                "source": "    Domaine de la Clapière – Figuerette Pays d’Oc 2023\n    Blanc frais et aromatique, aux notes de fruits blancs, d’agrumes et de fleurs, avec une finale légère et désaltérante.",
+                "value": "    Domaine de la Clapière – Figuerette Pays d’Oc 2023\n    A fresh, aromatic white wine with notes of white fruit, citrus and flowers, and a light, refreshing finish."
+              }
+            },
+            "es": {
+              "name": {
+                "source": "Figuerette 75cl",
+                "value": "Figuerette 75 cl"
+              },
+              "description": {
+                "source": "    Domaine de la Clapière – Figuerette Pays d’Oc 2023\n    Blanc frais et aromatique, aux notes de fruits blancs, d’agrumes et de fleurs, avec une finale légère et désaltérante.",
+                "value": "    Domaine de la Clapière – Figuerette Pays d’Oc 2023\n    Un vino blanco fresco y aromático, con notas de frutas blancas, cítricos y flores, y un final ligero y refrescante."
+              }
+            },
+            "pt": {
+              "name": {
+                "source": "Figuerette 75cl",
+                "value": "Figuerette 75 cl"
+              },
+              "description": {
+                "source": "    Domaine de la Clapière – Figuerette Pays d’Oc 2023\n    Blanc frais et aromatique, aux notes de fruits blancs, d’agrumes et de fleurs, avec une finale légère et désaltérante.",
+                "value": "    Domaine de la Clapière – Figuerette Pays d’Oc 2023\n    Um vinho branco fresco e aromático, com notas de frutos brancos, citrinos e flores, e um final leve e refrescante."
+              }
+            },
+            "de": {
+              "name": {
+                "source": "Figuerette 75cl",
+                "value": "Figuerette 75 cl"
+              },
+              "description": {
+                "source": "    Domaine de la Clapière – Figuerette Pays d’Oc 2023\n    Blanc frais et aromatique, aux notes de fruits blancs, d’agrumes et de fleurs, avec une finale légère et désaltérante.",
+                "value": "    Domaine de la Clapière – Figuerette Pays d’Oc 2023\n    Ein frischer und aromatischer Weißwein mit Noten von weißen Früchten, Zitrusfrüchten und Blumen sowie einem leichten und erfrischenden Abgang."
+              }
+            }
+          }
         },
         {
           "name": "Coteaux du layon 75cl",
