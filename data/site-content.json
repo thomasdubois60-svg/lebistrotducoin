@@ -528,7 +528,33 @@
           "wineType": "red"
         }
       ],
-      "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/18631f8a41d538a51723a986f95cd390827136fd/public/photos/a00bb916-b91a-4d0c-9fa1-a48d4dd25943-8df16d35-6a3a-488f-bf49-b077f9b1a343.png"
+      "headerImage": "https://raw.githubusercontent.com/thomasdubois60-svg/lebistrotducoin/18631f8a41d538a51723a986f95cd390827136fd/public/photos/a00bb916-b91a-4d0c-9fa1-a48d4dd25943-8df16d35-6a3a-488f-bf49-b077f9b1a343.png",
+      "i18n": {
+        "en": {
+          "category": {
+            "source": "Notre sélection de vin en bouteille",
+            "value": "Our selection of bottled wine"
+          }
+        },
+        "es": {
+          "category": {
+            "source": "Notre sélection de vin en bouteille",
+            "value": "Nuestra selección de vinos embotellados"
+          }
+        },
+        "pt": {
+          "category": {
+            "source": "Notre sélection de vin en bouteille",
+            "value": "A nossa seleção de vinhos engarrafados"
+          }
+        },
+        "de": {
+          "category": {
+            "source": "Notre sélection de vin en bouteille",
+            "value": "Unsere Auswahl an Flaschenweinen"
+          }
+        }
+      }
     },
     {
       "category": "Whiskys",
