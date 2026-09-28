@@ -1,3 +1,4 @@
+import {GET as readPublishedContent} from '@/app/api/content/route'
 import {LanguageProvider} from '@/components/language-provider'
 import {serverLanguage} from '@/lib/language-server'
 import {translate} from '@/lib/i18n'
@@ -30,5 +31,6 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const locale=await serverLanguage()
-  return <html lang={locale}><body><LanguageProvider initialLocale={locale}><ContentProvider><ServiceWorker/><Header/><main><SectionBanner/>{children}</main><Footer/><PwaInstallPrompt/><Analytics/></ContentProvider></LanguageProvider></body></html>
+  const published=await readPublishedContent();const content=published.ok?await published.json():undefined
+  return <html lang={locale}><body><LanguageProvider initialLocale={locale}><ContentProvider publishedContent={content}><ServiceWorker/><Header/><main><SectionBanner/>{children}</main><Footer/><PwaInstallPrompt/><Analytics/></ContentProvider></LanguageProvider></body></html>
 }

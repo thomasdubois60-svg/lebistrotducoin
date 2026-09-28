@@ -9,8 +9,8 @@ import { defaultContent, normalizeContent, SiteContent } from '@/lib/default-con
 const initialContent = { ...defaultContent, heroImage: '', privatization: { ...defaultContent.privatization, photos: [] } }
 const ContentContext = createContext<SiteContent>(initialContent)
 
-export function ContentProvider({ children }: { children: React.ReactNode }) {
-  const [content, setContent] = useState<SiteContent>(initialContent)
+export function ContentProvider({ children, publishedContent }: { children: React.ReactNode; publishedContent?: SiteContent }) {
+  const [content, setContent] = useState<SiteContent>(()=>publishedContent?normalizeContent(publishedContent):initialContent)
   useEffect(() => {
     let disposed = false
     let latestRequest = 0
@@ -27,15 +27,15 @@ export function ContentProvider({ children }: { children: React.ReactNode }) {
     const onVisibilityChange = () => {
       if (document.visibilityState === 'visible') void update()
     }
-    void update()
+    if(!publishedContent)void update()
     window.addEventListener('focus', update)
-    window.addEventListener('pageshow', update)
+    const onPageShow=(event:PageTransitionEvent)=>{if(event.persisted)void update()};window.addEventListener('pageshow', onPageShow)
     document.addEventListener('visibilitychange', onVisibilityChange)
     window.addEventListener('bistrot-content-updated', update)
     return () => {
       disposed = true
       window.removeEventListener('focus', update)
-      window.removeEventListener('pageshow', update)
+      window.removeEventListener('pageshow', onPageShow)
       document.removeEventListener('visibilitychange', onVisibilityChange)
       window.removeEventListener('bistrot-content-updated', update)
     }

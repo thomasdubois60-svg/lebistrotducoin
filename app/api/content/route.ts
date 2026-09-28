@@ -67,10 +67,10 @@ export async function GET() {
     } catch { /* Retry anonymously if configured credentials failed. */ }
   }
   if (!commit) return NextResponse.json({ error: 'La dernière publication est temporairement indisponible.' }, { status: 503, headers: { ...headers, 'X-Content-Source': 'unavailable', 'Retry-After': '5' } })
-  const apiUrl = 'https://api.github.com/repos/' + path + '/contents/data/site-content.json?ref=' + commit + '&publication=' + refresh
+  const apiUrl = 'https://api.github.com/repos/' + path + '/contents/data/site-content.json?ref=' + commit
   // Read the public branch first, independently of the token used by Administration.
   const sources = [
-    { name: 'github-raw', url: 'https://raw.githubusercontent.com/' + path + '/' + commit + '/data/site-content.json?publication=' + refresh, token: undefined },
+    { name: 'github-raw', url: 'https://raw.githubusercontent.com/' + path + '/' + commit + '/data/site-content.json', token: undefined },
     { name: 'github-api', url: apiUrl, token },
     ...(token ? [{ name: 'github-api-public', url: apiUrl + '&anonymous=1', token: undefined }] : [])
   ]
@@ -84,7 +84,7 @@ export async function GET() {
           'Cache-Control': 'no-cache',
           ...(source.token ? { Authorization: 'Bearer ' + source.token } : {})
         },
-        cache: 'no-store',
+        cache: 'force-cache',
         signal: AbortSignal.timeout(5000)
       })
       if (!response.ok) continue
