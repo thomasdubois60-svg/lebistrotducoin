@@ -2263,7 +2263,18 @@
       }
     ]
   },
-  "events": [],
+  "events": [
+    {
+      "title": "Test ",
+      "date": "2026-09-30",
+      "time": "19:07",
+      "endDate": "2026-10-01",
+      "endTime": "18:07",
+      "description": "",
+      "price": "0",
+      "gallery": []
+    }
+  ],
   "reviews": {
     "title": "Avis Google & réseaux sociaux",
     "intro": "Votre avis compte beaucoup pour nous. Consultez les témoignages de nos clients ou partagez votre expérience.",
