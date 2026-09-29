@@ -1,4 +1,5 @@
 'use client'
+import CommunityShare from '@/components/community-share'
 import {siteImage} from '@/lib/site-image'
 import {useLanguage} from '@/components/language-provider'
 import { PageHero } from '@/components/page-hero'
@@ -10,7 +11,7 @@ function EventCard({ item, phone }: { item: EventRow; phone?: string }) {
  const {t,locale}=useLanguage();
 
   const { event } = item
-  return <article className="event-card" id={eventAnchor(event)}>{event.image && <img src={siteImage(event.image)} loading="lazy" decoding="async" alt={event.imageAlt || event.title}/>}<div className="event-content"><span className="eyebrow">{eventDateLabel(event,locale)}</span><h2>{event.title}</h2><p>{event.description}</p>{event.price && <strong className="event-price">{event.price}</strong>}{phone&&<a className="button" href={`tel:${phone}`}>{t("Réserver pour cet événement")} ↗</a>}</div></article>
+  return <article className="event-card" id={eventAnchor(event)}>{event.image && <img src={siteImage(event.image)} loading="lazy" decoding="async" alt={event.imageAlt || event.title}/>}<div className="event-content"><span className="eyebrow">{eventDateLabel(event,locale)}</span><h2>{event.title}</h2><p>{event.description}</p>{event.price && <strong className="event-price">{event.price}</strong>}{phone&&<a className="button" href={`tel:${phone}`}>{t("Réserver pour cet événement")} ↗</a>}<CommunityShare label="Partager cet événement" title={event.title} text={[event.title,eventDateLabel(event,locale),event.description,event.price].filter(Boolean).join('\n')} path={'/evenements#'+eventAnchor(event)}/></div></article>
 }
 
 export default function EventsPage() {

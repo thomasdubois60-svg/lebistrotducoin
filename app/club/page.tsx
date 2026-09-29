@@ -1,3 +1,4 @@
+import CommunityShare from '@/components/community-share'
 import {localizedMetadata} from '@/lib/language-server'
 import {Text} from '@/components/language-provider'
 import type { Metadata } from 'next'
@@ -21,7 +22,7 @@ export default async function ClubPage(){
     <PageHero eyebrow="Avantages & actualités" title="Club LBDC" text="Le Bistrot dans votre poche, avec les menus, événements et futurs avantages fidélité."/>
     <section className="section club-page"><div className="container club-layout">
       <div><ClubSignup/><p className="club-login-link"><Text>{" Déjà membre ? "}</Text><a className="button secondary" href="/club/espace"><Text>{" Accéder à mon espace "}</Text></a></p></div>
-      <ClubProgramIntro/>
+      <div><ClubProgramIntro/><CommunityShare title="Club LBDC" label="Partager le Club" text="Rejoignez le Club LBDC pour profiter des avantages du Bistrot Du Coin." path="/club"/></div>
     </div></section>
     <section className="section club-push-section"><div className="container narrow"><PushSubscriptionManager/></div></section>
   </>

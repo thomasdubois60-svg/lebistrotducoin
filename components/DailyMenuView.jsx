@@ -1,6 +1,7 @@
 'use client';
 import {useLanguage} from '@/components/language-provider'
 import {useId} from 'react';
+import CommunityShare from './community-share';
 import styles from './DailyMenuView.module.css';
 import SectionPhoto from './SectionPhoto';
 
@@ -33,7 +34,7 @@ export default function DailyMenuView({daily,introduction='',phone='',phoneHref=
    <h1>{t("Aujourd’hui ")}<em>{t("au Bistrot")}</em></h1>
    {daily.dateLabel&&<span className={styles.date}>{daily.dateLabel}</span>}
    {introduction&&<p>{introduction}</p>}
-   <div className={styles.flourish} aria-hidden="true">— ✦ —</div>
+   <CommunityShare label="Partager le Menu du jour" title={t('Menu du jour')+' · Le Bistrot Du Coin'} path="/aujourdhui" text={[daily.dateLabel,...groups.flatMap(([key,title])=>daily[key].length?[title,...daily[key].map(p=>p.name+(p.description?' — '+p.description:'')+(p.price?' · '+p.price:''))]:[]),suggestion?.name?t('Suggestion du chef')+' : '+suggestion.name:''].filter(Boolean).join('\n')}/><div className={styles.flourish} aria-hidden="true">— ✦ —</div>
   </header>
   <div className={styles.container}>
    {daily.formulas.length>0&&<section className={styles.formulas} aria-label={t("Nos formules")}>

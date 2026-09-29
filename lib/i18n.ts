@@ -1,3 +1,4 @@
+import {communityMessages} from './community-messages'
 import { messages } from './messages'
 import editorial from './editorial-translations.json'
 export const locales = ['fr','en','es','pt','de'] as const
@@ -6,7 +7,7 @@ export const isLocale = (value: unknown): value is Locale => locales.includes(va
 export const languageNames: Record<Locale,string> = {fr:'Français',en:'English',es:'Español',pt:'Português',de:'Deutsch'}
 export const flags: Record<Locale,string> = {fr:'🇫🇷',en:'🇬🇧',es:'🇪🇸',pt:'🇵🇹',de:'🇩🇪'}
 export function translate(text: string, locale: Locale, values: Record<string,string|number> = {}) {
- const key=text.trim(), translated=locale==='fr'?key:messages[key]?.[locale]||(editorial as Record<string,Record<string,string>>)[key]?.[locale]||key
+ const key=text.trim(), translated=locale==='fr'?key:communityMessages[key]?.[locale]||messages[key]?.[locale]||(editorial as Record<string,Record<string,string>>)[key]?.[locale]||key
  const result=translated.replace(/\{(\w+)\}/g,(match,key)=>String(values[key]??match))
  return text.match(/^\s*/)?.[0]+result+(text.match(/\s*$/)?.[0]||'')
 }
